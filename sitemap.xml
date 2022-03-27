@@ -2,38 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://github-lym.github.io/</loc>
+    <loc>https://example.com/</loc>
     <lastmod>2022-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github-lym.github.io/post/2022/</loc>
+    <loc>https://example.com/post/2022/</loc>
     <lastmod>2022-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github-lym.github.io/post/</loc>
+    <loc>https://example.com/post/</loc>
     <lastmod>2022-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github-lym.github.io/tags/mssql/</loc>
+    <loc>https://example.com/tags/mssql/</loc>
     <lastmod>2022-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github-lym.github.io/tags/</loc>
+    <loc>https://example.com/tags/</loc>
     <lastmod>2022-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github-lym.github.io/post/2022/covert-to-files-from-mssql/</loc>
+    <loc>https://example.com/post/2022/covert-to-files-from-mssql/</loc>
     <lastmod>2022-03-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github-lym.github.io/about/</loc>
+    <loc>https://example.com/about/</loc>
     <lastmod>2022-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github-lym.github.io/tags/trifles/</loc>
+    <loc>https://example.com/tags/trifles/</loc>
     <lastmod>2022-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github-lym.github.io/post/2022/first-post/</loc>
+    <loc>https://example.com/post/2022/first-post/</loc>
     <lastmod>2022-03-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github-lym.github.io/archives/</loc>
+    <loc>https://example.com/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github-lym.github.io/categories/</loc>
+    <loc>https://example.com/categories/</loc>
   </url><url>
-    <loc>https://github-lym.github.io/series/</loc>
+    <loc>https://example.com/search/</loc>
+  </url><url>
+    <loc>https://example.com/series/</loc>
   </url>
 </urlset>
