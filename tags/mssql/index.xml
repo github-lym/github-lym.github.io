@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MSSQL on Clarity</title>
+    <title>MSSQL on My_Memo</title>
     <link>https://github-lym.github.io/tags/mssql/</link>
-    <description>Recent content in MSSQL on Clarity</description>
+    <description>Recent content in MSSQL on My_Memo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright © 2008–2018, Steve Francia and the Hugo Authors; all rights reserved.</copyright>
