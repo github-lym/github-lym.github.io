@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>My Memo</title>
-    <link>https://github-lym.github.io/</link>
-    <description>Recent content on My Memo</description>
+    <title>Posts on My Memo</title>
+    <link>https://github-lym.github.io/posts/</link>
+    <description>Recent content in Posts on My Memo</description>
     <image>
       <url>https://github-lym.github.io/papermod-cover.png</url>
       <link>https://github-lym.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 28 Mar 2022 22:11:00 +0800</lastBuildDate><atom:link href="https://github-lym.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Mar 2022 22:11:00 +0800</lastBuildDate><atom:link href="https://github-lym.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>批次執行vbs檔並檢查結果</title>
       <link>https://github-lym.github.io/posts/2022/%E6%89%B9%E6%AC%A1%E5%9F%B7%E8%A1%8Cvbs%E6%AA%94%E4%B8%A6%E6%AA%A2%E6%9F%A5%E7%B5%90%E6%9E%9C/</link>
@@ -36,17 +36,6 @@
       <guid>https://github-lym.github.io/posts/2022/first-post/</guid>
       <description>第一篇文章</description>
     </item>
-    
-    <item>
-      <title>關於我</title>
-      <link>https://github-lym.github.io/about/</link>
-      <pubDate>Tue, 12 Mar 2019 17:52:00 +0000</pubDate>
-      
-      <guid>https://github-lym.github.io/about/</guid>
-      <description>不學無術，混死等死，記憶衰退，只能把可能有用的東西記錄下來。 </description>
-    </item>
-    
-    
     
   </channel>
 </rss>
