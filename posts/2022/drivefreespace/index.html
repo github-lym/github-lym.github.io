@@ -100,8 +100,8 @@
   "keywords": [
     "懶人上班程式", "C#", "Console"
   ],
-  "articleBody": "因代理同事工作，才知道他每天得特地進機房看某主機的硬碟剩餘空間。\n沒辦法，一樣沒有遠端連線可直接登入觀看。\n可以秀出磁碟空間的寫法，MSDN就有資料所以直接照抄。 好在FTP沒被擋，可排程產生log，再用FTP連到該主機看。 \n",
-  "wordCount" : "4",
+  "articleBody": "因代理同事工作，才知道他每天得特地進機房看某主機的硬碟剩餘空間。\n沒辦法，一樣沒有遠端連線可直接登入觀看。\n可以秀出磁碟空間的寫法，MSDN就有資料所以直接照抄。 好在FTP沒被擋，可排程產生log，再用FTP連到該主機看。 \n 取得磁碟資料\nDriveInfo[] allDrives = DriveInfo.GetDrives(); 列出\nforeach (DriveInfo d in allDrives) { if (!File.Exists(logFullPath)) log = new StreamWriter(logFullPath); else log = File.AppendText(logFullPath); log.WriteLine(\"Drive {0}\", d.Name); log.WriteLine(\" Drive type: {0}\", d.DriveType); if (d.IsReady == true) { log.WriteLine(\" Volume label: {0}\", d.VolumeLabel); log.WriteLine(\" File system: {0}\", d.DriveFormat); gb = (float)(d.TotalSize / 1073741824d); log.WriteLine( \" Total size of drive: {0, 15} GBs\", gb); gb = (float)((d.TotalSize - d.AvailableFreeSpace) / 1073741824d); log.WriteLine( \" Used space: {0, 15} GBs\", gb); gb = (float)(d.TotalFreeSpace / 1073741824d); log.WriteLine( \" Total available space: {0, 15} GBs\", gb); log.WriteLine(\"\"); } ",
+  "wordCount" : "95",
   "inLanguage": "en",
   "datePublished": "2022-03-29T11:30:57+08:00",
   "dateModified": "2022-03-29T11:30:57+08:00",
@@ -224,6 +224,42 @@
 好在FTP沒被擋，可排程產生log，再用FTP連到該主機看。
 <a href="https://github.com/github-lym/DriveFreeSpace"><img loading="lazy" src="screenshot.png" alt="DriveFreeSpace"  title="產生的log"  />
 </a></p>
+<blockquote>
+<p>取得磁碟資料</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">DriveInfo</span><span class="p">[]</span> <span class="n">allDrives</span> <span class="p">=</span> <span class="n">DriveInfo</span><span class="p">.</span><span class="n">GetDrives</span><span class="p">();</span>
+</span></span></code></pre></div><p>列出</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">foreach</span> <span class="p">(</span><span class="n">DriveInfo</span> <span class="n">d</span> <span class="k">in</span> <span class="n">allDrives</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(!</span><span class="n">File</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">logFullPath</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">		<span class="n">log</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StreamWriter</span><span class="p">(</span><span class="n">logFullPath</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span>
+</span></span><span class="line"><span class="cl">		<span class="n">log</span> <span class="p">=</span> <span class="n">File</span><span class="p">.</span><span class="n">AppendText</span><span class="p">(</span><span class="n">logFullPath</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="n">log</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Drive {0}&#34;</span><span class="p">,</span> <span class="n">d</span><span class="p">.</span><span class="n">Name</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="n">log</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;  Drive type: {0}&#34;</span><span class="p">,</span> <span class="n">d</span><span class="p">.</span><span class="n">DriveType</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span><span class="n">d</span><span class="p">.</span><span class="n">IsReady</span> <span class="p">==</span> <span class="k">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">log</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;  Volume label: {0}&#34;</span><span class="p">,</span> <span class="n">d</span><span class="p">.</span><span class="n">VolumeLabel</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="n">log</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;  File system: {0}&#34;</span><span class="p">,</span> <span class="n">d</span><span class="p">.</span><span class="n">DriveFormat</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="n">gb</span> <span class="p">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)(</span><span class="n">d</span><span class="p">.</span><span class="n">TotalSize</span> <span class="p">/</span> <span class="m">1073741824d</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="n">log</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">			<span class="s">&#34;  Total size of drive:            {0, 15} GBs&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">			<span class="n">gb</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="n">gb</span> <span class="p">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)((</span><span class="n">d</span><span class="p">.</span><span class="n">TotalSize</span> <span class="p">-</span> <span class="n">d</span><span class="p">.</span><span class="n">AvailableFreeSpace</span><span class="p">)</span> <span class="p">/</span> <span class="m">1073741824d</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="n">log</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">			<span class="s">&#34;  Used space:                     {0, 15} GBs&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">			<span class="n">gb</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="n">gb</span> <span class="p">=</span> <span class="p">(</span><span class="kt">float</span><span class="p">)(</span><span class="n">d</span><span class="p">.</span><span class="n">TotalFreeSpace</span> <span class="p">/</span> <span class="m">1073741824d</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="n">log</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">			<span class="s">&#34;  Total available space:          {0, 15} GBs&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">			<span class="n">gb</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="n">log</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span></code></pre></div></blockquote>
 
   </div>
 

@@ -9,7 +9,16 @@
       <link>https://github-lym.github.io/papermod-cover.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 29 Mar 2022 11:43:50 +0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/console/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Mar 2022 13:44:43 +0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/console/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>以FTP抓取資料庫備份</title>
+      <link>https://github-lym.github.io/posts/2022/ftpdb/</link>
+      <pubDate>Tue, 29 Mar 2022 13:44:43 +0800</pubDate>
+      
+      <guid>https://github-lym.github.io/posts/2022/ftpdb/</guid>
+      <description>懶人上班程式(FTP抓取資料庫備份)</description>
+    </item>
+    
     <item>
       <title>排程狀態</title>
       <link>https://github-lym.github.io/posts/2022/taskscheduler/</link>
