@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>查詢磁碟容量 | My Memo</title>
-<meta name="keywords" content="懶人上班程式, C#, Console" />
+<meta name="keywords" content="懶人上班程式, CSharp, Console" />
 <meta name="description" content="懶人上班程式(查詢磁碟容量)">
 <meta name="author" content="LYM">
 <link rel="canonical" href="https://github-lym.github.io/posts/2022/drivefreespace/" />
@@ -98,7 +98,7 @@
   "name": "查詢磁碟容量",
   "description": "懶人上班程式(查詢磁碟容量)",
   "keywords": [
-    "懶人上班程式", "C#", "Console"
+    "懶人上班程式", "CSharp", "Console"
   ],
   "articleBody": "因代理同事工作，才知道他每天得特地進機房看某主機的硬碟剩餘空間。\n沒辦法，一樣沒有遠端連線可直接登入觀看。\n可以秀出磁碟空間的寫法，MSDN就有資料所以直接照抄。 好在FTP沒被擋，可排程產生log，再用FTP連到該主機看。 \n 取得磁碟資料\nDriveInfo[] allDrives = DriveInfo.GetDrives(); 列出\nforeach (DriveInfo d in allDrives) { if (!File.Exists(logFullPath)) log = new StreamWriter(logFullPath); else log = File.AppendText(logFullPath); log.WriteLine(\"Drive {0}\", d.Name); log.WriteLine(\" Drive type: {0}\", d.DriveType); if (d.IsReady == true) { log.WriteLine(\" Volume label: {0}\", d.VolumeLabel); log.WriteLine(\" File system: {0}\", d.DriveFormat); gb = (float)(d.TotalSize / 1073741824d); log.WriteLine( \" Total size of drive: {0, 15} GBs\", gb); gb = (float)((d.TotalSize - d.AvailableFreeSpace) / 1073741824d); log.WriteLine( \" Used space: {0, 15} GBs\", gb); gb = (float)(d.TotalFreeSpace / 1073741824d); log.WriteLine( \" Total available space: {0, 15} GBs\", gb); log.WriteLine(\"\"); } ",
   "wordCount" : "95",
@@ -266,7 +266,7 @@
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="https://github-lym.github.io/tags/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/">懶人上班程式</a></li>
-      <li><a href="https://github-lym.github.io/tags/c#/">C#</a></li>
+      <li><a href="https://github-lym.github.io/tags/csharp/">CSharp</a></li>
       <li><a href="https://github-lym.github.io/tags/console/">Console</a></li>
     </ul>
 <nav class="paginav">
@@ -285,7 +285,7 @@
 
 <div class="share-buttons">
     <a target="_blank" rel="noopener noreferrer" aria-label="share 查詢磁碟容量 on twitter"
-        href="https://twitter.com/intent/tweet/?text=%e6%9f%a5%e8%a9%a2%e7%a3%81%e7%a2%9f%e5%ae%b9%e9%87%8f&amp;url=https%3a%2f%2fgithub-lym.github.io%2fposts%2f2022%2fdrivefreespace%2f&amp;hashtags=%e6%87%b6%e4%ba%ba%e4%b8%8a%e7%8f%ad%e7%a8%8b%e5%bc%8f%2cC%23%2cConsole">
+        href="https://twitter.com/intent/tweet/?text=%e6%9f%a5%e8%a9%a2%e7%a3%81%e7%a2%9f%e5%ae%b9%e9%87%8f&amp;url=https%3a%2f%2fgithub-lym.github.io%2fposts%2f2022%2fdrivefreespace%2f&amp;hashtags=%e6%87%b6%e4%ba%ba%e4%b8%8a%e7%8f%ad%e7%a8%8b%e5%bc%8f%2cCSharp%2cConsole">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />

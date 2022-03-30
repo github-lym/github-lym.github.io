@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>去掉文字前後空白 | My Memo</title>
-<meta name="keywords" content="懶人上班程式, C#, WinForm" />
+<meta name="keywords" content="懶人上班程式, CSharp, WinForm" />
 <meta name="description" content="懶人上班程式(自動去掉文字前後空白)">
 <meta name="author" content="LYM">
 <link rel="canonical" href="https://github-lym.github.io/posts/2022/trimcopy/" />
@@ -98,7 +98,7 @@
   "name": "去掉文字前後空白",
   "description": "懶人上班程式(自動去掉文字前後空白)",
   "keywords": [
-    "懶人上班程式", "C#", "WinForm"
+    "懶人上班程式", "CSharp", "WinForm"
   ],
   "articleBody": "做客服工程師那會，每天都要查詢資料庫。\n但資料庫有個欄位當初設計為char而非varchar，\n複製這欄位做之後的查詢還得去除掉後面的空白造成困擾。\n當時的想法是如果可以在剪貼簿上把前後空白刪掉就好了。 但即便對現在的我來說仍是有困難的，還好有得抄。\n找到類似的稍微改一下達到我要的，\n加上可以將程式縮到工作列與點擊切換啟動與否。\n//hide form from Alt-Tab dialog protected override CreateParams CreateParams { get { // Turn on WS_EX_TOOLWINDOW style bit CreateParams cp = base.CreateParams; cp.ExStyle |= 0x80; return cp; } } //form invisible protected override void OnVisibleChanged(EventArgs e) { base.OnVisibleChanged(e); this.Visible = false; } public Form1() { InitializeComponent(); nextClipboardViewer = (IntPtr)SetClipboardViewer((int)this.Handle); //this.ShowInTaskbar = false; //不顯示在底下工具列(改設定在form屬性) this.Hide(); //隱藏視窗 this.notifyIcon1.ContextMenu = new ContextMenu(); this.notifyIcon1.ContextMenu.MenuItems.Add(new MenuItem(\"EXIT\", new EventHandler(Exit))); notifyIcon1.Icon = Properties.Resources.checkIcon; } private void notifyIcon1_MouseClick(object sender, MouseEventArgs e) { if (trimWorking == true) { trimWorking = false; notifyIcon1.Icon = Properties.Resources.unCheckIcon; notifyIcon1.ShowBalloonTip(100, null, \"Stop Working\", ToolTipIcon.Warning); } else if (trimWorking == false) { trimWorking = true; notifyIcon1.Icon = Properties.Resources.checkIcon; notifyIcon1.ShowBalloonTip(100, null, \"Start Working\", ToolTipIcon.Warning); } } private void Exit(object sender, EventArgs e) { this.Close(); } 雖然偶爾會跳出異常，不過方便多了。\n如今回過頭來看，還真的是有些地方可以改改看看還會不會跳出異常。\n",
   "wordCount" : "128",
@@ -284,7 +284,7 @@
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="https://github-lym.github.io/tags/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/">懶人上班程式</a></li>
-      <li><a href="https://github-lym.github.io/tags/c#/">C#</a></li>
+      <li><a href="https://github-lym.github.io/tags/csharp/">CSharp</a></li>
       <li><a href="https://github-lym.github.io/tags/winform/">WinForm</a></li>
     </ul>
 <nav class="paginav">
@@ -303,7 +303,7 @@
 
 <div class="share-buttons">
     <a target="_blank" rel="noopener noreferrer" aria-label="share 去掉文字前後空白 on twitter"
-        href="https://twitter.com/intent/tweet/?text=%e5%8e%bb%e6%8e%89%e6%96%87%e5%ad%97%e5%89%8d%e5%be%8c%e7%a9%ba%e7%99%bd&amp;url=https%3a%2f%2fgithub-lym.github.io%2fposts%2f2022%2ftrimcopy%2f&amp;hashtags=%e6%87%b6%e4%ba%ba%e4%b8%8a%e7%8f%ad%e7%a8%8b%e5%bc%8f%2cC%23%2cWinForm">
+        href="https://twitter.com/intent/tweet/?text=%e5%8e%bb%e6%8e%89%e6%96%87%e5%ad%97%e5%89%8d%e5%be%8c%e7%a9%ba%e7%99%bd&amp;url=https%3a%2f%2fgithub-lym.github.io%2fposts%2f2022%2ftrimcopy%2f&amp;hashtags=%e6%87%b6%e4%ba%ba%e4%b8%8a%e7%8f%ad%e7%a8%8b%e5%bc%8f%2cCSharp%2cWinForm">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />

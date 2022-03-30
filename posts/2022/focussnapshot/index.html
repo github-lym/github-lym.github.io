@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>多線程執行批次檔並將視窗分別擷圖(導向輸出log) | My Memo</title>
-<meta name="keywords" content="懶人上班程式, C#, WinForm" />
+<meta name="keywords" content="懶人上班程式, CSharp, WinForm" />
 <meta name="description" content="懶人上班程式(執行批次檔並將視窗分別擷圖)">
 <meta name="author" content="LYM">
 <link rel="canonical" href="https://github-lym.github.io/posts/2022/focussnapshot/" />
@@ -98,7 +98,7 @@
   "name": "多線程執行批次檔並將視窗分別擷圖(導向輸出log)",
   "description": "懶人上班程式(執行批次檔並將視窗分別擷圖)",
   "keywords": [
-    "懶人上班程式", "C#", "WinForm"
+    "懶人上班程式", "CSharp", "WinForm"
   ],
   "articleBody": "駐點在機關時得幫其他廠商定期與不定期更新網站。\n更新這件事是沒什麼問題，廠商已經盡量簡化，編譯包版後執行批次檔就可以了。\n只不過就是批次檔有點多，每個網站一個近40個。\n負責上版的主機效能的很棒，可以一次執行20個左右沒問題。\n但Windows有個內建設定─不得一次執行超過15個批次檔，\n這樣本可兩次跑完卻分三次跑，不是很願意。\n雖這可以藉由改登錄檔處理，但在公家機關的主機改登錄檔怕會有些不必要的麻煩。\n且每個批次檔要截圖為證。\n這就有點麻煩，那麼多個視窗，一個不小心就漏了或搞不清是否已擷過圖。\n於是就寫了這個程式，\n既可以多線程大量執行批次檔，且可以讓批次檔視窗輪流跑到最前端並擷圖。\n 後來發現有時批次檔執行不見得會成功，\n但程式截圖那時根本也不可能一一細看，\n最後改成把命令提示字元輸出導向成文字檔，\n事後再去檢查文字檔的訊息，\n若失敗就再一次執行相對應的批次檔。\n",
   "wordCount" : "16",
@@ -247,7 +247,7 @@
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="https://github-lym.github.io/tags/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/">懶人上班程式</a></li>
-      <li><a href="https://github-lym.github.io/tags/c#/">C#</a></li>
+      <li><a href="https://github-lym.github.io/tags/csharp/">CSharp</a></li>
       <li><a href="https://github-lym.github.io/tags/winform/">WinForm</a></li>
     </ul>
 <nav class="paginav">
@@ -261,7 +261,7 @@
 
 <div class="share-buttons">
     <a target="_blank" rel="noopener noreferrer" aria-label="share 多線程執行批次檔並將視窗分別擷圖(導向輸出log) on twitter"
-        href="https://twitter.com/intent/tweet/?text=%e5%a4%9a%e7%b7%9a%e7%a8%8b%e5%9f%b7%e8%a1%8c%e6%89%b9%e6%ac%a1%e6%aa%94%e4%b8%a6%e5%b0%87%e8%a6%96%e7%aa%97%e5%88%86%e5%88%a5%e6%93%b7%e5%9c%96%28%e5%b0%8e%e5%90%91%e8%bc%b8%e5%87%balog%29&amp;url=https%3a%2f%2fgithub-lym.github.io%2fposts%2f2022%2ffocussnapshot%2f&amp;hashtags=%e6%87%b6%e4%ba%ba%e4%b8%8a%e7%8f%ad%e7%a8%8b%e5%bc%8f%2cC%23%2cWinForm">
+        href="https://twitter.com/intent/tweet/?text=%e5%a4%9a%e7%b7%9a%e7%a8%8b%e5%9f%b7%e8%a1%8c%e6%89%b9%e6%ac%a1%e6%aa%94%e4%b8%a6%e5%b0%87%e8%a6%96%e7%aa%97%e5%88%86%e5%88%a5%e6%93%b7%e5%9c%96%28%e5%b0%8e%e5%90%91%e8%bc%b8%e5%87%balog%29&amp;url=https%3a%2f%2fgithub-lym.github.io%2fposts%2f2022%2ffocussnapshot%2f&amp;hashtags=%e6%87%b6%e4%ba%ba%e4%b8%8a%e7%8f%ad%e7%a8%8b%e5%bc%8f%2cCSharp%2cWinForm">
         <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve">
             <path
                 d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-253.927,424.544c135.939,0 210.268,-112.643 210.268,-210.268c0,-3.218 0,-6.437 -0.153,-9.502c14.406,-10.421 26.973,-23.448 36.935,-38.314c-13.18,5.824 -27.433,9.809 -42.452,11.648c15.326,-9.196 26.973,-23.602 32.49,-40.92c-14.252,8.429 -30.038,14.56 -46.896,17.931c-13.487,-14.406 -32.644,-23.295 -53.946,-23.295c-40.767,0 -73.87,33.104 -73.87,73.87c0,5.824 0.613,11.494 1.992,16.858c-61.456,-3.065 -115.862,-32.49 -152.337,-77.241c-6.284,10.881 -9.962,23.601 -9.962,37.088c0,25.594 13.027,48.276 32.95,61.456c-12.107,-0.307 -23.448,-3.678 -33.41,-9.196l0,0.92c0,35.862 25.441,65.594 59.311,72.49c-6.13,1.686 -12.72,2.606 -19.464,2.606c-4.751,0 -9.348,-0.46 -13.946,-1.38c9.349,29.426 36.628,50.728 68.965,51.341c-25.287,19.771 -57.164,31.571 -91.8,31.571c-5.977,0 -11.801,-0.306 -17.625,-1.073c32.337,21.15 71.264,33.41 112.95,33.41Z" />
