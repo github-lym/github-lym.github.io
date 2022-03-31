@@ -1,59 +1,38 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Console on My Memo</title>
-    <link>https://github-lym.github.io/tags/console/</link>
-    <description>Recent content in Console on My Memo</description>
-    <image>
-      <url>https://github-lym.github.io/papermod-cover.png</url>
-      <link>https://github-lym.github.io/papermod-cover.png</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 29 Mar 2022 13:44:43 +0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/console/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>以FTP抓取資料庫備份</title>
-      <link>https://github-lym.github.io/posts/2022/ftpdb/</link>
-      <pubDate>Tue, 29 Mar 2022 13:44:43 +0800</pubDate>
-      
-      <guid>https://github-lym.github.io/posts/2022/ftpdb/</guid>
-      <description>懶人上班程式(FTP抓取資料庫備份)</description>
-    </item>
-    
-    <item>
-      <title>查詢排程狀態</title>
-      <link>https://github-lym.github.io/posts/2022/taskscheduler/</link>
-      <pubDate>Tue, 29 Mar 2022 11:43:50 +0800</pubDate>
-      
-      <guid>https://github-lym.github.io/posts/2022/taskscheduler/</guid>
-      <description>懶人上班程式(查詢排程狀態)</description>
-    </item>
-    
-    <item>
-      <title>查詢磁碟容量</title>
-      <link>https://github-lym.github.io/posts/2022/drivefreespace/</link>
-      <pubDate>Tue, 29 Mar 2022 11:30:57 +0800</pubDate>
-      
-      <guid>https://github-lym.github.io/posts/2022/drivefreespace/</guid>
-      <description>懶人上班程式(查詢磁碟容量)</description>
-    </item>
-    
-    <item>
-      <title>整理logs</title>
-      <link>https://github-lym.github.io/posts/2022/arrangelog/</link>
-      <pubDate>Tue, 29 Mar 2022 11:24:10 +0800</pubDate>
-      
-      <guid>https://github-lym.github.io/posts/2022/arrangelog/</guid>
-      <description>懶人上班程式(整理logs)</description>
-    </item>
-    
-    <item>
-      <title>批次執行vbs檔並檢查結果</title>
-      <link>https://github-lym.github.io/posts/2022/ntpc-organizational-chart/</link>
-      <pubDate>Mon, 28 Mar 2022 22:11:00 +0800</pubDate>
-      
-      <guid>https://github-lym.github.io/posts/2022/ntpc-organizational-chart/</guid>
-      <description>懶人上班程式(批次執行vbs檔並檢查結果)</description>
-    </item>
-    
-  </channel>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Console - Tag - My Memo</title>
+        <link>https://github-lym.github.io/tags/console/</link>
+        <description>Console - Tag - My Memo</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Mar 2022 13:44:43 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/console/" rel="self" type="application/rss+xml" /><item>
+    <title>以FTP抓取資料庫備份</title>
+    <link>https://github-lym.github.io/posts/2022/ftpdb/</link>
+    <pubDate>Tue, 29 Mar 2022 13:44:43 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/ftpdb/</guid>
+    <description><![CDATA[<p>MSSQL資料庫每天都會備份，每週一得還原最新備份在另一台當歷史資料查詢。</p>]]></description>
+</item>
+<item>
+    <title>查詢排程狀態</title>
+    <link>https://github-lym.github.io/posts/2022/taskscheduler/</link>
+    <pubDate>Tue, 29 Mar 2022 11:43:50 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/taskscheduler/</guid>
+    <description><![CDATA[<p>因代理同事工作，才知道他每天需記錄排程是否順利。</p>]]></description>
+</item>
+<item>
+    <title>查詢磁碟容量</title>
+    <link>https://github-lym.github.io/posts/2022/drivefreespace/</link>
+    <pubDate>Tue, 29 Mar 2022 11:30:57 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/drivefreespace/</guid>
+    <description><![CDATA[<p>因代理同事工作，才知道他每天得特地進機房看某主機的硬碟剩餘空間。</p>]]></description>
+</item>
+<item>
+    <title>整理logs</title>
+    <link>https://github-lym.github.io/posts/2022/arrangelog/</link>
+    <pubDate>Tue, 29 Mar 2022 11:24:10 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/arrangelog/</guid>
+    <description><![CDATA[<p>有個系統每天產生的log檔很多。</p>]]></description>
+</item>
+<item>
+    <title>批次執行vbs檔並檢查結果</title>
+    <link>https://github-lym.github.io/posts/2022/ntpc-organizational-chart/</link>
+    <pubDate>Mon, 28 Mar 2022 22:11:00 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/ntpc-organizational-chart/</guid>
+    <description><![CDATA[<p>剛進公司是駐點在公家機關做客服工程師，每天接電話回答系統問題。</p>
+<p>除此之外，每天下班為了流程都必須更新該機關組織圖。</p>]]></description>
+</item>
+</channel>
 </rss>
