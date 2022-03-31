@@ -4,37 +4,37 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>多線程執行批次檔並將視窗分別擷圖(導向輸出log) - My Memo</title><meta name="description" content="懶人上班程式(執行批次檔並將視窗分別擷圖)"><meta property="og:title" content="多線程執行批次檔並將視窗分別擷圖(導向輸出log)" />
-<meta property="og:description" content="懶人上班程式(執行批次檔並將視窗分別擷圖)" />
+        <title>Git從其他分支Copy檔案到工作目錄 - My Memo</title><meta name="description" content="第一篇文章"><meta property="og:title" content="Git從其他分支Copy檔案到工作目錄" />
+<meta property="og:description" content="第一篇文章" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://github-lym.github.io/posts/2022/focussnapshot/" /><meta property="og:image" content="https://github-lym.github.io/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-03-30T14:41:19+08:00" />
-<meta property="article:modified_time" content="2022-03-30T14:41:19+08:00" />
+<meta property="og:url" content="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" /><meta property="og:image" content="https://github-lym.github.io/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-03-31T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://github-lym.github.io/images/devil_s_bg.png"/>
 
-<meta name="twitter:title" content="多線程執行批次檔並將視窗分別擷圖(導向輸出log)"/>
-<meta name="twitter:description" content="懶人上班程式(執行批次檔並將視窗分別擷圖)"/>
+<meta name="twitter:title" content="Git從其他分支Copy檔案到工作目錄"/>
+<meta name="twitter:description" content="第一篇文章"/>
 <meta name="application-name" content="My Memo">
 <meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://github-lym.github.io/posts/2022/focussnapshot/" /><link rel="prev" href="https://github-lym.github.io/posts/2022/trimcopy/" /><link rel="next" href="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" /><link rel="prev" href="https://github-lym.github.io/posts/2022/focussnapshot/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "多線程執行批次檔並將視窗分別擷圖(導向輸出log)",
+        "headline": "Git從其他分支Copy檔案到工作目錄",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "https:\/\/github-lym.github.io\/posts\/2022\/focussnapshot\/"
-        },"genre": "posts","keywords": "懶人上班程式, CSharp, WinForm","wordcount":  19 ,
-        "url": "https:\/\/github-lym.github.io\/posts\/2022\/focussnapshot\/","datePublished": "2022-03-30T14:41:19+08:00","dateModified": "2022-03-30T14:41:19+08:00","publisher": {
+            "@id": "https:\/\/github-lym.github.io\/posts\/2022\/gitcopyfromotherbranch\/"
+        },"genre": "posts","keywords": "Git","wordcount":  12 ,
+        "url": "https:\/\/github-lym.github.io\/posts\/2022\/gitcopyfromotherbranch\/","datePublished": "2022-03-31T00:00:00+00:00","dateModified": "2022-03-31T00:00:00+00:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
                 "@type": "Person",
                 "name": "LYM"
-            },"description": "懶人上班程式(執行批次檔並將視窗分別擷圖)"
+            },"description": "第一篇文章"
     }
     </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
@@ -113,43 +113,29 @@
 <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
 </div><main class="main">
-                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">多線程執行批次檔並將視窗分別擷圖(導向輸出log)</h2><div class="post-meta">
-                <div class="post-meta-line"><span class="post-author"><a href="https://github.com/github-lym" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>LYM</a></span>&nbsp;<span class="post-category">published in <a href="/categories/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/"><i class="far fa-folder fa-fw"></i>懶人上班程式</a></span></div>
-                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-30 14:02:41 Wednesday">2022-03-30 14:02:41 Wednesday</time></span>&nbsp;</div>
+                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">Git從其他分支Copy檔案到工作目錄</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="https://github.com/github-lym" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>LYM</a></span>&nbsp;<span class="post-category">published in <a href="/categories/%E7%AD%86%E8%A8%98/"><i class="far fa-folder fa-fw"></i>筆記</a></span></div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-31 00:12:00 Thursday">2022-03-31 00:12:00 Thursday</time></span>&nbsp;</div>
             </div>
             
-            <hr><div class="content" id="content"><p>駐點在機關時得幫其他廠商定期與不定期更新網站。</p>
-<p>更新這件事是沒什麼問題，廠商已經盡量簡化，編譯包版後執行批次檔就可以了。<br>
-<br>
-只不過就是批次檔有點多，每個網站一個近40個。<br>
-<br>
-負責上版的主機效能的很棒，可以一次執行20個左右沒問題。<br>
-但Windows有個內建設定─不得一次執行超過15個批次檔，<br>
-這樣本可兩次跑完卻分三次跑，不是很願意。<br>
-<br>
-雖這可以藉由改登錄檔處理，但在公家機關的主機改登錄檔怕會有些不必要的麻煩。</p>
-<p>且每個批次檔要截圖為證。<br>
-<br>
-這就有點麻煩，那麼多個視窗，一個不小心就漏了或搞不清是否已擷過圖。<br>
-<br>
-於是就寫了<a href="https://github.com/github-lym/FocusSnapshot" target="_blank" rel="noopener noreffer">這個程式</a>，<br>
-既可以多線程大量執行批次檔，且可以讓批次檔視窗輪流跑到最前端並擷圖。<br>
-<br>
-=&gt; <a href="/posts/2022/focussnapshot/demo.webp" rel="">初版執行畫面</a> &lt;=</p>
-<blockquote>
-<p>後來發現有時批次檔執行不見得會成功，<br>
-但程式截圖那時根本也不可能一一細看，<br>
-最後改成把命令提示字元輸出導向成文字檔，<br>
-事後再去檢查文字檔的訊息，<br>
-若失敗就再一次執行相對應的批次檔。</p>
-</blockquote></div><div class="post-footer" id="post-footer">
-    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/">懶人上班程式</a>
-                </span><span><a href="/tags/csharp/">CSharp</a>
-                </span><span><a href="/tags/winform/">WinForm</a>
+            <hr><div class="content" id="content"><p>今天Blog用了兩個主題，<br>
+所以需要不停切換。</p>
+<p>有需要把其他分支的檔案copy到主分支，<br>
+查了一下，發現在Stack Overflow網站的答案非常棒。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git checkout 其他分支 .
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>這動作目前tortoisegit我還沒發現該怎麼做，<br>
+git指令操作果然還是王道。</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/git/">Git</a>
                 </span></div><div class="post-info-share">
-            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://github-lym.github.io/posts/2022/focussnapshot/" data-title="多線程執行批次檔並將視窗分別擷圖(導向輸出log)" data-hashtags="懶人上班程式,CSharp,WinForm"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://github-lym.github.io/posts/2022/focussnapshot/" data-hashtag="懶人上班程式"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://github-lym.github.io/posts/2022/focussnapshot/" data-title="多線程執行批次檔並將視窗分別擷圖(導向輸出log)"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://github-lym.github.io/posts/2022/focussnapshot/" data-title="多線程執行批次檔並將視窗分別擷圖(導向輸出log)" data-description="懶人上班程式(執行批次檔並將視窗分別擷圖)"><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://github-lym.github.io/posts/2022/focussnapshot/" data-title="多線程執行批次檔並將視窗分別擷圖(導向輸出log)"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="https://github-lym.github.io/posts/2022/focussnapshot/" data-title="多線程執行批次檔並將視窗分別擷圖(導向輸出log)"><i class="fab fa-skype fa-fw"></i></a></span>
-        </div></div><div class="post-nav"><a href="/posts/2022/trimcopy/" class="prev" rel="prev" title="去掉文字前後空白"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
-            <a href="/posts/2022/gitcopyfromotherbranch/" class="next" rel="next" title="Git從其他分支Copy檔案到工作目錄">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" data-title="Git從其他分支Copy檔案到工作目錄" data-hashtags="Git"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" data-hashtag="Git"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" data-title="Git從其他分支Copy檔案到工作目錄"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" data-title="Git從其他分支Copy檔案到工作目錄" data-description="第一篇文章"><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" data-title="Git從其他分支Copy檔案到工作目錄"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" data-title="Git從其他分支Copy檔案到工作目錄"><i class="fab fa-skype fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/2022/focussnapshot/" class="prev" rel="prev" title="多線程執行批次檔並將視窗分別擷圖(導向輸出log)"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a></div></div>
 </div></article></div>
             </main>
             <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>

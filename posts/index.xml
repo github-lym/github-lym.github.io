@@ -3,7 +3,14 @@
         <title>All Posts - My Memo</title>
         <link>https://github-lym.github.io/posts/</link>
         <description>All Posts | My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Mar 2022 14:41:19 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 31 Mar 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://github-lym.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Git從其他分支Copy檔案到工作目錄</title>
+    <link>https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/</link>
+    <pubDate>Thu, 31 Mar 2022 00:00:00 &#43;0000</pubDate><guid>https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/</guid>
+    <description><![CDATA[<p>今天Blog用了兩個主題，<br>
+所以需要不停切換。</p>]]></description>
+</item>
+<item>
     <title>多線程執行批次檔並將視窗分別擷圖(導向輸出log)</title>
     <link>https://github-lym.github.io/posts/2022/focussnapshot/</link>
     <pubDate>Wed, 30 Mar 2022 14:41:19 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/focussnapshot/</guid>
@@ -57,13 +64,6 @@
     <pubDate>Tue, 29 Mar 2022 09:55:11 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/copytofolder/</guid>
     <description><![CDATA[<p>維護的系統有提供上傳附件的功能。<br>
 也不意外，這功能是一般系統都會有的功能。</p>]]></description>
-</item>
-<item>
-    <title>批次執行vbs檔並檢查結果</title>
-    <link>https://github-lym.github.io/posts/2022/ntpc-organizational-chart/</link>
-    <pubDate>Mon, 28 Mar 2022 22:11:00 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/ntpc-organizational-chart/</guid>
-    <description><![CDATA[<p>剛進公司是駐點在公家機關做客服工程師，每天接電話回答系統問題。</p>
-<p>除此之外，每天下班為了流程都必須更新該機關組織圖。</p>]]></description>
 </item>
 </channel>
 </rss>
