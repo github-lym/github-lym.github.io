@@ -11,6 +11,6 @@
 git checkout 其他分支 .
 ```
 
-這動作目前tortoisegit我還沒發現該怎麼做，  
+這動作目前在tortoisegit我還沒發現該怎麼做，  
 git指令操作果然還是王道。
 
