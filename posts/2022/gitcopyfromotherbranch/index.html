@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/github-lym.github.io\/posts\/2022\/gitcopyfromotherbranch\/"
-        },"genre": "posts","keywords": "Git","wordcount":  12 ,
+        },"genre": "posts","keywords": "Git","wordcount":  20 ,
         "url": "https:\/\/github-lym.github.io\/posts\/2022\/gitcopyfromotherbranch\/","datePublished": "2022-03-31T00:00:00+00:00","dateModified": "2022-03-31T00:00:00+00:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
@@ -115,7 +115,7 @@
 </div><main class="main">
                 <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">Git從其他分支Copy檔案到工作目錄</h2><div class="post-meta">
                 <div class="post-meta-line"><span class="post-author"><a href="https://github.com/github-lym" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>LYM</a></span>&nbsp;<span class="post-category">published in <a href="/categories/%E7%AD%86%E8%A8%98/"><i class="far fa-folder fa-fw"></i>筆記</a></span></div>
-                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-31 00:12:00 Thursday">2022-03-31 00:12:00 Thursday</time></span>&nbsp;</div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-03-31 00:00:00 Thursday">2022-03-31 00:00:00 Thursday</time></span>&nbsp;</div>
             </div>
             
             <hr><div class="content" id="content"><p>今天Blog用了兩個主題，<br>
@@ -130,8 +130,19 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git checkout 其他分支 .
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>這動作目前在tortoisegit我還沒發現該怎麼做，<br>
-git指令操作果然還是王道。</p></div><div class="post-footer" id="post-footer">
+</div><p>不過因為是copy的關係，若有相同檔案會直接覆蓋而不會產生衝突(conflict)。<br>
+這動作目前在tortoisegit我還沒發現該怎麼做，<br>
+git指令操作果然還是王道。</p>
+<p><em>另外補充只要某檔案：</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git checkout 其他分支 -- 檔案名
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
     <div class="post-info"><div class="post-info-tag"><span><a href="/tags/git/">Git</a>
                 </span></div><div class="post-info-share">
             <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" data-title="Git從其他分支Copy檔案到工作目錄" data-hashtags="Git"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" data-hashtag="Git"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" data-title="Git從其他分支Copy檔案到工作目錄"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" data-title="Git從其他分支Copy檔案到工作目錄" data-description="第一篇文章"><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" data-title="Git從其他分支Copy檔案到工作目錄"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" data-title="Git從其他分支Copy檔案到工作目錄"><i class="fab fa-skype fa-fw"></i></a></span>

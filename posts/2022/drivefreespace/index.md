@@ -5,9 +5,9 @@
 <!--more-->
 
 沒辦法，一樣沒有遠端連線可直接登入觀看。  
-可以秀出磁碟空間的寫法，MSDN就有資料所以直接照抄。
-好在FTP沒被擋，可排程產生log，再用FTP連到該主機看。
-[![DriveFreeSpace](screenshot.png "產生的log")](https://github.com/github-lym/DriveFreeSpace)
+可以秀出磁碟空間的寫法，MSDN就有資料所以直接照抄。  
+好在FTP沒被擋，用[程式](https://github.com/github-lym/DriveFreeSpace)排程產生log，再用FTP連到該主機看。  
+[![DriveFreeSpace](screenshot.png "產生的log")](screenshot.png)  
 
 > 取得磁碟資料
 >

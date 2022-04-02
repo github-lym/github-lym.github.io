@@ -3,7 +3,19 @@
         <title>Console - Tag - My Memo</title>
         <link>https://github-lym.github.io/tags/console/</link>
         <description>Console - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Mar 2022 13:44:43 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/console/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 02 Apr 2022 12:59:04 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/console/" rel="self" type="application/rss+xml" /><item>
+    <title>TreeToExcel—列出子資料夾檔案至Excel</title>
+    <link>https://github-lym.github.io/posts/2022/treetoexcel/</link>
+    <pubDate>Sat, 02 Apr 2022 12:59:04 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/treetoexcel/</guid>
+    <description><![CDATA[<p>版更要寫一份Excel—伺服器應用程式及檔案異動清單。</p>]]></description>
+</item>
+<item>
+    <title>GetModifiedFiles—匯出更新的資料</title>
+    <link>https://github-lym.github.io/posts/2022/getmodifiedfiles/</link>
+    <pubDate>Sat, 02 Apr 2022 12:32:19 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/getmodifiedfiles/</guid>
+    <description><![CDATA[<p>寫完的程式要做源碼掃描。</p>]]></description>
+</item>
+<item>
     <title>以FTP抓取資料庫備份</title>
     <link>https://github-lym.github.io/posts/2022/ftpdb/</link>
     <pubDate>Tue, 29 Mar 2022 13:44:43 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/ftpdb/</guid>
@@ -29,8 +41,8 @@
 </item>
 <item>
     <title>批次執行vbs檔並檢查結果</title>
-    <link>https://github-lym.github.io/posts/2022/ntpc-organizational-chart/</link>
-    <pubDate>Mon, 28 Mar 2022 22:11:00 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/ntpc-organizational-chart/</guid>
+    <link>https://github-lym.github.io/posts/2022/ntpcorganizationalchart/</link>
+    <pubDate>Mon, 28 Mar 2022 22:11:00 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/ntpcorganizationalchart/</guid>
     <description><![CDATA[<p>剛進公司是駐點在公家機關做客服工程師，每天接電話回答系統問題。</p>
 <p>除此之外，每天下班為了流程都必須更新該機關組織圖。</p>]]></description>
 </item>

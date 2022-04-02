@@ -12,10 +12,10 @@ Fody是個好用的套件，可以把多個dll檔跟執行檔合併成單一檔�
 找了半天終於找到解決這問題的文章。
 
 ## 安裝Fody  
-從管理器控制臺中輸入Install-Package Fody -Version 4.2.1來安裝4.2.1版本的Fody。  
+從套件管理器主控臺中輸入Install-Package Fody -Version 4.2.1來安裝4.2.1版本的Fody。  
   
 ## 安裝Costura.Fody
-管理器控制臺中輸入Install-Package Costura.Fody -Version 3.3.3來安裝3.3.3版本的Costura.Fody。  
+套件管理器主控臺中輸入Install-Package Costura.Fody -Version 3.3.3來安裝3.3.3版本的Costura.Fody。  
   
 ## 安裝完成重新建置
   

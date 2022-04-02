@@ -5,14 +5,14 @@
         <description>cmd - Tag - My Memo</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 29 Mar 2022 14:44:48 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/cmd/" rel="self" type="application/rss+xml" /><item>
     <title>用forfiles刪除過期檔案</title>
-    <link>https://github-lym.github.io/posts/2022/del_logs_forfiles/</link>
-    <pubDate>Tue, 29 Mar 2022 14:44:48 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/del_logs_forfiles/</guid>
+    <link>https://github-lym.github.io/posts/2022/deletelogsbyforfiles/</link>
+    <pubDate>Tue, 29 Mar 2022 14:44:48 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/deletelogsbyforfiles/</guid>
     <description><![CDATA[<p>之前有聽過forfiles的大名，但沒機會用。</p>]]></description>
 </item>
 <item>
     <title>使用robocopy站台備份</title>
-    <link>https://github-lym.github.io/posts/2022/website_backup/</link>
-    <pubDate>Tue, 29 Mar 2022 14:08:42 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/website_backup/</guid>
+    <link>https://github-lym.github.io/posts/2022/websitebackup/</link>
+    <pubDate>Tue, 29 Mar 2022 14:08:42 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/websitebackup/</guid>
     <description><![CDATA[<p>站台要更新之前一定得備份。</p>]]></description>
 </item>
 </channel>

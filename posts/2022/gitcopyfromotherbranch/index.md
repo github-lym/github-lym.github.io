@@ -10,7 +10,11 @@
 ```Git
 git checkout 其他分支 .
 ```
-
+不過因為是copy的關係，若有相同檔案會直接覆蓋而不會產生衝突(conflict)。  
 這動作目前在tortoisegit我還沒發現該怎麼做，  
-git指令操作果然還是王道。
-
+git指令操作果然還是王道。  
+  
+*另外補充只要某檔案：*  
+```Git
+git checkout 其他分支 -- 檔案名
+```

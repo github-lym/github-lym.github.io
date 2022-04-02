@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>INIFiles - My Memo</title><meta name="description" content="比config簡潔的設定檔"><meta property="og:title" content="INIFiles" />
+<meta property="og:description" content="比config簡潔的設定檔" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://github-lym.github.io/posts/2022/inifiles/" /><meta property="og:image" content="https://github-lym.github.io/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-04-01T22:19:11+08:00" />
+<meta property="article:modified_time" content="2022-04-01T22:19:11+08:00" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://github-lym.github.io/images/devil_s_bg.png"/>
+
+<meta name="twitter:title" content="INIFiles"/>
+<meta name="twitter:description" content="比config簡潔的設定檔"/>
+<meta name="application-name" content="My Memo">
+<meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://github-lym.github.io/posts/2022/inifiles/" /><link rel="prev" href="https://github-lym.github.io/posts/2022/fodyonvisualstudio2015/" /><link rel="next" href="https://github-lym.github.io/posts/2022/submitgoogleform/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "INIFiles",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/github-lym.github.io\/posts\/2022\/inifiles\/"
+        },"genre": "posts","keywords": "VisualStudio, CSharp","wordcount":  3370 ,
+        "url": "https:\/\/github-lym.github.io\/posts\/2022\/inifiles\/","datePublished": "2022-04-01T22:19:11+08:00","dateModified": "2022-04-01T22:19:11+08:00","publisher": {
+            "@type": "Organization",
+            "name": "LYM"},"author": {
+                "@type": "Person",
+                "name": "LYM"
+            },"description": "比config簡潔的設定檔"
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My Memo"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/devil_s_bg.png"
+        data-srcset="/images/devil_s_bg.png, /images/devil_s_bg.png 1.5x, /images/devil_s_bg.png 2x"
+        data-sizes="auto"
+        alt="/images/devil_s_bg.png"
+        title="/images/devil_s_bg.png" /><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/github-lym" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My Memo"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/devil_s_bg.png"
+        data-srcset="/images/devil_s_bg.png, /images/devil_s_bg.png 1.5x, /images/devil_s_bg.png 2x"
+        data-sizes="auto"
+        alt="/images/devil_s_bg.png"
+        title="/images/devil_s_bg.png" /><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/github-lym" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single" data-toc="enable"><div class="single-card" ><h2 class="single-title animated flipInX">INIFiles</h2><div class="post-meta">
+                <div class="post-meta-line"><span class="post-author"><a href="https://github.com/github-lym" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>LYM</a></span></div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-01 22:19:11 Friday">2022-04-01 22:19:11 Friday</time></span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="details toc" id="toc-static"  data-kept="">
+                    <div class="details-summary toc-title">
+                        <span>Contents</span>
+                        <span><i class="details-icon fas fa-angle-right"></i></span>
+                    </div>
+                    <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#引用">引用</a></li>
+    <li><a href="#實例化">實例化</a></li>
+    <li><a href="#讀取內容">讀取內容</a></li>
+    <li><a href="#讀取數據">讀取數據</a></li>
+    <li><a href="#讀取多行內容">讀取多行內容</a></li>
+    <li><a href="#列出ini文件中所有的字段名">列出ini文件中所有的字段名</a></li>
+    <li><a href="#讀取user字段下的所有鍵名">讀取[user]字段下的所有鍵名</a></li>
+    <li><a href="#讀取user字段下的所有鍵名的值">讀取[user]字段下的所有鍵名的值</a></li>
+    <li><a href="#寫入數據">寫入數據</a></li>
+    <li><a href="#可以將多行文本保存到ini中">可以將多行文本保存到INI中</a></li>
+    <li><a href="#讀取異常">讀取異常</a></li>
+    <li><a href="#靜態讀寫">靜態讀寫</a>
+      <ul>
+        <li><a href="#讀">讀</a></li>
+        <li><a href="#寫">寫</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+                </div><div class="content" id="content"><p>之前開發都是使用app.config來放設定值。</p>
+<p>但我覺得config用起來最大的問題是無用的資訊很多，太過雜亂。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34; ?&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;configuration&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;configSections&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;sectionGroup</span> <span class="na">name=</span><span class="s">&#34;userSettings&#34;</span> <span class="na">type=</span><span class="s">&#34;System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#34;</span> <span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;section</span> <span class="na">name=</span><span class="s">&#34;OC.Settings1&#34;</span> <span class="na">type=</span><span class="s">&#34;System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&#34;</span> <span class="na">allowExeDefinition=</span><span class="s">&#34;MachineToLocalUser&#34;</span> <span class="na">requirePermission=</span><span class="s">&#34;false&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/sectionGroup&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/configSections&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;userSettings&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;OC.Settings1&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;setting</span> <span class="na">name=</span><span class="s">&#34;VBSname&#34;</span> <span class="na">serializeAs=</span><span class="s">&#34;String&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;value&gt;</span>OC.bat<span class="nt">&lt;/value&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/setting&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;setting</span> <span class="na">name=</span><span class="s">&#34;connection&#34;</span> <span class="na">serializeAs=</span><span class="s">&#34;String&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;value&gt;</span>Data Source=(local);Initial Catalog=Northwind;User Id=sa;Password=sa;<span class="nt">&lt;/value&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/setting&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;setting</span> <span class="na">name=</span><span class="s">&#34;waitTime&#34;</span> <span class="na">serializeAs=</span><span class="s">&#34;String&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">                <span class="nt">&lt;value&gt;</span>3<span class="nt">&lt;/value&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/setting&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/OC.Settings1&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/userSettings&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/configuration&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>後來發現了可以用ini檔存放設定，加上從接觸軟體就看過該檔案，<br>
+覺得有為的資訊人員應該採用這種方法，所以就學了一下。</p>
+<p>在用過幾次以後又發現有大大寫出一個完整的class還附教學，<br>
+那不拿來用真的太不好意思了。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span><span class="lnt">153
+</span><span class="lnt">154
+</span><span class="lnt">155
+</span><span class="lnt">156
+</span><span class="lnt">157
+</span><span class="lnt">158
+</span><span class="lnt">159
+</span><span class="lnt">160
+</span><span class="lnt">161
+</span><span class="lnt">162
+</span><span class="lnt">163
+</span><span class="lnt">164
+</span><span class="lnt">165
+</span><span class="lnt">166
+</span><span class="lnt">167
+</span><span class="lnt">168
+</span><span class="lnt">169
+</span><span class="lnt">170
+</span><span class="lnt">171
+</span><span class="lnt">172
+</span><span class="lnt">173
+</span><span class="lnt">174
+</span><span class="lnt">175
+</span><span class="lnt">176
+</span><span class="lnt">177
+</span><span class="lnt">178
+</span><span class="lnt">179
+</span><span class="lnt">180
+</span><span class="lnt">181
+</span><span class="lnt">182
+</span><span class="lnt">183
+</span><span class="lnt">184
+</span><span class="lnt">185
+</span><span class="lnt">186
+</span><span class="lnt">187
+</span><span class="lnt">188
+</span><span class="lnt">189
+</span><span class="lnt">190
+</span><span class="lnt">191
+</span><span class="lnt">192
+</span><span class="lnt">193
+</span><span class="lnt">194
+</span><span class="lnt">195
+</span><span class="lnt">196
+</span><span class="lnt">197
+</span><span class="lnt">198
+</span><span class="lnt">199
+</span><span class="lnt">200
+</span><span class="lnt">201
+</span><span class="lnt">202
+</span><span class="lnt">203
+</span><span class="lnt">204
+</span><span class="lnt">205
+</span><span class="lnt">206
+</span><span class="lnt">207
+</span><span class="lnt">208
+</span><span class="lnt">209
+</span><span class="lnt">210
+</span><span class="lnt">211
+</span><span class="lnt">212
+</span><span class="lnt">213
+</span><span class="lnt">214
+</span><span class="lnt">215
+</span><span class="lnt">216
+</span><span class="lnt">217
+</span><span class="lnt">218
+</span><span class="lnt">219
+</span><span class="lnt">220
+</span><span class="lnt">221
+</span><span class="lnt">222
+</span><span class="lnt">223
+</span><span class="lnt">224
+</span><span class="lnt">225
+</span><span class="lnt">226
+</span><span class="lnt">227
+</span><span class="lnt">228
+</span><span class="lnt">229
+</span><span class="lnt">230
+</span><span class="lnt">231
+</span><span class="lnt">232
+</span><span class="lnt">233
+</span><span class="lnt">234
+</span><span class="lnt">235
+</span><span class="lnt">236
+</span><span class="lnt">237
+</span><span class="lnt">238
+</span><span class="lnt">239
+</span><span class="lnt">240
+</span><span class="lnt">241
+</span><span class="lnt">242
+</span><span class="lnt">243
+</span><span class="lnt">244
+</span><span class="lnt">245
+</span><span class="lnt">246
+</span><span class="lnt">247
+</span><span class="lnt">248
+</span><span class="lnt">249
+</span><span class="lnt">250
+</span><span class="lnt">251
+</span><span class="lnt">252
+</span><span class="lnt">253
+</span><span class="lnt">254
+</span><span class="lnt">255
+</span><span class="lnt">256
+</span><span class="lnt">257
+</span><span class="lnt">258
+</span><span class="lnt">259
+</span><span class="lnt">260
+</span><span class="lnt">261
+</span><span class="lnt">262
+</span><span class="lnt">263
+</span><span class="lnt">264
+</span><span class="lnt">265
+</span><span class="lnt">266
+</span><span class="lnt">267
+</span><span class="lnt">268
+</span><span class="lnt">269
+</span><span class="lnt">270
+</span><span class="lnt">271
+</span><span class="lnt">272
+</span><span class="lnt">273
+</span><span class="lnt">274
+</span><span class="lnt">275
+</span><span class="lnt">276
+</span><span class="lnt">277
+</span><span class="lnt">278
+</span><span class="lnt">279
+</span><span class="lnt">280
+</span><span class="lnt">281
+</span><span class="lnt">282
+</span><span class="lnt">283
+</span><span class="lnt">284
+</span><span class="lnt">285
+</span><span class="lnt">286
+</span><span class="lnt">287
+</span><span class="lnt">288
+</span><span class="lnt">289
+</span><span class="lnt">290
+</span><span class="lnt">291
+</span><span class="lnt">292
+</span><span class="lnt">293
+</span><span class="lnt">294
+</span><span class="lnt">295
+</span><span class="lnt">296
+</span><span class="lnt">297
+</span><span class="lnt">298
+</span><span class="lnt">299
+</span><span class="lnt">300
+</span><span class="lnt">301
+</span><span class="lnt">302
+</span><span class="lnt">303
+</span><span class="lnt">304
+</span><span class="lnt">305
+</span><span class="lnt">306
+</span><span class="lnt">307
+</span><span class="lnt">308
+</span><span class="lnt">309
+</span><span class="lnt">310
+</span><span class="lnt">311
+</span><span class="lnt">312
+</span><span class="lnt">313
+</span><span class="lnt">314
+</span><span class="lnt">315
+</span><span class="lnt">316
+</span><span class="lnt">317
+</span><span class="lnt">318
+</span><span class="lnt">319
+</span><span class="lnt">320
+</span><span class="lnt">321
+</span><span class="lnt">322
+</span><span class="lnt">323
+</span><span class="lnt">324
+</span><span class="lnt">325
+</span><span class="lnt">326
+</span><span class="lnt">327
+</span><span class="lnt">328
+</span><span class="lnt">329
+</span><span class="lnt">330
+</span><span class="lnt">331
+</span><span class="lnt">332
+</span><span class="lnt">333
+</span><span class="lnt">334
+</span><span class="lnt">335
+</span><span class="lnt">336
+</span><span class="lnt">337
+</span><span class="lnt">338
+</span><span class="lnt">339
+</span><span class="lnt">340
+</span><span class="lnt">341
+</span><span class="lnt">342
+</span><span class="lnt">343
+</span><span class="lnt">344
+</span><span class="lnt">345
+</span><span class="lnt">346
+</span><span class="lnt">347
+</span><span class="lnt">348
+</span><span class="lnt">349
+</span><span class="lnt">350
+</span><span class="lnt">351
+</span><span class="lnt">352
+</span><span class="lnt">353
+</span><span class="lnt">354
+</span><span class="lnt">355
+</span><span class="lnt">356
+</span><span class="lnt">357
+</span><span class="lnt">358
+</span><span class="lnt">359
+</span><span class="lnt">360
+</span><span class="lnt">361
+</span><span class="lnt">362
+</span><span class="lnt">363
+</span><span class="lnt">364
+</span><span class="lnt">365
+</span><span class="lnt">366
+</span><span class="lnt">367
+</span><span class="lnt">368
+</span><span class="lnt">369
+</span><span class="lnt">370
+</span><span class="lnt">371
+</span><span class="lnt">372
+</span><span class="lnt">373
+</span><span class="lnt">374
+</span><span class="lnt">375
+</span><span class="lnt">376
+</span><span class="lnt">377
+</span><span class="lnt">378
+</span><span class="lnt">379
+</span><span class="lnt">380
+</span><span class="lnt">381
+</span><span class="lnt">382
+</span><span class="lnt">383
+</span><span class="lnt">384
+</span><span class="lnt">385
+</span><span class="lnt">386
+</span><span class="lnt">387
+</span><span class="lnt">388
+</span><span class="lnt">389
+</span><span class="lnt">390
+</span><span class="lnt">391
+</span><span class="lnt">392
+</span><span class="lnt">393
+</span><span class="lnt">394
+</span><span class="lnt">395
+</span><span class="lnt">396
+</span><span class="lnt">397
+</span><span class="lnt">398
+</span><span class="lnt">399
+</span><span class="lnt">400
+</span><span class="lnt">401
+</span><span class="lnt">402
+</span><span class="lnt">403
+</span><span class="lnt">404
+</span><span class="lnt">405
+</span><span class="lnt">406
+</span><span class="lnt">407
+</span><span class="lnt">408
+</span><span class="lnt">409
+</span><span class="lnt">410
+</span><span class="lnt">411
+</span><span class="lnt">412
+</span><span class="lnt">413
+</span><span class="lnt">414
+</span><span class="lnt">415
+</span><span class="lnt">416
+</span><span class="lnt">417
+</span><span class="lnt">418
+</span><span class="lnt">419
+</span><span class="lnt">420
+</span><span class="lnt">421
+</span><span class="lnt">422
+</span><span class="lnt">423
+</span><span class="lnt">424
+</span><span class="lnt">425
+</span><span class="lnt">426
+</span><span class="lnt">427
+</span><span class="lnt">428
+</span><span class="lnt">429
+</span><span class="lnt">430
+</span><span class="lnt">431
+</span><span class="lnt">432
+</span><span class="lnt">433
+</span><span class="lnt">434
+</span><span class="lnt">435
+</span><span class="lnt">436
+</span><span class="lnt">437
+</span><span class="lnt">438
+</span><span class="lnt">439
+</span><span class="lnt">440
+</span><span class="lnt">441
+</span><span class="lnt">442
+</span><span class="lnt">443
+</span><span class="lnt">444
+</span><span class="lnt">445
+</span><span class="lnt">446
+</span><span class="lnt">447
+</span><span class="lnt">448
+</span><span class="lnt">449
+</span><span class="lnt">450
+</span><span class="lnt">451
+</span><span class="lnt">452
+</span><span class="lnt">453
+</span><span class="lnt">454
+</span><span class="lnt">455
+</span><span class="lnt">456
+</span><span class="lnt">457
+</span><span class="lnt">458
+</span><span class="lnt">459
+</span><span class="lnt">460
+</span><span class="lnt">461
+</span><span class="lnt">462
+</span><span class="lnt">463
+</span><span class="lnt">464
+</span><span class="lnt">465
+</span><span class="lnt">466
+</span><span class="lnt">467
+</span><span class="lnt">468
+</span><span class="lnt">469
+</span><span class="lnt">470
+</span><span class="lnt">471
+</span><span class="lnt">472
+</span><span class="lnt">473
+</span><span class="lnt">474
+</span><span class="lnt">475
+</span><span class="lnt">476
+</span><span class="lnt">477
+</span><span class="lnt">478
+</span><span class="lnt">479
+</span><span class="lnt">480
+</span><span class="lnt">481
+</span><span class="lnt">482
+</span><span class="lnt">483
+</span><span class="lnt">484
+</span><span class="lnt">485
+</span><span class="lnt">486
+</span><span class="lnt">487
+</span><span class="lnt">488
+</span><span class="lnt">489
+</span><span class="lnt">490
+</span><span class="lnt">491
+</span><span class="lnt">492
+</span><span class="lnt">493
+</span><span class="lnt">494
+</span><span class="lnt">495
+</span><span class="lnt">496
+</span><span class="lnt">497
+</span><span class="lnt">498
+</span><span class="lnt">499
+</span><span class="lnt">500
+</span><span class="lnt">501
+</span><span class="lnt">502
+</span><span class="lnt">503
+</span><span class="lnt">504
+</span><span class="lnt">505
+</span><span class="lnt">506
+</span><span class="lnt">507
+</span><span class="lnt">508
+</span><span class="lnt">509
+</span><span class="lnt">510
+</span><span class="lnt">511
+</span><span class="lnt">512
+</span><span class="lnt">513
+</span><span class="lnt">514
+</span><span class="lnt">515
+</span><span class="lnt">516
+</span><span class="lnt">517
+</span><span class="lnt">518
+</span><span class="lnt">519
+</span><span class="lnt">520
+</span><span class="lnt">521
+</span><span class="lnt">522
+</span><span class="lnt">523
+</span><span class="lnt">524
+</span><span class="lnt">525
+</span><span class="lnt">526
+</span><span class="lnt">527
+</span><span class="lnt">528
+</span><span class="lnt">529
+</span><span class="lnt">530
+</span><span class="lnt">531
+</span><span class="lnt">532
+</span><span class="lnt">533
+</span><span class="lnt">534
+</span><span class="lnt">535
+</span><span class="lnt">536
+</span><span class="lnt">537
+</span><span class="lnt">538
+</span><span class="lnt">539
+</span><span class="lnt">540
+</span><span class="lnt">541
+</span><span class="lnt">542
+</span><span class="lnt">543
+</span><span class="lnt">544
+</span><span class="lnt">545
+</span><span class="lnt">546
+</span><span class="lnt">547
+</span><span class="lnt">548
+</span><span class="lnt">549
+</span><span class="lnt">550
+</span><span class="lnt">551
+</span><span class="lnt">552
+</span><span class="lnt">553
+</span><span class="lnt">554
+</span><span class="lnt">555
+</span><span class="lnt">556
+</span><span class="lnt">557
+</span><span class="lnt">558
+</span><span class="lnt">559
+</span><span class="lnt">560
+</span><span class="lnt">561
+</span><span class="lnt">562
+</span><span class="lnt">563
+</span><span class="lnt">564
+</span><span class="lnt">565
+</span><span class="lnt">566
+</span><span class="lnt">567
+</span><span class="lnt">568
+</span><span class="lnt">569
+</span><span class="lnt">570
+</span><span class="lnt">571
+</span><span class="lnt">572
+</span><span class="lnt">573
+</span><span class="lnt">574
+</span><span class="lnt">575
+</span><span class="lnt">576
+</span><span class="lnt">577
+</span><span class="lnt">578
+</span><span class="lnt">579
+</span><span class="lnt">580
+</span><span class="lnt">581
+</span><span class="lnt">582
+</span><span class="lnt">583
+</span><span class="lnt">584
+</span><span class="lnt">585
+</span><span class="lnt">586
+</span><span class="lnt">587
+</span><span class="lnt">588
+</span><span class="lnt">589
+</span><span class="lnt">590
+</span><span class="lnt">591
+</span><span class="lnt">592
+</span><span class="lnt">593
+</span><span class="lnt">594
+</span><span class="lnt">595
+</span><span class="lnt">596
+</span><span class="lnt">597
+</span><span class="lnt">598
+</span><span class="lnt">599
+</span><span class="lnt">600
+</span><span class="lnt">601
+</span><span class="lnt">602
+</span><span class="lnt">603
+</span><span class="lnt">604
+</span><span class="lnt">605
+</span><span class="lnt">606
+</span><span class="lnt">607
+</span><span class="lnt">608
+</span><span class="lnt">609
+</span><span class="lnt">610
+</span><span class="lnt">611
+</span><span class="lnt">612
+</span><span class="lnt">613
+</span><span class="lnt">614
+</span><span class="lnt">615
+</span><span class="lnt">616
+</span><span class="lnt">617
+</span><span class="lnt">618
+</span><span class="lnt">619
+</span><span class="lnt">620
+</span><span class="lnt">621
+</span><span class="lnt">622
+</span><span class="lnt">623
+</span><span class="lnt">624
+</span><span class="lnt">625
+</span><span class="lnt">626
+</span><span class="lnt">627
+</span><span class="lnt">628
+</span><span class="lnt">629
+</span><span class="lnt">630
+</span><span class="lnt">631
+</span><span class="lnt">632
+</span><span class="lnt">633
+</span><span class="lnt">634
+</span><span class="lnt">635
+</span><span class="lnt">636
+</span><span class="lnt">637
+</span><span class="lnt">638
+</span><span class="lnt">639
+</span><span class="lnt">640
+</span><span class="lnt">641
+</span><span class="lnt">642
+</span><span class="lnt">643
+</span><span class="lnt">644
+</span><span class="lnt">645
+</span><span class="lnt">646
+</span><span class="lnt">647
+</span><span class="lnt">648
+</span><span class="lnt">649
+</span><span class="lnt">650
+</span><span class="lnt">651
+</span><span class="lnt">652
+</span><span class="lnt">653
+</span><span class="lnt">654
+</span><span class="lnt">655
+</span><span class="lnt">656
+</span><span class="lnt">657
+</span><span class="lnt">658
+</span><span class="lnt">659
+</span><span class="lnt">660
+</span><span class="lnt">661
+</span><span class="lnt">662
+</span><span class="lnt">663
+</span><span class="lnt">664
+</span><span class="lnt">665
+</span><span class="lnt">666
+</span><span class="lnt">667
+</span><span class="lnt">668
+</span><span class="lnt">669
+</span><span class="lnt">670
+</span><span class="lnt">671
+</span><span class="lnt">672
+</span><span class="lnt">673
+</span><span class="lnt">674
+</span><span class="lnt">675
+</span><span class="lnt">676
+</span><span class="lnt">677
+</span><span class="lnt">678
+</span><span class="lnt">679
+</span><span class="lnt">680
+</span><span class="lnt">681
+</span><span class="lnt">682
+</span><span class="lnt">683
+</span><span class="lnt">684
+</span><span class="lnt">685
+</span><span class="lnt">686
+</span><span class="lnt">687
+</span><span class="lnt">688
+</span><span class="lnt">689
+</span><span class="lnt">690
+</span><span class="lnt">691
+</span><span class="lnt">692
+</span><span class="lnt">693
+</span><span class="lnt">694
+</span><span class="lnt">695
+</span><span class="lnt">696
+</span><span class="lnt">697
+</span><span class="lnt">698
+</span><span class="lnt">699
+</span><span class="lnt">700
+</span><span class="lnt">701
+</span><span class="lnt">702
+</span><span class="lnt">703
+</span><span class="lnt">704
+</span><span class="lnt">705
+</span><span class="lnt">706
+</span><span class="lnt">707
+</span><span class="lnt">708
+</span><span class="lnt">709
+</span><span class="lnt">710
+</span><span class="lnt">711
+</span><span class="lnt">712
+</span><span class="lnt">713
+</span><span class="lnt">714
+</span><span class="lnt">715
+</span><span class="lnt">716
+</span><span class="lnt">717
+</span><span class="lnt">718
+</span><span class="lnt">719
+</span><span class="lnt">720
+</span><span class="lnt">721
+</span><span class="lnt">722
+</span><span class="lnt">723
+</span><span class="lnt">724
+</span><span class="lnt">725
+</span><span class="lnt">726
+</span><span class="lnt">727
+</span><span class="lnt">728
+</span><span class="lnt">729
+</span><span class="lnt">730
+</span><span class="lnt">731
+</span><span class="lnt">732
+</span><span class="lnt">733
+</span><span class="lnt">734
+</span><span class="lnt">735
+</span><span class="lnt">736
+</span><span class="lnt">737
+</span><span class="lnt">738
+</span><span class="lnt">739
+</span><span class="lnt">740
+</span><span class="lnt">741
+</span><span class="lnt">742
+</span><span class="lnt">743
+</span><span class="lnt">744
+</span><span class="lnt">745
+</span><span class="lnt">746
+</span><span class="lnt">747
+</span><span class="lnt">748
+</span><span class="lnt">749
+</span><span class="lnt">750
+</span><span class="lnt">751
+</span><span class="lnt">752
+</span><span class="lnt">753
+</span><span class="lnt">754
+</span><span class="lnt">755
+</span><span class="lnt">756
+</span><span class="lnt">757
+</span><span class="lnt">758
+</span><span class="lnt">759
+</span><span class="lnt">760
+</span><span class="lnt">761
+</span><span class="lnt">762
+</span><span class="lnt">763
+</span><span class="lnt">764
+</span><span class="lnt">765
+</span><span class="lnt">766
+</span><span class="lnt">767
+</span><span class="lnt">768
+</span><span class="lnt">769
+</span><span class="lnt">770
+</span><span class="lnt">771
+</span><span class="lnt">772
+</span><span class="lnt">773
+</span><span class="lnt">774
+</span><span class="lnt">775
+</span><span class="lnt">776
+</span><span class="lnt">777
+</span><span class="lnt">778
+</span><span class="lnt">779
+</span><span class="lnt">780
+</span><span class="lnt">781
+</span><span class="lnt">782
+</span><span class="lnt">783
+</span><span class="lnt">784
+</span><span class="lnt">785
+</span><span class="lnt">786
+</span><span class="lnt">787
+</span><span class="lnt">788
+</span><span class="lnt">789
+</span><span class="lnt">790
+</span><span class="lnt">791
+</span><span class="lnt">792
+</span><span class="lnt">793
+</span><span class="lnt">794
+</span><span class="lnt">795
+</span><span class="lnt">796
+</span><span class="lnt">797
+</span><span class="lnt">798
+</span><span class="lnt">799
+</span><span class="lnt">800
+</span><span class="lnt">801
+</span><span class="lnt">802
+</span><span class="lnt">803
+</span><span class="lnt">804
+</span><span class="lnt">805
+</span><span class="lnt">806
+</span><span class="lnt">807
+</span><span class="lnt">808
+</span><span class="lnt">809
+</span><span class="lnt">810
+</span><span class="lnt">811
+</span><span class="lnt">812
+</span><span class="lnt">813
+</span><span class="lnt">814
+</span><span class="lnt">815
+</span><span class="lnt">816
+</span><span class="lnt">817
+</span><span class="lnt">818
+</span><span class="lnt">819
+</span><span class="lnt">820
+</span><span class="lnt">821
+</span><span class="lnt">822
+</span><span class="lnt">823
+</span><span class="lnt">824
+</span><span class="lnt">825
+</span><span class="lnt">826
+</span><span class="lnt">827
+</span><span class="lnt">828
+</span><span class="lnt">829
+</span><span class="lnt">830
+</span><span class="lnt">831
+</span><span class="lnt">832
+</span><span class="lnt">833
+</span><span class="lnt">834
+</span><span class="lnt">835
+</span><span class="lnt">836
+</span><span class="lnt">837
+</span><span class="lnt">838
+</span><span class="lnt">839
+</span><span class="lnt">840
+</span><span class="lnt">841
+</span><span class="lnt">842
+</span><span class="lnt">843
+</span><span class="lnt">844
+</span><span class="lnt">845
+</span><span class="lnt">846
+</span><span class="lnt">847
+</span><span class="lnt">848
+</span><span class="lnt">849
+</span><span class="lnt">850
+</span><span class="lnt">851
+</span><span class="lnt">852
+</span><span class="lnt">853
+</span><span class="lnt">854
+</span><span class="lnt">855
+</span><span class="lnt">856
+</span><span class="lnt">857
+</span><span class="lnt">858
+</span><span class="lnt">859
+</span><span class="lnt">860
+</span><span class="lnt">861
+</span><span class="lnt">862
+</span><span class="lnt">863
+</span><span class="lnt">864
+</span><span class="lnt">865
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="err">﻿</span><span class="cm">/* ----------------------------------------------------------
+</span></span></span><span class="line"><span class="cl"><span class="cm">* 
+</span></span></span><span class="line"><span class="cl"><span class="cm">* 作者：qq450640526
+</span></span></span><span class="line"><span class="cl"><span class="cm">* 
+</span></span></span><span class="line"><span class="cl"><span class="cm">* 微信：roman_2015
+</span></span></span><span class="line"><span class="cl"><span class="cm">* 时间: 2021年4月11日 14:54:43
+</span></span></span><span class="line"><span class="cl"><span class="cm">* 更新：2021年9月21日 18:55:21
+</span></span></span><span class="line"><span class="cl"><span class="cm">* 博客：https://www.cnblogs.com/xe2011/
+</span></span></span><span class="line"><span class="cl"><span class="cm">*  
+</span></span></span><span class="line"><span class="cl"><span class="cm">* 
+</span></span></span><span class="line"><span class="cl"><span class="cm">* 说明
+</span></span></span><span class="line"><span class="cl"><span class="cm">* [Conf]
+</span></span></span><span class="line"><span class="cl"><span class="cm">* test = &#34; A A SD F   &#34;
+</span></span></span><span class="line"><span class="cl"><span class="cm">* 分号的出现是为了保存值中左边或右边的空格的
+</span></span></span><span class="line"><span class="cl"><span class="cm">* 
+</span></span></span><span class="line"><span class="cl"><span class="cm">*  
+</span></span></span><span class="line"><span class="cl"><span class="cm">*  模板使用utf-8格式 为了能支持特殊字符
+</span></span></span><span class="line"><span class="cl"><span class="cm">* 
+</span></span></span><span class="line"><span class="cl"><span class="cm">* 
+</span></span></span><span class="line"><span class="cl"><span class="cm">------------------------------------------------------------ */</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Collections</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.IO</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Reflection</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Runtime.InteropServices</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Windows.Forms</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">static</span> <span class="n">IniFiles</span><span class="p">.</span><span class="n">WinAPI</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">namespace</span> <span class="nn">IniFiles</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">class</span> <span class="nc">WinAPI</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">       ------------------------------------------------------------------------------------------------------------- 
+</span></span></span><span class="line"><span class="cl"><span class="cm">               BOOL WritePrivateProfileString(
+</span></span></span><span class="line"><span class="cl"><span class="cm">                       LPCTSTR lpAppName,
+</span></span></span><span class="line"><span class="cl"><span class="cm">                       LPCTSTR lpKeyName,
+</span></span></span><span class="line"><span class="cl"><span class="cm">                       LPCTSTR lpString,
+</span></span></span><span class="line"><span class="cl"><span class="cm">                       LPCTSTR lpFileName
+</span></span></span><span class="line"><span class="cl"><span class="cm">               );
+</span></span></span><span class="line"><span class="cl"><span class="cm">
+</span></span></span><span class="line"><span class="cl"><span class="cm">                其中各参数的意义
+</span></span></span><span class="line"><span class="cl"><span class="cm">                       LPCTSTR lpAppName 是INI文件中的一个字段名.
+</span></span></span><span class="line"><span class="cl"><span class="cm">                       LPCTSTR lpKeyName 是lpAppName下的一个键名,通俗讲就是变量名.
+</span></span></span><span class="line"><span class="cl"><span class="cm">                       LPCTSTR lpString 是键值,也就是变量的值,不过必须为LPCTSTR型或CString型的.
+</span></span></span><span class="line"><span class="cl"><span class="cm">                       LPCTSTR lpFileName 是完整的INI文件名，如果没有指定完整路径名，则会在windows目录（默认）查找文件。如果文件没有找到，则函数会在windows目录创建它。
+</span></span></span><span class="line"><span class="cl"><span class="cm">
+</span></span></span><span class="line"><span class="cl"><span class="cm">       -------------------------------------------------------------------------------------------------------------
+</span></span></span><span class="line"><span class="cl"><span class="cm">                UINT WINAPI GetPrivateProfileInt (
+</span></span></span><span class="line"><span class="cl"><span class="cm">                   _In_LPCTSTR lpAppName, //The name of the sectionName in the initialization file.
+</span></span></span><span class="line"><span class="cl"><span class="cm">                   _In_LPCTSTR lpKeyName, //The name of the key whose value is to be retrieved.
+</span></span></span><span class="line"><span class="cl"><span class="cm">                   _In_INT nDefault, //The default value to return if the key name cannot be found in the initialization file.
+</span></span></span><span class="line"><span class="cl"><span class="cm">                   _In_LPCTSTR lpFileName //The name of the initialization file
+</span></span></span><span class="line"><span class="cl"><span class="cm">                   );
+</span></span></span><span class="line"><span class="cl"><span class="cm">
+</span></span></span><span class="line"><span class="cl"><span class="cm">                   参数表编辑  
+</span></span></span><span class="line"><span class="cl"><span class="cm">                       lpApplicationName String，指定在其中查找条目的小节。注意这个字串是不区分大小写的
+</span></span></span><span class="line"><span class="cl"><span class="cm">                       lpKeyName String，欲获取的设置项或条目。这个支持不区分大小写
+</span></span></span><span class="line"><span class="cl"><span class="cm">                       nDefault Long，指定条目未找到时返回的默认值
+</span></span></span><span class="line"><span class="cl"><span class="cm">                       lpFileName String，初始化文件的名字。如果没有指定完整的路径名，windows就会在Windows目录中搜索文件
+</span></span></span><span class="line"><span class="cl"><span class="cm">
+</span></span></span><span class="line"><span class="cl"><span class="cm">        -------------------------------------------------------------------------------------------------------------
+</span></span></span><span class="line"><span class="cl"><span class="cm">            为一个初始化文件（.ini）中指定的小节设置所有项名和值
+</span></span></span><span class="line"><span class="cl"><span class="cm">            返回值
+</span></span></span><span class="line"><span class="cl"><span class="cm">            Long，非零表示成功，零表示失败。会设置GetLastError
+</span></span></span><span class="line"><span class="cl"><span class="cm">           
+</span></span></span><span class="line"><span class="cl"><span class="cm">            参数表
+</span></span></span><span class="line"><span class="cl"><span class="cm">            WritePrivateProfileSection(
+</span></span></span><span class="line"><span class="cl"><span class="cm">                LPCTSTR lpAppName, // 指向包含 sectionName 名称的字符串地址
+</span></span></span><span class="line"><span class="cl"><span class="cm">                LPCTSTR lpString ,  // 要写入的数据的地址
+</span></span></span><span class="line"><span class="cl"><span class="cm">                LPCTSTR lpFileName  // ini 文件的文件名
+</span></span></span><span class="line"><span class="cl"><span class="cm">            );
+</span></span></span><span class="line"><span class="cl"><span class="cm">
+</span></span></span><span class="line"><span class="cl"><span class="cm">
+</span></span></span><span class="line"><span class="cl"><span class="cm">
+</span></span></span><span class="line"><span class="cl"><span class="cm">
+</span></span></span><span class="line"><span class="cl"><span class="cm">
+</span></span></span><span class="line"><span class="cl"><span class="cm">       */</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;keyName&#34;&gt;LPCTSTR lpKeyName 是lpAppName下的一个键名,通俗讲就是变量名.&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;value&#34;&gt;LPCTSTR lpString 是键值,也就是变量的值,不过必须为LPCTSTR型或CString型的.&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;fileName&#34;&gt;LPCTSTR lpFileName 是完整的INI文件名，如果没有指定完整路径名，则会在windows目录（默认）查找文件。如果文件没有找到，则函数会在windows目录创建它。&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="na">        [DllImport(&#34;kernel32&#34;)]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">bool</span> <span class="n">WritePrivateProfileString</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">keyName</span><span class="p">,</span> <span class="kt">string</span> <span class="k">value</span><span class="p">,</span> <span class="kt">string</span> <span class="n">fileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;LPCTSTR lpAppName 是INI文件中的一个字段名.&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;LPCTSTR lpKeyName 是lpAppName下的一个键名,通俗讲就是变量名&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;val&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;fileName&#34;&gt;LPCTSTR lpFileName 是完整的INI文件名，如果没有指定完整路径名，则会在windows目录（默认）查找文件。如果文件没有找到，则函数会在windows目录创建它。&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="na">        [DllImport(&#34;kernel32&#34;)]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">bool</span> <span class="n">WritePrivateProfileString</span><span class="p">(</span><span class="kt">byte</span><span class="p">[]</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">byte</span><span class="p">[]</span> <span class="n">keyName</span><span class="p">,</span> <span class="kt">byte</span><span class="p">[]</span> <span class="k">value</span><span class="p">,</span> <span class="kt">string</span> <span class="n">fileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;def&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;retVal&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;size&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;fileName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="na">        [DllImport(&#34;kernel32&#34;)]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">int</span> <span class="n">GetPrivateProfileString</span><span class="p">(</span><span class="kt">byte</span><span class="p">[]</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">byte</span><span class="p">[]</span> <span class="n">key</span><span class="p">,</span> <span class="kt">byte</span><span class="p">[]</span> <span class="n">def</span><span class="p">,</span> <span class="kt">byte</span><span class="p">[]</span> <span class="n">retVal</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">,</span> <span class="kt">string</span> <span class="n">fileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//需要调用GetPrivateProfileString的重载</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;def&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;retVal&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;size&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;fileName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="na">        [DllImport(&#34;kernel32&#34;)]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">long</span> <span class="n">GetPrivateProfileString</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">string</span> <span class="n">def</span><span class="p">,</span> <span class="n">StringBuilder</span> <span class="n">retVal</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">,</span> <span class="kt">string</span> <span class="n">fileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;def&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;retVal&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;size&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;fileName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="na">        [DllImport(&#34;kernel32&#34;)]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">uint</span> <span class="n">GetPrivateProfileStringA</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">string</span> <span class="n">def</span><span class="p">,</span> <span class="n">Byte</span><span class="p">[]</span> <span class="n">retVal</span><span class="p">,</span> <span class="kt">int</span> <span class="n">size</span><span class="p">,</span> <span class="kt">string</span> <span class="n">fileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;lpAppName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;lpKeyName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;nDefault&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;lpFileName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="na">        [DllImport(&#34;kernel32&#34;)]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">int</span> <span class="n">GetPrivateProfileInt</span><span class="p">(</span><span class="kt">string</span> <span class="n">lpAppName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">lpKeyName</span><span class="p">,</span> <span class="kt">int</span> <span class="n">nDefault</span><span class="p">,</span> <span class="kt">string</span> <span class="n">lpFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//获取ini文件所有的sectionName</span>
+</span></span><span class="line"><span class="cl"><span class="na">        [DllImport(&#34;Kernel32.dll&#34;)]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">extern</span> <span class="k">static</span> <span class="kt">int</span> <span class="n">GetPrivateProfileSectionNamesA</span><span class="p">(</span><span class="kt">byte</span><span class="p">[]</span> <span class="n">buffer</span><span class="p">,</span> <span class="kt">int</span> <span class="n">iLen</span><span class="p">,</span> <span class="kt">string</span> <span class="n">fileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//获取指定sectionName的key和value</span>
+</span></span><span class="line"><span class="cl"><span class="na">        [DllImport(&#34;Kernel32.dll&#34;)]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">int</span> <span class="n">GetPrivateProfileSection</span><span class="p">(</span><span class="kt">string</span> <span class="n">lpAppName</span><span class="p">,</span> <span class="kt">byte</span><span class="p">[]</span> <span class="n">lpReturnedString</span><span class="p">,</span> <span class="kt">int</span> <span class="n">nSize</span><span class="p">,</span> <span class="kt">string</span> <span class="n">lpFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 将指定的键值对写到指定的节点，如果已经存在则替换。</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;SectionName&#34;&gt;节点，如果不存在此节点，则创建此节点&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;Value&#34;&gt;Item键值对，多个用\0分隔,形如key1=value1\0key2=value2</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;para&gt;如果为string.Empty，则删除指定节点下的所有内容，保留节点&lt;/para&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;para&gt;如果为null，则删除指定节点下的所有内容，并且删除该节点&lt;/para&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;iniFileName&#34;&gt;INI文件&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;是否成功写入&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="na">        [DllImport(&#34;kernel32.dll&#34;, CharSet = CharSet.Auto)]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">bool</span> <span class="n">WritePrivateProfileSection</span><span class="p">(</span><span class="kt">string</span> <span class="n">SectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">Value</span><span class="p">,</span> <span class="kt">string</span> <span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="na">
+</span></span></span><span class="line"><span class="cl"><span class="na">        [DllImport(&#34;kernel32&#34;)]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">static</span> <span class="k">extern</span> <span class="kt">uint</span> <span class="n">GetLastError</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="k">class</span> <span class="nc">IniFile</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">///  &lt;param name=&#34;iniFileName&#34;&gt;ini的路径 请使用完整的路径&#34;X:\test.ini&#34;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="n">IniFile</span><span class="p">(</span><span class="kt">string</span> <span class="n">iniFileName</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//_iniFileName = iniFileName;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="m">_</span><span class="n">iniFileName</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="n">GetFullPath</span><span class="p">(</span><span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">File</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="m">_</span><span class="n">iniFileName</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="m">_</span><span class="n">iniFileEncoding</span> <span class="p">=</span> <span class="n">FileEncoding</span><span class="p">.</span><span class="n">GetEncoding</span><span class="p">(</span><span class="m">_</span><span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="cp">#region 2021-9-21-15_32_03 当编码为 UTF-8 BOM，第1行如果有字段，则这个字段不能读取。</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="k">try</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                    <span class="n">FileStream</span> <span class="n">fs</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileStream</span><span class="p">(</span><span class="n">iniFileName</span><span class="p">,</span> <span class="n">FileMode</span><span class="p">.</span><span class="n">Open</span><span class="p">,</span> <span class="n">FileAccess</span><span class="p">.</span><span class="n">Read</span><span class="p">,</span> <span class="n">FileShare</span><span class="p">.</span><span class="n">ReadWrite</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">StreamReader</span> <span class="n">sr</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StreamReader</span><span class="p">(</span><span class="n">fs</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileEncoding</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                    <span class="kt">string</span> <span class="n">firstLine</span> <span class="p">=</span> <span class="n">sr</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">().</span><span class="n">Trim</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">(</span><span class="n">firstLine</span><span class="p">.</span><span class="n">Length</span> <span class="p">&gt;=</span> <span class="m">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="p">(</span><span class="n">firstLine</span><span class="p">.</span><span class="n">StartsWith</span><span class="p">(</span><span class="s">&#34;[&#34;</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="n">firstLine</span><span class="p">.</span><span class="n">EndsWith</span><span class="p">(</span><span class="s">&#34;]&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="kt">string</span> <span class="n">msg</span> <span class="p">=</span> <span class="s">&#34;\r\n\r\n&#34;</span><span class="p">;</span><span class="c1">//&#34;;&#34; + DateTime.Now.ToString() + &#34;\tqq450640526提醒：当文本编码为 UTF-8 BOM，第1行如果有字段，则这个字段不能读取。  -- 软件自动添加。\r\n\r\n&#34;;</span>
+</span></span><span class="line"><span class="cl">                            <span class="kt">string</span> <span class="n">str</span> <span class="p">=</span> <span class="n">File</span><span class="p">.</span><span class="n">ReadAllText</span><span class="p">(</span><span class="n">iniFileName</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileEncoding</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">File</span><span class="p">.</span><span class="n">WriteAllText</span><span class="p">(</span><span class="n">iniFileName</span><span class="p">,</span> <span class="n">msg</span> <span class="p">+</span> <span class="n">str</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileEncoding</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="k">catch</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">//**************异常文本 * *************</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">//System.NullReferenceException: 未将对象引用设置到对象的实例。</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">//在 IniFiles.IniFile..ctor(String fileName) 位置 E:\ASM\WindowsFormsApp1\IniFiles.cs:行号 83</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">//在 WindowsFormsApp1.Form1.btnQuery_Click(Object sender, EventArgs e) 位置 E:\ASM\WindowsFormsApp1\Form1.cs:行号 194</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">//在 System.Windows.Forms.Control.OnClick(EventArgs e)</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">//在 DevComponents.DotNetBar.ButtonX.OnClick(EventArgs e)</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">//在 DevComponents.DotNetBar.ButtonX.OnMouseUp(MouseEventArgs e)</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">//在 System.Windows.Forms.Control.WmMouseUp(Message &amp; m, MouseButtons button, Int32 clicks)</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">//在 System.Windows.Forms.Control.WndProc(Message &amp; m)</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">//在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="err">#</span><span class="n">endregion</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 在exe相对路径中自动产生 一个 配置文件</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 程序为 app1.exe 对应的配置 app1.exe.ini</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 可以这样直接使用</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// IniFile.Instance.WriteString(&#34;conf&#34;,&#34;name&#34;,textBox1.Text);</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// textBox1.Text = IniFile.Instance.ReadString(&#34;conf&#34;,&#34;name&#34;);</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 在dll中获得调用当前DLL的路径</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 在DLL中用不了这样的写法 Application.ExecutablePath + &#34;.ini&#34;;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// app1.exe 对应的 app1.exe.ini</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">///</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">static</span> <span class="n">IniFile</span> <span class="n">Instance</span> <span class="p">=&gt;</span> <span class="k">new</span> <span class="n">IniFile</span><span class="p">(</span><span class="n">Assembly</span><span class="p">.</span><span class="n">GetEntryAssembly</span><span class="p">().</span><span class="n">Location</span> <span class="p">+</span> <span class="s">&#34;.ini&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">     
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 文件编码</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Encoding</span> <span class="m">_</span><span class="n">iniFileEncoding</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">Default</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">static</span> <span class="kt">string</span> <span class="m">_</span><span class="n">iniFileName</span> <span class="p">=</span> <span class="s">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;s&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">static</span> <span class="kt">bool</span> <span class="n">IsKeyContains</span><span class="p">(</span><span class="kt">string</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cp">#region 核心部分</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">private</span> <span class="k">static</span> <span class="kt">byte</span><span class="p">[]</span> <span class="n">GetBytes</span><span class="p">(</span><span class="kt">string</span> <span class="n">s</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="k">null</span> <span class="p">==</span> <span class="n">s</span> <span class="p">?</span> <span class="k">null</span> <span class="p">:</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">GetEncoding</span><span class="p">(</span><span class="s">&#34;utf-8&#34;</span><span class="p">).</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//读取utf8编码格式的文件内容</span>
+</span></span><span class="line"><span class="cl">        <span class="k">private</span> <span class="kt">string</span> <span class="n">GetPrivateProfileString_UTF8</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">string</span> <span class="n">sValue</span><span class="p">,</span> <span class="kt">string</span> <span class="m">_</span><span class="n">iniFileName</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">size</span> <span class="p">=</span> <span class="m">65535</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">byte</span><span class="p">[]</span> <span class="n">bt</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="p">[</span><span class="n">size</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">count</span> <span class="p">=</span> <span class="n">GetPrivateProfileString</span><span class="p">(</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">sectionName</span><span class="p">),</span> <span class="n">GetBytes</span><span class="p">(</span><span class="n">key</span><span class="p">),</span> <span class="n">GetBytes</span><span class="p">(</span><span class="n">sValue</span><span class="p">),</span> <span class="n">bt</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">.</span><span class="n">GetString</span><span class="p">(</span><span class="n">bt</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="n">count</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//写入utf8编码格式的文件内容</span>
+</span></span><span class="line"><span class="cl">        <span class="k">private</span> <span class="kt">bool</span> <span class="n">WriteStringUTF8</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">string</span> <span class="n">sValue</span><span class="p">,</span> <span class="kt">string</span> <span class="n">fileName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">encodingName</span> <span class="p">=</span> <span class="s">&#34;utf-8&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">WritePrivateProfileString</span><span class="p">(</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">sectionName</span><span class="p">),</span> <span class="n">GetBytes</span><span class="p">(</span><span class="n">key</span><span class="p">),</span> <span class="n">GetBytes</span><span class="p">(</span><span class="n">sValue</span><span class="p">),</span> <span class="n">fileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//读取信息</span>
+</span></span><span class="line"><span class="cl">        <span class="k">private</span> <span class="kt">string</span> <span class="n">Read</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">string</span> <span class="n">sValue</span> <span class="p">=</span> <span class="s">&#34;&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//TestExecption(sectionName,key);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="m">_</span><span class="n">iniFileEncoding</span> <span class="p">!=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//ansi或gb2312格式的编码</span>
+</span></span><span class="line"><span class="cl">                <span class="n">StringBuilder</span> <span class="n">sb</span> <span class="p">=</span> <span class="k">new</span> <span class="n">StringBuilder</span><span class="p">(</span><span class="m">4096</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">GetPrivateProfileString</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">sValue</span><span class="p">,</span> <span class="n">sb</span><span class="p">,</span> <span class="m">4096</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">sb</span><span class="p">.</span><span class="n">ToString</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">else</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">GetPrivateProfileString_UTF8</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">sValue</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//写入信息</span>
+</span></span><span class="line"><span class="cl">        <span class="k">private</span> <span class="kt">bool</span> <span class="n">Write</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">string</span> <span class="n">sValue</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(!</span><span class="n">IsSectionExists</span><span class="p">(</span><span class="n">sectionName</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">                新键的字段 前一行要是空行 这样文档看起来美观
+</span></span></span><span class="line"><span class="cl"><span class="cm">                在文件末尾增加一个空行
+</span></span></span><span class="line"><span class="cl"><span class="cm">                */</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">string</span> <span class="n">str</span> <span class="p">=</span> <span class="n">File</span><span class="p">.</span><span class="n">ReadAllText</span><span class="p">(</span><span class="m">_</span><span class="n">iniFileName</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileEncoding</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">File</span><span class="p">.</span><span class="n">WriteAllText</span><span class="p">(</span><span class="m">_</span><span class="n">iniFileName</span><span class="p">,</span>  <span class="n">str</span> <span class="p">+</span> <span class="s">&#34;\r\n&#34;</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileEncoding</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">             * 新增加的字段没有 换行符
+</span></span></span><span class="line"><span class="cl"><span class="cm">             */</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//使用&#34;&#34; 能保存其中的空格字符</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="m">_</span><span class="n">iniFileEncoding</span> <span class="p">!=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span><span class="c1">//ansi或gb2312格式的编码</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">WritePrivateProfileString</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="s">&#34; \&#34;&#34;</span> <span class="p">+</span> <span class="n">sValue</span> <span class="p">+</span> <span class="s">&#34;\&#34;&#34;</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">else</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">WriteStringUTF8</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="s">&#34; \&#34;&#34;</span> <span class="p">+</span> <span class="n">sValue</span> <span class="p">+</span> <span class="s">&#34;\&#34;&#34;</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="err">#</span><span class="n">endregion</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cp">#region 字段、判断、测试异常</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 验证文件ini是否存在</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;布尔值&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">bool</span> <span class="n">ExistIniFile</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">File</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="m">_</span><span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//判断字段是否存在，字段和键名不区分大小写</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">bool</span> <span class="n">IsSectionExists</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//全部转换成小写来判断 不区分大小写了</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span><span class="p">[]</span> <span class="n">arr</span> <span class="p">=</span> <span class="n">ReadSections</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">ToLower</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">sectionName</span> <span class="p">=</span> <span class="n">sectionName</span><span class="p">.</span><span class="n">ToLower</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Array</span><span class="p">.</span><span class="n">IndexOf</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">sectionName</span><span class="p">)</span> <span class="p">&gt;</span> <span class="p">-</span><span class="m">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//检查某个sectionName下的某个键值是否存在，字段和键名不区分大小写</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">bool</span> <span class="n">IsKeyExists</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span><span class="p">[]</span> <span class="n">arr</span> <span class="p">=</span> <span class="n">ReadKeyNames</span><span class="p">(</span><span class="n">sectionName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">=</span> <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">ToLower</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">key</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">ToLower</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Array</span><span class="p">.</span><span class="n">IndexOf</span><span class="p">(</span><span class="n">arr</span><span class="p">,</span> <span class="n">key</span><span class="p">)</span> <span class="p">&gt;</span> <span class="p">-</span><span class="m">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 字段或者键名不存在，尝试读取时抛出异常</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">private</span> <span class="k">void</span> <span class="n">TestExecption</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(!</span><span class="n">File</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="m">_</span><span class="n">iniFileName</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="k">throw</span> <span class="k">new</span> <span class="n">ApplicationException</span><span class="p">(</span><span class="s">&#34;文件不存在！ 读取数据失败！\n\&#34;&#34;</span> <span class="p">+</span> <span class="m">_</span><span class="n">iniFileName</span> <span class="p">+</span> <span class="s">&#34;\&#34;&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span> <span class="k">if</span> <span class="p">(!</span><span class="n">IsSectionExists</span><span class="p">(</span><span class="n">sectionName</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="k">throw</span> <span class="k">new</span> <span class="n">ApplicationException</span><span class="p">(</span><span class="s">&#34;字段[&#34;</span> <span class="p">+</span> <span class="n">sectionName</span> <span class="p">+</span> <span class="s">&#34;]不存在！\n路径: \&#34;&#34;</span> <span class="p">+</span> <span class="m">_</span><span class="n">iniFileName</span> <span class="p">+</span> <span class="s">&#34;\&#34;&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(!</span><span class="n">IsKeyExists</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">.</span><span class="n">ToLower</span><span class="p">()))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="k">throw</span> <span class="k">new</span> <span class="n">ApplicationException</span><span class="p">(</span><span class="s">&#34;文件“&#34;</span> <span class="p">+</span> <span class="m">_</span><span class="n">iniFileName</span> <span class="p">+</span> <span class="s">&#34;”的\n字段[&#34;</span> <span class="p">+</span> <span class="n">sectionName</span> <span class="p">+</span> <span class="s">&#34;]的“&#34;</span> <span class="p">+</span> <span class="n">key</span> <span class="p">+</span> <span class="s">&#34;”键名，不存在！&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//2021年5月1日 21:48:43发现不支持UTF-8</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 列出INI文件中所有的字段名  可以包含空的字段</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">ReadSections</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">get</span> <span class="p">{</span> <span class="c1">//ansi或gb2312格式的编码</span>
+</span></span><span class="line"><span class="cl">                <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">list</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">byte</span><span class="p">[]</span> <span class="n">buf</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="p">[</span><span class="m">65536</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="kt">uint</span> <span class="n">Length</span> <span class="p">=</span> <span class="n">GetPrivateProfileStringA</span><span class="p">(</span><span class="k">null</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="n">buf</span><span class="p">.</span><span class="n">Length</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="kt">int</span> <span class="n">j</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">(</span><span class="n">buf</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span>                
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="p">(</span><span class="m">_</span><span class="n">iniFileEncoding</span> <span class="p">!=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                            <span class="m">_</span><span class="n">iniFileEncoding</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                        <span class="n">list</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="m">_</span><span class="n">iniFileEncoding</span><span class="p">.</span><span class="n">GetString</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">i</span> <span class="p">-</span> <span class="n">j</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">j</span> <span class="p">=</span> <span class="n">i</span> <span class="p">+</span> <span class="m">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">list</span><span class="p">.</span><span class="n">ToArray</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 读取当前ini所有的字段值 其中不含空的字段</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">ReadSectionsWithoutWhiteSpace</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">get</span> <span class="p">{</span> <span class="c1">//ansi或gb2312格式的编码</span>
+</span></span><span class="line"><span class="cl">                <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">list</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">byte</span><span class="p">[]</span> <span class="n">buf</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="p">[</span><span class="m">65536</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="kt">uint</span> <span class="n">Length</span> <span class="p">=</span> <span class="n">GetPrivateProfileStringA</span><span class="p">(</span><span class="k">null</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="n">buf</span><span class="p">.</span><span class="n">Length</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="kt">int</span> <span class="n">j</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">(</span><span class="n">buf</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="p">(</span><span class="m">_</span><span class="n">iniFileEncoding</span> <span class="p">!=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                            <span class="m">_</span><span class="n">iniFileEncoding</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                        <span class="kt">string</span> <span class="n">str</span> <span class="p">=</span> <span class="m">_</span><span class="n">iniFileEncoding</span><span class="p">.</span><span class="n">GetString</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">i</span> <span class="p">-</span> <span class="n">j</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="p">(</span><span class="n">str</span><span class="p">.</span><span class="n">Trim</span><span class="p">()</span> <span class="p">!=</span> <span class="s">&#34;&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">list</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                        <span class="n">j</span> <span class="p">=</span> <span class="n">i</span> <span class="p">+</span> <span class="m">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">list</span><span class="p">.</span><span class="n">ToArray</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 读取字段下的所有键名,长度受限</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">ReadKeyNames</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="m">_</span><span class="n">iniFileEncoding</span> <span class="p">==</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">byte</span><span class="p">[]</span> <span class="n">bt</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">sectionName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                 <span class="n">sectionName</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">Default</span><span class="p">.</span><span class="n">GetString</span><span class="p">(</span><span class="n">bt</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">list</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">byte</span><span class="p">[]</span> <span class="n">buf</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="p">[</span><span class="m">9999999</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">uint</span> <span class="n">len</span> <span class="p">=</span> <span class="n">GetPrivateProfileStringA</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="n">buf</span><span class="p">,</span> <span class="n">buf</span><span class="p">.</span><span class="n">Length</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">j</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">buf</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">(</span><span class="m">_</span><span class="n">iniFileEncoding</span> <span class="p">==</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">list</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">.</span><span class="n">GetString</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">i</span> <span class="p">-</span> <span class="n">j</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">else</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">list</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">Encoding</span><span class="p">.</span><span class="n">Default</span><span class="p">.</span><span class="n">GetString</span><span class="p">(</span><span class="n">buf</span><span class="p">,</span> <span class="n">j</span><span class="p">,</span> <span class="n">i</span> <span class="p">-</span> <span class="n">j</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">j</span> <span class="p">=</span> <span class="n">i</span> <span class="p">+</span> <span class="m">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">list</span><span class="p">.</span><span class="n">ToArray</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 读取字段值的所有的键的值</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">ReadSectionValue</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">result</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">            <span class="k">foreach</span> <span class="p">(</span><span class="kt">string</span> <span class="n">key</span> <span class="k">in</span> <span class="n">ReadKeyNames</span><span class="p">(</span><span class="n">sectionName</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                <span class="n">result</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">Read</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">result</span><span class="p">.</span><span class="n">ToArray</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 清除某个sectionName 及其字段下所有的所有内容 </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">bool</span> <span class="n">DeleteSection</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="m">_</span><span class="n">iniFileEncoding</span> <span class="p">==</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">byte</span><span class="p">[]</span> <span class="n">bt</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">sectionName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">sectionName</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">Default</span><span class="p">.</span><span class="n">GetString</span><span class="p">(</span><span class="n">bt</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">bool</span> <span class="n">b</span> <span class="p">=</span> <span class="n">WritePrivateProfileString</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(!</span><span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">throw</span> <span class="p">(</span><span class="k">new</span> <span class="n">ApplicationException</span><span class="p">(</span><span class="s">&#34;无法清除Ini文件中的sectionName&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">       <span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">        * 通过把文件读取到STRING[]然后一行一行来判断
+</span></span></span><span class="line"><span class="cl"><span class="cm">        */</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 修改节点名称</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;section_old&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;section_replaceStr&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">bool</span> <span class="n">WriteSection</span><span class="p">(</span><span class="kt">string</span> <span class="n">section_old</span><span class="p">,</span> <span class="kt">string</span> <span class="n">section_replaceStr</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">try</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//修改ini节点字段</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">string</span><span class="p">[]</span> <span class="n">arr</span> <span class="p">=</span> <span class="n">File</span><span class="p">.</span><span class="n">ReadAllLines</span><span class="p">(</span><span class="m">_</span><span class="n">iniFileName</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileEncoding</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="n">Length</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span> <span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">Trim</span><span class="p">().</span><span class="n">StartsWith</span><span class="p">(</span><span class="s">&#34;[&#34;</span><span class="p">)</span> <span class="p">&amp;&amp;</span> <span class="n">arr</span><span class="p">[</span><span class="m">0</span><span class="p">].</span><span class="n">Trim</span><span class="p">().</span><span class="n">EndsWith</span><span class="p">(</span><span class="s">&#34;]&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">arr</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;\t&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">arr</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">Trim</span><span class="p">()</span> <span class="p">==</span> <span class="s">&#34;[&#34;</span> <span class="p">+</span> <span class="n">section_old</span> <span class="p">+</span> <span class="s">&#34;]&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">arr</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">=</span> <span class="s">&#34;[&#34;</span> <span class="p">+</span> <span class="n">section_replaceStr</span> <span class="p">+</span> <span class="s">&#34;]&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="n">File</span><span class="p">.</span><span class="n">WriteAllLines</span><span class="p">(</span><span class="m">_</span><span class="n">iniFileName</span><span class="p">,</span> <span class="n">arr</span><span class="p">);</span><span class="c1">//保存文本</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">catch</span><span class="p">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="n">ex</span><span class="p">.</span><span class="n">Message</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">          
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 修改字段名</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;section_old&#34;&gt;原字段名&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;section_new&#34;&gt;新字段名&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;value&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">bool</span> <span class="n">EditSection</span><span class="p">(</span><span class="kt">string</span> <span class="n">section_old</span><span class="p">,</span> <span class="kt">string</span> <span class="n">section_new</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//return WritePrivateProfileSection(sectionName, value, _iniFileName);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span><span class="p">[]</span> <span class="n">keys</span> <span class="p">=</span> <span class="n">ReadKeyNames</span><span class="p">(</span><span class="n">section_old</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span><span class="p">[]</span> <span class="n">keyValues</span> <span class="p">=</span> <span class="n">ReadSectionValue</span><span class="p">(</span><span class="n">section_old</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">//MessageBox.Show(string.Join(&#34;\r\n&#34;, keyValues));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">DeleteSection</span><span class="p">(</span><span class="n">section_old</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">keys</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">WriteString</span><span class="p">(</span><span class="n">section_new</span><span class="p">,</span> <span class="n">keys</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">keyValues</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">             1 读取当前字段值
+</span></span></span><span class="line"><span class="cl"><span class="cm">             2 读取当前字段所有的属性名和属性值
+</span></span></span><span class="line"><span class="cl"><span class="cm">             3 删除当前字段
+</span></span></span><span class="line"><span class="cl"><span class="cm">             4 重新写入 新字段 旧属性
+</span></span></span><span class="line"><span class="cl"><span class="cm">
+</span></span></span><span class="line"><span class="cl"><span class="cm">            此方法的BUG会 修改字段到文本最后的位置
+</span></span></span><span class="line"><span class="cl"><span class="cm">
+</span></span></span><span class="line"><span class="cl"><span class="cm">             */</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="cs">/// 删除某个sectionName下的键 及其对应的值</span>
+</span></span><span class="line"><span class="cl">    <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="kt">bool</span> <span class="n">DeleteKey</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="m">_</span><span class="n">iniFileEncoding</span> <span class="p">==</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">byte</span><span class="p">[]</span> <span class="n">bt</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">.</span><span class="n">GetBytes</span><span class="p">(</span><span class="n">sectionName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">sectionName</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">Default</span><span class="p">.</span><span class="n">GetString</span><span class="p">(</span><span class="n">bt</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">WritePrivateProfileString</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="k">null</span><span class="p">,</span> <span class="m">_</span><span class="n">iniFileName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="err">#</span><span class="n">endregion</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cp">#region 读和写 string、Boolean、Integer、Single、Double、StringArray</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sValue&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">string</span> <span class="n">ReadString</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">string</span> <span class="n">sValue</span> <span class="p">=</span> <span class="s">&#34;&#34;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Read</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">sValue</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sValue&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">bool</span> <span class="n">WriteString</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">string</span> <span class="n">sValue</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Write</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">sValue</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//返回值为true false 不区分大小写</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sValue&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">bool</span> <span class="n">ReadBoolean</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">sValue</span> <span class="p">=</span> <span class="k">false</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span> <span class="n">v</span> <span class="p">=</span> <span class="n">sValue</span><span class="p">.</span><span class="n">ToString</span><span class="p">().</span><span class="n">ToLower</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span> <span class="n">s</span> <span class="p">=</span> <span class="n">Read</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">v</span><span class="p">).</span><span class="n">ToLower</span><span class="p">().</span><span class="n">Trim</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">//必须要返回一个值</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Convert</span><span class="p">.</span><span class="n">ToBoolean</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sValue&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">bool</span> <span class="n">WriteBoolean</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">sValue</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Write</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">sValue</span><span class="p">.</span><span class="n">ToString</span><span class="p">().</span><span class="n">Trim</span><span class="p">().</span><span class="n">ToLower</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sValue&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">int</span> <span class="n">ReadInteger</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">int</span> <span class="n">sValue</span> <span class="p">=</span> <span class="m">0</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span> <span class="n">v</span> <span class="p">=</span> <span class="n">sValue</span><span class="p">.</span><span class="n">ToString</span><span class="p">().</span><span class="n">ToLower</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span> <span class="n">s</span> <span class="p">=</span> <span class="n">Read</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">v</span><span class="p">).</span><span class="n">Trim</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Convert</span><span class="p">.</span><span class="n">ToInt32</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sValue&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">bool</span> <span class="n">WriteInteger</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">int</span> <span class="n">sValue</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Write</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">sValue</span><span class="p">.</span><span class="n">ToString</span><span class="p">().</span><span class="n">Trim</span><span class="p">().</span><span class="n">ToLower</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sValue&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">double</span> <span class="n">ReadDouble</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">double</span> <span class="n">sValue</span> <span class="p">=</span> <span class="m">0d</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span> <span class="n">v</span> <span class="p">=</span> <span class="n">sValue</span><span class="p">.</span><span class="n">ToString</span><span class="p">().</span><span class="n">ToLower</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span> <span class="n">s</span> <span class="p">=</span> <span class="n">Read</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">v</span><span class="p">).</span><span class="n">ToLower</span><span class="p">().</span><span class="n">Trim</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Convert</span><span class="p">.</span><span class="n">ToDouble</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sValue&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">bool</span> <span class="n">WriteDouble</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">double</span> <span class="n">sValue</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Write</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">sValue</span><span class="p">.</span><span class="n">ToString</span><span class="p">().</span><span class="n">Trim</span><span class="p">().</span><span class="n">ToLower</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sValue&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">double</span> <span class="n">ReadSingle</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">double</span> <span class="n">sValue</span> <span class="p">=</span> <span class="m">0d</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span> <span class="n">v</span> <span class="p">=</span> <span class="n">sValue</span><span class="p">.</span><span class="n">ToString</span><span class="p">().</span><span class="n">ToLower</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span> <span class="n">s</span> <span class="p">=</span> <span class="n">Read</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">v</span><span class="p">).</span><span class="n">ToLower</span><span class="p">().</span><span class="n">Trim</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">Convert</span><span class="p">.</span><span class="n">ToSingle</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;key&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sValue&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">bool</span> <span class="n">WriteSingle</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span> <span class="n">key</span><span class="p">,</span> <span class="kt">double</span> <span class="n">sValue</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">WriteDouble</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">sValue</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1">//2014年6月24日19:39:25</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">ReadStringArray</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">len</span> <span class="p">=</span> <span class="n">ReadInteger</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="s">&#34;Count&#34;</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">list</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">len</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">string</span> <span class="n">s</span> <span class="p">=</span> <span class="n">ReadString</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">i</span><span class="p">.</span><span class="n">ToString</span><span class="p">(),</span> <span class="s">&#34;0&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">list</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">list</span><span class="p">.</span><span class="n">ToArray</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="kt">string</span> <span class="n">ReadStringArrayText</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kt">string</span><span class="p">.</span><span class="n">Join</span><span class="p">(</span><span class="s">&#34;\n&#34;</span><span class="p">,</span> <span class="n">ReadStringArray</span><span class="p">(</span><span class="n">sectionName</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cm">/*  为了确保能正确显示空格请使用单引号 或者双引号将值加入进去
+</span></span></span><span class="line"><span class="cl"><span class="cm">            磁的时候不用解析直接读出来的
+</span></span></span><span class="line"><span class="cl"><span class="cm">            [TEST]
+</span></span></span><span class="line"><span class="cl"><span class="cm">            a = &#39;  asd a as  &#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">            b = &#39; a a &#39;
+</span></span></span><span class="line"><span class="cl"><span class="cm">        */</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;sectionName&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;stringArray&#34;&gt;&lt;/param&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">void</span> <span class="n">WriteStringArray</span><span class="p">(</span><span class="kt">string</span> <span class="n">sectionName</span><span class="p">,</span> <span class="kt">string</span><span class="p">[]</span> <span class="n">stringArray</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">DeleteSection</span><span class="p">(</span><span class="n">sectionName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">WriteInteger</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="s">&#34;Count&#34;</span><span class="p">,</span> <span class="n">stringArray</span><span class="p">.</span><span class="n">Length</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">stringArray</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">WriteString</span><span class="p">(</span><span class="n">sectionName</span><span class="p">,</span> <span class="n">i</span><span class="p">.</span><span class="n">ToString</span><span class="p">(),</span> <span class="n">stringArray</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="err">#</span><span class="n">endregion</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">class</span> <span class="nc">FileEncoding</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt; </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 给定文件的路径，读取文件的二进制数据，判断文件的编码类型 </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt; </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;path&#34;&gt;文件路径&lt;/param&gt; </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;文件的编码类型&lt;/returns&gt; </span>
+</span></span><span class="line"><span class="cl">        <span class="k">public</span> <span class="k">static</span> <span class="n">Encoding</span> <span class="n">GetEncoding</span><span class="p">(</span><span class="kt">string</span> <span class="n">path</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">File</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">path</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">FileStream</span> <span class="n">fs</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FileStream</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">FileMode</span><span class="p">.</span><span class="n">Open</span><span class="p">,</span> <span class="n">FileAccess</span><span class="p">.</span><span class="n">Read</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Encoding</span> <span class="n">r</span> <span class="p">=</span> <span class="n">GetType</span><span class="p">(</span><span class="n">fs</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">fs</span><span class="p">.</span><span class="n">Close</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">r</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">else</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="k">null</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt; </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 通过给定的文件流，判断文件的编码类型 </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt; </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;fs&#34;&gt;文件流&lt;/param&gt; </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;文件的编码类型&lt;/returns&gt; </span>
+</span></span><span class="line"><span class="cl">        <span class="k">private</span> <span class="k">static</span> <span class="n">Encoding</span> <span class="n">GetType</span><span class="p">(</span><span class="n">FileStream</span> <span class="n">fs</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">byte</span><span class="p">[]</span> <span class="n">Unicode</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="p">[]</span> <span class="p">{</span> <span class="m">0xFF</span><span class="p">,</span> <span class="m">0xFE</span><span class="p">,</span> <span class="m">0x41</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">byte</span><span class="p">[]</span> <span class="n">UnicodeBIG</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="p">[]</span> <span class="p">{</span> <span class="m">0xFE</span><span class="p">,</span> <span class="m">0xFF</span><span class="p">,</span> <span class="m">0x00</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">byte</span><span class="p">[]</span> <span class="n">UTF8</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="p">[]</span> <span class="p">{</span> <span class="m">0xEF</span><span class="p">,</span> <span class="m">0xBB</span><span class="p">,</span> <span class="m">0xBF</span> <span class="p">};</span> <span class="c1">//带BOM </span>
+</span></span><span class="line"><span class="cl">            <span class="n">Encoding</span> <span class="n">reVal</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">Default</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">BinaryReader</span> <span class="n">r</span> <span class="p">=</span> <span class="k">new</span> <span class="n">BinaryReader</span><span class="p">(</span><span class="n">fs</span><span class="p">,</span> <span class="n">System</span><span class="p">.</span><span class="n">Text</span><span class="p">.</span><span class="n">Encoding</span><span class="p">.</span><span class="n">Default</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">.</span><span class="n">TryParse</span><span class="p">(</span><span class="n">fs</span><span class="p">.</span><span class="n">Length</span><span class="p">.</span><span class="n">ToString</span><span class="p">(),</span> <span class="k">out</span> <span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">byte</span><span class="p">[]</span> <span class="n">ss</span> <span class="p">=</span> <span class="n">r</span><span class="p">.</span><span class="n">ReadBytes</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">IsUTF8Bytes</span><span class="p">(</span><span class="n">ss</span><span class="p">)</span> <span class="p">||</span> <span class="p">(</span><span class="n">ss</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">==</span> <span class="m">0xEF</span> <span class="p">&amp;&amp;</span> <span class="n">ss</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="p">==</span> <span class="m">0xBB</span> <span class="p">&amp;&amp;</span> <span class="n">ss</span><span class="p">[</span><span class="m">2</span><span class="p">]</span> <span class="p">==</span> <span class="m">0xBF</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">reVal</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">UTF8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">ss</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">==</span> <span class="m">0xFE</span> <span class="p">&amp;&amp;</span> <span class="n">ss</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="p">==</span> <span class="m">0xFF</span> <span class="p">&amp;&amp;</span> <span class="n">ss</span><span class="p">[</span><span class="m">2</span><span class="p">]</span> <span class="p">==</span> <span class="m">0x00</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">reVal</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">BigEndianUnicode</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">ss</span><span class="p">[</span><span class="m">0</span><span class="p">]</span> <span class="p">==</span> <span class="m">0xFF</span> <span class="p">&amp;&amp;</span> <span class="n">ss</span><span class="p">[</span><span class="m">1</span><span class="p">]</span> <span class="p">==</span> <span class="m">0xFE</span> <span class="p">&amp;&amp;</span> <span class="n">ss</span><span class="p">[</span><span class="m">2</span><span class="p">]</span> <span class="p">==</span> <span class="m">0x41</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">reVal</span> <span class="p">=</span> <span class="n">Encoding</span><span class="p">.</span><span class="n">Unicode</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">r</span><span class="p">.</span><span class="n">Close</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">reVal</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt; </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 判断是否是不带 BOM 的 UTF8 格式 </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt; </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;param name=&#34;data&#34;&gt;&lt;/param&gt; </span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;returns&gt;&lt;/returns&gt; </span>
+</span></span><span class="line"><span class="cl">        <span class="k">private</span> <span class="k">static</span> <span class="kt">bool</span> <span class="n">IsUTF8Bytes</span><span class="p">(</span><span class="kt">byte</span><span class="p">[]</span> <span class="n">data</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">charByteCounter</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//计算当前正分析的字符应还有的字节数 </span>
+</span></span><span class="line"><span class="cl">            <span class="kt">byte</span> <span class="n">curByte</span><span class="p">;</span> <span class="c1">//当前分析的字节. </span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">data</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">curByte</span> <span class="p">=</span> <span class="n">data</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">charByteCounter</span> <span class="p">==</span> <span class="m">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">(</span><span class="n">curByte</span> <span class="p">&gt;=</span> <span class="m">0x80</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">//判断当前 </span>
+</span></span><span class="line"><span class="cl">                        <span class="k">while</span> <span class="p">(((</span><span class="n">curByte</span> <span class="p">&lt;&lt;=</span> <span class="m">1</span><span class="p">)</span> <span class="p">&amp;</span> <span class="m">0x80</span><span class="p">)</span> <span class="p">!=</span> <span class="m">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">charByteCounter</span><span class="p">++;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">//标记位首位若为非0 则至少以2个1开始 如:110XXXXX...........1111110X　 </span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="p">(</span><span class="n">charByteCounter</span> <span class="p">==</span> <span class="m">1</span> <span class="p">||</span> <span class="n">charByteCounter</span> <span class="p">&gt;</span> <span class="m">6</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span> <span class="k">else</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">//若是UTF-8 此时第一位必须为1 </span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">((</span><span class="n">curByte</span> <span class="p">&amp;</span> <span class="m">0xC0</span><span class="p">)</span> <span class="p">!=</span> <span class="m">0x80</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">charByteCounter</span><span class="p">--;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">charByteCounter</span> <span class="p">&gt;</span> <span class="m">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">throw</span> <span class="k">new</span> <span class="n">Exception</span><span class="p">(</span><span class="s">&#34;非预期的byte格式&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>這個class包山包海，我還沒用過全部的功能。<br>
+而且不知是他有寫錯，還是我的問題，用其中一個method時有發生錯誤。 
+但忘了在哪遇到，有機會再看看。</p>
+<h1 id="使用說明">使用說明</h1>
+<h2 id="引用">引用</h2>
+<p>using IniFiles;</p>
+<h2 id="實例化">實例化</h2>
+<p>IniFile ini = new IniFile(&quot; c:\app.ini&quot;);</p>
+<p>yourInipath 可以是如下2種方法
+和EXE在同一目錄的路徑： app.ini
+完整的文件路徑： c:\app.ini</p>
+<h2 id="讀取內容">讀取內容</h2>
+<p>ini文件結構
+[user]
+name = &ldquo;測試&rdquo;
+age = &ldquo;14&rdquo;
+phone = &ldquo;12345678910&rdquo;
+sex = &ldquo;true&rdquo;</p>
+<p>[note]
+Count= &ldquo;3&rdquo;
+0= &ldquo;【推薦】了解你才能更懂你，博客園首發問卷調查，助力社區新升級&rdquo;
+1= &ldquo;【推薦】超50萬行VC++源碼: 大型組態工控、電力仿真CAD與GIS源碼庫&rdquo;
+2= &ldquo;【推薦】獨家首發 | 900頁阿里文娛技術實戰，8大技術棧解析技術全景&rdquo;</p>
+<h2 id="讀取數據">讀取數據</h2>
+<p>string s =  ini.ReadString(&ldquo;user&rdquo;,&ldquo;name&rdquo;); //返回 測試
+int age = ini.ReadString(&ldquo;user&rdquo;,&ldquo;age&rdquo;); //14
+bool b = ini.ReadBoolean(&ldquo;user&rdquo;,&ldquo;sex&rdquo;); //讀出來的值總是 小寫的  true或false</p>
+<h2 id="讀取多行內容">讀取多行內容</h2>
+<p>textBox1.Lines =  ini.ReadStringArrayText(&ldquo;note&rdquo;);</p>
+<h2 id="列出ini文件中所有的字段名">列出ini文件中所有的字段名</h2>
+<p>string[] sections = ini.SectionNames;</p>
+<h2 id="讀取user字段下的所有鍵名">讀取[user]字段下的所有鍵名</h2>
+<p>string[] keys= ini.ReadKeyNames(&ldquo;user&rdquo;);</p>
+<h2 id="讀取user字段下的所有鍵名的值">讀取[user]字段下的所有鍵名的值</h2>
+<p>string[] values= ini.ReadSectionKeyValues(&ldquo;user&rdquo;);</p>
+<h2 id="寫入數據">寫入數據</h2>
+<p>ini.WriteString(&ldquo;user&rdquo;,&ldquo;name&rdquo;，”test”);
+ini.WriteInteger(&ldquo;user&rdquo;,&ldquo;age&rdquo;,18); 
+ini.WriteBoolean(&ldquo;user&rdquo;,&ldquo;sex&rdquo;,true);</p>
+<h2 id="可以將多行文本保存到ini中">可以將多行文本保存到INI中</h2>
+<p>ini.WriteStringArray(&ldquo;note&rdquo;,textBox1.Lines);</p>
+<h2 id="讀取異常">讀取異常</h2>
+<p>如果.ini文件不存在、或者目標字段、或者目標鍵值不存在則拋出異常。</p>
+<h2 id="靜態讀寫">靜態讀寫</h2>
+<p>使用 IniFile.Instance.方法名
+如果使用此種寫法則 配置文件默認和exe在同一目錄，假如程序為 app1.exe則配置文件為app1.exe.ini</p>
+<h3 id="讀">讀</h3>
+<p>textBox1.Text = IniFile.Instance.ReadString(&ldquo;conf&rdquo;,&ldquo;name&rdquo;);</p>
+<h3 id="寫">寫</h3>
+<p>IniFile.Instance.WriteString(&ldquo;conf&rdquo;,&ldquo;name&rdquo;,textBox1.Text);</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/visualstudio/">VisualStudio</a>
+                </span><span><a href="/tags/csharp/">CSharp</a>
+                </span></div><div class="post-info-share">
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://github-lym.github.io/posts/2022/inifiles/" data-title="INIFiles" data-hashtags="VisualStudio,CSharp"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://github-lym.github.io/posts/2022/inifiles/" data-hashtag="VisualStudio"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://github-lym.github.io/posts/2022/inifiles/" data-title="INIFiles"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://github-lym.github.io/posts/2022/inifiles/" data-title="INIFiles" data-description="比config簡潔的設定檔"><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://github-lym.github.io/posts/2022/inifiles/" data-title="INIFiles"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="https://github-lym.github.io/posts/2022/inifiles/" data-title="INIFiles"><i class="fab fa-skype fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/2022/fodyonvisualstudio2015/" class="prev" rel="prev" title="在Visual Studio 2015上使用Fody"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/2022/submitgoogleform/" class="next" rel="next" title="送交Google表單">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/twemoji/twemoji.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":20},"comment":{},"data":{"id-1":"My Memo","id-2":"My Memo"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"algoliaAppID":"REZKV78K6P","algoliaIndex":"index","algoliaSearchKey":"b32b9724683ef42845b63a2743550d51","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"},"twemoji":true,"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

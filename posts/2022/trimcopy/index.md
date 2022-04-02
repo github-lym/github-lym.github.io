@@ -12,6 +12,9 @@
 
 找到類似的稍微改一下達到[我要的](https://github.com/github-lym/TrimCopy)，  
 加上可以將程式縮到工作列與點擊切換啟動與否。  
+  
+[![demo](TrimCopy.gif)](TrimCopy.gif)  
+  
 ```csharp
         //hide form from Alt-Tab dialog
         protected override CreateParams CreateParams

@@ -3,7 +3,25 @@
         <title>WinForm - Tag - My Memo</title>
         <link>https://github-lym.github.io/tags/winform/</link>
         <description>WinForm - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 30 Mar 2022 14:41:19 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/winform/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 02 Apr 2022 12:32:19 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/winform/" rel="self" type="application/rss+xml" /><item>
+    <title>GetModifiedFiles—匯出更新的資料</title>
+    <link>https://github-lym.github.io/posts/2022/getmodifiedfiles/</link>
+    <pubDate>Sat, 02 Apr 2022 12:32:19 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/getmodifiedfiles/</guid>
+    <description><![CDATA[<p>寫完的程式要做源碼掃描。</p>]]></description>
+</item>
+<item>
+    <title>GenerateModel—Model生成工具</title>
+    <link>https://github-lym.github.io/posts/2022/generatemodel/</link>
+    <pubDate>Sat, 02 Apr 2022 10:53:49 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/generatemodel/</guid>
+    <description><![CDATA[<p>結束駐點回公司後開始寫MVC。</p>]]></description>
+</item>
+<item>
+    <title>送交Google表單</title>
+    <link>https://github-lym.github.io/posts/2022/submitgoogleform/</link>
+    <pubDate>Sat, 02 Apr 2022 10:44:11 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/submitgoogleform/</guid>
+    <description><![CDATA[<p>疫情的關係，公司設計了一個Google表單要我們每日填寫。</p>]]></description>
+</item>
+<item>
     <title>多線程執行批次檔並將視窗分別擷圖(導向輸出log)</title>
     <link>https://github-lym.github.io/posts/2022/focussnapshot/</link>
     <pubDate>Wed, 30 Mar 2022 14:41:19 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/focussnapshot/</guid>
@@ -24,8 +42,8 @@
 </item>
 <item>
     <title>批次執行vbs檔並檢查結果</title>
-    <link>https://github-lym.github.io/posts/2022/ntpc-organizational-chart/</link>
-    <pubDate>Mon, 28 Mar 2022 22:11:00 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/ntpc-organizational-chart/</guid>
+    <link>https://github-lym.github.io/posts/2022/ntpcorganizationalchart/</link>
+    <pubDate>Mon, 28 Mar 2022 22:11:00 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/ntpcorganizationalchart/</guid>
     <description><![CDATA[<p>剛進公司是駐點在公家機關做客服工程師，每天接電話回答系統問題。</p>
 <p>除此之外，每天下班為了流程都必須更新該機關組織圖。</p>]]></description>
 </item>

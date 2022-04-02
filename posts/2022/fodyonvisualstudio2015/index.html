@@ -19,7 +19,7 @@
 <meta name="application-name" content="My Memo">
 <meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://github-lym.github.io/posts/2022/fodyonvisualstudio2015/" /><link rel="prev" href="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://github-lym.github.io/posts/2022/fodyonvisualstudio2015/" /><link rel="prev" href="https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/" /><link rel="next" href="https://github-lym.github.io/posts/2022/inifiles/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -118,7 +118,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single" data-toc="enable"><div class="single-card" ><h2 class="single-title animated flipInX">在Visual Studio 2015上使用Fody</h2><div class="post-meta">
                 <div class="post-meta-line"><span class="post-author"><a href="https://github.com/github-lym" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw"></i>LYM</a></span></div>
-                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-01 15:03:49 Friday">2022-04-01 15:03:49 Friday</time></span>&nbsp;</div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-04-01 15:49:11 Friday">2022-04-01 15:49:11 Friday</time></span>&nbsp;</div>
             </div>
             
             <hr><div class="details toc" id="toc-static"  data-kept="">
@@ -139,9 +139,9 @@
 <p><strong>甚至整個專案變成無法編譯！</strong></p>
 <p>找了半天終於找到解決這問題的文章。</p>
 <h2 id="安裝fody">安裝Fody</h2>
-<p>從管理器控制臺中輸入Install-Package Fody -Version 4.2.1來安裝4.2.1版本的Fody。</p>
+<p>從套件管理器主控臺中輸入Install-Package Fody -Version 4.2.1來安裝4.2.1版本的Fody。</p>
 <h2 id="安裝costurafody">安裝Costura.Fody</h2>
-<p>管理器控制臺中輸入Install-Package Costura.Fody -Version 3.3.3來安裝3.3.3版本的Costura.Fody。</p>
+<p>套件管理器主控臺中輸入Install-Package Costura.Fody -Version 3.3.3來安裝3.3.3版本的Costura.Fody。</p>
 <h2 id="安裝完成重新建置">安裝完成重新建置</h2>
 <h2 id="若有錯誤可修改fodyweaversxml">若有錯誤可修改FodyWeavers.xml</h2>
 <p>錯誤提示如下：<br>
@@ -166,7 +166,8 @@ Fody: No configuration entry found for the installed weaver Costura. This weaver
                 </span><span><a href="/tags/nuget/">NuGet</a>
                 </span></div><div class="post-info-share">
             <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://github-lym.github.io/posts/2022/fodyonvisualstudio2015/" data-title="在Visual Studio 2015上使用Fody" data-hashtags="VisualStudio,NuGet"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://github-lym.github.io/posts/2022/fodyonvisualstudio2015/" data-hashtag="VisualStudio"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="https://github-lym.github.io/posts/2022/fodyonvisualstudio2015/" data-title="在Visual Studio 2015上使用Fody"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="https://github-lym.github.io/posts/2022/fodyonvisualstudio2015/" data-title="在Visual Studio 2015上使用Fody" data-description="在Visual Studio 2015上使用Fody"><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="https://github-lym.github.io/posts/2022/fodyonvisualstudio2015/" data-title="在Visual Studio 2015上使用Fody"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="https://github-lym.github.io/posts/2022/fodyonvisualstudio2015/" data-title="在Visual Studio 2015上使用Fody"><i class="fab fa-skype fa-fw"></i></a></span>
-        </div></div><div class="post-nav"><a href="/posts/2022/gitcopyfromotherbranch/" class="prev" rel="prev" title="Git從其他分支Copy檔案到工作目錄"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a></div></div>
+        </div></div><div class="post-nav"><a href="/posts/2022/gitcopyfromotherbranch/" class="prev" rel="prev" title="Git從其他分支Copy檔案到工作目錄"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/2022/inifiles/" class="next" rel="next" title="INIFiles">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
 </div></article></div>
             </main>
             <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>
