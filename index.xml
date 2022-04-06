@@ -3,13 +3,57 @@
         <title>My Memo</title>
         <link>https://github-lym.github.io/</link>
         <description>My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 02 Apr 2022 23:08:47 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</lastBuildDate>
             <atom:link href="https://github-lym.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>NPOI直接存取Excel</title>
+    <link>https://github-lym.github.io/posts/2022/v_excel/</link>
+    <pubDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/v_excel/</guid>
+    <description><![CDATA[<p>之前Vincent讓我接了一個case。</p>]]></description>
+</item>
+<item>
+    <title>將字串元素加雙引號</title>
+    <link>https://github-lym.github.io/posts/2022/addapostrophetostringelements/</link>
+    <pubDate>Wed, 06 Apr 2022 14:56:10 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/addapostrophetostringelements/</guid>
+    <description><![CDATA[string v = &quot;10,14,18,21&quot;;
+1 2 3 4 5 6 7 8 9 10 11  //method1 var r1 = string.Join(&#34;,&#34;, v.Split(&#34;,&#34;).Select(x =&gt; $&#34;&#39;{x}&#39;&#34;)); Console.WriteLine(r1); // &#39;10&#39;, &#39;14&#39;, &#39;18&#39;, &#39;21&#39; //method2 var r2 = $&#34;&#39;{v.Replace(&#34;,&#34;, &#34;&#39;,&#39;&#34;)}&#39;&#34;; Console.WriteLine(r2); //method3 using System.Text.RegularExpressions;  string r3 = Regex.Replace(v, &#34;[^,]+&#34;, &#34;&#39;$0&#39;&#34;); Console.WriteLine(r3);   輸出為'10','14','18','21']]></description>
+</item>
+<item>
+    <title>快速取得某天當月第一天與最後一天</title>
+    <link>https://github-lym.github.io/posts/2022/getfisrtandlastdate/</link>
+    <pubDate>Wed, 06 Apr 2022 14:48:51 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/getfisrtandlastdate/</guid>
+    <description><![CDATA[1 2 3 4 5 6 7 8 9 10  public static DateTime FirstDayOfMonth_AddMethod(this DateTime value) { return value.Date.AddDays(1 - value.Day); } public static DateTime LastDayOfMonth_NewMethodWithReuseOfExtMethod(this DateTime value) { return new DateTime(value.Year, value.Month, value.DaysInMonth()); }   ]]></description>
+</item>
+<item>
+    <title>ComboBox的模糊查詢</title>
+    <link>https://github-lym.github.io/posts/2022/comboboxfuzzysearch/</link>
+    <pubDate>Wed, 06 Apr 2022 14:34:04 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/comboboxfuzzysearch/</guid>
+    <description><![CDATA[<p>要不是Vincent，我可能還沒機會做這個。</p>]]></description>
+</item>
+<item>
+    <title>命令提示字元取得最後存取資料夾</title>
+    <link>https://github-lym.github.io/posts/2022/cmdgetlastaccessfolder/</link>
+    <pubDate>Wed, 06 Apr 2022 14:25:47 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/cmdgetlastaccessfolder/</guid>
+    <description><![CDATA[*號表萬用字元，那邊可以寫路徑。
+1 2  for /f &#34;delims=&#34; %%a in (&#39;dir /b /ad-h /od &#34;*&#34;&#39;) do set &#34;latestDir=%%~a&#34; echo(%latestDir%   ]]></description>
+</item>
+<item>
+    <title>命令提示字元取得日期</title>
+    <link>https://github-lym.github.io/posts/2022/cmdgetdate/</link>
+    <pubDate>Wed, 06 Apr 2022 14:19:12 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/cmdgetdate/</guid>
+    <description><![CDATA[<p>每次遇到都要重新搜尋，在此筆記。</p>]]></description>
+</item>
+<item>
+    <title>Captcha驗證碼</title>
+    <link>https://github-lym.github.io/posts/2022/captcha/</link>
+    <pubDate>Wed, 06 Apr 2022 13:48:21 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/captcha/</guid>
+    <description><![CDATA[<p>前陣子要做登入驗證碼。</p>]]></description>
+</item>
+<item>
     <title>ConsoleProgressBar—Console下的進度條</title>
     <link>https://github-lym.github.io/posts/2022/consoleprogressbar/</link>
     <pubDate>Sat, 02 Apr 2022 23:08:47 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/consoleprogressbar/</guid>
-    <description><![CDATA[<p>整理檔案時時才發現這個。</p>]]></description>
+    <description><![CDATA[<p>整理檔案時才發現這個。</p>]]></description>
 </item>
 <item>
     <title>刪除名稱尾端為點(.)的資料夾</title>
@@ -22,49 +66,6 @@
     <link>https://github-lym.github.io/posts/2022/treetoexcel/</link>
     <pubDate>Sat, 02 Apr 2022 12:59:04 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/treetoexcel/</guid>
     <description><![CDATA[<p>版更要寫一份Excel—伺服器應用程式及檔案異動清單。</p>]]></description>
-</item>
-<item>
-    <title>GetModifiedFiles—匯出更新的資料</title>
-    <link>https://github-lym.github.io/posts/2022/getmodifiedfiles/</link>
-    <pubDate>Sat, 02 Apr 2022 12:32:19 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/getmodifiedfiles/</guid>
-    <description><![CDATA[<p>寫完的程式要做源碼掃描。</p>]]></description>
-</item>
-<item>
-    <title>GenerateModel—Model生成工具</title>
-    <link>https://github-lym.github.io/posts/2022/generatemodel/</link>
-    <pubDate>Sat, 02 Apr 2022 10:53:49 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/generatemodel/</guid>
-    <description><![CDATA[<p>結束駐點回公司後開始寫MVC。</p>]]></description>
-</item>
-<item>
-    <title>送交Google表單</title>
-    <link>https://github-lym.github.io/posts/2022/submitgoogleform/</link>
-    <pubDate>Sat, 02 Apr 2022 10:44:11 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/submitgoogleform/</guid>
-    <description><![CDATA[<p>疫情的關係，公司設計了一個Google表單要我們每日填寫。</p>]]></description>
-</item>
-<item>
-    <title>INIFiles</title>
-    <link>https://github-lym.github.io/posts/2022/inifiles/</link>
-    <pubDate>Fri, 01 Apr 2022 22:19:11 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/inifiles/</guid>
-    <description><![CDATA[<p>之前開發都是使用app.config來放設定值。</p>]]></description>
-</item>
-<item>
-    <title>在Visual Studio 2015上使用Fody</title>
-    <link>https://github-lym.github.io/posts/2022/fodyonvisualstudio2015/</link>
-    <pubDate>Fri, 01 Apr 2022 15:49:11 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/fodyonvisualstudio2015/</guid>
-    <description><![CDATA[<p>Fody是個好用的套件，可以把多個dll檔跟執行檔合併成單一檔案。</p>]]></description>
-</item>
-<item>
-    <title>Git從其他分支Copy檔案到工作目錄</title>
-    <link>https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/</link>
-    <pubDate>Thu, 31 Mar 2022 00:00:00 &#43;0000</pubDate><guid>https://github-lym.github.io/posts/2022/gitcopyfromotherbranch/</guid>
-    <description><![CDATA[<p>今天Blog用了兩個主題，<br>
-所以需要不停切換。</p>]]></description>
-</item>
-<item>
-    <title>多線程執行批次檔並將視窗分別擷圖(導向輸出log)</title>
-    <link>https://github-lym.github.io/posts/2022/focussnapshot/</link>
-    <pubDate>Wed, 30 Mar 2022 14:41:19 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/focussnapshot/</guid>
-    <description><![CDATA[<p>駐點在機關時得幫其他廠商定期與不定期更新網站。</p>]]></description>
 </item>
 </channel>
 </rss>

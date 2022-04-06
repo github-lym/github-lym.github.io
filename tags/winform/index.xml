@@ -3,7 +3,19 @@
         <title>WinForm - Tag - My Memo</title>
         <link>https://github-lym.github.io/tags/winform/</link>
         <description>WinForm - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 02 Apr 2022 12:32:19 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/winform/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/winform/" rel="self" type="application/rss+xml" /><item>
+    <title>NPOI直接存取Excel</title>
+    <link>https://github-lym.github.io/posts/2022/v_excel/</link>
+    <pubDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/v_excel/</guid>
+    <description><![CDATA[<p>之前Vincent讓我接了一個case。</p>]]></description>
+</item>
+<item>
+    <title>ComboBox的模糊查詢</title>
+    <link>https://github-lym.github.io/posts/2022/comboboxfuzzysearch/</link>
+    <pubDate>Wed, 06 Apr 2022 14:34:04 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/comboboxfuzzysearch/</guid>
+    <description><![CDATA[<p>要不是Vincent，我可能還沒機會做這個。</p>]]></description>
+</item>
+<item>
     <title>GetModifiedFiles—匯出更新的資料</title>
     <link>https://github-lym.github.io/posts/2022/getmodifiedfiles/</link>
     <pubDate>Sat, 02 Apr 2022 12:32:19 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/getmodifiedfiles/</guid>

@@ -3,11 +3,36 @@
         <title>CSharp - Tag - My Memo</title>
         <link>https://github-lym.github.io/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 02 Apr 2022 23:08:47 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>NPOI直接存取Excel</title>
+    <link>https://github-lym.github.io/posts/2022/v_excel/</link>
+    <pubDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/v_excel/</guid>
+    <description><![CDATA[<p>之前Vincent讓我接了一個case。</p>]]></description>
+</item>
+<item>
+    <title>將字串元素加雙引號</title>
+    <link>https://github-lym.github.io/posts/2022/addapostrophetostringelements/</link>
+    <pubDate>Wed, 06 Apr 2022 14:56:10 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/addapostrophetostringelements/</guid>
+    <description><![CDATA[string v = &quot;10,14,18,21&quot;;
+1 2 3 4 5 6 7 8 9 10 11  //method1 var r1 = string.Join(&#34;,&#34;, v.Split(&#34;,&#34;).Select(x =&gt; $&#34;&#39;{x}&#39;&#34;)); Console.WriteLine(r1); // &#39;10&#39;, &#39;14&#39;, &#39;18&#39;, &#39;21&#39; //method2 var r2 = $&#34;&#39;{v.Replace(&#34;,&#34;, &#34;&#39;,&#39;&#34;)}&#39;&#34;; Console.WriteLine(r2); //method3 using System.Text.RegularExpressions;  string r3 = Regex.Replace(v, &#34;[^,]+&#34;, &#34;&#39;$0&#39;&#34;); Console.WriteLine(r3);   輸出為'10','14','18','21']]></description>
+</item>
+<item>
+    <title>快速取得某天當月第一天與最後一天</title>
+    <link>https://github-lym.github.io/posts/2022/getfisrtandlastdate/</link>
+    <pubDate>Wed, 06 Apr 2022 14:48:51 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/getfisrtandlastdate/</guid>
+    <description><![CDATA[1 2 3 4 5 6 7 8 9 10  public static DateTime FirstDayOfMonth_AddMethod(this DateTime value) { return value.Date.AddDays(1 - value.Day); } public static DateTime LastDayOfMonth_NewMethodWithReuseOfExtMethod(this DateTime value) { return new DateTime(value.Year, value.Month, value.DaysInMonth()); }   ]]></description>
+</item>
+<item>
+    <title>ComboBox的模糊查詢</title>
+    <link>https://github-lym.github.io/posts/2022/comboboxfuzzysearch/</link>
+    <pubDate>Wed, 06 Apr 2022 14:34:04 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/comboboxfuzzysearch/</guid>
+    <description><![CDATA[<p>要不是Vincent，我可能還沒機會做這個。</p>]]></description>
+</item>
+<item>
     <title>ConsoleProgressBar—Console下的進度條</title>
     <link>https://github-lym.github.io/posts/2022/consoleprogressbar/</link>
     <pubDate>Sat, 02 Apr 2022 23:08:47 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/consoleprogressbar/</guid>
-    <description><![CDATA[<p>整理檔案時時才發現這個。</p>]]></description>
+    <description><![CDATA[<p>整理檔案時才發現這個。</p>]]></description>
 </item>
 <item>
     <title>TreeToExcel—列出子資料夾檔案至Excel</title>
@@ -38,30 +63,6 @@
     <link>https://github-lym.github.io/posts/2022/inifiles/</link>
     <pubDate>Fri, 01 Apr 2022 22:19:11 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/inifiles/</guid>
     <description><![CDATA[<p>之前開發都是使用app.config來放設定值。</p>]]></description>
-</item>
-<item>
-    <title>多線程執行批次檔並將視窗分別擷圖(導向輸出log)</title>
-    <link>https://github-lym.github.io/posts/2022/focussnapshot/</link>
-    <pubDate>Wed, 30 Mar 2022 14:41:19 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/focussnapshot/</guid>
-    <description><![CDATA[<p>駐點在機關時得幫其他廠商定期與不定期更新網站。</p>]]></description>
-</item>
-<item>
-    <title>去掉文字前後空白</title>
-    <link>https://github-lym.github.io/posts/2022/trimcopy/</link>
-    <pubDate>Wed, 30 Mar 2022 14:13:40 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/trimcopy/</guid>
-    <description><![CDATA[<p>做客服工程師那會，每天都要查詢資料庫。</p>]]></description>
-</item>
-<item>
-    <title>以FTP抓取資料庫備份</title>
-    <link>https://github-lym.github.io/posts/2022/ftpdb/</link>
-    <pubDate>Tue, 29 Mar 2022 13:44:43 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/ftpdb/</guid>
-    <description><![CDATA[<p>MSSQL資料庫每天都會備份，每週一得還原最新備份在另一台當歷史資料查詢。</p>]]></description>
-</item>
-<item>
-    <title>查詢排程狀態</title>
-    <link>https://github-lym.github.io/posts/2022/taskscheduler/</link>
-    <pubDate>Tue, 29 Mar 2022 11:43:50 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/taskscheduler/</guid>
-    <description><![CDATA[<p>因代理同事工作，才知道他每天需記錄排程是否順利。</p>]]></description>
 </item>
 </channel>
 </rss>
