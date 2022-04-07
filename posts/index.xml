@@ -3,7 +3,37 @@
         <title>All Posts - My Memo</title>
         <link>https://github-lym.github.io/posts/</link>
         <description>All Posts | My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Apr 2022 15:59:37 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>MSSQL備份相關</title>
+    <link>https://github-lym.github.io/posts/2022/mssqlbackup/</link>
+    <pubDate>Thu, 07 Apr 2022 15:59:37 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/mssqlbackup/</guid>
+    <description><![CDATA[<p>跟備份相關的。</p>]]></description>
+</item>
+<item>
+    <title>bcp匯出</title>
+    <link>https://github-lym.github.io/posts/2022/mssqlbcp/</link>
+    <pubDate>Thu, 07 Apr 2022 10:58:20 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/mssqlbcp/</guid>
+    <description><![CDATA[<p>駐點時要每天從資料庫匯出資料，就找到了這些。</p>]]></description>
+</item>
+<item>
+    <title>MSSQL比對兩資料表並Merge</title>
+    <link>https://github-lym.github.io/posts/2022/mssqlmerge/</link>
+    <pubDate>Thu, 07 Apr 2022 10:39:55 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/mssqlmerge/</guid>
+    <description><![CDATA[<p>感謝Warren大大讓我認識了這個指令。</p>]]></description>
+</item>
+<item>
+    <title>創一個臨時表單並傳送</title>
+    <link>https://github-lym.github.io/posts/2022/htmlcreateform/</link>
+    <pubDate>Thu, 07 Apr 2022 10:28:54 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/htmlcreateform/</guid>
+    <description><![CDATA[<p>有點忘記是在寫什麼，只能先記錄下來。</p>]]></description>
+</item>
+<item>
+    <title>JavaScript的日期</title>
+    <link>https://github-lym.github.io/posts/2022/momentjs/</link>
+    <pubDate>Thu, 07 Apr 2022 09:20:00 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/momentjs/</guid>
+    <description><![CDATA[<p>在整理筆記時，本已將材料備好準備大抄特抄。</p>]]></description>
+</item>
+<item>
     <title>NPOI直接存取Excel</title>
     <link>https://github-lym.github.io/posts/2022/v_excel/</link>
     <pubDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/v_excel/</guid>
@@ -34,36 +64,6 @@
     <pubDate>Wed, 06 Apr 2022 14:25:47 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/cmdgetlastaccessfolder/</guid>
     <description><![CDATA[*號表萬用字元，那邊可以寫路徑。
 1 2  for /f &#34;delims=&#34; %%a in (&#39;dir /b /ad-h /od &#34;*&#34;&#39;) do set &#34;latestDir=%%~a&#34; echo(%latestDir%   ]]></description>
-</item>
-<item>
-    <title>命令提示字元取得日期</title>
-    <link>https://github-lym.github.io/posts/2022/cmdgetdate/</link>
-    <pubDate>Wed, 06 Apr 2022 14:19:12 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/cmdgetdate/</guid>
-    <description><![CDATA[<p>每次遇到都要重新搜尋，在此筆記。</p>]]></description>
-</item>
-<item>
-    <title>Captcha驗證碼</title>
-    <link>https://github-lym.github.io/posts/2022/captcha/</link>
-    <pubDate>Wed, 06 Apr 2022 13:48:21 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/captcha/</guid>
-    <description><![CDATA[<p>前陣子要做登入驗證碼。</p>]]></description>
-</item>
-<item>
-    <title>ConsoleProgressBar—Console下的進度條</title>
-    <link>https://github-lym.github.io/posts/2022/consoleprogressbar/</link>
-    <pubDate>Sat, 02 Apr 2022 23:08:47 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/consoleprogressbar/</guid>
-    <description><![CDATA[<p>整理檔案時才發現這個。</p>]]></description>
-</item>
-<item>
-    <title>刪除名稱尾端為點(.)的資料夾</title>
-    <link>https://github-lym.github.io/posts/2022/deletefolderthatnameendedwithadot/</link>
-    <pubDate>Sat, 02 Apr 2022 21:32:48 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/deletefolderthatnameendedwithadot/</guid>
-    <description><![CDATA[<p>今天解壓縮，不小心輸出名稱多了一個點(.)。</p>]]></description>
-</item>
-<item>
-    <title>TreeToExcel—列出子資料夾檔案至Excel</title>
-    <link>https://github-lym.github.io/posts/2022/treetoexcel/</link>
-    <pubDate>Sat, 02 Apr 2022 12:59:04 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/treetoexcel/</guid>
-    <description><![CDATA[<p>版更要寫一份Excel—伺服器應用程式及檔案異動清單。</p>]]></description>
 </item>
 </channel>
 </rss>
