@@ -1,12 +1,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Google - Tag - My Memo</title>
-        <link>https://github-lym.github.io/tags/google/</link>
+        <link>/tags/google/</link>
         <description>Google - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 02 Apr 2022 10:44:11 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/google/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 02 Apr 2022 10:44:11 &#43;0800</lastBuildDate><atom:link href="/tags/google/" rel="self" type="application/rss+xml" /><item>
     <title>送交Google表單</title>
-    <link>https://github-lym.github.io/posts/2022/submitgoogleform/</link>
-    <pubDate>Sat, 02 Apr 2022 10:44:11 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/submitgoogleform/</guid>
+    <link>/posts/2022/submitgoogleform/</link>
+    <pubDate>Sat, 02 Apr 2022 10:44:11 &#43;0800</pubDate><guid>/posts/2022/submitgoogleform/</guid>
     <description><![CDATA[<p>疫情的關係，公司設計了一個Google表單要我們每日填寫。</p>]]></description>
 </item>
 </channel>

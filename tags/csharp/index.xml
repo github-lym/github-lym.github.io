@@ -1,68 +1,68 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>CSharp - Tag - My Memo</title>
-        <link>https://github-lym.github.io/tags/csharp/</link>
+        <link>/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 11 Apr 2022 14:01:37 &#43;0800</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>導入EntityFramework的嘗試與錯誤</title>
+    <link>/posts/2022/toeftryerror/</link>
+    <pubDate>Mon, 11 Apr 2022 14:01:37 &#43;0800</pubDate><guid>/posts/2022/toeftryerror/</guid>
+    <description><![CDATA[<p>想將工作上的傳統作法改用EntityFramework，就做了一下嘗試。</p>]]></description>
+</item>
+<item>
     <title>NPOI直接存取Excel</title>
-    <link>https://github-lym.github.io/posts/2022/v_excel/</link>
-    <pubDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/v_excel/</guid>
+    <link>/posts/2022/v_excel/</link>
+    <pubDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</pubDate><guid>/posts/2022/v_excel/</guid>
     <description><![CDATA[<p>之前Vincent讓我接了一個case。</p>]]></description>
 </item>
 <item>
     <title>將字串元素加雙引號</title>
-    <link>https://github-lym.github.io/posts/2022/addapostrophetostringelements/</link>
-    <pubDate>Wed, 06 Apr 2022 14:56:10 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/addapostrophetostringelements/</guid>
+    <link>/posts/2022/addapostrophetostringelements/</link>
+    <pubDate>Wed, 06 Apr 2022 14:56:10 &#43;0800</pubDate><guid>/posts/2022/addapostrophetostringelements/</guid>
     <description><![CDATA[string v = &quot;10,14,18,21&quot;;
 1 2 3 4 5 6 7 8 9 10 11  //method1 var r1 = string.Join(&#34;,&#34;, v.Split(&#34;,&#34;).Select(x =&gt; $&#34;&#39;{x}&#39;&#34;)); Console.WriteLine(r1); // &#39;10&#39;, &#39;14&#39;, &#39;18&#39;, &#39;21&#39; //method2 var r2 = $&#34;&#39;{v.Replace(&#34;,&#34;, &#34;&#39;,&#39;&#34;)}&#39;&#34;; Console.WriteLine(r2); //method3 using System.Text.RegularExpressions;  string r3 = Regex.Replace(v, &#34;[^,]+&#34;, &#34;&#39;$0&#39;&#34;); Console.WriteLine(r3);   輸出為'10','14','18','21']]></description>
 </item>
 <item>
     <title>快速取得某天當月第一天與最後一天</title>
-    <link>https://github-lym.github.io/posts/2022/getfisrtandlastdate/</link>
-    <pubDate>Wed, 06 Apr 2022 14:48:51 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/getfisrtandlastdate/</guid>
+    <link>/posts/2022/getfisrtandlastdate/</link>
+    <pubDate>Wed, 06 Apr 2022 14:48:51 &#43;0800</pubDate><guid>/posts/2022/getfisrtandlastdate/</guid>
     <description><![CDATA[1 2 3 4 5 6 7 8 9 10  public static DateTime FirstDayOfMonth_AddMethod(this DateTime value) { return value.Date.AddDays(1 - value.Day); } public static DateTime LastDayOfMonth_NewMethodWithReuseOfExtMethod(this DateTime value) { return new DateTime(value.Year, value.Month, value.DaysInMonth()); }   ]]></description>
 </item>
 <item>
     <title>ComboBox的模糊查詢</title>
-    <link>https://github-lym.github.io/posts/2022/comboboxfuzzysearch/</link>
-    <pubDate>Wed, 06 Apr 2022 14:34:04 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/comboboxfuzzysearch/</guid>
+    <link>/posts/2022/comboboxfuzzysearch/</link>
+    <pubDate>Wed, 06 Apr 2022 14:34:04 &#43;0800</pubDate><guid>/posts/2022/comboboxfuzzysearch/</guid>
     <description><![CDATA[<p>要不是Vincent，我可能還沒機會做這個。</p>]]></description>
 </item>
 <item>
     <title>ConsoleProgressBar—Console下的進度條</title>
-    <link>https://github-lym.github.io/posts/2022/consoleprogressbar/</link>
-    <pubDate>Sat, 02 Apr 2022 23:08:47 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/consoleprogressbar/</guid>
+    <link>/posts/2022/consoleprogressbar/</link>
+    <pubDate>Sat, 02 Apr 2022 23:08:47 &#43;0800</pubDate><guid>/posts/2022/consoleprogressbar/</guid>
     <description><![CDATA[<p>整理檔案時才發現這個。</p>]]></description>
 </item>
 <item>
     <title>TreeToExcel—列出子資料夾檔案至Excel</title>
-    <link>https://github-lym.github.io/posts/2022/treetoexcel/</link>
-    <pubDate>Sat, 02 Apr 2022 12:59:04 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/treetoexcel/</guid>
+    <link>/posts/2022/treetoexcel/</link>
+    <pubDate>Sat, 02 Apr 2022 12:59:04 &#43;0800</pubDate><guid>/posts/2022/treetoexcel/</guid>
     <description><![CDATA[<p>版更要寫一份Excel—伺服器應用程式及檔案異動清單。</p>]]></description>
 </item>
 <item>
     <title>GetModifiedFiles—匯出更新的資料</title>
-    <link>https://github-lym.github.io/posts/2022/getmodifiedfiles/</link>
-    <pubDate>Sat, 02 Apr 2022 12:32:19 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/getmodifiedfiles/</guid>
+    <link>/posts/2022/getmodifiedfiles/</link>
+    <pubDate>Sat, 02 Apr 2022 12:32:19 &#43;0800</pubDate><guid>/posts/2022/getmodifiedfiles/</guid>
     <description><![CDATA[<p>寫完的程式要做源碼掃描。</p>]]></description>
 </item>
 <item>
     <title>GenerateModel—Model生成工具</title>
-    <link>https://github-lym.github.io/posts/2022/generatemodel/</link>
-    <pubDate>Sat, 02 Apr 2022 10:53:49 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/generatemodel/</guid>
+    <link>/posts/2022/generatemodel/</link>
+    <pubDate>Sat, 02 Apr 2022 10:53:49 &#43;0800</pubDate><guid>/posts/2022/generatemodel/</guid>
     <description><![CDATA[<p>結束駐點回公司後開始寫MVC。</p>]]></description>
 </item>
 <item>
     <title>送交Google表單</title>
-    <link>https://github-lym.github.io/posts/2022/submitgoogleform/</link>
-    <pubDate>Sat, 02 Apr 2022 10:44:11 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/submitgoogleform/</guid>
+    <link>/posts/2022/submitgoogleform/</link>
+    <pubDate>Sat, 02 Apr 2022 10:44:11 &#43;0800</pubDate><guid>/posts/2022/submitgoogleform/</guid>
     <description><![CDATA[<p>疫情的關係，公司設計了一個Google表單要我們每日填寫。</p>]]></description>
-</item>
-<item>
-    <title>INIFiles</title>
-    <link>https://github-lym.github.io/posts/2022/inifiles/</link>
-    <pubDate>Fri, 01 Apr 2022 22:19:11 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/inifiles/</guid>
-    <description><![CDATA[<p>之前開發都是使用app.config來放設定值。</p>]]></description>
 </item>
 </channel>
 </rss>

@@ -1,12 +1,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>NuGet - Tag - My Memo</title>
-        <link>https://github-lym.github.io/tags/nuget/</link>
+        <link>/tags/nuget/</link>
         <description>NuGet - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 01 Apr 2022 15:49:11 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/nuget/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 01 Apr 2022 15:49:11 &#43;0800</lastBuildDate><atom:link href="/tags/nuget/" rel="self" type="application/rss+xml" /><item>
     <title>在Visual Studio 2015上使用Fody</title>
-    <link>https://github-lym.github.io/posts/2022/fodyonvisualstudio2015/</link>
-    <pubDate>Fri, 01 Apr 2022 15:49:11 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/fodyonvisualstudio2015/</guid>
+    <link>/posts/2022/fodyonvisualstudio2015/</link>
+    <pubDate>Fri, 01 Apr 2022 15:49:11 &#43;0800</pubDate><guid>/posts/2022/fodyonvisualstudio2015/</guid>
     <description><![CDATA[<p>Fody是個好用的套件，可以把多個dll檔跟執行檔合併成單一檔案。</p>]]></description>
 </item>
 </channel>

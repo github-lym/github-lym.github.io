@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>EntityFramework - Tag - My Memo</title>
+        <link>/tags/entityframework/</link>
+        <description>EntityFramework - Tag - My Memo</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 11 Apr 2022 14:01:37 &#43;0800</lastBuildDate><atom:link href="/tags/entityframework/" rel="self" type="application/rss+xml" /><item>
+    <title>導入EntityFramework的嘗試與錯誤</title>
+    <link>/posts/2022/toeftryerror/</link>
+    <pubDate>Mon, 11 Apr 2022 14:01:37 &#43;0800</pubDate><guid>/posts/2022/toeftryerror/</guid>
+    <description><![CDATA[<p>想將工作上的傳統作法改用EntityFramework，就做了一下嘗試。</p>]]></description>
+</item>
+</channel>
+</rss>

@@ -1,24 +1,24 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>筆記 - Category - My Memo</title>
-        <link>https://github-lym.github.io/categories/%E7%AD%86%E8%A8%98/</link>
+        <link>/categories/%E7%AD%86%E8%A8%98/</link>
         <description>筆記 - Category - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Apr 2022 10:39:55 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Apr 2022 10:39:55 &#43;0800</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
     <title>MSSQL比對兩資料表並Merge</title>
-    <link>https://github-lym.github.io/posts/2022/mssqlmerge/</link>
-    <pubDate>Thu, 07 Apr 2022 10:39:55 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/mssqlmerge/</guid>
+    <link>/posts/2022/mssqlmerge/</link>
+    <pubDate>Thu, 07 Apr 2022 10:39:55 &#43;0800</pubDate><guid>/posts/2022/mssqlmerge/</guid>
     <description><![CDATA[<p>感謝Warren大大讓我認識了這個指令。</p>]]></description>
 </item>
 <item>
     <title>JavaScript的日期</title>
-    <link>https://github-lym.github.io/posts/2022/momentjs/</link>
-    <pubDate>Thu, 07 Apr 2022 09:20:00 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/momentjs/</guid>
+    <link>/posts/2022/momentjs/</link>
+    <pubDate>Thu, 07 Apr 2022 09:20:00 &#43;0800</pubDate><guid>/posts/2022/momentjs/</guid>
     <description><![CDATA[<p>在整理筆記時，本已將材料備好準備大抄特抄。</p>]]></description>
 </item>
 <item>
     <title>命令提示字元取得日期</title>
-    <link>https://github-lym.github.io/posts/2022/cmdgetdate/</link>
-    <pubDate>Wed, 06 Apr 2022 14:19:12 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/cmdgetdate/</guid>
+    <link>/posts/2022/cmdgetdate/</link>
+    <pubDate>Wed, 06 Apr 2022 14:19:12 &#43;0800</pubDate><guid>/posts/2022/cmdgetdate/</guid>
     <description><![CDATA[<p>每次遇到都要重新搜尋，在此筆記。</p>]]></description>
 </item>
 </channel>

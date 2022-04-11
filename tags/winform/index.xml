@@ -1,61 +1,61 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>WinForm - Tag - My Memo</title>
-        <link>https://github-lym.github.io/tags/winform/</link>
+        <link>/tags/winform/</link>
         <description>WinForm - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/winform/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</lastBuildDate><atom:link href="/tags/winform/" rel="self" type="application/rss+xml" /><item>
     <title>NPOI直接存取Excel</title>
-    <link>https://github-lym.github.io/posts/2022/v_excel/</link>
-    <pubDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/v_excel/</guid>
+    <link>/posts/2022/v_excel/</link>
+    <pubDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</pubDate><guid>/posts/2022/v_excel/</guid>
     <description><![CDATA[<p>之前Vincent讓我接了一個case。</p>]]></description>
 </item>
 <item>
     <title>ComboBox的模糊查詢</title>
-    <link>https://github-lym.github.io/posts/2022/comboboxfuzzysearch/</link>
-    <pubDate>Wed, 06 Apr 2022 14:34:04 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/comboboxfuzzysearch/</guid>
+    <link>/posts/2022/comboboxfuzzysearch/</link>
+    <pubDate>Wed, 06 Apr 2022 14:34:04 &#43;0800</pubDate><guid>/posts/2022/comboboxfuzzysearch/</guid>
     <description><![CDATA[<p>要不是Vincent，我可能還沒機會做這個。</p>]]></description>
 </item>
 <item>
     <title>GetModifiedFiles—匯出更新的資料</title>
-    <link>https://github-lym.github.io/posts/2022/getmodifiedfiles/</link>
-    <pubDate>Sat, 02 Apr 2022 12:32:19 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/getmodifiedfiles/</guid>
+    <link>/posts/2022/getmodifiedfiles/</link>
+    <pubDate>Sat, 02 Apr 2022 12:32:19 &#43;0800</pubDate><guid>/posts/2022/getmodifiedfiles/</guid>
     <description><![CDATA[<p>寫完的程式要做源碼掃描。</p>]]></description>
 </item>
 <item>
     <title>GenerateModel—Model生成工具</title>
-    <link>https://github-lym.github.io/posts/2022/generatemodel/</link>
-    <pubDate>Sat, 02 Apr 2022 10:53:49 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/generatemodel/</guid>
+    <link>/posts/2022/generatemodel/</link>
+    <pubDate>Sat, 02 Apr 2022 10:53:49 &#43;0800</pubDate><guid>/posts/2022/generatemodel/</guid>
     <description><![CDATA[<p>結束駐點回公司後開始寫MVC。</p>]]></description>
 </item>
 <item>
     <title>送交Google表單</title>
-    <link>https://github-lym.github.io/posts/2022/submitgoogleform/</link>
-    <pubDate>Sat, 02 Apr 2022 10:44:11 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/submitgoogleform/</guid>
+    <link>/posts/2022/submitgoogleform/</link>
+    <pubDate>Sat, 02 Apr 2022 10:44:11 &#43;0800</pubDate><guid>/posts/2022/submitgoogleform/</guid>
     <description><![CDATA[<p>疫情的關係，公司設計了一個Google表單要我們每日填寫。</p>]]></description>
 </item>
 <item>
     <title>多線程執行批次檔並將視窗分別擷圖(導向輸出log)</title>
-    <link>https://github-lym.github.io/posts/2022/focussnapshot/</link>
-    <pubDate>Wed, 30 Mar 2022 14:41:19 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/focussnapshot/</guid>
+    <link>/posts/2022/focussnapshot/</link>
+    <pubDate>Wed, 30 Mar 2022 14:41:19 &#43;0800</pubDate><guid>/posts/2022/focussnapshot/</guid>
     <description><![CDATA[<p>駐點在機關時得幫其他廠商定期與不定期更新網站。</p>]]></description>
 </item>
 <item>
     <title>去掉文字前後空白</title>
-    <link>https://github-lym.github.io/posts/2022/trimcopy/</link>
-    <pubDate>Wed, 30 Mar 2022 14:13:40 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/trimcopy/</guid>
+    <link>/posts/2022/trimcopy/</link>
+    <pubDate>Wed, 30 Mar 2022 14:13:40 &#43;0800</pubDate><guid>/posts/2022/trimcopy/</guid>
     <description><![CDATA[<p>做客服工程師那會，每天都要查詢資料庫。</p>]]></description>
 </item>
 <item>
     <title>指定目錄搬移大量檔案</title>
-    <link>https://github-lym.github.io/posts/2022/copytofolder/</link>
-    <pubDate>Tue, 29 Mar 2022 09:55:11 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/copytofolder/</guid>
+    <link>/posts/2022/copytofolder/</link>
+    <pubDate>Tue, 29 Mar 2022 09:55:11 &#43;0800</pubDate><guid>/posts/2022/copytofolder/</guid>
     <description><![CDATA[<p>維護的系統有提供上傳附件的功能。<br>
 也不意外，這功能是一般系統都會有的功能。</p>]]></description>
 </item>
 <item>
     <title>批次執行vbs檔並檢查結果</title>
-    <link>https://github-lym.github.io/posts/2022/ntpcorganizationalchart/</link>
-    <pubDate>Mon, 28 Mar 2022 22:11:00 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/ntpcorganizationalchart/</guid>
+    <link>/posts/2022/ntpcorganizationalchart/</link>
+    <pubDate>Mon, 28 Mar 2022 22:11:00 &#43;0800</pubDate><guid>/posts/2022/ntpcorganizationalchart/</guid>
     <description><![CDATA[<p>剛進公司是駐點在公家機關做客服工程師，每天接電話回答系統問題。</p>
 <p>除此之外，每天下班為了流程都必須更新該機關組織圖。</p>]]></description>
 </item>

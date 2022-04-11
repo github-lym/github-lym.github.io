@@ -1,12 +1,12 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>murmur - Tag - My Memo</title>
-        <link>https://github-lym.github.io/tags/murmur/</link>
+        <link>/tags/murmur/</link>
         <description>murmur - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Mar 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://github-lym.github.io/tags/murmur/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Mar 2022 00:00:00 &#43;0000</lastBuildDate><atom:link href="/tags/murmur/" rel="self" type="application/rss+xml" /><item>
     <title>第一篇</title>
-    <link>https://github-lym.github.io/posts/2022/firstpost/</link>
-    <pubDate>Sun, 20 Mar 2022 00:00:00 &#43;0000</pubDate><guid>https://github-lym.github.io/posts/2022/firstpost/</guid>
+    <link>/posts/2022/firstpost/</link>
+    <pubDate>Sun, 20 Mar 2022 00:00:00 &#43;0000</pubDate><guid>/posts/2022/firstpost/</guid>
     <description><![CDATA[<p>就試看看吧？</p>]]></description>
 </item>
 </channel>

@@ -1,37 +1,37 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>cmd - Tag - My Memo</title>
-        <link>https://github-lym.github.io/tags/cmd/</link>
+        <link>/tags/cmd/</link>
         <description>cmd - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 Apr 2022 14:25:47 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/cmd/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 Apr 2022 14:25:47 &#43;0800</lastBuildDate><atom:link href="/tags/cmd/" rel="self" type="application/rss+xml" /><item>
     <title>命令提示字元取得最後存取資料夾</title>
-    <link>https://github-lym.github.io/posts/2022/cmdgetlastaccessfolder/</link>
-    <pubDate>Wed, 06 Apr 2022 14:25:47 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/cmdgetlastaccessfolder/</guid>
+    <link>/posts/2022/cmdgetlastaccessfolder/</link>
+    <pubDate>Wed, 06 Apr 2022 14:25:47 &#43;0800</pubDate><guid>/posts/2022/cmdgetlastaccessfolder/</guid>
     <description><![CDATA[*號表萬用字元，那邊可以寫路徑。
 1 2  for /f &#34;delims=&#34; %%a in (&#39;dir /b /ad-h /od &#34;*&#34;&#39;) do set &#34;latestDir=%%~a&#34; echo(%latestDir%   ]]></description>
 </item>
 <item>
     <title>命令提示字元取得日期</title>
-    <link>https://github-lym.github.io/posts/2022/cmdgetdate/</link>
-    <pubDate>Wed, 06 Apr 2022 14:19:12 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/cmdgetdate/</guid>
+    <link>/posts/2022/cmdgetdate/</link>
+    <pubDate>Wed, 06 Apr 2022 14:19:12 &#43;0800</pubDate><guid>/posts/2022/cmdgetdate/</guid>
     <description><![CDATA[<p>每次遇到都要重新搜尋，在此筆記。</p>]]></description>
 </item>
 <item>
     <title>刪除名稱尾端為點(.)的資料夾</title>
-    <link>https://github-lym.github.io/posts/2022/deletefolderthatnameendedwithadot/</link>
-    <pubDate>Sat, 02 Apr 2022 21:32:48 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/deletefolderthatnameendedwithadot/</guid>
+    <link>/posts/2022/deletefolderthatnameendedwithadot/</link>
+    <pubDate>Sat, 02 Apr 2022 21:32:48 &#43;0800</pubDate><guid>/posts/2022/deletefolderthatnameendedwithadot/</guid>
     <description><![CDATA[<p>今天解壓縮，不小心輸出名稱多了一個點(.)。</p>]]></description>
 </item>
 <item>
     <title>用forfiles刪除過期檔案</title>
-    <link>https://github-lym.github.io/posts/2022/deletelogsbyforfiles/</link>
-    <pubDate>Tue, 29 Mar 2022 14:44:48 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/deletelogsbyforfiles/</guid>
+    <link>/posts/2022/deletelogsbyforfiles/</link>
+    <pubDate>Tue, 29 Mar 2022 14:44:48 &#43;0800</pubDate><guid>/posts/2022/deletelogsbyforfiles/</guid>
     <description><![CDATA[<p>之前有聽過forfiles的大名，但沒機會用。</p>]]></description>
 </item>
 <item>
     <title>使用robocopy站台備份</title>
-    <link>https://github-lym.github.io/posts/2022/websitebackup/</link>
-    <pubDate>Tue, 29 Mar 2022 14:08:42 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/websitebackup/</guid>
+    <link>/posts/2022/websitebackup/</link>
+    <pubDate>Tue, 29 Mar 2022 14:08:42 &#43;0800</pubDate><guid>/posts/2022/websitebackup/</guid>
     <description><![CDATA[<p>站台要更新之前一定得備份。</p>]]></description>
 </item>
 </channel>

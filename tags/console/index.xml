@@ -1,54 +1,54 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Console - Tag - My Memo</title>
-        <link>https://github-lym.github.io/tags/console/</link>
+        <link>/tags/console/</link>
         <description>Console - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 02 Apr 2022 23:08:47 &#43;0800</lastBuildDate><atom:link href="https://github-lym.github.io/tags/console/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 02 Apr 2022 23:08:47 &#43;0800</lastBuildDate><atom:link href="/tags/console/" rel="self" type="application/rss+xml" /><item>
     <title>ConsoleProgressBar—Console下的進度條</title>
-    <link>https://github-lym.github.io/posts/2022/consoleprogressbar/</link>
-    <pubDate>Sat, 02 Apr 2022 23:08:47 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/consoleprogressbar/</guid>
+    <link>/posts/2022/consoleprogressbar/</link>
+    <pubDate>Sat, 02 Apr 2022 23:08:47 &#43;0800</pubDate><guid>/posts/2022/consoleprogressbar/</guid>
     <description><![CDATA[<p>整理檔案時才發現這個。</p>]]></description>
 </item>
 <item>
     <title>TreeToExcel—列出子資料夾檔案至Excel</title>
-    <link>https://github-lym.github.io/posts/2022/treetoexcel/</link>
-    <pubDate>Sat, 02 Apr 2022 12:59:04 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/treetoexcel/</guid>
+    <link>/posts/2022/treetoexcel/</link>
+    <pubDate>Sat, 02 Apr 2022 12:59:04 &#43;0800</pubDate><guid>/posts/2022/treetoexcel/</guid>
     <description><![CDATA[<p>版更要寫一份Excel—伺服器應用程式及檔案異動清單。</p>]]></description>
 </item>
 <item>
     <title>GetModifiedFiles—匯出更新的資料</title>
-    <link>https://github-lym.github.io/posts/2022/getmodifiedfiles/</link>
-    <pubDate>Sat, 02 Apr 2022 12:32:19 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/getmodifiedfiles/</guid>
+    <link>/posts/2022/getmodifiedfiles/</link>
+    <pubDate>Sat, 02 Apr 2022 12:32:19 &#43;0800</pubDate><guid>/posts/2022/getmodifiedfiles/</guid>
     <description><![CDATA[<p>寫完的程式要做源碼掃描。</p>]]></description>
 </item>
 <item>
     <title>以FTP抓取資料庫備份</title>
-    <link>https://github-lym.github.io/posts/2022/ftpdb/</link>
-    <pubDate>Tue, 29 Mar 2022 13:44:43 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/ftpdb/</guid>
+    <link>/posts/2022/ftpdb/</link>
+    <pubDate>Tue, 29 Mar 2022 13:44:43 &#43;0800</pubDate><guid>/posts/2022/ftpdb/</guid>
     <description><![CDATA[<p>MSSQL資料庫每天都會備份，每週一得還原最新備份在另一台當歷史資料查詢。</p>]]></description>
 </item>
 <item>
     <title>查詢排程狀態</title>
-    <link>https://github-lym.github.io/posts/2022/taskscheduler/</link>
-    <pubDate>Tue, 29 Mar 2022 11:43:50 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/taskscheduler/</guid>
+    <link>/posts/2022/taskscheduler/</link>
+    <pubDate>Tue, 29 Mar 2022 11:43:50 &#43;0800</pubDate><guid>/posts/2022/taskscheduler/</guid>
     <description><![CDATA[<p>因代理同事工作，才知道他每天需記錄排程是否順利。</p>]]></description>
 </item>
 <item>
     <title>查詢磁碟容量</title>
-    <link>https://github-lym.github.io/posts/2022/drivefreespace/</link>
-    <pubDate>Tue, 29 Mar 2022 11:30:57 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/drivefreespace/</guid>
+    <link>/posts/2022/drivefreespace/</link>
+    <pubDate>Tue, 29 Mar 2022 11:30:57 &#43;0800</pubDate><guid>/posts/2022/drivefreespace/</guid>
     <description><![CDATA[<p>因代理同事工作，才知道他每天得特地進機房看某主機的硬碟剩餘空間。</p>]]></description>
 </item>
 <item>
     <title>整理logs</title>
-    <link>https://github-lym.github.io/posts/2022/arrangelog/</link>
-    <pubDate>Tue, 29 Mar 2022 11:24:10 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/arrangelog/</guid>
+    <link>/posts/2022/arrangelog/</link>
+    <pubDate>Tue, 29 Mar 2022 11:24:10 &#43;0800</pubDate><guid>/posts/2022/arrangelog/</guid>
     <description><![CDATA[<p>有個系統每天產生的log檔很多。</p>]]></description>
 </item>
 <item>
     <title>批次執行vbs檔並檢查結果</title>
-    <link>https://github-lym.github.io/posts/2022/ntpcorganizationalchart/</link>
-    <pubDate>Mon, 28 Mar 2022 22:11:00 &#43;0800</pubDate><guid>https://github-lym.github.io/posts/2022/ntpcorganizationalchart/</guid>
+    <link>/posts/2022/ntpcorganizationalchart/</link>
+    <pubDate>Mon, 28 Mar 2022 22:11:00 &#43;0800</pubDate><guid>/posts/2022/ntpcorganizationalchart/</guid>
     <description><![CDATA[<p>剛進公司是駐點在公家機關做客服工程師，每天接電話回答系統問題。</p>
 <p>除此之外，每天下班為了流程都必須更新該機關組織圖。</p>]]></description>
 </item>

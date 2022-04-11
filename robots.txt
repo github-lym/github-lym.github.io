@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://github-lym.github.io/sitemap.xml
+Sitemap: /sitemap.xml
