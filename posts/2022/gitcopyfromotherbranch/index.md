@@ -7,7 +7,7 @@
 
 有需要把其他分支的檔案copy到主分支，  
 查了一下，發現在Stack Overflow網站的答案非常棒。  
-```Git
+```Bash
 git checkout 其他分支 .
 ```
 不過因為是copy的關係，若有相同檔案會直接覆蓋而不會產生衝突(conflict)。  
@@ -15,6 +15,6 @@ git checkout 其他分支 .
 git指令操作果然還是王道。  
   
 *另外補充只要某檔案：*  
-```Git
+```Bash
 git checkout 其他分支 -- 檔案名
 ```
