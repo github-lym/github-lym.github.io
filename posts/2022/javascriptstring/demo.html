@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .t { 
+                display: inline-block; width: 100px; padding: 3px;
+                color: white; background-color: cornflowerblue;
+                text-align: right; margin-bottom: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <pre id="d"></pre>
+        <script>
+            function log(t, m) {
+                document.getElementById('d').innerHTML +=
+                    `<span class=t>${t}</span> <span>${m}</span>` + '\n';
+            }
+            function logEval(t, exp) {
+                log(t, exp + ` => ${eval(exp)}`);
+            }
+            const s = "This is a book.";
+            log('string', `let s="${s}"`);
+            // at() 取第 n 個字元，類似 charAt 但可用負數
+            logEval('at()', `s.at(2)`); 
+            logEval('at()', `s.at(-5)`);
+            // charCodeAt() 取第 n 個字元的 UTF-16(ASCII) 碼
+            logEval('charAt()', `s.charAt(2) + "->" + s.charCodeAt(2)`);
+            // codePointAt() 可用轉換成 &#160; 
+            const c = '\ua66c';
+            const unicodeCodePoint = c.codePointAt(0);
+            log('codePointAt()', `${c} -> &amp;#${unicodeCodePoint}; &#${unicodeCodePoint};`);
+            logEval('concat()', `"hello".concat(" ", "world", "!")`);
+            // 相當於 C# string.Contains()
+            logEval('includes()', `"Smiles".includes("mile")`)
+            logEval('startsWith()', `"darkthread".startsWith("dark")`);
+            logEval('endsWith()', `"darkthread".endsWith("a")`);
+            logEval('match()', `JSON.stringify("192.168.1.1".match(/\\d{1,3}/))`);
+            logEval('match()', `JSON.stringify("192.168.1.1".match(/\\d{1,3}/g))`);
+            // 數字補零很好用
+            logEval('padStart()', `"12345".padStart(7, '0')`);
+            logEval('padEnd()', `"1234".padEnd(7, "#")`);
+            logEval('repeat()', `"A".repeat(10)`);
+            logEval('replace()', `"A1B2C3D4E5".replace("B2", "")`);
+            logEval('replace()', `"A1B2C3D4E5".replace(/[a-z]/ig, "")`);
+            logEval('search()', `"secret number 123 inside".search(/\\d/)`);
+            logEval('slice()', `"pen pineapple apple pen".slice(6)`);
+            logEval('slice()', `"pen pineapple apple pen".slice(-6)`);
+            logEval('slice()', `"pen pineapple apple pen".slice(4, 7)`);
+            logEval('split()', `"pen pineapple apple pen".split(' ')`);
+            // trim* 只去除空白，去頭尾非空白字元要用 replace + regular expression
+            logEval('trim()', `"[" + "  HELLO    ".trim() + "]"`);
+            logEval('trimStart()', `"[" + "  HELLO    ".trimStart() + "]"`);
+            logEval('trimEnd()', `"[" + "  HELLO    ".trimEnd() + "]"`);
+            logEval('Trim ending /', `"~/subdir/".replace(/\\/$/g, '')`);
+            // String("1+2") 與 "1+2" 行為有些不同，
+            logEval('valueOf()', `typeof(new String("1+2"))`);
+            logEval('valueOf()', `eval(new String("1+2"))`);
+            logEval('valueOf()', `new String("1+2").valueOf()`);
+            logEval('valueOf()', `eval(new String("1+2").valueOf())`);           
+        </script>
+    </body>
+</html>

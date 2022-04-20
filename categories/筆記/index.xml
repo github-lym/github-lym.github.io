@@ -3,7 +3,31 @@
         <title>筆記 - Category - My Memo</title>
         <link>/categories/%E7%AD%86%E8%A8%98/</link>
         <description>筆記 - Category - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Apr 2022 10:39:55 &#43;0800</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 20 Apr 2022 11:37:08 &#43;0800</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+    <title>在語法有IN情況下使用Sql Parameter</title>
+    <link>/posts/2022/sqlparameterin/</link>
+    <pubDate>Wed, 20 Apr 2022 11:37:08 &#43;0800</pubDate><guid>/posts/2022/sqlparameterin/</guid>
+    <description><![CDATA[<p>之前為了資安問題都用<strong>Sql Parameter</strong>。</p>]]></description>
+</item>
+<item>
+    <title>JavaScript的字串函數</title>
+    <link>/posts/2022/javascriptstring/</link>
+    <pubDate>Wed, 20 Apr 2022 10:38:26 &#43;0800</pubDate><guid>/posts/2022/javascriptstring/</guid>
+    <description><![CDATA[<p>來源在這=&gt;<a href="https://blog.darkthread.net/blog/js-string-funcs-notes/" target="_blank" rel="noopener noreffer">這些年，我錯過的 JavaScript 字串函數</a>。</p>]]></description>
+</item>
+<item>
+    <title>object-fit—圖片的縮放</title>
+    <link>/posts/2022/object-fit/</link>
+    <pubDate>Wed, 20 Apr 2022 10:13:03 &#43;0800</pubDate><guid>/posts/2022/object-fit/</guid>
+    <description><![CDATA[<p>發現圖片有新屬性，記錄一下。</p>]]></description>
+</item>
+<item>
+    <title>SqlBulkCopy—快速寫入MSSQL資料庫</title>
+    <link>/posts/2022/sqlbulkcopy/</link>
+    <pubDate>Wed, 20 Apr 2022 09:13:30 &#43;0800</pubDate><guid>/posts/2022/sqlbulkcopy/</guid>
+    <description><![CDATA[<p>之前在要在資料庫寫入數十萬乃至數百萬的資料，以往都是一筆筆慢慢寫入。</p>]]></description>
+</item>
+<item>
     <title>MSSQL比對兩資料表並Merge</title>
     <link>/posts/2022/mssqlmerge/</link>
     <pubDate>Thu, 07 Apr 2022 10:39:55 &#43;0800</pubDate><guid>/posts/2022/mssqlmerge/</guid>

@@ -3,17 +3,17 @@
         <title>HTML - Tag - My Memo</title>
         <link>/tags/html/</link>
         <description>HTML - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Apr 2022 10:28:54 &#43;0800</lastBuildDate><atom:link href="/tags/html/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 20 Apr 2022 10:13:03 &#43;0800</lastBuildDate><atom:link href="/tags/html/" rel="self" type="application/rss+xml" /><item>
+    <title>object-fit—圖片的縮放</title>
+    <link>/posts/2022/object-fit/</link>
+    <pubDate>Wed, 20 Apr 2022 10:13:03 &#43;0800</pubDate><guid>/posts/2022/object-fit/</guid>
+    <description><![CDATA[<p>發現圖片有新屬性，記錄一下。</p>]]></description>
+</item>
+<item>
     <title>創一個臨時表單並傳送</title>
     <link>/posts/2022/htmlcreateform/</link>
     <pubDate>Thu, 07 Apr 2022 10:28:54 &#43;0800</pubDate><guid>/posts/2022/htmlcreateform/</guid>
     <description><![CDATA[<p>有點忘記是在寫什麼，只能先記錄下來。</p>]]></description>
-</item>
-<item>
-    <title>JavaScript的日期</title>
-    <link>/posts/2022/momentjs/</link>
-    <pubDate>Thu, 07 Apr 2022 09:20:00 &#43;0800</pubDate><guid>/posts/2022/momentjs/</guid>
-    <description><![CDATA[<p>在整理筆記時，本已將材料備好準備大抄特抄。</p>]]></description>
 </item>
 <item>
     <title>Captcha驗證碼</title>

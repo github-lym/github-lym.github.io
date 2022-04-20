@@ -32,7 +32,7 @@ WHEN MATCHED
 ```
   
   
-`OUTPUT`是用來讀取 inserted 和 deleted 這二個特殊資料表用的。  
+`OUTPUT`是用來讀取 inserted 和 deleted 這二個特殊資料表用的(參考用)。  
 ```sql
 INSERT INTO dbo.TestLog 
 Select 

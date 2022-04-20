@@ -3,7 +3,13 @@
         <title>JavaScript - Tag - My Memo</title>
         <link>/tags/javascript/</link>
         <description>JavaScript - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 07 Apr 2022 10:28:54 &#43;0800</lastBuildDate><atom:link href="/tags/javascript/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 20 Apr 2022 10:38:26 &#43;0800</lastBuildDate><atom:link href="/tags/javascript/" rel="self" type="application/rss+xml" /><item>
+    <title>JavaScript的字串函數</title>
+    <link>/posts/2022/javascriptstring/</link>
+    <pubDate>Wed, 20 Apr 2022 10:38:26 &#43;0800</pubDate><guid>/posts/2022/javascriptstring/</guid>
+    <description><![CDATA[<p>來源在這=&gt;<a href="https://blog.darkthread.net/blog/js-string-funcs-notes/" target="_blank" rel="noopener noreffer">這些年，我錯過的 JavaScript 字串函數</a>。</p>]]></description>
+</item>
+<item>
     <title>創一個臨時表單並傳送</title>
     <link>/posts/2022/htmlcreateform/</link>
     <pubDate>Thu, 07 Apr 2022 10:28:54 &#43;0800</pubDate><guid>/posts/2022/htmlcreateform/</guid>

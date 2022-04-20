@@ -3,7 +3,19 @@
         <title>CSharp - Tag - My Memo</title>
         <link>/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 11 Apr 2022 14:01:37 &#43;0800</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 20 Apr 2022 11:37:08 &#43;0800</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>在語法有IN情況下使用Sql Parameter</title>
+    <link>/posts/2022/sqlparameterin/</link>
+    <pubDate>Wed, 20 Apr 2022 11:37:08 &#43;0800</pubDate><guid>/posts/2022/sqlparameterin/</guid>
+    <description><![CDATA[<p>之前為了資安問題都用<strong>Sql Parameter</strong>。</p>]]></description>
+</item>
+<item>
+    <title>SqlBulkCopy—快速寫入MSSQL資料庫</title>
+    <link>/posts/2022/sqlbulkcopy/</link>
+    <pubDate>Wed, 20 Apr 2022 09:13:30 &#43;0800</pubDate><guid>/posts/2022/sqlbulkcopy/</guid>
+    <description><![CDATA[<p>之前在要在資料庫寫入數十萬乃至數百萬的資料，以往都是一筆筆慢慢寫入。</p>]]></description>
+</item>
+<item>
     <title>導入EntityFramework的嘗試與錯誤</title>
     <link>/posts/2022/toeftryerror/</link>
     <pubDate>Mon, 11 Apr 2022 14:01:37 &#43;0800</pubDate><guid>/posts/2022/toeftryerror/</guid>
@@ -51,18 +63,6 @@
     <link>/posts/2022/getmodifiedfiles/</link>
     <pubDate>Sat, 02 Apr 2022 12:32:19 &#43;0800</pubDate><guid>/posts/2022/getmodifiedfiles/</guid>
     <description><![CDATA[<p>寫完的程式要做源碼掃描。</p>]]></description>
-</item>
-<item>
-    <title>GenerateModel—Model生成工具</title>
-    <link>/posts/2022/generatemodel/</link>
-    <pubDate>Sat, 02 Apr 2022 10:53:49 &#43;0800</pubDate><guid>/posts/2022/generatemodel/</guid>
-    <description><![CDATA[<p>結束駐點回公司後開始寫MVC。</p>]]></description>
-</item>
-<item>
-    <title>送交Google表單</title>
-    <link>/posts/2022/submitgoogleform/</link>
-    <pubDate>Sat, 02 Apr 2022 10:44:11 &#43;0800</pubDate><guid>/posts/2022/submitgoogleform/</guid>
-    <description><![CDATA[<p>疫情的關係，公司設計了一個Google表單要我們每日填寫。</p>]]></description>
 </item>
 </channel>
 </rss>

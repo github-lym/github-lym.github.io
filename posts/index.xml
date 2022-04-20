@@ -3,7 +3,31 @@
         <title>All Posts - My Memo</title>
         <link>/posts/</link>
         <description>All Posts | My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 14 Apr 2022 09:40:10 &#43;0800</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 20 Apr 2022 11:37:08 &#43;0800</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>在語法有IN情況下使用Sql Parameter</title>
+    <link>/posts/2022/sqlparameterin/</link>
+    <pubDate>Wed, 20 Apr 2022 11:37:08 &#43;0800</pubDate><guid>/posts/2022/sqlparameterin/</guid>
+    <description><![CDATA[<p>之前為了資安問題都用<strong>Sql Parameter</strong>。</p>]]></description>
+</item>
+<item>
+    <title>JavaScript的字串函數</title>
+    <link>/posts/2022/javascriptstring/</link>
+    <pubDate>Wed, 20 Apr 2022 10:38:26 &#43;0800</pubDate><guid>/posts/2022/javascriptstring/</guid>
+    <description><![CDATA[<p>來源在這=&gt;<a href="https://blog.darkthread.net/blog/js-string-funcs-notes/" target="_blank" rel="noopener noreffer">這些年，我錯過的 JavaScript 字串函數</a>。</p>]]></description>
+</item>
+<item>
+    <title>object-fit—圖片的縮放</title>
+    <link>/posts/2022/object-fit/</link>
+    <pubDate>Wed, 20 Apr 2022 10:13:03 &#43;0800</pubDate><guid>/posts/2022/object-fit/</guid>
+    <description><![CDATA[<p>發現圖片有新屬性，記錄一下。</p>]]></description>
+</item>
+<item>
+    <title>SqlBulkCopy—快速寫入MSSQL資料庫</title>
+    <link>/posts/2022/sqlbulkcopy/</link>
+    <pubDate>Wed, 20 Apr 2022 09:13:30 &#43;0800</pubDate><guid>/posts/2022/sqlbulkcopy/</guid>
+    <description><![CDATA[<p>之前在要在資料庫寫入數十萬乃至數百萬的資料，以往都是一筆筆慢慢寫入。</p>]]></description>
+</item>
+<item>
     <title>工作低潮</title>
     <link>/posts/2022/slump/</link>
     <pubDate>Thu, 14 Apr 2022 09:40:10 &#43;0800</pubDate><guid>/posts/2022/slump/</guid>
@@ -38,31 +62,6 @@
     <link>/posts/2022/htmlcreateform/</link>
     <pubDate>Thu, 07 Apr 2022 10:28:54 &#43;0800</pubDate><guid>/posts/2022/htmlcreateform/</guid>
     <description><![CDATA[<p>有點忘記是在寫什麼，只能先記錄下來。</p>]]></description>
-</item>
-<item>
-    <title>JavaScript的日期</title>
-    <link>/posts/2022/momentjs/</link>
-    <pubDate>Thu, 07 Apr 2022 09:20:00 &#43;0800</pubDate><guid>/posts/2022/momentjs/</guid>
-    <description><![CDATA[<p>在整理筆記時，本已將材料備好準備大抄特抄。</p>]]></description>
-</item>
-<item>
-    <title>NPOI直接存取Excel</title>
-    <link>/posts/2022/v_excel/</link>
-    <pubDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</pubDate><guid>/posts/2022/v_excel/</guid>
-    <description><![CDATA[<p>之前Vincent讓我接了一個case。</p>]]></description>
-</item>
-<item>
-    <title>將字串元素加雙引號</title>
-    <link>/posts/2022/addapostrophetostringelements/</link>
-    <pubDate>Wed, 06 Apr 2022 14:56:10 &#43;0800</pubDate><guid>/posts/2022/addapostrophetostringelements/</guid>
-    <description><![CDATA[string v = &quot;10,14,18,21&quot;;
-1 2 3 4 5 6 7 8 9 10 11  //method1 var r1 = string.Join(&#34;,&#34;, v.Split(&#34;,&#34;).Select(x =&gt; $&#34;&#39;{x}&#39;&#34;)); Console.WriteLine(r1); // &#39;10&#39;, &#39;14&#39;, &#39;18&#39;, &#39;21&#39; //method2 var r2 = $&#34;&#39;{v.Replace(&#34;,&#34;, &#34;&#39;,&#39;&#34;)}&#39;&#34;; Console.WriteLine(r2); //method3 using System.Text.RegularExpressions;  string r3 = Regex.Replace(v, &#34;[^,]+&#34;, &#34;&#39;$0&#39;&#34;); Console.WriteLine(r3);   輸出為'10','14','18','21']]></description>
-</item>
-<item>
-    <title>快速取得某天當月第一天與最後一天</title>
-    <link>/posts/2022/getfisrtandlastdate/</link>
-    <pubDate>Wed, 06 Apr 2022 14:48:51 &#43;0800</pubDate><guid>/posts/2022/getfisrtandlastdate/</guid>
-    <description><![CDATA[1 2 3 4 5 6 7 8 9 10  public static DateTime FirstDayOfMonth_AddMethod(this DateTime value) { return value.Date.AddDays(1 - value.Day); } public static DateTime LastDayOfMonth_NewMethodWithReuseOfExtMethod(this DateTime value) { return new DateTime(value.Year, value.Month, value.DaysInMonth()); }   ]]></description>
 </item>
 </channel>
 </rss>
