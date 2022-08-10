@@ -8,7 +8,7 @@
     <link>/posts/2022/cmdgetlastaccessfolder/</link>
     <pubDate>Wed, 06 Apr 2022 14:25:47 &#43;0800</pubDate><guid>/posts/2022/cmdgetlastaccessfolder/</guid>
     <description><![CDATA[*號表萬用字元，那邊可以寫路徑。
-1 2  for /f &#34;delims=&#34; %%a in (&#39;dir /b /ad-h /od &#34;*&#34;&#39;) do set &#34;latestDir=%%~a&#34; echo(%latestDir%   ]]></description>
+1 2 for /f &#34;delims=&#34; %%a in (&#39;dir /b /ad-h /od &#34;*&#34;&#39;) do set &#34;latestDir=%%~a&#34; echo(%latestDir% ]]></description>
 </item>
 <item>
     <title>命令提示字元取得日期</title>

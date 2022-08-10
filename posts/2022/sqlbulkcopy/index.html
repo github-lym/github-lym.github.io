@@ -194,7 +194,7 @@
 </span><span class="lnt">65
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="k">using</span> <span class="p">(</span><span class="n">SqlBulkCopy</span> <span class="n">bulkcopy</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlBulkCopy</span><span class="p">(</span><span class="m">_d</span><span class="n">ao</span><span class="p">.</span><span class="m">_</span><span class="n">conn</span><span class="p">))</span>
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="k">using</span> <span class="p">(</span><span class="n">SqlBulkCopy</span> <span class="n">bulkcopy</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlBulkCopy</span><span class="p">(</span><span class="n">_dao</span><span class="p">.</span><span class="n">_conn</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="c1">//目標資料庫名稱</span>
 </span></span><span class="line"><span class="cl">	<span class="n">bulkcopy</span><span class="p">.</span><span class="n">DestinationTableName</span> <span class="p">=</span> <span class="s">&#34;MP01_ASIGNCASE&#34;</span><span class="p">;</span>

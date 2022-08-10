@@ -3,9 +3,21 @@
         <title>My Memo</title>
         <link>/</link>
         <description>My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 20 Apr 2022 11:37:08 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 10 Aug 2022 09:59:13 &#43;0800</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>WinForm抓取鍵盤輸入</title>
+    <link>/posts/2022/winformcatchkeyboard/</link>
+    <pubDate>Wed, 10 Aug 2022 09:59:13 &#43;0800</pubDate><guid>/posts/2022/winformcatchkeyboard/</guid>
+    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 protected override bool ProcessCmdKey(ref Message msg, Keys keyData) { //capture up arrow key if (keyData == Keys.Up ) { MessageBox.Show(&#34;You pressed Up arrow key&#34;); return true; } //capture down arrow key if (keyData == Keys.Down ) { MessageBox.Show(&#34;You pressed Down arrow key&#34;); return true; } //capture left arrow key if (keyData == Keys.]]></description>
+</item>
+<item>
+    <title>取得執行檔資料夾與完整路徑</title>
+    <link>/posts/2022/executepath/</link>
+    <pubDate>Wed, 10 Aug 2022 09:22:31 &#43;0800</pubDate><guid>/posts/2022/executepath/</guid>
+    <description><![CDATA[取得執行檔執行資料夾 1 string assemblyPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location); 取得執行檔完全路徑 1 System.Reflection.Assembly.GetEntryAssembly().Location; ]]></description>
+</item>
+<item>
     <title>在語法有IN情況下使用Sql Parameter</title>
     <link>/posts/2022/sqlparameterin/</link>
     <pubDate>Wed, 20 Apr 2022 11:37:08 &#43;0800</pubDate><guid>/posts/2022/sqlparameterin/</guid>
@@ -52,18 +64,6 @@
     <link>/posts/2022/mssqlbcp/</link>
     <pubDate>Thu, 07 Apr 2022 10:58:20 &#43;0800</pubDate><guid>/posts/2022/mssqlbcp/</guid>
     <description><![CDATA[<p>駐點時要每天從資料庫匯出資料，就找到了這些。</p>]]></description>
-</item>
-<item>
-    <title>MSSQL比對兩資料表並Merge</title>
-    <link>/posts/2022/mssqlmerge/</link>
-    <pubDate>Thu, 07 Apr 2022 10:39:55 &#43;0800</pubDate><guid>/posts/2022/mssqlmerge/</guid>
-    <description><![CDATA[<p>感謝Warren大大讓我認識了這個指令。</p>]]></description>
-</item>
-<item>
-    <title>創一個臨時表單並傳送</title>
-    <link>/posts/2022/htmlcreateform/</link>
-    <pubDate>Thu, 07 Apr 2022 10:28:54 &#43;0800</pubDate><guid>/posts/2022/htmlcreateform/</guid>
-    <description><![CDATA[<p>有點忘記是在寫什麼，只能先記錄下來。</p>]]></description>
 </item>
 </channel>
 </rss>
