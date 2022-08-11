@@ -7,7 +7,9 @@
     <title>取得執行檔資料夾與完整路徑</title>
     <link>/posts/2022/executepath/</link>
     <pubDate>Wed, 10 Aug 2022 09:22:31 &#43;0800</pubDate><guid>/posts/2022/executepath/</guid>
-    <description><![CDATA[取得執行檔執行資料夾 1 string assemblyPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location); 取得執行檔完全路徑 1 System.Reflection.Assembly.GetEntryAssembly().Location; ]]></description>
+    <description><![CDATA[取得執行檔執行資料夾
+1 string assemblyPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location); 取得執行檔完全路徑
+1 System.Reflection.Assembly.GetEntryAssembly().Location; ]]></description>
 </item>
 <item>
     <title>在語法有IN情況下使用Sql Parameter</title>

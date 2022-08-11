@@ -19,7 +19,7 @@
 <meta name="application-name" content="My Memo">
 <meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2022/winformcatchkeyboard/" /><link rel="prev" href="/posts/2022/executepath/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2022/winformcatchkeyboard/" /><link rel="prev" href="/posts/2022/executepath/" /><link rel="next" href="/posts/2022/datatablecolumnnametoarray/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/2022\/winformcatchkeyboard\/"
-        },"genre": "posts","keywords": "CSharp, WinForm","wordcount":  113 ,
+        },"genre": "posts","keywords": "CSharp, WinForm","wordcount":  111 ,
         "url": "\/posts\/2022\/winformcatchkeyboard\/","datePublished": "2022-08-10T09:59:13+08:00","dateModified": "2022-08-10T09:59:13+08:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
@@ -118,7 +118,8 @@
                 <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-10 09:59:13 Wednesday">2022-08-10 09:59:13 Wednesday</time></span>&nbsp;</div>
             </div>
             
-            <hr><div class="content" id="content"><div class="highlight"><div class="chroma">
+            <hr><div class="content" id="content"><p>做個紀錄。</p>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
@@ -153,30 +154,30 @@
 <pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="k">protected</span> <span class="k">override</span> <span class="kt">bool</span> <span class="n">ProcessCmdKey</span><span class="p">(</span><span class="k">ref</span> <span class="n">Message</span> <span class="n">msg</span><span class="p">,</span> <span class="n">Keys</span> <span class="n">keyData</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="c1">//capture up arrow key</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">keyData</span> <span class="p">==</span> <span class="n">Keys</span><span class="p">.</span><span class="n">Up</span> <span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&#34;You pressed Up arrow key&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span><span class="n">keyData</span> <span class="p">==</span> <span class="n">Keys</span><span class="p">.</span><span class="n">Up</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&#34;You pressed Up arrow key&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	<span class="c1">//capture down arrow key</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">keyData</span> <span class="p">==</span> <span class="n">Keys</span><span class="p">.</span><span class="n">Down</span> <span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&#34;You pressed Down arrow key&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span><span class="n">keyData</span> <span class="p">==</span> <span class="n">Keys</span><span class="p">.</span><span class="n">Down</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&#34;You pressed Down arrow key&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	<span class="c1">//capture left arrow key</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">keyData</span> <span class="p">==</span> <span class="n">Keys</span><span class="p">.</span><span class="n">Left</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&#34;You pressed Left arrow key&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span><span class="n">keyData</span> <span class="p">==</span> <span class="n">Keys</span><span class="p">.</span><span class="n">Left</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&#34;You pressed Left arrow key&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
 </span></span><span class="line"><span class="cl">	<span class="c1">//capture right arrow key</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">keyData</span> <span class="p">==</span> <span class="n">Keys</span><span class="p">.</span><span class="n">Right</span> <span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&#34;You pressed Right arrow key&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="k">base</span><span class="p">.</span><span class="n">ProcessCmdKey</span><span class="p">(</span><span class="k">ref</span> <span class="n">msg</span><span class="p">,</span> <span class="n">keyData</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="p">(</span><span class="n">keyData</span> <span class="p">==</span> <span class="n">Keys</span><span class="p">.</span><span class="n">Right</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="n">MessageBox</span><span class="p">.</span><span class="n">Show</span><span class="p">(</span><span class="s">&#34;You pressed Right arrow key&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">		<span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">	<span class="k">return</span> <span class="k">base</span><span class="p">.</span><span class="n">ProcessCmdKey</span><span class="p">(</span><span class="k">ref</span> <span class="n">msg</span><span class="p">,</span> <span class="n">keyData</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
@@ -185,7 +186,8 @@
                 </span><span><a href="/tags/winform/">WinForm</a>
                 </span></div><div class="post-info-share">
             <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2022/winformcatchkeyboard/" data-title="WinForm抓取鍵盤輸入" data-hashtags="CSharp,WinForm"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2022/winformcatchkeyboard/" data-hashtag="CSharp"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2022/winformcatchkeyboard/" data-title="WinForm抓取鍵盤輸入"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2022/winformcatchkeyboard/" data-title="WinForm抓取鍵盤輸入" data-description="WinForm抓取鍵盤輸入(上下左右)"><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2022/winformcatchkeyboard/" data-title="WinForm抓取鍵盤輸入"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2022/winformcatchkeyboard/" data-title="WinForm抓取鍵盤輸入"><i class="fab fa-skype fa-fw"></i></a></span>
-        </div></div><div class="post-nav"><a href="/posts/2022/executepath/" class="prev" rel="prev" title="取得執行檔資料夾與完整路徑"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a></div></div>
+        </div></div><div class="post-nav"><a href="/posts/2022/executepath/" class="prev" rel="prev" title="取得執行檔資料夾與完整路徑"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/2022/datatablecolumnnametoarray/" class="next" rel="next" title="將DataTable的欄位名稱取出">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
 </div></article></div>
             </main>
             <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>

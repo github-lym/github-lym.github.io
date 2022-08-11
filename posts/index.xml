@@ -3,17 +3,37 @@
         <title>All Posts - My Memo</title>
         <link>/posts/</link>
         <description>All Posts | My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 10 Aug 2022 09:59:13 &#43;0800</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 11 Aug 2022 06:40:20 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo常用筆記</title>
+    <link>/posts/2022/hugomemo/</link>
+    <pubDate>Thu, 11 Aug 2022 06:40:20 &#43;0000</pubDate><guid>/posts/2022/hugomemo/</guid>
+    <description><![CDATA[<p>隔了四個月，差點連指令都不會打了。</p>]]></description>
+</item>
+<item>
+    <title>從資料表建相同的樣SchemaType的DataTable</title>
+    <link>/posts/2022/makesameschemadatatablefromdbtable/</link>
+    <pubDate>Thu, 11 Aug 2022 06:32:54 &#43;0000</pubDate><guid>/posts/2022/makesameschemadatatablefromdbtable/</guid>
+    <description><![CDATA[<p>之前還挺常用的，不過後來用 Entity 就沒在用了。</p>]]></description>
+</item>
+<item>
+    <title>將DataTable的欄位名稱取出</title>
+    <link>/posts/2022/datatablecolumnnametoarray/</link>
+    <pubDate>Thu, 11 Aug 2022 06:26:43 &#43;0000</pubDate><guid>/posts/2022/datatablecolumnnametoarray/</guid>
+    <description><![CDATA[<p>已忘記何時用到的，不過還是記一下。</p>]]></description>
+</item>
+<item>
     <title>WinForm抓取鍵盤輸入</title>
     <link>/posts/2022/winformcatchkeyboard/</link>
     <pubDate>Wed, 10 Aug 2022 09:59:13 &#43;0800</pubDate><guid>/posts/2022/winformcatchkeyboard/</guid>
-    <description><![CDATA[1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 protected override bool ProcessCmdKey(ref Message msg, Keys keyData) { //capture up arrow key if (keyData == Keys.Up ) { MessageBox.Show(&#34;You pressed Up arrow key&#34;); return true; } //capture down arrow key if (keyData == Keys.Down ) { MessageBox.Show(&#34;You pressed Down arrow key&#34;); return true; } //capture left arrow key if (keyData == Keys.]]></description>
+    <description><![CDATA[<p>做個紀錄。</p>]]></description>
 </item>
 <item>
     <title>取得執行檔資料夾與完整路徑</title>
     <link>/posts/2022/executepath/</link>
     <pubDate>Wed, 10 Aug 2022 09:22:31 &#43;0800</pubDate><guid>/posts/2022/executepath/</guid>
-    <description><![CDATA[取得執行檔執行資料夾 1 string assemblyPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location); 取得執行檔完全路徑 1 System.Reflection.Assembly.GetEntryAssembly().Location; ]]></description>
+    <description><![CDATA[取得執行檔執行資料夾
+1 string assemblyPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location); 取得執行檔完全路徑
+1 System.Reflection.Assembly.GetEntryAssembly().Location; ]]></description>
 </item>
 <item>
     <title>在語法有IN情況下使用Sql Parameter</title>
@@ -44,24 +64,6 @@
     <link>/posts/2022/slump/</link>
     <pubDate>Thu, 14 Apr 2022 09:40:10 &#43;0800</pubDate><guid>/posts/2022/slump/</guid>
     <description><![CDATA[<p>昨日是新工作的低潮。</p>]]></description>
-</item>
-<item>
-    <title>導入EntityFramework的嘗試與錯誤</title>
-    <link>/posts/2022/toeftryerror/</link>
-    <pubDate>Mon, 11 Apr 2022 14:01:37 &#43;0800</pubDate><guid>/posts/2022/toeftryerror/</guid>
-    <description><![CDATA[<p>想將工作上的傳統作法改用EntityFramework，就做了一下嘗試。</p>]]></description>
-</item>
-<item>
-    <title>MSSQL備份相關</title>
-    <link>/posts/2022/mssqlbackup/</link>
-    <pubDate>Thu, 07 Apr 2022 15:59:37 &#43;0800</pubDate><guid>/posts/2022/mssqlbackup/</guid>
-    <description><![CDATA[<p>跟備份相關的。</p>]]></description>
-</item>
-<item>
-    <title>bcp匯出</title>
-    <link>/posts/2022/mssqlbcp/</link>
-    <pubDate>Thu, 07 Apr 2022 10:58:20 &#43;0800</pubDate><guid>/posts/2022/mssqlbcp/</guid>
-    <description><![CDATA[<p>駐點時要每天從資料庫匯出資料，就找到了這些。</p>]]></description>
 </item>
 </channel>
 </rss>

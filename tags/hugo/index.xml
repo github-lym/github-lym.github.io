@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Hugo - Tag - My Memo</title>
+        <link>/tags/hugo/</link>
+        <description>Hugo - Tag - My Memo</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 11 Aug 2022 06:40:20 &#43;0000</lastBuildDate><atom:link href="/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+    <title>Hugo常用筆記</title>
+    <link>/posts/2022/hugomemo/</link>
+    <pubDate>Thu, 11 Aug 2022 06:40:20 &#43;0000</pubDate><guid>/posts/2022/hugomemo/</guid>
+    <description><![CDATA[<p>隔了四個月，差點連指令都不會打了。</p>]]></description>
+</item>
+</channel>
+</rss>
