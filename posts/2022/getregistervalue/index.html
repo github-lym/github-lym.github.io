@@ -4,32 +4,32 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Hugo常用筆記 - My Memo</title><meta name="description" content=""><meta property="og:title" content="Hugo常用筆記" />
-<meta property="og:description" content="隔了四個月，差點連指令都不會打了。" />
+        <title>取得登錄檔的值 - My Memo</title><meta name="description" content=""><meta property="og:title" content="取得登錄檔的值" />
+<meta property="og:description" content="本來是要用預設瀏覽器開啟網址，但看到另種處理方法。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/2022/hugomemo/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-08-11T06:40:20+00:00" />
-<meta property="article:modified_time" content="2022-08-11T06:40:20+00:00" />
+<meta property="og:url" content="/posts/2022/getregistervalue/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-16T02:35:20+00:00" />
+<meta property="article:modified_time" content="2022-08-16T02:35:20+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/images/devil_s_bg.png"/>
 
-<meta name="twitter:title" content="Hugo常用筆記"/>
-<meta name="twitter:description" content="隔了四個月，差點連指令都不會打了。"/>
+<meta name="twitter:title" content="取得登錄檔的值"/>
+<meta name="twitter:description" content="本來是要用預設瀏覽器開啟網址，但看到另種處理方法。"/>
 <meta name="application-name" content="My Memo">
 <meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2022/hugomemo/" /><link rel="prev" href="/posts/2022/makesameschemadatatablefromdbtable/" /><link rel="next" href="/posts/2022/filewatcher/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2022/getregistervalue/" /><link rel="prev" href="/posts/2022/filewatcher/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Hugo常用筆記",
+        "headline": "取得登錄檔的值",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "\/posts\/2022\/hugomemo\/"
-        },"genre": "posts","keywords": "Hugo","wordcount":  11 ,
-        "url": "\/posts\/2022\/hugomemo\/","datePublished": "2022-08-11T06:40:20+00:00","dateModified": "2022-08-11T06:40:20+00:00","publisher": {
+            "@id": "\/posts\/2022\/getregistervalue\/"
+        },"genre": "posts","keywords": "CSharp","wordcount":  50 ,
+        "url": "\/posts\/2022\/getregistervalue\/","datePublished": "2022-08-16T02:35:20+00:00","dateModified": "2022-08-16T02:35:20+00:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
                 "@type": "Person",
@@ -113,28 +113,46 @@
 <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
 </div><main class="main">
-                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">Hugo常用筆記</h2><div class="post-meta">
+                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">取得登錄檔的值</h2><div class="post-meta">
                 <div class="post-meta-line"></div>
-                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-11 06:40:20 Thursday">2022-08-11 06:40:20 Thursday</time></span>&nbsp;</div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-16 02:35:20 Tuesday">2022-08-16 02:35:20 Tuesday</time></span>&nbsp;</div>
             </div>
             
-            <hr><div class="content" id="content"><p>隔了四個月，差點連指令都不會打了。</p>
-<p>不用快取啟動 Server</p>
+            <hr><div class="content" id="content"><p>本來是要用預設瀏覽器開啟網址，但看到另種處理方法。</p>
+<p>這方法是去登錄檔找 HTTP 是何執行檔開啟的值。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">hugo server --disableFastRender
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">string</span> <span class="n">browser</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="n">RegistryKey</span> <span class="n">key</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">key</span> <span class="p">=</span> <span class="n">Registry</span><span class="p">.</span><span class="n">ClassesRoot</span><span class="p">.</span><span class="n">OpenSubKey</span><span class="p">(</span><span class="s">@&#34;HTTP\shell\open\command&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">browser</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">GetValue</span><span class="p">(</span><span class="k">null</span><span class="p">).</span><span class="n">ToString</span><span class="p">().</span><span class="n">ToLower</span><span class="p">().</span><span class="n">Trim</span><span class="p">(</span><span class="k">new</span><span class="p">[]</span> <span class="p">{</span> <span class="sc">&#39;&#34;&#39;</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(!</span><span class="n">browser</span><span class="p">.</span><span class="n">EndsWith</span><span class="p">(</span><span class="s">&#34;exe&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">//Remove all after the &#34;.exe&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">browser</span> <span class="p">=</span> <span class="n">browser</span><span class="p">.</span><span class="n">Substring</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="n">browser</span><span class="p">.</span><span class="n">LastIndexOf</span><span class="p">(</span><span class="s">&#34;.exe&#34;</span><span class="p">,</span> <span class="n">StringComparison</span><span class="p">.</span><span class="n">InvariantCultureIgnoreCase</span><span class="p">)</span> <span class="p">+</span> <span class="m">4</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>執行 hugo 會匯出編譯檔在<code>public</code>資料夾。
-產生出的<code>index.json</code>拿去<a href="https://www.algolia.com/" title="algolia" target="_blank" rel="noopener noreffer">Algolia</a>建立搜尋索引。</p></div><div class="post-footer" id="post-footer">
-    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/hugo/">Hugo</a>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/csharp/">CSharp</a>
                 </span></div><div class="post-info-share">
-            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2022/hugomemo/" data-title="Hugo常用筆記" data-hashtags="Hugo"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2022/hugomemo/" data-hashtag="Hugo"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2022/hugomemo/" data-title="Hugo常用筆記"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2022/hugomemo/" data-title="Hugo常用筆記" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2022/hugomemo/" data-title="Hugo常用筆記"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2022/hugomemo/" data-title="Hugo常用筆記"><i class="fab fa-skype fa-fw"></i></a></span>
-        </div></div><div class="post-nav"><a href="/posts/2022/makesameschemadatatablefromdbtable/" class="prev" rel="prev" title="從資料表建相同的樣SchemaType的DataTable"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
-            <a href="/posts/2022/filewatcher/" class="next" rel="next" title="FileWatcher">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2022/getregistervalue/" data-title="取得登錄檔的值" data-hashtags="CSharp"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2022/getregistervalue/" data-hashtag="CSharp"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2022/getregistervalue/" data-title="取得登錄檔的值"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2022/getregistervalue/" data-title="取得登錄檔的值" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2022/getregistervalue/" data-title="取得登錄檔的值"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2022/getregistervalue/" data-title="取得登錄檔的值"><i class="fab fa-skype fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/2022/filewatcher/" class="prev" rel="prev" title="FileWatcher"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a></div></div>
 </div></article></div>
             </main>
             <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>

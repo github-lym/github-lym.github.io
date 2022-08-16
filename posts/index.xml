@@ -3,7 +3,19 @@
         <title>All Posts - My Memo</title>
         <link>/posts/</link>
         <description>All Posts | My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 11 Aug 2022 06:40:20 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 Aug 2022 02:35:20 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>取得登錄檔的值</title>
+    <link>/posts/2022/getregistervalue/</link>
+    <pubDate>Tue, 16 Aug 2022 02:35:20 &#43;0000</pubDate><guid>/posts/2022/getregistervalue/</guid>
+    <description><![CDATA[<p>本來是要用預設瀏覽器開啟網址，但看到另種處理方法。</p>]]></description>
+</item>
+<item>
+    <title>FileWatcher</title>
+    <link>/posts/2022/filewatcher/</link>
+    <pubDate>Tue, 16 Aug 2022 01:15:48 &#43;0000</pubDate><guid>/posts/2022/filewatcher/</guid>
+    <description><![CDATA[<p>將檔案備份至多個硬碟對我來說一直是個很花時間的事。</p>]]></description>
+</item>
+<item>
     <title>Hugo常用筆記</title>
     <link>/posts/2022/hugomemo/</link>
     <pubDate>Thu, 11 Aug 2022 06:40:20 &#43;0000</pubDate><guid>/posts/2022/hugomemo/</guid>
@@ -52,18 +64,6 @@
     <link>/posts/2022/object-fit/</link>
     <pubDate>Wed, 20 Apr 2022 10:13:03 &#43;0800</pubDate><guid>/posts/2022/object-fit/</guid>
     <description><![CDATA[<p>發現圖片有新屬性，記錄一下。</p>]]></description>
-</item>
-<item>
-    <title>SqlBulkCopy—快速寫入MSSQL資料庫</title>
-    <link>/posts/2022/sqlbulkcopy/</link>
-    <pubDate>Wed, 20 Apr 2022 09:13:30 &#43;0800</pubDate><guid>/posts/2022/sqlbulkcopy/</guid>
-    <description><![CDATA[<p>之前在要在資料庫寫入數十萬乃至數百萬的資料，以往都是一筆筆慢慢寫入。</p>]]></description>
-</item>
-<item>
-    <title>工作低潮</title>
-    <link>/posts/2022/slump/</link>
-    <pubDate>Thu, 14 Apr 2022 09:40:10 &#43;0800</pubDate><guid>/posts/2022/slump/</guid>
-    <description><![CDATA[<p>昨日是新工作的低潮。</p>]]></description>
 </item>
 </channel>
 </rss>

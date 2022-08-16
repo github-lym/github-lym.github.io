@@ -4,32 +4,32 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>Hugo常用筆記 - My Memo</title><meta name="description" content=""><meta property="og:title" content="Hugo常用筆記" />
-<meta property="og:description" content="隔了四個月，差點連指令都不會打了。" />
+        <title>FileWatcher - My Memo</title><meta name="description" content=""><meta property="og:title" content="FileWatcher" />
+<meta property="og:description" content="將檔案備份至多個硬碟對我來說一直是個很花時間的事。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/2022/hugomemo/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-08-11T06:40:20+00:00" />
-<meta property="article:modified_time" content="2022-08-11T06:40:20+00:00" />
+<meta property="og:url" content="/posts/2022/filewatcher/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-16T01:15:48+00:00" />
+<meta property="article:modified_time" content="2022-08-16T01:15:48+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/images/devil_s_bg.png"/>
 
-<meta name="twitter:title" content="Hugo常用筆記"/>
-<meta name="twitter:description" content="隔了四個月，差點連指令都不會打了。"/>
+<meta name="twitter:title" content="FileWatcher"/>
+<meta name="twitter:description" content="將檔案備份至多個硬碟對我來說一直是個很花時間的事。"/>
 <meta name="application-name" content="My Memo">
 <meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2022/hugomemo/" /><link rel="prev" href="/posts/2022/makesameschemadatatablefromdbtable/" /><link rel="next" href="/posts/2022/filewatcher/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2022/filewatcher/" /><link rel="prev" href="/posts/2022/hugomemo/" /><link rel="next" href="/posts/2022/getregistervalue/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "Hugo常用筆記",
+        "headline": "FileWatcher",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "\/posts\/2022\/hugomemo\/"
-        },"genre": "posts","keywords": "Hugo","wordcount":  11 ,
-        "url": "\/posts\/2022\/hugomemo\/","datePublished": "2022-08-11T06:40:20+00:00","dateModified": "2022-08-11T06:40:20+00:00","publisher": {
+            "@id": "\/posts\/2022\/filewatcher\/"
+        },"genre": "posts","keywords": "CSharp","wordcount":  21 ,
+        "url": "\/posts\/2022\/filewatcher\/","datePublished": "2022-08-16T01:15:48+00:00","dateModified": "2022-08-16T01:15:48+00:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
                 "@type": "Person",
@@ -113,28 +113,28 @@
 <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
 </div><main class="main">
-                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">Hugo常用筆記</h2><div class="post-meta">
+                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">FileWatcher</h2><div class="post-meta">
                 <div class="post-meta-line"></div>
-                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-11 06:40:20 Thursday">2022-08-11 06:40:20 Thursday</time></span>&nbsp;</div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-16 01:15:48 Tuesday">2022-08-16 01:15:48 Tuesday</time></span>&nbsp;</div>
             </div>
             
-            <hr><div class="content" id="content"><p>隔了四個月，差點連指令都不會打了。</p>
-<p>不用快取啟動 Server</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">hugo server --disableFastRender
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>執行 hugo 會匯出編譯檔在<code>public</code>資料夾。
-產生出的<code>index.json</code>拿去<a href="https://www.algolia.com/" title="algolia" target="_blank" rel="noopener noreffer">Algolia</a>建立搜尋索引。</p></div><div class="post-footer" id="post-footer">
-    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/hugo/">Hugo</a>
+            <hr><div class="content" id="content"><p>將檔案備份至多個硬碟對我來說一直是個很花時間的事。</p>
+<p>主要是目前的同步備份是還是不夠聰明。</p>
+<p>假設已有個備份為 A 檔案，如果 A 要更名為 A&rsquo;，<br>
+那一般的同步軟體就是把已備份的 A 刪除，<br>
+然後將 A&rsquo;(內容還是 A)視為新檔案複製一份。<br>
+檔案如果很大就很花時間，明明只是改了檔名而已。<br>
+移動也是一樣的情況，就是改個路徑而已。</p>
+<p>所以我寫了<a href="https://github.com/github-lym/FILEWATCHER" target="_blank" rel="noopener noreffer">FileWatcher</a>處理這問題。<br>
+其實就是用到<code>FileSystemWatcher</code>來監視幹了什麼，<br>
+整理一下把同樣的動作弄到其他備份區域。</p>
+<p>我的能力是沒有寫到即時同步啦，就還是得按個鍵重現這些異動。
+不同於一般同步軟體就是可以偵測目標資料夾的檔案名稱與路徑異動。</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/csharp/">CSharp</a>
                 </span></div><div class="post-info-share">
-            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2022/hugomemo/" data-title="Hugo常用筆記" data-hashtags="Hugo"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2022/hugomemo/" data-hashtag="Hugo"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2022/hugomemo/" data-title="Hugo常用筆記"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2022/hugomemo/" data-title="Hugo常用筆記" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2022/hugomemo/" data-title="Hugo常用筆記"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2022/hugomemo/" data-title="Hugo常用筆記"><i class="fab fa-skype fa-fw"></i></a></span>
-        </div></div><div class="post-nav"><a href="/posts/2022/makesameschemadatatablefromdbtable/" class="prev" rel="prev" title="從資料表建相同的樣SchemaType的DataTable"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
-            <a href="/posts/2022/filewatcher/" class="next" rel="next" title="FileWatcher">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2022/filewatcher/" data-title="FileWatcher" data-hashtags="CSharp"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2022/filewatcher/" data-hashtag="CSharp"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2022/filewatcher/" data-title="FileWatcher"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2022/filewatcher/" data-title="FileWatcher" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2022/filewatcher/" data-title="FileWatcher"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2022/filewatcher/" data-title="FileWatcher"><i class="fab fa-skype fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/2022/hugomemo/" class="prev" rel="prev" title="Hugo常用筆記"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/2022/getregistervalue/" class="next" rel="next" title="取得登錄檔的值">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
 </div></article></div>
             </main>
             <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>
