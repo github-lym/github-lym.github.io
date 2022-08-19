@@ -3,7 +3,13 @@
         <title>CSharp - Tag - My Memo</title>
         <link>/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 Aug 2022 02:35:20 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Aug 2022 11:41:51 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>問號的用法</title>
+    <link>/posts/2022/questionsymbol/</link>
+    <pubDate>Fri, 19 Aug 2022 11:41:51 &#43;0000</pubDate><guid>/posts/2022/questionsymbol/</guid>
+    <description><![CDATA[<p>因年紀大又沒常用老是忘記，記錄一下。</p>]]></description>
+</item>
+<item>
     <title>取得登錄檔的值</title>
     <link>/posts/2022/getregistervalue/</link>
     <pubDate>Tue, 16 Aug 2022 02:35:20 &#43;0000</pubDate><guid>/posts/2022/getregistervalue/</guid>
@@ -58,12 +64,6 @@
     <link>/posts/2022/toeftryerror/</link>
     <pubDate>Mon, 11 Apr 2022 14:01:37 &#43;0800</pubDate><guid>/posts/2022/toeftryerror/</guid>
     <description><![CDATA[<p>想將工作上的傳統作法改用EntityFramework，就做了一下嘗試。</p>]]></description>
-</item>
-<item>
-    <title>NPOI直接存取Excel</title>
-    <link>/posts/2022/v_excel/</link>
-    <pubDate>Wed, 06 Apr 2022 15:10:49 &#43;0800</pubDate><guid>/posts/2022/v_excel/</guid>
-    <description><![CDATA[<p>之前Vincent讓我接了一個case。</p>]]></description>
 </item>
 </channel>
 </rss>

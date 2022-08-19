@@ -4,32 +4,32 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>取得登錄檔的值 - My Memo</title><meta name="description" content=""><meta property="og:title" content="取得登錄檔的值" />
-<meta property="og:description" content="本來是要用預設瀏覽器開啟網址，但看到另種處理方法。" />
+        <title>解決排程執行無效的問題 - My Memo</title><meta name="description" content=""><meta property="og:title" content="解決排程執行無效的問題" />
+<meta property="og:description" content="一般公司的主機常會有些排程。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/2022/getregistervalue/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-08-16T02:35:20+00:00" />
-<meta property="article:modified_time" content="2022-08-16T02:35:20+00:00" />
+<meta property="og:url" content="/posts/2022/taskscheduler2/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-19T11:17:01+00:00" />
+<meta property="article:modified_time" content="2022-08-19T11:17:01+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/images/devil_s_bg.png"/>
 
-<meta name="twitter:title" content="取得登錄檔的值"/>
-<meta name="twitter:description" content="本來是要用預設瀏覽器開啟網址，但看到另種處理方法。"/>
+<meta name="twitter:title" content="解決排程執行無效的問題"/>
+<meta name="twitter:description" content="一般公司的主機常會有些排程。"/>
 <meta name="application-name" content="My Memo">
 <meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2022/getregistervalue/" /><link rel="prev" href="/posts/2022/filewatcher/" /><link rel="next" href="/posts/2022/taskscheduler2/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2022/taskscheduler2/" /><link rel="prev" href="/posts/2022/getregistervalue/" /><link rel="next" href="/posts/2022/questionsymbol/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "取得登錄檔的值",
+        "headline": "解決排程執行無效的問題",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "\/posts\/2022\/getregistervalue\/"
-        },"genre": "posts","keywords": "CSharp","wordcount":  50 ,
-        "url": "\/posts\/2022\/getregistervalue\/","datePublished": "2022-08-16T02:35:20+00:00","dateModified": "2022-08-16T02:35:20+00:00","publisher": {
+            "@id": "\/posts\/2022\/taskscheduler2\/"
+        },"genre": "posts","keywords": "Windows","wordcount":  32 ,
+        "url": "\/posts\/2022\/taskscheduler2\/","datePublished": "2022-08-19T11:17:01+00:00","dateModified": "2022-08-19T11:17:01+00:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
                 "@type": "Person",
@@ -113,47 +113,76 @@
 <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
 </div><main class="main">
-                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">取得登錄檔的值</h2><div class="post-meta">
+                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">解決排程執行無效的問題</h2><div class="post-meta">
                 <div class="post-meta-line"></div>
-                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-16 02:35:20 Tuesday">2022-08-16 02:35:20 Tuesday</time></span>&nbsp;</div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-19 11:17:01 Friday">2022-08-19 11:17:01 Friday</time></span>&nbsp;</div>
             </div>
             
-            <hr><div class="content" id="content"><p>本來是要用預設瀏覽器開啟網址，但看到另種處理方法。</p>
-<p>這方法是去登錄檔找 HTTP 是何執行檔開啟的值。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">string</span> <span class="n">browser</span> <span class="p">=</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl"><span class="k">static</span> <span class="n">RegistryKey</span> <span class="n">key</span> <span class="p">=</span> <span class="k">null</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">key</span> <span class="p">=</span> <span class="n">Registry</span><span class="p">.</span><span class="n">ClassesRoot</span><span class="p">.</span><span class="n">OpenSubKey</span><span class="p">(</span><span class="s">@&#34;HTTP\shell\open\command&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="n">browser</span> <span class="p">=</span> <span class="n">key</span><span class="p">.</span><span class="n">GetValue</span><span class="p">(</span><span class="k">null</span><span class="p">).</span><span class="n">ToString</span><span class="p">().</span><span class="n">ToLower</span><span class="p">().</span><span class="n">Trim</span><span class="p">(</span><span class="k">new</span><span class="p">[]</span> <span class="p">{</span> <span class="sc">&#39;&#34;&#39;</span> <span class="p">});</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(!</span><span class="n">browser</span><span class="p">.</span><span class="n">EndsWith</span><span class="p">(</span><span class="s">&#34;exe&#34;</span><span class="p">))</span>
-</span></span><span class="line"><span class="cl"><span class="p">{</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">//Remove all after the &#34;.exe&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">browser</span> <span class="p">=</span> <span class="n">browser</span><span class="p">.</span><span class="n">Substring</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="n">browser</span><span class="p">.</span><span class="n">LastIndexOf</span><span class="p">(</span><span class="s">&#34;.exe&#34;</span><span class="p">,</span> <span class="n">StringComparison</span><span class="p">.</span><span class="n">InvariantCultureIgnoreCase</span><span class="p">)</span> <span class="p">+</span> <span class="m">4</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div></div><div class="post-footer" id="post-footer">
-    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/csharp/">CSharp</a>
+            <hr><div class="content" id="content"><p>一般公司的主機常會有些排程。</p>
+<p>排程在某日後突然產生了<code>可以啟動但是實際上沒有執行</code>的怪事。</p>
+<p>但實際登入執行又可以跑。</p>
+<p>設定為<code>只有使用者登入</code>是沒問題啦…，但總覺得不夠好。</p>
+<p>所以就把網路上可以嘗試的方法全混在一起做撒尿牛丸，果然就可以了。</p>
+<ol>
+<li>
+<p>首先把排程的設定改為比較舊的版本。
+<a href="/posts/2022/taskscheduler2/task01.webp" rel=""><figure><a class="lightgallery" href="/posts/2022/taskscheduler2/task01.webp" title="TaskScheduler" data-thumbnail="/posts/2022/taskscheduler2/task01.webp" data-sub-html="<h2>改用舊版本</h2><p>TaskScheduler</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="task01.webp"
+            data-srcset="/posts/2022/taskscheduler2/task01.webp, task01.webp 1.5x, /posts/2022/taskscheduler2/task01.webp 2x"
+            data-sizes="auto"
+            alt="/posts/2022/taskscheduler2/task01.webp" />
+    </a><figcaption class="image-caption">改用舊版本</figcaption>
+    </figure></a></p>
+</li>
+<li>
+<p>從 <code>[系統管理工具]</code> 開啟 <code>[本機安全性原則]</code>
+<a href="/posts/2022/taskscheduler2/task02.webp" rel=""><figure><a class="lightgallery" href="/posts/2022/taskscheduler2/task02.webp" title="TaskScheduler" data-thumbnail="/posts/2022/taskscheduler2/task02.webp" data-sub-html="<h2>本機安全性原則</h2><p>TaskScheduler</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="task02.webp"
+            data-srcset="/posts/2022/taskscheduler2/task02.webp, task02.webp 1.5x, /posts/2022/taskscheduler2/task02.webp 2x"
+            data-sizes="auto"
+            alt="/posts/2022/taskscheduler2/task02.webp" />
+    </a><figcaption class="image-caption">本機安全性原則</figcaption>
+    </figure></a></p>
+</li>
+<li>
+<p><code>[本機原則]</code> / <code>[使用者權限指派]</code> 並找到 <code>[以批次工作登入]</code> (Logon as a batch job) 選項，開啟設定視窗
+<a href="/posts/2022/taskscheduler2/task03.webp" rel=""><figure><a class="lightgallery" href="/posts/2022/taskscheduler2/task03.webp" title="TaskScheduler" data-thumbnail="/posts/2022/taskscheduler2/task03.webp" data-sub-html="<h2>以批次工作登入</h2><p>TaskScheduler</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="task03.webp"
+            data-srcset="/posts/2022/taskscheduler2/task03.webp, task03.webp 1.5x, /posts/2022/taskscheduler2/task03.webp 2x"
+            data-sizes="auto"
+            alt="/posts/2022/taskscheduler2/task03.webp" />
+    </a><figcaption class="image-caption">以批次工作登入</figcaption>
+    </figure></a></p>
+</li>
+<li>
+<p><code>[以批次工作登入 - 內容]</code> 視窗裡，點選 <code>[新增使用者或群組]</code> 按鈕，並新增使用者帳號或特定群組到這裡來。
+<a href="/posts/2022/taskscheduler2/task04.webp" rel=""><figure><a class="lightgallery" href="/posts/2022/taskscheduler2/task04.webp" title="TaskScheduler" data-thumbnail="/posts/2022/taskscheduler2/task04.webp" data-sub-html="<h2>新增使用者或群組</h2><p>TaskScheduler</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="task04.webp"
+            data-srcset="/posts/2022/taskscheduler2/task04.webp, task04.webp 1.5x, /posts/2022/taskscheduler2/task04.webp 2x"
+            data-sizes="auto"
+            alt="/posts/2022/taskscheduler2/task04.webp" />
+    </a><figcaption class="image-caption">新增使用者或群組</figcaption>
+    </figure></a></p>
+</li>
+</ol>
+<p>好吧，這樣亂搞還居然有用。</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/windows/">Windows</a>
                 </span></div><div class="post-info-share">
-            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2022/getregistervalue/" data-title="取得登錄檔的值" data-hashtags="CSharp"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2022/getregistervalue/" data-hashtag="CSharp"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2022/getregistervalue/" data-title="取得登錄檔的值"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2022/getregistervalue/" data-title="取得登錄檔的值" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2022/getregistervalue/" data-title="取得登錄檔的值"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2022/getregistervalue/" data-title="取得登錄檔的值"><i class="fab fa-skype fa-fw"></i></a></span>
-        </div></div><div class="post-nav"><a href="/posts/2022/filewatcher/" class="prev" rel="prev" title="FileWatcher"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
-            <a href="/posts/2022/taskscheduler2/" class="next" rel="next" title="解決排程執行無效的問題">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2022/taskscheduler2/" data-title="解決排程執行無效的問題" data-hashtags="Windows"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2022/taskscheduler2/" data-hashtag="Windows"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2022/taskscheduler2/" data-title="解決排程執行無效的問題"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2022/taskscheduler2/" data-title="解決排程執行無效的問題" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2022/taskscheduler2/" data-title="解決排程執行無效的問題"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2022/taskscheduler2/" data-title="解決排程執行無效的問題"><i class="fab fa-skype fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/2022/getregistervalue/" class="prev" rel="prev" title="取得登錄檔的值"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/2022/questionsymbol/" class="next" rel="next" title="問號的用法">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
 </div></article></div>
             </main>
             <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>

@@ -2,10 +2,13 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>/tags/csharp/</loc><lastmod>2022-08-16T02:35:20&#43;00:00</lastmod></url><url>
-            <loc>/</loc><lastmod>2022-08-16T02:35:20&#43;00:00</lastmod></url><url>
-            <loc>/posts/</loc><lastmod>2022-08-16T02:35:20&#43;00:00</lastmod></url><url>
-            <loc>/tags/</loc><lastmod>2022-08-16T02:35:20&#43;00:00</lastmod></url><url>
+            <loc>/tags/csharp/</loc><lastmod>2022-08-19T11:41:51&#43;00:00</lastmod></url><url>
+            <loc>/</loc><lastmod>2022-08-19T11:41:51&#43;00:00</lastmod></url><url>
+            <loc>/posts/</loc><lastmod>2022-08-19T11:41:51&#43;00:00</lastmod></url><url>
+            <loc>/tags/</loc><lastmod>2022-08-19T11:41:51&#43;00:00</lastmod></url><url>
+            <loc>/posts/2022/questionsymbol/</loc><lastmod>2022-08-19T11:41:51&#43;00:00</lastmod></url><url>
+            <loc>/tags/windows/</loc><lastmod>2022-08-19T11:17:01&#43;00:00</lastmod></url><url>
+            <loc>/posts/2022/taskscheduler2/</loc><lastmod>2022-08-19T11:17:01&#43;00:00</lastmod></url><url>
             <loc>/posts/2022/getregistervalue/</loc><lastmod>2022-08-16T02:35:20&#43;00:00</lastmod></url><url>
             <loc>/posts/2022/filewatcher/</loc><lastmod>2022-08-16T01:15:48&#43;00:00</lastmod></url><url>
             <loc>/tags/hugo/</loc><lastmod>2022-08-11T06:40:20&#43;00:00</lastmod></url><url>

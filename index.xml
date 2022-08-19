@@ -3,9 +3,21 @@
         <title>My Memo</title>
         <link>/</link>
         <description>My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 16 Aug 2022 02:35:20 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Aug 2022 11:41:51 &#43;0000</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>問號的用法</title>
+    <link>/posts/2022/questionsymbol/</link>
+    <pubDate>Fri, 19 Aug 2022 11:41:51 &#43;0000</pubDate><guid>/posts/2022/questionsymbol/</guid>
+    <description><![CDATA[<p>因年紀大又沒常用老是忘記，記錄一下。</p>]]></description>
+</item>
+<item>
+    <title>解決排程執行無效的問題</title>
+    <link>/posts/2022/taskscheduler2/</link>
+    <pubDate>Fri, 19 Aug 2022 11:17:01 &#43;0000</pubDate><guid>/posts/2022/taskscheduler2/</guid>
+    <description><![CDATA[<p>一般公司的主機常會有些排程。</p>]]></description>
+</item>
+<item>
     <title>取得登錄檔的值</title>
     <link>/posts/2022/getregistervalue/</link>
     <pubDate>Tue, 16 Aug 2022 02:35:20 &#43;0000</pubDate><guid>/posts/2022/getregistervalue/</guid>
@@ -54,18 +66,6 @@
     <link>/posts/2022/sqlparameterin/</link>
     <pubDate>Wed, 20 Apr 2022 11:37:08 &#43;0800</pubDate><guid>/posts/2022/sqlparameterin/</guid>
     <description><![CDATA[<p>之前為了資安問題都用<strong>Sql Parameter</strong>。</p>]]></description>
-</item>
-<item>
-    <title>JavaScript的字串函數</title>
-    <link>/posts/2022/javascriptstring/</link>
-    <pubDate>Wed, 20 Apr 2022 10:38:26 &#43;0800</pubDate><guid>/posts/2022/javascriptstring/</guid>
-    <description><![CDATA[<p>來源在這=&gt;<a href="https://blog.darkthread.net/blog/js-string-funcs-notes/" target="_blank" rel="noopener noreffer">這些年，我錯過的 JavaScript 字串函數</a>。</p>]]></description>
-</item>
-<item>
-    <title>object-fit—圖片的縮放</title>
-    <link>/posts/2022/object-fit/</link>
-    <pubDate>Wed, 20 Apr 2022 10:13:03 &#43;0800</pubDate><guid>/posts/2022/object-fit/</guid>
-    <description><![CDATA[<p>發現圖片有新屬性，記錄一下。</p>]]></description>
 </item>
 </channel>
 </rss>
