@@ -1,0 +1,31 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>疑難雜症 - Category - My Memo</title>
+        <link>/categories/%E7%96%91%E9%9B%A3%E9%9B%9C%E7%97%87/</link>
+        <description>疑難雜症 - Category - My Memo</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Aug 2022 02:56:59 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%96%91%E9%9B%A3%E9%9B%9C%E7%97%87/" rel="self" type="application/rss+xml" /><item>
+    <title>解決重開機桌面圖示排列混亂問題</title>
+    <link>/posts/2022/iconarrangement/</link>
+    <pubDate>Mon, 22 Aug 2022 02:56:59 &#43;0000</pubDate><guid>/posts/2022/iconarrangement/</guid>
+    <description><![CDATA[<p>公司不知為何，明明設定好桌面圖示順序，一重開機就亂了套。</p>]]></description>
+</item>
+<item>
+    <title>解決排程執行無效的問題</title>
+    <link>/posts/2022/taskscheduler2/</link>
+    <pubDate>Fri, 19 Aug 2022 11:17:01 &#43;0000</pubDate><guid>/posts/2022/taskscheduler2/</guid>
+    <description><![CDATA[<p>一般公司的主機常會有些排程。</p>]]></description>
+</item>
+<item>
+    <title>導入EntityFramework的嘗試與錯誤</title>
+    <link>/posts/2022/toeftryerror/</link>
+    <pubDate>Mon, 11 Apr 2022 14:01:37 &#43;0800</pubDate><guid>/posts/2022/toeftryerror/</guid>
+    <description><![CDATA[<p>想將工作上的傳統作法改用EntityFramework，就做了一下嘗試。</p>]]></description>
+</item>
+<item>
+    <title>在Visual Studio 2015上使用Fody</title>
+    <link>/posts/2022/fodyonvisualstudio2015/</link>
+    <pubDate>Fri, 01 Apr 2022 15:49:11 &#43;0800</pubDate><guid>/posts/2022/fodyonvisualstudio2015/</guid>
+    <description><![CDATA[<p>Fody是個好用的套件，可以把多個dll檔跟執行檔合併成單一檔案。</p>]]></description>
+</item>
+</channel>
+</rss>

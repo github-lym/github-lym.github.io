@@ -3,7 +3,13 @@
         <title>All Posts - My Memo</title>
         <link>/posts/</link>
         <description>All Posts | My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Aug 2022 11:41:51 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Aug 2022 02:56:59 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>解決重開機桌面圖示排列混亂問題</title>
+    <link>/posts/2022/iconarrangement/</link>
+    <pubDate>Mon, 22 Aug 2022 02:56:59 &#43;0000</pubDate><guid>/posts/2022/iconarrangement/</guid>
+    <description><![CDATA[<p>公司不知為何，明明設定好桌面圖示順序，一重開機就亂了套。</p>]]></description>
+</item>
+<item>
     <title>問號的用法</title>
     <link>/posts/2022/questionsymbol/</link>
     <pubDate>Fri, 19 Aug 2022 11:41:51 &#43;0000</pubDate><guid>/posts/2022/questionsymbol/</guid>
@@ -58,12 +64,6 @@
     <description><![CDATA[取得執行檔執行資料夾
 1 string assemblyPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location); 取得執行檔完全路徑
 1 System.Reflection.Assembly.GetEntryAssembly().Location; ]]></description>
-</item>
-<item>
-    <title>在語法有IN情況下使用Sql Parameter</title>
-    <link>/posts/2022/sqlparameterin/</link>
-    <pubDate>Wed, 20 Apr 2022 11:37:08 &#43;0800</pubDate><guid>/posts/2022/sqlparameterin/</guid>
-    <description><![CDATA[<p>之前為了資安問題都用<strong>Sql Parameter</strong>。</p>]]></description>
 </item>
 </channel>
 </rss>
