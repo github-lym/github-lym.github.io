@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/2022\/dockerpath\/"
-        },"genre": "posts","keywords": "Docker","wordcount":  239 ,
+        },"genre": "posts","keywords": "Docker","wordcount":  197 ,
         "url": "\/posts\/2022\/dockerpath\/","datePublished": "2022-08-23T07:11:21+00:00","dateModified": "2022-08-23T07:11:21+00:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
@@ -122,99 +122,49 @@
 <p>結果到目前為止，只有當下和學完那個月有摸到。</p>
 <p>當時最讓人頭痛的，就是它都把資料塞在 C 槽而且無法從設定移動。<br>
 後來找半天才讓我找到解法。</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-cmd" data-lang="cmd"><span class="line"><span class="cl">By default, Docker Desktop for Window will create 2 distros below
-</span></span><span class="line"><span class="cl">docker-desktop
-</span></span><span class="line"><span class="cl">docker-desktop-data
-</span></span><span class="line"><span class="cl"><span class="k">If</span> we<span class="err"> access the path %LOCALAPPDATA%/Docker/wsl;</span>
-</span></span><span class="line"><span class="cl">we can see 2 folders; and inside it is vhdx file. For detail,
-</span></span><span class="line"><span class="cl">data/ext4.vhdx which is consumed by docker-desktop-data
-</span></span><span class="line"><span class="cl">distro/ext4.vhdx which is consumed by docker-desktop
-</span></span><span class="line"><span class="cl">In which, docker-desktop-data is used to store images and so on. Therefore,
-</span></span><span class="line"><span class="cl">its size will be increased in the future, consequently,
-</span></span><span class="line"><span class="cl">our System Drive will be out of space.
-</span></span><span class="line"><span class="cl">Below are step-by-step to move docker-desktop-data out of System Drive,
-</span></span><span class="line"><span class="cl"><span class="k">for</span> example, E:\docker-desktop\data.
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Step 1: Stop Docker
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Step 2: Export, unregister then import distro
-</span></span><span class="line"><span class="cl">1- Shutdown all WSL distros
-</span></span><span class="line"><span class="cl">wsl --shutdown
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">2- Export docker-desktop-data to tar file
-</span></span><span class="line"><span class="cl">wsl --export docker-desktop-data D:\Docker\docker-desktop-data.tar
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">3- Unregister current docker-desktop-data distro
-</span></span><span class="line"><span class="cl">wsl --unregister docker-desktop-data
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">4- Import docker-desktop-data distro from tar file
-</span></span><span class="line"><span class="cl">wsl --import docker-desktop-data D:\Docker\data D:\Docker\docker-desktop-data.tar --version 2
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Notes:
-</span></span><span class="line"><span class="cl">In this step, we may meet the error of cannot create a specific network.
-</span></span><span class="line"><span class="cl">Just re-run the import command.
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">Step 3: Start Docker
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">C<span class="p">:</span><span class="nl">\ProgramData\Docker\config\daemon.json</span><span class="c1"> is for windows containers,</span>
-</span></span><span class="line"><span class="cl">this is the default location in windows daemon code.
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">C<span class="p">:</span><span class="nl">\Users\</span><span class="c1">&lt;username&gt;\.docker\daemon.json is for linux containers,</span>
-</span></span><span class="line"><span class="cl">this hyper-v/wls2/linux native default lo
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">參數為data-root
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>雖不知現在的 Docker 變得如何，也不知還有沒有機會玩。</p>
+<blockquote>
+<p>By default,<br>
+Docker Desktop for Window will create 2 distros below<br>
+<code>docker-desktop</code><br>
+<code>docker-desktop-data</code><br>
+If we access the path <code>%LOCALAPPDATA%/Docker/wsl</code><br>
+we can see 2 folders; and inside it is vhdx file.</p>
+</blockquote>
+<blockquote>
+<p>For detail,<br>
+<code>data/ext4.vhdx</code> which is consumed by <code>docker-desktop-data</code><br>
+<code>distro/ext4.vhdx</code> which is consumed by <code>docker-desktop</code><br>
+In which, docker-desktop-data is used to store images and so on.</p>
+</blockquote>
+<blockquote>
+<p>Therefore,<br>
+its size will be increased in the future, consequently,
+our System Drive will be out of space.
+Below are step-by-step to move docker-desktop-data out of System &gt;Drive,
+for example, E:\docker-desktop\data.</p>
+</blockquote>
+<blockquote>
+<h3 id="step-1-stop-docker">Step 1: Stop Docker</h3>
+<h3 id="step-2-export-unregister-then-import-distro">Step 2: Export, unregister then import distro</h3>
+<p><strong>1- Shutdown all WSL distros</strong><br>
+<code>wsl --shutdown</code></p>
+<p><strong>2- Export docker-desktop-data to tar file</strong><br>
+<code>wsl --export docker-desktop-data D:\Docker\docker-desktop-data.tar</code></p>
+<p><strong>3- Unregister current docker-desktop-data distro</strong><br>
+<code>wsl --unregister docker-desktop-data</code></p>
+<p><strong>4- Import docker-desktop-data distro from tar file</strong><br>
+<code>wsl --import docker-desktop-data D:\Docker\data D:\Docker\docker-desktop-data.tar --version 2</code></p>
+<p><em>Notes:<br>
+In this step, we may meet the error of cannot create a specific network.<br>
+Just re-run the import command.</em></p>
+<h3 id="step-3-start-docker">Step 3: Start Docker</h3>
+<p><code>C:\ProgramData\Docker\config\daemon.json</code> is for windows &gt;containers,<br>
+this is the default location in windows daemon code.</p>
+<p><code>C:\Users\&lt;username&gt;\.docker\daemon.json</code> is for linux containers,<br>
+this hyper-v/wls2/linux native default location</p>
+<p>參數為 data-root</p>
+</blockquote>
+<p>雖不知現在的 Docker 變得如何，也不知還有沒有機會玩。</p>
 <p>不過怕自己遇到還要找一次，還是做個記錄吧！</p></div><div class="post-footer" id="post-footer">
     <div class="post-info"><div class="post-info-tag"><span><a href="/tags/docker/">Docker</a>
                 </span></div><div class="post-info-share">
