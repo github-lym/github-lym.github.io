@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Docker - Tag - My Memo</title>
+        <link>/tags/docker/</link>
+        <description>Docker - Tag - My Memo</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 23 Aug 2022 07:11:21 &#43;0000</lastBuildDate><atom:link href="/tags/docker/" rel="self" type="application/rss+xml" /><item>
+    <title>修改Docker的映像檔路徑</title>
+    <link>/posts/2022/dockerpath/</link>
+    <pubDate>Tue, 23 Aug 2022 07:11:21 &#43;0000</pubDate><guid>/posts/2022/dockerpath/</guid>
+    <description><![CDATA[<p>兩年前有學到 Docker。</p>]]></description>
+</item>
+</channel>
+</rss>

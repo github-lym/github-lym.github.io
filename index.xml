@@ -3,9 +3,21 @@
         <title>My Memo</title>
         <link>/</link>
         <description>My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Aug 2022 02:56:59 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 23 Aug 2022 07:11:21 &#43;0000</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>修改Docker的映像檔路徑</title>
+    <link>/posts/2022/dockerpath/</link>
+    <pubDate>Tue, 23 Aug 2022 07:11:21 &#43;0000</pubDate><guid>/posts/2022/dockerpath/</guid>
+    <description><![CDATA[<p>兩年前有學到 Docker。</p>]]></description>
+</item>
+<item>
+    <title>Web Service GUI Test Tool ( wizdl )</title>
+    <link>/posts/2022/wizdl/</link>
+    <pubDate>Tue, 23 Aug 2022 06:56:13 &#43;0000</pubDate><guid>/posts/2022/wizdl/</guid>
+    <description><![CDATA[<p>今天閒暇亂翻翻到保哥的介紹，才發現我也有玩過這東西。</p>]]></description>
+</item>
+<item>
     <title>解決重開機桌面圖示排列混亂問題</title>
     <link>/posts/2022/iconarrangement/</link>
     <pubDate>Mon, 22 Aug 2022 02:56:59 &#43;0000</pubDate><guid>/posts/2022/iconarrangement/</guid>
@@ -52,20 +64,6 @@
     <link>/posts/2022/datatablecolumnnametoarray/</link>
     <pubDate>Thu, 11 Aug 2022 06:26:43 &#43;0000</pubDate><guid>/posts/2022/datatablecolumnnametoarray/</guid>
     <description><![CDATA[<p>已忘記何時用到的，不過還是記一下。</p>]]></description>
-</item>
-<item>
-    <title>WinForm抓取鍵盤輸入</title>
-    <link>/posts/2022/winformcatchkeyboard/</link>
-    <pubDate>Wed, 10 Aug 2022 09:59:13 &#43;0800</pubDate><guid>/posts/2022/winformcatchkeyboard/</guid>
-    <description><![CDATA[<p>做個紀錄。</p>]]></description>
-</item>
-<item>
-    <title>取得執行檔資料夾與完整路徑</title>
-    <link>/posts/2022/executepath/</link>
-    <pubDate>Wed, 10 Aug 2022 09:22:31 &#43;0800</pubDate><guid>/posts/2022/executepath/</guid>
-    <description><![CDATA[取得執行檔執行資料夾
-1 string assemblyPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location); 取得執行檔完全路徑
-1 System.Reflection.Assembly.GetEntryAssembly().Location; ]]></description>
 </item>
 </channel>
 </rss>

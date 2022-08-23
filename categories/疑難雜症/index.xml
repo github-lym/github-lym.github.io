@@ -3,7 +3,13 @@
         <title>疑難雜症 - Category - My Memo</title>
         <link>/categories/%E7%96%91%E9%9B%A3%E9%9B%9C%E7%97%87/</link>
         <description>疑難雜症 - Category - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Aug 2022 02:56:59 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%96%91%E9%9B%A3%E9%9B%9C%E7%97%87/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 23 Aug 2022 07:11:21 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%96%91%E9%9B%A3%E9%9B%9C%E7%97%87/" rel="self" type="application/rss+xml" /><item>
+    <title>修改Docker的映像檔路徑</title>
+    <link>/posts/2022/dockerpath/</link>
+    <pubDate>Tue, 23 Aug 2022 07:11:21 &#43;0000</pubDate><guid>/posts/2022/dockerpath/</guid>
+    <description><![CDATA[<p>兩年前有學到 Docker。</p>]]></description>
+</item>
+<item>
     <title>解決重開機桌面圖示排列混亂問題</title>
     <link>/posts/2022/iconarrangement/</link>
     <pubDate>Mon, 22 Aug 2022 02:56:59 &#43;0000</pubDate><guid>/posts/2022/iconarrangement/</guid>
