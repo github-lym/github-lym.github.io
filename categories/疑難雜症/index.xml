@@ -28,6 +28,12 @@
     <description><![CDATA[<p>想將工作上的傳統作法改用EntityFramework，就做了一下嘗試。</p>]]></description>
 </item>
 <item>
+    <title>刪除名稱尾端為點(.)的資料夾</title>
+    <link>/posts/2022/deletefolderthatnameendedwithadot/</link>
+    <pubDate>Sat, 02 Apr 2022 21:32:48 &#43;0800</pubDate><guid>/posts/2022/deletefolderthatnameendedwithadot/</guid>
+    <description><![CDATA[<p>今天解壓縮，不小心輸出名稱多了一個點(.)。</p>]]></description>
+</item>
+<item>
     <title>在Visual Studio 2015上使用Fody</title>
     <link>/posts/2022/fodyonvisualstudio2015/</link>
     <pubDate>Fri, 01 Apr 2022 15:49:11 &#43;0800</pubDate><guid>/posts/2022/fodyonvisualstudio2015/</guid>

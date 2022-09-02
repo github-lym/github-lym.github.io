@@ -63,9 +63,9 @@
 >>
 >>ROLLBACK immediate;
 >>
->>ALTER DATABASE covid19 modify FILE (NAME='COVID19', filename= >>'D:\_MSSQL_DB\COVID19.mdf');
+>>ALTER DATABASE covid19 modify FILE (NAME = 'COVID19', filename = 'D:\_MSSQL_DB\COVID19.mdf');
 >>
->>ALTER DATABASE covid19 modify FILE (NAME='COVID19_LOG', filename= >>'D:\_MSSQL_DB_LOG\COVID19_log.ldf');
+>>ALTER DATABASE covid19 modify FILE (NAME = 'COVID19_LOG', filename = 'D:\_MSSQL_DB_LOG\COVID19_log.ldf');
 >>
 >>--然後移動實體檔案
 >>ALTER DATABASE COVID19 SET ONLINE;
