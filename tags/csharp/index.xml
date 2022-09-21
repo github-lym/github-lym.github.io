@@ -3,7 +3,13 @@
         <title>CSharp - Tag - My Memo</title>
         <link>/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 23 Aug 2022 06:56:13 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Sep 2022 06:59:48 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>將IEnumerable轉成DataTable</title>
+    <link>/posts/2022/ienumerabletodatatable/</link>
+    <pubDate>Mon, 19 Sep 2022 06:59:48 &#43;0000</pubDate><guid>/posts/2022/ienumerabletodatatable/</guid>
+    <description><![CDATA[<p>使用linq，但回傳要是DataTable，所以找到並抄下來。</p>]]></description>
+</item>
+<item>
     <title>Web Service GUI Test Tool ( wizdl )</title>
     <link>/posts/2022/wizdl/</link>
     <pubDate>Tue, 23 Aug 2022 06:56:13 &#43;0000</pubDate><guid>/posts/2022/wizdl/</guid>
@@ -58,12 +64,6 @@
     <link>/posts/2022/sqlparameterin/</link>
     <pubDate>Wed, 20 Apr 2022 11:37:08 &#43;0800</pubDate><guid>/posts/2022/sqlparameterin/</guid>
     <description><![CDATA[<p>之前為了資安問題都用<strong>Sql Parameter</strong>。</p>]]></description>
-</item>
-<item>
-    <title>SqlBulkCopy—快速寫入MSSQL資料庫</title>
-    <link>/posts/2022/sqlbulkcopy/</link>
-    <pubDate>Wed, 20 Apr 2022 09:13:30 &#43;0800</pubDate><guid>/posts/2022/sqlbulkcopy/</guid>
-    <description><![CDATA[<p>之前在要在資料庫寫入數十萬乃至數百萬的資料，以往都是一筆筆慢慢寫入。</p>]]></description>
 </item>
 </channel>
 </rss>

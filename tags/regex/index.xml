@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>regex - Tag - My Memo</title>
+        <link>/tags/regex/</link>
+        <description>regex - Tag - My Memo</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Sep 2022 06:31:50 &#43;0000</lastBuildDate><atom:link href="/tags/regex/" rel="self" type="application/rss+xml" /><item>
+    <title>正規表示法筆記</title>
+    <link>/posts/2022/regex/</link>
+    <pubDate>Mon, 19 Sep 2022 06:31:50 &#43;0000</pubDate><guid>/posts/2022/regex/</guid>
+    <description><![CDATA[<p>有時遇到一些正規表示法的問題，做個筆記記錄一下。</p>]]></description>
+</item>
+</channel>
+</rss>

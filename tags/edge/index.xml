@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Edge - Tag - My Memo</title>
+        <link>/tags/edge/</link>
+        <description>Edge - Tag - My Memo</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Sep 2022 06:06:45 &#43;0000</lastBuildDate><atom:link href="/tags/edge/" rel="self" type="application/rss+xml" /><item>
+    <title>在Edge裡使用IE模式</title>
+    <link>/posts/2022/ieinedge/</link>
+    <pubDate>Mon, 19 Sep 2022 06:06:45 &#43;0000</pubDate><guid>/posts/2022/ieinedge/</guid>
+    <description><![CDATA[<p>工作上的WebClient需在IE模式下執行。</p>]]></description>
+</item>
+</channel>
+</rss>
