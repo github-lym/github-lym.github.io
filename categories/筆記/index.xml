@@ -3,7 +3,19 @@
         <title>筆記 - Category - My Memo</title>
         <link>/categories/%E7%AD%86%E8%A8%98/</link>
         <description>筆記 - Category - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Sep 2022 06:59:48 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 27 Sep 2022 16:28:45 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+    <title>DataTable的小技巧</title>
+    <link>/posts/2022/datatablememo/</link>
+    <pubDate>Tue, 27 Sep 2022 16:28:45 &#43;0000</pubDate><guid>/posts/2022/datatablememo/</guid>
+    <description><![CDATA[<p>偶爾看到兩個小技巧，筆記一下。</p>]]></description>
+</item>
+<item>
+    <title>IIS加解密</title>
+    <link>/posts/2022/iisencryptiondecryption/</link>
+    <pubDate>Mon, 26 Sep 2022 14:15:32 &#43;0000</pubDate><guid>/posts/2022/iisencryptiondecryption/</guid>
+    <description><![CDATA[<p>雖知道有這功能，但之前完全沒有自己用過。</p>]]></description>
+</item>
+<item>
     <title>將IEnumerable轉成DataTable</title>
     <link>/posts/2022/ienumerabletodatatable/</link>
     <pubDate>Mon, 19 Sep 2022 06:59:48 &#43;0000</pubDate><guid>/posts/2022/ienumerabletodatatable/</guid>
@@ -52,18 +64,6 @@
     <link>/posts/2022/object-fit/</link>
     <pubDate>Wed, 20 Apr 2022 10:13:03 &#43;0800</pubDate><guid>/posts/2022/object-fit/</guid>
     <description><![CDATA[<p>發現圖片有新屬性，記錄一下。</p>]]></description>
-</item>
-<item>
-    <title>SqlBulkCopy—快速寫入MSSQL資料庫</title>
-    <link>/posts/2022/sqlbulkcopy/</link>
-    <pubDate>Wed, 20 Apr 2022 09:13:30 &#43;0800</pubDate><guid>/posts/2022/sqlbulkcopy/</guid>
-    <description><![CDATA[<p>之前在要在資料庫寫入數十萬乃至數百萬的資料，以往都是一筆筆慢慢寫入。</p>]]></description>
-</item>
-<item>
-    <title>MSSQL比對兩資料表並Merge</title>
-    <link>/posts/2022/mssqlmerge/</link>
-    <pubDate>Thu, 07 Apr 2022 10:39:55 &#43;0800</pubDate><guid>/posts/2022/mssqlmerge/</guid>
-    <description><![CDATA[<p>感謝Warren大大讓我認識了這個指令。</p>]]></description>
 </item>
 </channel>
 </rss>

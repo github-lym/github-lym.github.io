@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>RDLC - Tag - My Memo</title>
+        <link>/tags/rdlc/</link>
+        <description>RDLC - Tag - My Memo</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 03 Oct 2022 03:04:09 &#43;0000</lastBuildDate><atom:link href="/tags/rdlc/" rel="self" type="application/rss+xml" /><item>
+    <title>RDLC設定重複表頭</title>
+    <link>/posts/2022/rdlcrepeattitle/</link>
+    <pubDate>Mon, 03 Oct 2022 03:04:09 &#43;0000</pubDate><guid>/posts/2022/rdlcrepeattitle/</guid>
+    <description><![CDATA[<p>用那麼久，終於會設定了。</p>]]></description>
+</item>
+</channel>
+</rss>

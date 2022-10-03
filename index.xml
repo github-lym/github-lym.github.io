@@ -3,9 +3,27 @@
         <title>My Memo</title>
         <link>/</link>
         <description>My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Sep 2022 06:59:48 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 03 Oct 2022 03:04:09 &#43;0000</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>RDLC設定重複表頭</title>
+    <link>/posts/2022/rdlcrepeattitle/</link>
+    <pubDate>Mon, 03 Oct 2022 03:04:09 &#43;0000</pubDate><guid>/posts/2022/rdlcrepeattitle/</guid>
+    <description><![CDATA[<p>用那麼久，終於會設定了。</p>]]></description>
+</item>
+<item>
+    <title>DataTable的小技巧</title>
+    <link>/posts/2022/datatablememo/</link>
+    <pubDate>Tue, 27 Sep 2022 16:28:45 &#43;0000</pubDate><guid>/posts/2022/datatablememo/</guid>
+    <description><![CDATA[<p>偶爾看到兩個小技巧，筆記一下。</p>]]></description>
+</item>
+<item>
+    <title>IIS加解密</title>
+    <link>/posts/2022/iisencryptiondecryption/</link>
+    <pubDate>Mon, 26 Sep 2022 14:15:32 &#43;0000</pubDate><guid>/posts/2022/iisencryptiondecryption/</guid>
+    <description><![CDATA[<p>雖知道有這功能，但之前完全沒有自己用過。</p>]]></description>
+</item>
+<item>
     <title>將IEnumerable轉成DataTable</title>
     <link>/posts/2022/ienumerabletodatatable/</link>
     <pubDate>Mon, 19 Sep 2022 06:59:48 &#43;0000</pubDate><guid>/posts/2022/ienumerabletodatatable/</guid>
@@ -46,24 +64,6 @@
     <link>/posts/2022/questionsymbol/</link>
     <pubDate>Fri, 19 Aug 2022 11:41:51 &#43;0000</pubDate><guid>/posts/2022/questionsymbol/</guid>
     <description><![CDATA[<p>因年紀大又沒常用老是忘記，記錄一下。</p>]]></description>
-</item>
-<item>
-    <title>解決排程執行無效的問題</title>
-    <link>/posts/2022/taskscheduler2/</link>
-    <pubDate>Fri, 19 Aug 2022 11:17:01 &#43;0000</pubDate><guid>/posts/2022/taskscheduler2/</guid>
-    <description><![CDATA[<p>一般公司的主機常會有些排程。</p>]]></description>
-</item>
-<item>
-    <title>取得登錄檔的值</title>
-    <link>/posts/2022/getregistervalue/</link>
-    <pubDate>Tue, 16 Aug 2022 02:35:20 &#43;0000</pubDate><guid>/posts/2022/getregistervalue/</guid>
-    <description><![CDATA[<p>本來是要用預設瀏覽器開啟網址，但看到另種處理方法。</p>]]></description>
-</item>
-<item>
-    <title>FileWatcher</title>
-    <link>/posts/2022/filewatcher/</link>
-    <pubDate>Tue, 16 Aug 2022 01:15:48 &#43;0000</pubDate><guid>/posts/2022/filewatcher/</guid>
-    <description><![CDATA[<p>將檔案備份至多個硬碟對我來說一直是個很花時間的事。</p>]]></description>
 </item>
 </channel>
 </rss>

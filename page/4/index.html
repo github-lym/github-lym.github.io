@@ -114,6 +114,19 @@
         alt="/images/devil_s_bg.png"
         title="/images/devil_s_bg.png" /></a></div><h1 class="home-title">中老年備忘錄</h1><div class="home-subtitle"><div id="id-3" class="typeit"></div></div><div class="links"></div></div>
 <div class="summary-card"><article class="summary" itemscope itemtype="http://schema.org/Article" data-image="hide"><h2 class="single-title" itemprop="name headline">
+        <a href="/posts/2022/addapostrophetostringelements/">將字串元素加雙引號</a>
+    </h2><div class="post-meta"><span class="post-publish">published on <time datetime="2022-04-06 14:56:10 Wednesday">2022-04-06 14:56:10 Wednesday</time></span></div><a class="content" href="/posts/2022/addapostrophetostringelements/">string v = &quot;10,14,18,21&quot;;
+1 2 3 4 5 6 7 8 9 10 11 //method1 var r1 = string.Join(&#34;,&#34;, v.Split(&#34;,&#34;).Select(x =&gt; $&#34;&#39;{x}&#39;&#34;)); Console.WriteLine(r1); // &#39;10&#39;, &#39;14&#39;, &#39;18&#39;, &#39;21&#39; //method2 var r2 = $&#34;&#39;{v.Replace(&#34;,&#34;, &#34;&#39;,&#39;&#34;)}&#39;&#34;; Console.WriteLine(r2); //method3 using System.Text.RegularExpressions; string r3 = Regex.Replace(v, &#34;[^,]+&#34;, &#34;&#39;$0&#39;&#34;); Console.WriteLine(r3); 輸出為'10','14','18','21'</a><div class="post-footer"><ul class="post-tags"><li><a href="/tags/csharp/">CSharp</a></li></ul></div>
+</article>
+<article class="summary" itemscope itemtype="http://schema.org/Article" data-image="hide"><h2 class="single-title" itemprop="name headline">
+        <a href="/posts/2022/getfisrtandlastdate/">快速取得某天當月第一天與最後一天</a>
+    </h2><div class="post-meta"><span class="post-publish">published on <time datetime="2022-04-06 14:48:51 Wednesday">2022-04-06 14:48:51 Wednesday</time></span></div><a class="content" href="/posts/2022/getfisrtandlastdate/"> 1 2 3 4 5 6 7 8 9 10 public static DateTime FirstDayOfMonth_AddMethod(this DateTime value) { return value.Date.AddDays(1 - value.Day); } public static DateTime LastDayOfMonth_NewMethodWithReuseOfExtMethod(this DateTime value) { return new DateTime(value.Year, value.Month, value.DaysInMonth()); } </a><div class="post-footer"><ul class="post-tags"><li><a href="/tags/csharp/">CSharp</a></li></ul></div>
+</article>
+<article class="summary" itemscope itemtype="http://schema.org/Article" data-image="hide"><h2 class="single-title" itemprop="name headline">
+        <a href="/posts/2022/comboboxfuzzysearch/">ComboBox的模糊查詢</a>
+    </h2><div class="post-meta"><span class="post-publish">published on <time datetime="2022-04-06 14:34:04 Wednesday">2022-04-06 14:34:04 Wednesday</time></span></div><a class="content" href="/posts/2022/comboboxfuzzysearch/"><p>要不是Vincent，我可能還沒機會做這個。</p></a><div class="post-footer"><ul class="post-tags"><li><a href="/tags/csharp/">CSharp</a></li><li><a href="/tags/winform/">WinForm</a></li></ul></div>
+</article>
+<article class="summary" itemscope itemtype="http://schema.org/Article" data-image="hide"><h2 class="single-title" itemprop="name headline">
         <a href="/posts/2022/cmdgetlastaccessfolder/">命令提示字元取得最後存取資料夾</a>
     </h2><div class="post-meta"><span class="post-publish">published on <time datetime="2022-04-06 14:25:47 Wednesday">2022-04-06 14:25:47 Wednesday</time></span></div><a class="content" href="/posts/2022/cmdgetlastaccessfolder/">*號表萬用字元，那邊可以寫路徑。
 1 2 for /f &#34;delims=&#34; %%a in (&#39;dir /b /ad-h /od &#34;*&#34;&#39;) do set &#34;latestDir=%%~a&#34; echo(%latestDir% </a><div class="post-footer"><ul class="post-tags"><li><a href="/tags/cmd/">cmd</a></li></ul></div>
@@ -141,18 +154,6 @@
 <article class="summary" itemscope itemtype="http://schema.org/Article" data-image="hide"><h2 class="single-title" itemprop="name headline">
         <a href="/posts/2022/getmodifiedfiles/">GetModifiedFiles—匯出更新的資料</a>
     </h2><div class="post-meta"><span class="post-publish">published on <time datetime="2022-04-02 12:32:19 Saturday">2022-04-02 12:32:19 Saturday</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/"><i class="far fa-folder fa-fw"></i>懶人上班程式</a></span></div><a class="content" href="/posts/2022/getmodifiedfiles/"><p>寫完的程式要做源碼掃描。</p></a><div class="post-footer"><ul class="post-tags"><li><a href="/tags/csharp/">CSharp</a></li><li><a href="/tags/winform/">WinForm</a></li><li><a href="/tags/console/">Console</a></li></ul></div>
-</article>
-<article class="summary" itemscope itemtype="http://schema.org/Article" data-image="hide"><h2 class="single-title" itemprop="name headline">
-        <a href="/posts/2022/generatemodel/">GenerateModel—Model生成工具</a>
-    </h2><div class="post-meta"><span class="post-publish">published on <time datetime="2022-04-02 10:53:49 Saturday">2022-04-02 10:53:49 Saturday</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/"><i class="far fa-folder fa-fw"></i>懶人上班程式</a></span></div><a class="content" href="/posts/2022/generatemodel/"><p>結束駐點回公司後開始寫MVC。</p></a><div class="post-footer"><ul class="post-tags"><li><a href="/tags/csharp/">CSharp</a></li><li><a href="/tags/winform/">WinForm</a></li></ul></div>
-</article>
-<article class="summary" itemscope itemtype="http://schema.org/Article" data-image="hide"><h2 class="single-title" itemprop="name headline">
-        <a href="/posts/2022/submitgoogleform/">送交Google表單</a>
-    </h2><div class="post-meta"><span class="post-publish">published on <time datetime="2022-04-02 10:44:11 Saturday">2022-04-02 10:44:11 Saturday</time></span>&nbsp;<span class="post-category">included in <a href="/categories/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/"><i class="far fa-folder fa-fw"></i>懶人上班程式</a></span></div><a class="content" href="/posts/2022/submitgoogleform/"><p>疫情的關係，公司設計了一個Google表單要我們每日填寫。</p></a><div class="post-footer"><ul class="post-tags"><li><a href="/tags/csharp/">CSharp</a></li><li><a href="/tags/winform/">WinForm</a></li><li><a href="/tags/google/">Google</a></li></ul></div>
-</article>
-<article class="summary" itemscope itemtype="http://schema.org/Article" data-image="hide"><h2 class="single-title" itemprop="name headline">
-        <a href="/posts/2022/inifiles/">INIFiles</a>
-    </h2><div class="post-meta"><span class="post-publish">published on <time datetime="2022-04-01 22:19:11 Friday">2022-04-01 22:19:11 Friday</time></span></div><a class="content" href="/posts/2022/inifiles/"><p>之前開發都是使用app.config來放設定值。</p></a><div class="post-footer"><ul class="post-tags"><li><a href="/tags/csharp/">CSharp</a></li></ul></div>
 </article>
 <ul class="pagination"><li class="page-item ">
                     <span class="page-link">
