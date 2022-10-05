@@ -3,7 +3,13 @@
         <title>筆記 - Category - My Memo</title>
         <link>/categories/%E7%AD%86%E8%A8%98/</link>
         <description>筆記 - Category - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 27 Sep 2022 16:28:45 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+    <title>節約CPU效能的Sleep</title>
+    <link>/posts/2022/spinwait/</link>
+    <pubDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</pubDate><guid>/posts/2022/spinwait/</guid>
+    <description><![CDATA[<p>從來沒用過這東西，不過看到了就該筆記。</p>]]></description>
+</item>
+<item>
     <title>DataTable的小技巧</title>
     <link>/posts/2022/datatablememo/</link>
     <pubDate>Tue, 27 Sep 2022 16:28:45 &#43;0000</pubDate><guid>/posts/2022/datatablememo/</guid>
@@ -58,12 +64,6 @@
     <link>/posts/2022/javascriptstring/</link>
     <pubDate>Wed, 20 Apr 2022 10:38:26 &#43;0800</pubDate><guid>/posts/2022/javascriptstring/</guid>
     <description><![CDATA[<p>來源在這=&gt;<a href="https://blog.darkthread.net/blog/js-string-funcs-notes/" target="_blank" rel="noopener noreffer">這些年，我錯過的 JavaScript 字串函數</a>。</p>]]></description>
-</item>
-<item>
-    <title>object-fit—圖片的縮放</title>
-    <link>/posts/2022/object-fit/</link>
-    <pubDate>Wed, 20 Apr 2022 10:13:03 &#43;0800</pubDate><guid>/posts/2022/object-fit/</guid>
-    <description><![CDATA[<p>發現圖片有新屬性，記錄一下。</p>]]></description>
 </item>
 </channel>
 </rss>

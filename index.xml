@@ -3,9 +3,15 @@
         <title>My Memo</title>
         <link>/</link>
         <description>My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 03 Oct 2022 03:04:09 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>節約CPU效能的Sleep</title>
+    <link>/posts/2022/spinwait/</link>
+    <pubDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</pubDate><guid>/posts/2022/spinwait/</guid>
+    <description><![CDATA[<p>從來沒用過這東西，不過看到了就該筆記。</p>]]></description>
+</item>
+<item>
     <title>RDLC設定重複表頭</title>
     <link>/posts/2022/rdlcrepeattitle/</link>
     <pubDate>Mon, 03 Oct 2022 03:04:09 &#43;0000</pubDate><guid>/posts/2022/rdlcrepeattitle/</guid>
@@ -58,12 +64,6 @@
     <link>/posts/2022/iconarrangement/</link>
     <pubDate>Mon, 22 Aug 2022 02:56:59 &#43;0000</pubDate><guid>/posts/2022/iconarrangement/</guid>
     <description><![CDATA[<p>公司不知為何，明明設定好桌面圖示順序，一重開機就亂了套。</p>]]></description>
-</item>
-<item>
-    <title>問號的用法</title>
-    <link>/posts/2022/questionsymbol/</link>
-    <pubDate>Fri, 19 Aug 2022 11:41:51 &#43;0000</pubDate><guid>/posts/2022/questionsymbol/</guid>
-    <description><![CDATA[<p>因年紀大又沒常用老是忘記，記錄一下。</p>]]></description>
 </item>
 </channel>
 </rss>

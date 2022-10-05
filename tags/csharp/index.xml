@@ -3,7 +3,13 @@
         <title>CSharp - Tag - My Memo</title>
         <link>/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 27 Sep 2022 16:28:45 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>節約CPU效能的Sleep</title>
+    <link>/posts/2022/spinwait/</link>
+    <pubDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</pubDate><guid>/posts/2022/spinwait/</guid>
+    <description><![CDATA[<p>從來沒用過這東西，不過看到了就該筆記。</p>]]></description>
+</item>
+<item>
     <title>DataTable的小技巧</title>
     <link>/posts/2022/datatablememo/</link>
     <pubDate>Tue, 27 Sep 2022 16:28:45 &#43;0000</pubDate><guid>/posts/2022/datatablememo/</guid>
@@ -56,14 +62,6 @@
     <link>/posts/2022/winformcatchkeyboard/</link>
     <pubDate>Wed, 10 Aug 2022 09:59:13 &#43;0800</pubDate><guid>/posts/2022/winformcatchkeyboard/</guid>
     <description><![CDATA[<p>做個紀錄。</p>]]></description>
-</item>
-<item>
-    <title>取得執行檔資料夾與完整路徑</title>
-    <link>/posts/2022/executepath/</link>
-    <pubDate>Wed, 10 Aug 2022 09:22:31 &#43;0800</pubDate><guid>/posts/2022/executepath/</guid>
-    <description><![CDATA[取得執行檔執行資料夾
-1 string assemblyPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location); 取得執行檔完全路徑
-1 System.Reflection.Assembly.GetEntryAssembly().Location; ]]></description>
 </item>
 </channel>
 </rss>
