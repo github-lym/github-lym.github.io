@@ -3,7 +3,13 @@
         <title>All Posts - My Memo</title>
         <link>/posts/</link>
         <description>All Posts | My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Nov 2022 08:15:37 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>7-Zip排除特定目錄壓縮</title>
+    <link>/posts/2022/7zipcommand/</link>
+    <pubDate>Sat, 12 Nov 2022 08:15:37 &#43;0000</pubDate><guid>/posts/2022/7zipcommand/</guid>
+    <description><![CDATA[<p>要排除某些資料夾壓縮，本來只有找到壓成7z的指令。</p>]]></description>
+</item>
+<item>
     <title>節約CPU效能的Sleep</title>
     <link>/posts/2022/spinwait/</link>
     <pubDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</pubDate><guid>/posts/2022/spinwait/</guid>
@@ -56,12 +62,6 @@
     <link>/posts/2022/wizdl/</link>
     <pubDate>Tue, 23 Aug 2022 06:56:13 &#43;0000</pubDate><guid>/posts/2022/wizdl/</guid>
     <description><![CDATA[<p>今天閒暇亂翻翻到保哥的介紹，才發現我也有玩過這東西。</p>]]></description>
-</item>
-<item>
-    <title>解決重開機桌面圖示排列混亂問題</title>
-    <link>/posts/2022/iconarrangement/</link>
-    <pubDate>Mon, 22 Aug 2022 02:56:59 &#43;0000</pubDate><guid>/posts/2022/iconarrangement/</guid>
-    <description><![CDATA[<p>公司不知為何，明明設定好桌面圖示順序，一重開機就亂了套。</p>]]></description>
 </item>
 </channel>
 </rss>

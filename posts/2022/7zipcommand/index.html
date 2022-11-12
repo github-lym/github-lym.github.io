@@ -4,32 +4,32 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>節約CPU效能的Sleep - My Memo</title><meta name="description" content=""><meta property="og:title" content="節約CPU效能的Sleep" />
-<meta property="og:description" content="從來沒用過這東西，不過看到了就該筆記。" />
+        <title>7-Zip排除特定目錄壓縮 - My Memo</title><meta name="description" content=""><meta property="og:title" content="7-Zip排除特定目錄壓縮" />
+<meta property="og:description" content="要排除某些資料夾壓縮，本來只有找到壓成7z的指令。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/2022/spinwait/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-10-05T02:18:08+00:00" />
-<meta property="article:modified_time" content="2022-10-05T02:18:08+00:00" />
+<meta property="og:url" content="/posts/2022/7zipcommand/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-12T08:15:37+00:00" />
+<meta property="article:modified_time" content="2022-11-12T08:15:37+00:00" />
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/images/devil_s_bg.png"/>
 
-<meta name="twitter:title" content="節約CPU效能的Sleep"/>
-<meta name="twitter:description" content="從來沒用過這東西，不過看到了就該筆記。"/>
+<meta name="twitter:title" content="7-Zip排除特定目錄壓縮"/>
+<meta name="twitter:description" content="要排除某些資料夾壓縮，本來只有找到壓成7z的指令。"/>
 <meta name="application-name" content="My Memo">
 <meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2022/spinwait/" /><link rel="prev" href="/posts/2022/rdlcrepeattitle/" /><link rel="next" href="/posts/2022/7zipcommand/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2022/7zipcommand/" /><link rel="prev" href="/posts/2022/spinwait/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "節約CPU效能的Sleep",
+        "headline": "7-Zip排除特定目錄壓縮",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "\/posts\/2022\/spinwait\/"
-        },"genre": "posts","keywords": "CSharp","wordcount":  13 ,
-        "url": "\/posts\/2022\/spinwait\/","datePublished": "2022-10-05T02:18:08+00:00","dateModified": "2022-10-05T02:18:08+00:00","publisher": {
+            "@id": "\/posts\/2022\/7zipcommand\/"
+        },"genre": "posts","keywords": "7-Zip","wordcount":  30 ,
+        "url": "\/posts\/2022\/7zipcommand\/","datePublished": "2022-11-12T08:15:37+00:00","dateModified": "2022-11-12T08:15:37+00:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
                 "@type": "Person",
@@ -113,32 +113,43 @@
 <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
 </div><main class="main">
-                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">節約CPU效能的Sleep</h2><div class="post-meta">
+                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">7-Zip排除特定目錄壓縮</h2><div class="post-meta">
                 <div class="post-meta-line">&nbsp;<span class="post-category">published in <a href="/categories/%E7%AD%86%E8%A8%98/"><i class="far fa-folder fa-fw"></i>筆記</a></span></div>
-                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-10-05 02:18:08 Wednesday">2022-10-05 02:18:08 Wednesday</time></span>&nbsp;</div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-11-12 08:15:37 Saturday">2022-11-12 08:15:37 Saturday</time></span>&nbsp;</div>
             </div>
             
-            <hr><div class="content" id="content"><p>從來沒用過這東西，不過看到了就該筆記。</p>
+            <hr><div class="content" id="content"><p>要排除某些資料夾壓縮，本來只有找到壓成7z的指令。</p>
+<p><code>7z a MyProject.7z MyProject –mx7 –r –xr@proj-ignore.txt</code><br>
+<br>
+後來找到壓成ZIP格式的指令。<br>
+<code>7z a -tzip D:/Code/CMS_WebSite.zip D:/Code/CMS_WebSite -xr@D:/Code/proj-ignore.txt</code><br>
+<br>
+那<code>proj-ignore.txt</code>內容為</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="c1">//常用的執行序休眠, 但耗效能</span>
-</span></span><span class="line"><span class="cl"><span class="n">Thread</span><span class="p">.</span><span class="n">Sleep</span><span class="p">(</span><span class="m">10000</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl"><span class="c1">//節約效能的執行序休眠</span>
-</span></span><span class="line"><span class="cl"><span class="n">SpinWait</span><span class="p">.</span><span class="n">SpinUntil</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="k">false</span><span class="p">,</span> <span class="m">10000</span><span class="p">);</span>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">.git
+</span></span><span class="line"><span class="cl">bin
+</span></span><span class="line"><span class="cl">obj
+</span></span><span class="line"><span class="cl">packages
+</span></span><span class="line"><span class="cl">.vs
+</span></span><span class="line"><span class="cl">.vscode
+</span></span><span class="line"><span class="cl">Logs
 </span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
-    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/csharp/">CSharp</a>
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/7-zip/">7-Zip</a>
                 </span></div><div class="post-info-share">
-            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2022/spinwait/" data-title="節約CPU效能的Sleep" data-hashtags="CSharp"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2022/spinwait/" data-hashtag="CSharp"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2022/spinwait/" data-title="節約CPU效能的Sleep"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2022/spinwait/" data-title="節約CPU效能的Sleep" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2022/spinwait/" data-title="節約CPU效能的Sleep"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2022/spinwait/" data-title="節約CPU效能的Sleep"><i class="fab fa-skype fa-fw"></i></a></span>
-        </div></div><div class="post-nav"><a href="/posts/2022/rdlcrepeattitle/" class="prev" rel="prev" title="RDLC設定重複表頭"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
-            <a href="/posts/2022/7zipcommand/" class="next" rel="next" title="7-Zip排除特定目錄壓縮">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2022/7zipcommand/" data-title="7-Zip排除特定目錄壓縮" data-hashtags="7-Zip"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2022/7zipcommand/" data-hashtag="7-Zip"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2022/7zipcommand/" data-title="7-Zip排除特定目錄壓縮"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2022/7zipcommand/" data-title="7-Zip排除特定目錄壓縮" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2022/7zipcommand/" data-title="7-Zip排除特定目錄壓縮"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2022/7zipcommand/" data-title="7-Zip排除特定目錄壓縮"><i class="fab fa-skype fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/2022/spinwait/" class="prev" rel="prev" title="節約CPU效能的Sleep"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a></div></div>
 </div></article></div>
             </main>
             <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>

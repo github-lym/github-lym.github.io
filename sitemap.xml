@@ -2,12 +2,14 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>/categories/</loc><lastmod>2022-10-05T02:18:08&#43;00:00</lastmod></url><url>
+            <loc>/tags/7-zip/</loc><lastmod>2022-11-12T08:15:37&#43;00:00</lastmod></url><url>
+            <loc>/posts/2022/7zipcommand/</loc><lastmod>2022-11-12T08:15:37&#43;00:00</lastmod></url><url>
+            <loc>/categories/</loc><lastmod>2022-11-12T08:15:37&#43;00:00</lastmod></url><url>
+            <loc>/</loc><lastmod>2022-11-12T08:15:37&#43;00:00</lastmod></url><url>
+            <loc>/posts/</loc><lastmod>2022-11-12T08:15:37&#43;00:00</lastmod></url><url>
+            <loc>/tags/</loc><lastmod>2022-11-12T08:15:37&#43;00:00</lastmod></url><url>
+            <loc>/categories/%E7%AD%86%E8%A8%98/</loc><lastmod>2022-11-12T08:15:37&#43;00:00</lastmod></url><url>
             <loc>/tags/csharp/</loc><lastmod>2022-10-05T02:18:08&#43;00:00</lastmod></url><url>
-            <loc>/</loc><lastmod>2022-10-05T02:18:08&#43;00:00</lastmod></url><url>
-            <loc>/posts/</loc><lastmod>2022-10-05T02:18:08&#43;00:00</lastmod></url><url>
-            <loc>/tags/</loc><lastmod>2022-10-05T02:18:08&#43;00:00</lastmod></url><url>
-            <loc>/categories/%E7%AD%86%E8%A8%98/</loc><lastmod>2022-10-05T02:18:08&#43;00:00</lastmod></url><url>
             <loc>/posts/2022/spinwait/</loc><lastmod>2022-10-05T02:18:08&#43;00:00</lastmod></url><url>
             <loc>/tags/rdlc/</loc><lastmod>2022-10-03T03:04:09&#43;00:00</lastmod></url><url>
             <loc>/posts/2022/rdlcrepeattitle/</loc><lastmod>2022-10-03T03:04:09&#43;00:00</lastmod></url><url>

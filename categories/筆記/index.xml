@@ -3,7 +3,13 @@
         <title>筆記 - Category - My Memo</title>
         <link>/categories/%E7%AD%86%E8%A8%98/</link>
         <description>筆記 - Category - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Nov 2022 08:15:37 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+    <title>7-Zip排除特定目錄壓縮</title>
+    <link>/posts/2022/7zipcommand/</link>
+    <pubDate>Sat, 12 Nov 2022 08:15:37 &#43;0000</pubDate><guid>/posts/2022/7zipcommand/</guid>
+    <description><![CDATA[<p>要排除某些資料夾壓縮，本來只有找到壓成7z的指令。</p>]]></description>
+</item>
+<item>
     <title>節約CPU效能的Sleep</title>
     <link>/posts/2022/spinwait/</link>
     <pubDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</pubDate><guid>/posts/2022/spinwait/</guid>
@@ -58,12 +64,6 @@
     <link>/posts/2022/sqlparameterin/</link>
     <pubDate>Wed, 20 Apr 2022 11:37:08 &#43;0800</pubDate><guid>/posts/2022/sqlparameterin/</guid>
     <description><![CDATA[<p>之前為了資安問題都用<strong>Sql Parameter</strong>。</p>]]></description>
-</item>
-<item>
-    <title>JavaScript的字串函數</title>
-    <link>/posts/2022/javascriptstring/</link>
-    <pubDate>Wed, 20 Apr 2022 10:38:26 &#43;0800</pubDate><guid>/posts/2022/javascriptstring/</guid>
-    <description><![CDATA[<p>來源在這=&gt;<a href="https://blog.darkthread.net/blog/js-string-funcs-notes/" target="_blank" rel="noopener noreffer">這些年，我錯過的 JavaScript 字串函數</a>。</p>]]></description>
 </item>
 </channel>
 </rss>

@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>7-Zip - Tag - My Memo</title>
+        <link>/tags/7-zip/</link>
+        <description>7-Zip - Tag - My Memo</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Nov 2022 08:15:37 &#43;0000</lastBuildDate><atom:link href="/tags/7-zip/" rel="self" type="application/rss+xml" /><item>
+    <title>7-Zip排除特定目錄壓縮</title>
+    <link>/posts/2022/7zipcommand/</link>
+    <pubDate>Sat, 12 Nov 2022 08:15:37 &#43;0000</pubDate><guid>/posts/2022/7zipcommand/</guid>
+    <description><![CDATA[<p>要排除某些資料夾壓縮，本來只有找到壓成7z的指令。</p>]]></description>
+</item>
+</channel>
+</rss>
