@@ -3,7 +3,13 @@
         <title>IIS - Tag - My Memo</title>
         <link>/tags/iis/</link>
         <description>IIS - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 Sep 2022 14:15:32 &#43;0000</lastBuildDate><atom:link href="/tags/iis/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 16 Dec 2022 02:46:26 &#43;0000</lastBuildDate><atom:link href="/tags/iis/" rel="self" type="application/rss+xml" /><item>
+    <title>使用IIS搭配Visual Studio除錯</title>
+    <link>/posts/2022/iisdebug/</link>
+    <pubDate>Fri, 16 Dec 2022 02:46:26 &#43;0000</pubDate><guid>/posts/2022/iisdebug/</guid>
+    <description><![CDATA[<p>通常只用visual studio內建的IISExpress除錯。</p>]]></description>
+</item>
+<item>
     <title>IIS加解密</title>
     <link>/posts/2022/iisencryptiondecryption/</link>
     <pubDate>Mon, 26 Sep 2022 14:15:32 &#43;0000</pubDate><guid>/posts/2022/iisencryptiondecryption/</guid>

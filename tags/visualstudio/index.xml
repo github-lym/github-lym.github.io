@@ -3,7 +3,13 @@
         <title>VisualStudio - Tag - My Memo</title>
         <link>/tags/visualstudio/</link>
         <description>VisualStudio - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 03 Oct 2022 03:04:09 &#43;0000</lastBuildDate><atom:link href="/tags/visualstudio/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 16 Dec 2022 02:46:26 &#43;0000</lastBuildDate><atom:link href="/tags/visualstudio/" rel="self" type="application/rss+xml" /><item>
+    <title>使用IIS搭配Visual Studio除錯</title>
+    <link>/posts/2022/iisdebug/</link>
+    <pubDate>Fri, 16 Dec 2022 02:46:26 &#43;0000</pubDate><guid>/posts/2022/iisdebug/</guid>
+    <description><![CDATA[<p>通常只用visual studio內建的IISExpress除錯。</p>]]></description>
+</item>
+<item>
     <title>RDLC設定重複表頭</title>
     <link>/posts/2022/rdlcrepeattitle/</link>
     <pubDate>Mon, 03 Oct 2022 03:04:09 &#43;0000</pubDate><guid>/posts/2022/rdlcrepeattitle/</guid>

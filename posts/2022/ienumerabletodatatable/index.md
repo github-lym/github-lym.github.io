@@ -52,7 +52,11 @@ var restultDt = from d in dt.AsEnumerable()
 				from a in groupjoin.DefaultIfEmpty()
 				select new
 				{
-					Type = a.Field<string>("FileNameType"),
+					//Type = a.Field<string>("FileNameType"),
+					//20221213更新 因為left join的關係
+					//有可能比對結果為null造成填入FileName(string)錯誤
+					//所以須判斷a是否為null
+					Type = (a == null) ? string.Empty : a.Field<string>("FileName"),
 					SMSSendDate = d.Field<string>("SMSSendDate"),
 					SwiftCod = d.Field<string>("SwiftCod"),
 					BankName = d.Field<string>("BankName"),

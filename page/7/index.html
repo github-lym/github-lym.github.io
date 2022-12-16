@@ -1,40 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+	<meta name="generator" content="Hugo 0.105.0">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>IIS加解密 - My Memo</title><meta name="description" content=""><meta property="og:title" content="IIS加解密" />
-<meta property="og:description" content="雖知道有這功能，但之前完全沒有自己用過。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/2022/iisencryptiondecryption/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-09-26T14:15:32+00:00" />
-<meta property="article:modified_time" content="2022-09-26T14:15:32+00:00" />
+        <title>My Memo</title><meta name="description" content=""><meta property="og:title" content="My Memo" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" /><meta property="og:image" content="/images/devil_s_bg.png"/>
 
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/images/devil_s_bg.png"/>
 
-<meta name="twitter:title" content="IIS加解密"/>
-<meta name="twitter:description" content="雖知道有這功能，但之前完全沒有自己用過。"/>
+<meta name="twitter:title" content="My Memo"/>
+<meta name="twitter:description" content=""/>
 <meta name="application-name" content="My Memo">
 <meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2022/iisencryptiondecryption/" /><link rel="prev" href="/posts/2022/ienumerabletodatatable/" /><link rel="next" href="/posts/2022/datatablememo/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/" /><link rel="alternate" href="/index.xml" type="application/rss+xml" title="My Memo">
+    <link rel="feed" href="/index.xml" type="application/rss+xml" title="My Memo"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
-        "@type": "BlogPosting",
-        "headline": "IIS加解密",
-        "inLanguage": "en",
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "\/posts\/2022\/iisencryptiondecryption\/"
-        },"genre": "posts","keywords": "IIS","wordcount":  18 ,
-        "url": "\/posts\/2022\/iisencryptiondecryption\/","datePublished": "2022-09-26T14:15:32+00:00","dateModified": "2022-09-26T14:15:32+00:00","publisher": {
-            "@type": "Organization",
-            "name": "LYM"},"author": {
+        "@type": "WebSite",
+        "url": "\/","inLanguage": "en","author": {
                 "@type": "Person",
                 "name": "LYM"
-            },"description": ""
+            },"name": "My Memo"
     }
     </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
@@ -113,26 +105,37 @@
 <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
 </div><main class="main">
-                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">IIS加解密</h2><div class="post-meta">
-                <div class="post-meta-line">&nbsp;<span class="post-category">published in <a href="/categories/%E7%AD%86%E8%A8%98/"><i class="far fa-folder fa-fw"></i>筆記</a></span></div>
-                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-09-26 14:15:32 Monday">2022-09-26 14:15:32 Monday</time></span>&nbsp;</div>
-            </div>
-            
-            <hr><div class="content" id="content"><p>雖知道有這功能，但之前完全沒有自己用過。</p>
-<p>先切換到aspnet_regiis.exe的執行位置。<br>
-(若已經設定過環境變數可以直接找到指令就略過這個步驟)</p>
-<p><code>cd C:\Windows\Microsoft.NET\Framework\v4.0.30319</code></p>
-<p><code>aspnet_regiis.exe -pef &quot;connectionStrings&quot; &quot;C:\FFICMAPI&quot;</code> 加密<br>
-<code>aspnet_regiis.exe -pdf &quot;connectionStrings&quot; &quot;C:\FFICMAPI&quot;</code> 解密</p>
-<p>以前都一直以為路徑要直接包含web.config檔案，<br>
-實際操作才知道這樣反而會失敗。
-路徑到該IIS目錄即可。</p></div><div class="post-footer" id="post-footer">
-    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/iis/">IIS</a>
-                </span></div><div class="post-info-share">
-            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2022/iisencryptiondecryption/" data-title="IIS加解密" data-hashtags="IIS"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2022/iisencryptiondecryption/" data-hashtag="IIS"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2022/iisencryptiondecryption/" data-title="IIS加解密"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2022/iisencryptiondecryption/" data-title="IIS加解密" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2022/iisencryptiondecryption/" data-title="IIS加解密"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2022/iisencryptiondecryption/" data-title="IIS加解密"><i class="fab fa-skype fa-fw"></i></a></span>
-        </div></div><div class="post-nav"><a href="/posts/2022/ienumerabletodatatable/" class="prev" rel="prev" title="將IEnumerable轉成DataTable"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
-            <a href="/posts/2022/datatablememo/" class="next" rel="next" title="DataTable的小技巧">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
-</div></article></div>
+                <div class="container"><div class="page home" data-home="posts"><div class="home-profile"><div class="home-avatar"><a href="/posts/" title="Posts"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/images/devil_s_bg.png"
+        data-srcset="/images/devil_s_bg.png, /images/devil_s_bg.png 1.5x, /images/devil_s_bg.png 2x"
+        data-sizes="auto"
+        alt="/images/devil_s_bg.png"
+        title="/images/devil_s_bg.png" /></a></div><h1 class="home-title">中老年備忘錄</h1><div class="home-subtitle"><div id="id-3" class="typeit"></div></div><div class="links"></div></div>
+<div class="summary-card"><article class="summary" itemscope itemtype="http://schema.org/Article" data-image="hide"><h2 class="single-title" itemprop="name headline">
+        <a href="/posts/2022/firstpost/">第一篇</a>
+    </h2><div class="post-meta"><span class="post-publish">published on <time datetime="2022-03-20 00:00:00 Sunday">2022-03-20 00:00:00 Sunday</time></span></div><a class="content" href="/posts/2022/firstpost/"><p>就試看看吧？</p></a><div class="post-footer"><ul class="post-tags"><li><a href="/tags/murmur/">murmur</a></li></ul></div>
+</article>
+<ul class="pagination"><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/">1</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link" aria-hidden="true">&hellip;</span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/5/">5</a>
+                    </span>
+                </li><li class="page-item ">
+                    <span class="page-link">
+                        <a href="/page/6/">6</a>
+                    </span>
+                </li><li class="page-item active">
+                    <span class="page-link">
+                        <a href="/page/7/">7</a>
+                    </span>
+                </li></ul></div></div></div>
             </main>
             <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>
 </div>
@@ -141,4 +144,4 @@
 
         <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
                 <i class="fas fa-chevron-up fa-fw"></i>
-            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/twemoji/twemoji.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":20},"comment":{},"data":{"id-1":"My Memo","id-2":"My Memo"},"search":{"algoliaAppID":"REZKV78K6P","algoliaIndex":"index","algoliaSearchKey":"b32b9724683ef42845b63a2743550d51","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"},"twemoji":true,"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/twemoji/twemoji.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script>window.config={"code":{"maxShownLines":20},"data":{"id-1":"My Memo","id-2":"My Memo","id-3":"想記錄一些曾經做過或可能會用得到的東西"},"search":{"algoliaAppID":"REZKV78K6P","algoliaIndex":"index","algoliaSearchKey":"b32b9724683ef42845b63a2743550d51","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"},"twemoji":true,"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"],"id-3":["id-3"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

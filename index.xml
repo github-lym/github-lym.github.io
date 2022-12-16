@@ -3,9 +3,21 @@
         <title>My Memo</title>
         <link>/</link>
         <description>My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Nov 2022 08:15:37 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 16 Dec 2022 02:46:26 &#43;0000</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>使用IIS搭配Visual Studio除錯</title>
+    <link>/posts/2022/iisdebug/</link>
+    <pubDate>Fri, 16 Dec 2022 02:46:26 &#43;0000</pubDate><guid>/posts/2022/iisdebug/</guid>
+    <description><![CDATA[<p>通常只用visual studio內建的IISExpress除錯。</p>]]></description>
+</item>
+<item>
+    <title>判斷Dynamic某欄位是否存在</title>
+    <link>/posts/2022/dynamicpropertyexist/</link>
+    <pubDate>Fri, 16 Dec 2022 02:06:00 &#43;0000</pubDate><guid>/posts/2022/dynamicpropertyexist/</guid>
+    <description><![CDATA[<p>因傳遞給API的值要新增一欄位，為了新舊版的APP都要能用，</p>]]></description>
+</item>
+<item>
     <title>7-Zip排除特定目錄壓縮</title>
     <link>/posts/2022/7zipcommand/</link>
     <pubDate>Sat, 12 Nov 2022 08:15:37 &#43;0000</pubDate><guid>/posts/2022/7zipcommand/</guid>
@@ -52,18 +64,6 @@
     <link>/posts/2022/ieinedge/</link>
     <pubDate>Mon, 19 Sep 2022 06:06:45 &#43;0000</pubDate><guid>/posts/2022/ieinedge/</guid>
     <description><![CDATA[<p>工作上的WebClient需在IE模式下執行。</p>]]></description>
-</item>
-<item>
-    <title>修改Docker的映像檔路徑</title>
-    <link>/posts/2022/dockerpath/</link>
-    <pubDate>Tue, 23 Aug 2022 07:11:21 &#43;0000</pubDate><guid>/posts/2022/dockerpath/</guid>
-    <description><![CDATA[<p>兩年前有學到 Docker。</p>]]></description>
-</item>
-<item>
-    <title>Web Service GUI Test Tool ( wizdl )</title>
-    <link>/posts/2022/wizdl/</link>
-    <pubDate>Tue, 23 Aug 2022 06:56:13 &#43;0000</pubDate><guid>/posts/2022/wizdl/</guid>
-    <description><![CDATA[<p>今天閒暇亂翻翻到保哥的介紹，才發現我也有玩過這東西。</p>]]></description>
 </item>
 </channel>
 </rss>

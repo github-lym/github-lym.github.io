@@ -3,7 +3,19 @@
         <title>筆記 - Category - My Memo</title>
         <link>/categories/%E7%AD%86%E8%A8%98/</link>
         <description>筆記 - Category - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 12 Nov 2022 08:15:37 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 16 Dec 2022 02:46:26 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+    <title>使用IIS搭配Visual Studio除錯</title>
+    <link>/posts/2022/iisdebug/</link>
+    <pubDate>Fri, 16 Dec 2022 02:46:26 &#43;0000</pubDate><guid>/posts/2022/iisdebug/</guid>
+    <description><![CDATA[<p>通常只用visual studio內建的IISExpress除錯。</p>]]></description>
+</item>
+<item>
+    <title>判斷Dynamic某欄位是否存在</title>
+    <link>/posts/2022/dynamicpropertyexist/</link>
+    <pubDate>Fri, 16 Dec 2022 02:06:00 &#43;0000</pubDate><guid>/posts/2022/dynamicpropertyexist/</guid>
+    <description><![CDATA[<p>因傳遞給API的值要新增一欄位，為了新舊版的APP都要能用，</p>]]></description>
+</item>
+<item>
     <title>7-Zip排除特定目錄壓縮</title>
     <link>/posts/2022/7zipcommand/</link>
     <pubDate>Sat, 12 Nov 2022 08:15:37 &#43;0000</pubDate><guid>/posts/2022/7zipcommand/</guid>
@@ -50,20 +62,6 @@
     <link>/posts/2022/questionsymbol/</link>
     <pubDate>Fri, 19 Aug 2022 11:41:51 &#43;0000</pubDate><guid>/posts/2022/questionsymbol/</guid>
     <description><![CDATA[<p>因年紀大又沒常用老是忘記，記錄一下。</p>]]></description>
-</item>
-<item>
-    <title>取得執行檔資料夾與完整路徑</title>
-    <link>/posts/2022/executepath/</link>
-    <pubDate>Wed, 10 Aug 2022 09:22:31 &#43;0800</pubDate><guid>/posts/2022/executepath/</guid>
-    <description><![CDATA[取得執行檔執行資料夾
-1 string assemblyPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location); 取得執行檔完全路徑
-1 System.Reflection.Assembly.GetEntryAssembly().Location; ]]></description>
-</item>
-<item>
-    <title>在語法有IN情況下使用Sql Parameter</title>
-    <link>/posts/2022/sqlparameterin/</link>
-    <pubDate>Wed, 20 Apr 2022 11:37:08 &#43;0800</pubDate><guid>/posts/2022/sqlparameterin/</guid>
-    <description><![CDATA[<p>之前為了資安問題都用<strong>Sql Parameter</strong>。</p>]]></description>
 </item>
 </channel>
 </rss>

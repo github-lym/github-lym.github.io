@@ -3,7 +3,13 @@
         <title>CSharp - Tag - My Memo</title>
         <link>/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 16 Dec 2022 02:06:00 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>判斷Dynamic某欄位是否存在</title>
+    <link>/posts/2022/dynamicpropertyexist/</link>
+    <pubDate>Fri, 16 Dec 2022 02:06:00 &#43;0000</pubDate><guid>/posts/2022/dynamicpropertyexist/</guid>
+    <description><![CDATA[<p>因傳遞給API的值要新增一欄位，為了新舊版的APP都要能用，</p>]]></description>
+</item>
+<item>
     <title>節約CPU效能的Sleep</title>
     <link>/posts/2022/spinwait/</link>
     <pubDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</pubDate><guid>/posts/2022/spinwait/</guid>
@@ -56,12 +62,6 @@
     <link>/posts/2022/datatablecolumnnametoarray/</link>
     <pubDate>Thu, 11 Aug 2022 06:26:43 &#43;0000</pubDate><guid>/posts/2022/datatablecolumnnametoarray/</guid>
     <description><![CDATA[<p>已忘記何時用到的，不過還是記一下。</p>]]></description>
-</item>
-<item>
-    <title>WinForm抓取鍵盤輸入</title>
-    <link>/posts/2022/winformcatchkeyboard/</link>
-    <pubDate>Wed, 10 Aug 2022 09:59:13 &#43;0800</pubDate><guid>/posts/2022/winformcatchkeyboard/</guid>
-    <description><![CDATA[<p>做個紀錄。</p>]]></description>
 </item>
 </channel>
 </rss>

@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/2022\/ienumerabletodatatable\/"
-        },"genre": "posts","keywords": "CSharp, linq","wordcount":  199 ,
+        },"genre": "posts","keywords": "CSharp, linq","wordcount":  217 ,
         "url": "\/posts\/2022\/ienumerabletodatatable\/","datePublished": "2022-09-19T06:59:48+00:00","dateModified": "2022-09-19T06:59:48+00:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
@@ -219,6 +219,10 @@
 </span><span class="lnt">13
 </span><span class="lnt">14
 </span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="kt">var</span> <span class="n">restultDt</span> <span class="p">=</span> <span class="k">from</span> <span class="n">d</span> <span class="k">in</span> <span class="n">dt</span><span class="p">.</span><span class="n">AsEnumerable</span><span class="p">()</span>
@@ -228,7 +232,11 @@
 </span></span><span class="line"><span class="cl">				<span class="k">from</span> <span class="n">a</span> <span class="k">in</span> <span class="n">groupjoin</span><span class="p">.</span><span class="n">DefaultIfEmpty</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">				<span class="k">select</span> <span class="k">new</span>
 </span></span><span class="line"><span class="cl">				<span class="p">{</span>
-</span></span><span class="line"><span class="cl">					<span class="n">Type</span> <span class="p">=</span> <span class="n">a</span><span class="p">.</span><span class="n">Field</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;(</span><span class="s">&#34;FileNameType&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">					<span class="c1">//Type = a.Field&lt;string&gt;(&#34;FileNameType&#34;),</span>
+</span></span><span class="line"><span class="cl">					<span class="c1">//20221213更新 因為left join的關係</span>
+</span></span><span class="line"><span class="cl">					<span class="c1">//有可能比對結果為null造成填入FileName(string)錯誤</span>
+</span></span><span class="line"><span class="cl">					<span class="c1">//所以須判斷a是否為null</span>
+</span></span><span class="line"><span class="cl">					<span class="n">Type</span> <span class="p">=</span> <span class="p">(</span><span class="n">a</span> <span class="p">==</span> <span class="k">null</span><span class="p">)</span> <span class="p">?</span> <span class="kt">string</span><span class="p">.</span><span class="n">Empty</span> <span class="p">:</span> <span class="n">a</span><span class="p">.</span><span class="n">Field</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;(</span><span class="s">&#34;FileName&#34;</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl">					<span class="n">SMSSendDate</span> <span class="p">=</span> <span class="n">d</span><span class="p">.</span><span class="n">Field</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;(</span><span class="s">&#34;SMSSendDate&#34;</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl">					<span class="n">SwiftCod</span> <span class="p">=</span> <span class="n">d</span><span class="p">.</span><span class="n">Field</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;(</span><span class="s">&#34;SwiftCod&#34;</span><span class="p">),</span>
 </span></span><span class="line"><span class="cl">					<span class="n">BankName</span> <span class="p">=</span> <span class="n">d</span><span class="p">.</span><span class="n">Field</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;(</span><span class="s">&#34;BankName&#34;</span><span class="p">),</span>
