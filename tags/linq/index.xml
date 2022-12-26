@@ -1,9 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>linq - Tag - My Memo</title>
+        <title>LINQ - Tag - My Memo</title>
         <link>/tags/linq/</link>
-        <description>linq - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Sep 2022 06:59:48 &#43;0000</lastBuildDate><atom:link href="/tags/linq/" rel="self" type="application/rss+xml" /><item>
+        <description>LINQ - Tag - My Memo</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Dec 2022 11:10:48 &#43;0000</lastBuildDate><atom:link href="/tags/linq/" rel="self" type="application/rss+xml" /><item>
+    <title>查詢字串裡面的多個關鍵字</title>
+    <link>/posts/2022/linqkeywordsearch/</link>
+    <pubDate>Mon, 19 Dec 2022 11:10:48 &#43;0000</pubDate><guid>/posts/2022/linqkeywordsearch/</guid>
+    <description><![CDATA[<p>看了<a href="https://dotblogs.com.tw/kevinya/2022/12/12/115149" target="_blank" rel="noopener noreffer">這篇</a>才知有這種使用方式。</p>]]></description>
+</item>
+<item>
     <title>將IEnumerable轉成DataTable</title>
     <link>/posts/2022/ienumerabletodatatable/</link>
     <pubDate>Mon, 19 Sep 2022 06:59:48 &#43;0000</pubDate><guid>/posts/2022/ienumerabletodatatable/</guid>

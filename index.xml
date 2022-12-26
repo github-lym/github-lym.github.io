@@ -3,9 +3,15 @@
         <title>My Memo</title>
         <link>/</link>
         <description>My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 16 Dec 2022 02:46:26 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Dec 2022 11:10:48 &#43;0000</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>查詢字串裡面的多個關鍵字</title>
+    <link>/posts/2022/linqkeywordsearch/</link>
+    <pubDate>Mon, 19 Dec 2022 11:10:48 &#43;0000</pubDate><guid>/posts/2022/linqkeywordsearch/</guid>
+    <description><![CDATA[<p>看了<a href="https://dotblogs.com.tw/kevinya/2022/12/12/115149" target="_blank" rel="noopener noreffer">這篇</a>才知有這種使用方式。</p>]]></description>
+</item>
+<item>
     <title>使用IIS搭配Visual Studio除錯</title>
     <link>/posts/2022/iisdebug/</link>
     <pubDate>Fri, 16 Dec 2022 02:46:26 &#43;0000</pubDate><guid>/posts/2022/iisdebug/</guid>
@@ -58,12 +64,6 @@
     <link>/posts/2022/regex/</link>
     <pubDate>Mon, 19 Sep 2022 06:31:50 &#43;0000</pubDate><guid>/posts/2022/regex/</guid>
     <description><![CDATA[<p>有時遇到一些正規表示法的問題，做個筆記記錄一下。</p>]]></description>
-</item>
-<item>
-    <title>在Edge裡使用IE模式</title>
-    <link>/posts/2022/ieinedge/</link>
-    <pubDate>Mon, 19 Sep 2022 06:06:45 &#43;0000</pubDate><guid>/posts/2022/ieinedge/</guid>
-    <description><![CDATA[<p>工作上的WebClient需在IE模式下執行。</p>]]></description>
 </item>
 </channel>
 </rss>

@@ -15,4 +15,23 @@
 之後發現類似的情境很多，所以改成[GUI版](https://github.com/github-lym/GetModifiedFilesGUI)。  
 可以設定好不同參數切換使用，方便不少。  
 [![demo](GetModifiedFilesGUI.gif)](GetModifiedFilesGUI.gif)  
+  
+20221226更新  
+感謝[黑暗執行緒大大](https://blog.darkthread.net/blog/file-globbing/)讓我得知Globbing的用法，小改了一下程式。  
+|  比對樣式	|符合對象|
+|  ----  | ----  |
+|\*.txt	|所有 .txt 副檔名|
+|\*.\*	|所有有附檔案名的檔案|
+|\*	|最上層目錄的所有檔案|
+|.\*	|以 '.' 起始的檔案|
+|\*word\*	|檔案包含 'word'|
+|readme.\*	|主檔名 'readme'，附檔名不限|
+|styles/\*.css	|目錄 'styles/' 下的所有 .css 檔|
+|scripts/\*/*	|'scripts/' 及第一層子目錄下所有檔案|
+|images\*/\*	|以 'images' 起始目錄下的所有檔案|
+|\*\*/*	|所有子目錄的所有檔案|
+|dir/\*\*/\*	|'dir/'下所有子目錄的所有檔案| 
+
+[![demo](snapshot_20221226.png)](snapshot_20221226.png) 
+
 

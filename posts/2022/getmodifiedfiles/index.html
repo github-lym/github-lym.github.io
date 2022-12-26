@@ -28,7 +28,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/2022\/getmodifiedfiles\/"
-        },"genre": "posts","keywords": "CSharp, WinForm, Console","wordcount":  8 ,
+        },"genre": "posts","keywords": "CSharp, WinForm, Console","wordcount":  47 ,
         "url": "\/posts\/2022\/getmodifiedfiles\/","datePublished": "2022-04-02T12:32:19+08:00","dateModified": "2022-04-02T12:32:19+08:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
@@ -133,6 +133,70 @@
         data-srcset="/posts/2022/getmodifiedfiles/GetModifiedFilesGUI.gif, GetModifiedFilesGUI.gif 1.5x, /posts/2022/getmodifiedfiles/GetModifiedFilesGUI.gif 2x"
         data-sizes="auto"
         alt="/posts/2022/getmodifiedfiles/GetModifiedFilesGUI.gif"
+        title="demo" /></a></p>
+<p>20221226更新<br>
+感謝<a href="https://blog.darkthread.net/blog/file-globbing/" target="_blank" rel="noopener noreffer">黑暗執行緒大大</a>讓我得知Globbing的用法，小改了一下程式。 </p>
+<table>
+<thead>
+<tr>
+<th>比對樣式</th>
+<th>符合對象</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>*.txt</td>
+<td>所有 .txt 副檔名</td>
+</tr>
+<tr>
+<td>*.*</td>
+<td>所有有附檔案名的檔案</td>
+</tr>
+<tr>
+<td>*</td>
+<td>最上層目錄的所有檔案</td>
+</tr>
+<tr>
+<td>.*</td>
+<td>以 &lsquo;.&rsquo; 起始的檔案</td>
+</tr>
+<tr>
+<td>*word*</td>
+<td>檔案包含 &lsquo;word&rsquo;</td>
+</tr>
+<tr>
+<td>readme.*</td>
+<td>主檔名 &lsquo;readme&rsquo;，附檔名不限</td>
+</tr>
+<tr>
+<td>styles/*.css</td>
+<td>目錄 &lsquo;styles/&rsquo; 下的所有 .css 檔</td>
+</tr>
+<tr>
+<td>scripts/*/*</td>
+<td>&lsquo;scripts/&rsquo; 及第一層子目錄下所有檔案</td>
+</tr>
+<tr>
+<td>images*/*</td>
+<td>以 &lsquo;images&rsquo; 起始目錄下的所有檔案</td>
+</tr>
+<tr>
+<td>**/*</td>
+<td>所有子目錄的所有檔案</td>
+</tr>
+<tr>
+<td>dir/**/*</td>
+<td>&lsquo;dir/&lsquo;下所有子目錄的所有檔案</td>
+</tr>
+</tbody>
+</table>
+<p><a href="/posts/2022/getmodifiedfiles/snapshot_20221226.png" rel=""><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="snapshot_20221226.png"
+        data-srcset="/posts/2022/getmodifiedfiles/snapshot_20221226.png, snapshot_20221226.png 1.5x, /posts/2022/getmodifiedfiles/snapshot_20221226.png 2x"
+        data-sizes="auto"
+        alt="/posts/2022/getmodifiedfiles/snapshot_20221226.png"
         title="demo" /></a></p></div><div class="post-footer" id="post-footer">
     <div class="post-info"><div class="post-info-tag"><span><a href="/tags/csharp/">CSharp</a>
                 </span><span><a href="/tags/winform/">WinForm</a>

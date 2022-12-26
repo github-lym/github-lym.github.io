@@ -3,7 +3,13 @@
         <title>CSharp - Tag - My Memo</title>
         <link>/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 16 Dec 2022 02:06:00 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Dec 2022 11:10:48 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>查詢字串裡面的多個關鍵字</title>
+    <link>/posts/2022/linqkeywordsearch/</link>
+    <pubDate>Mon, 19 Dec 2022 11:10:48 &#43;0000</pubDate><guid>/posts/2022/linqkeywordsearch/</guid>
+    <description><![CDATA[<p>看了<a href="https://dotblogs.com.tw/kevinya/2022/12/12/115149" target="_blank" rel="noopener noreffer">這篇</a>才知有這種使用方式。</p>]]></description>
+</item>
+<item>
     <title>判斷Dynamic某欄位是否存在</title>
     <link>/posts/2022/dynamicpropertyexist/</link>
     <pubDate>Fri, 16 Dec 2022 02:06:00 &#43;0000</pubDate><guid>/posts/2022/dynamicpropertyexist/</guid>
@@ -56,12 +62,6 @@
     <link>/posts/2022/makesameschemadatatablefromdbtable/</link>
     <pubDate>Thu, 11 Aug 2022 06:32:54 &#43;0000</pubDate><guid>/posts/2022/makesameschemadatatablefromdbtable/</guid>
     <description><![CDATA[<p>之前還挺常用的，不過後來用 Entity 就沒在用了。</p>]]></description>
-</item>
-<item>
-    <title>將DataTable的欄位名稱取出</title>
-    <link>/posts/2022/datatablecolumnnametoarray/</link>
-    <pubDate>Thu, 11 Aug 2022 06:26:43 &#43;0000</pubDate><guid>/posts/2022/datatablecolumnnametoarray/</guid>
-    <description><![CDATA[<p>已忘記何時用到的，不過還是記一下。</p>]]></description>
 </item>
 </channel>
 </rss>
