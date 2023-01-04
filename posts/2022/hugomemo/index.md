@@ -10,7 +10,7 @@
 ```cmd
 hugo server --disableFastRender
 ```
-
-執行 hugo 會匯出編譯檔在`public`資料夾。
+  
+只執行 `hugo` 會匯出編譯檔在`public`資料夾。
 產生出的`index.json`拿去[Algolia](https://www.algolia.com/ 'algolia')建立搜尋索引。
 

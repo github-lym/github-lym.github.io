@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>讓下拉選單不可編輯 - My Memo</title><meta name="description" content=""><meta property="og:title" content="讓下拉選單不可編輯" />
+<meta property="og:description" content="現在才知道可以這麼搞。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2023/2023010401/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-04T21:47:45+08:00" />
+<meta property="article:modified_time" content="2023-01-04T21:47:45+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/images/devil_s_bg.png"/>
+
+<meta name="twitter:title" content="讓下拉選單不可編輯"/>
+<meta name="twitter:description" content="現在才知道可以這麼搞。"/>
+<meta name="application-name" content="My Memo">
+<meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2023/2023010401/" /><link rel="prev" href="/posts/2022/linqkeywordsearch/" /><link rel="next" href="/posts/2023/2023010402/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "讓下拉選單不可編輯",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/2023\/2023010401\/"
+        },"genre": "posts","keywords": "VisualStudio, WinForm","wordcount":  3 ,
+        "url": "\/posts\/2023\/2023010401\/","datePublished": "2023-01-04T21:47:45+08:00","dateModified": "2023-01-04T21:47:45+08:00","publisher": {
+            "@type": "Organization",
+            "name": "LYM"},"author": {
+                "@type": "Person",
+                "name": "LYM"
+            },"description": ""
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My Memo"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/devil_s_bg.png"
+        data-srcset="/images/devil_s_bg.png, /images/devil_s_bg.png 1.5x, /images/devil_s_bg.png 2x"
+        data-sizes="auto"
+        alt="/images/devil_s_bg.png"
+        title="/images/devil_s_bg.png" /><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/github-lym" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My Memo"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/devil_s_bg.png"
+        data-srcset="/images/devil_s_bg.png, /images/devil_s_bg.png 1.5x, /images/devil_s_bg.png 2x"
+        data-sizes="auto"
+        alt="/images/devil_s_bg.png"
+        title="/images/devil_s_bg.png" /><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/github-lym" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">讓下拉選單不可編輯</h2><div class="post-meta">
+                <div class="post-meta-line"></div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-01-04 21:47:45 Wednesday">2023-01-04 21:47:45 Wednesday</time></span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="content" id="content"><p>現在才知道可以這麼搞。</p>
+<p>預設是<code>DropDown</code>，可以在對話框編輯。<br>
+<a href="../img/2023010401/00.png" rel=""><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="../img/2023010401/00.png"
+        data-srcset="../img/2023010401/00.png, ../img/2023010401/00.png 1.5x, ../img/2023010401/00.png 2x"
+        data-sizes="auto"
+        alt="../img/2023010401/00.png"
+        title="demo" /></a></p>
+<p>改成是<code>DropDownList</code>，就有像唯讀的感覺。<br>
+<a href="../img/2023010401/01.png" rel=""><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="../img/2023010401/01.png"
+        data-srcset="../img/2023010401/01.png, ../img/2023010401/01.png 1.5x, ../img/2023010401/01.png 2x"
+        data-sizes="auto"
+        alt="../img/2023010401/01.png"
+        title="demo" /></a></p></div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/visualstudio/">VisualStudio</a>
+                </span><span><a href="/tags/winform/">WinForm</a>
+                </span></div><div class="post-info-share">
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2023/2023010401/" data-title="讓下拉選單不可編輯" data-hashtags="VisualStudio,WinForm"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2023/2023010401/" data-hashtag="VisualStudio"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2023/2023010401/" data-title="讓下拉選單不可編輯"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2023/2023010401/" data-title="讓下拉選單不可編輯" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2023/2023010401/" data-title="讓下拉選單不可編輯"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2023/2023010401/" data-title="讓下拉選單不可編輯"><i class="fab fa-skype fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/2022/linqkeywordsearch/" class="prev" rel="prev" title="查詢字串裡面的多個關鍵字"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/2023/2023010402/" class="next" rel="next" title="Microsoft.WindowsAPICodePack.Dialogs">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/twemoji/twemoji.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":20},"comment":{},"data":{"id-1":"My Memo","id-2":"My Memo"},"search":{"algoliaAppID":"REZKV78K6P","algoliaIndex":"index","algoliaSearchKey":"b32b9724683ef42845b63a2743550d51","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"},"twemoji":true,"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

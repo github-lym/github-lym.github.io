@@ -3,10 +3,22 @@
         <title>All Posts - My Memo</title>
         <link>/posts/</link>
         <description>All Posts | My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 19 Dec 2022 11:10:48 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 Jan 2023 14:11:15 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Microsoft.WindowsAPICodePack.Dialogs</title>
+    <link>/posts/2023/2023010402/</link>
+    <pubDate>Wed, 04 Jan 2023 14:11:15 &#43;0000</pubDate><guid>/posts/2023/2023010402/</guid>
+    <description><![CDATA[<p>想在固有的程式跳出顯示明細，但又覺得MessageBox太陽春。</p>]]></description>
+</item>
+<item>
+    <title>讓下拉選單不可編輯</title>
+    <link>/posts/2023/2023010401/</link>
+    <pubDate>Wed, 04 Jan 2023 21:47:45 &#43;0800</pubDate><guid>/posts/2023/2023010401/</guid>
+    <description><![CDATA[<p>現在才知道可以這麼搞。</p>]]></description>
+</item>
+<item>
     <title>查詢字串裡面的多個關鍵字</title>
     <link>/posts/2022/linqkeywordsearch/</link>
-    <pubDate>Mon, 19 Dec 2022 11:10:48 &#43;0000</pubDate><guid>/posts/2022/linqkeywordsearch/</guid>
+    <pubDate>Mon, 26 Dec 2022 11:10:48 &#43;0000</pubDate><guid>/posts/2022/linqkeywordsearch/</guid>
     <description><![CDATA[<p>看了<a href="https://dotblogs.com.tw/kevinya/2022/12/12/115149" target="_blank" rel="noopener noreffer">這篇</a>才知有這種使用方式。</p>]]></description>
 </item>
 <item>
@@ -50,18 +62,6 @@
     <link>/posts/2022/iisencryptiondecryption/</link>
     <pubDate>Mon, 26 Sep 2022 14:15:32 &#43;0000</pubDate><guid>/posts/2022/iisencryptiondecryption/</guid>
     <description><![CDATA[<p>雖知道有這功能，但之前完全沒有自己用過。</p>]]></description>
-</item>
-<item>
-    <title>將IEnumerable轉成DataTable</title>
-    <link>/posts/2022/ienumerabletodatatable/</link>
-    <pubDate>Mon, 19 Sep 2022 06:59:48 &#43;0000</pubDate><guid>/posts/2022/ienumerabletodatatable/</guid>
-    <description><![CDATA[<p>使用linq，但回傳要是DataTable，所以找到並抄下來。</p>]]></description>
-</item>
-<item>
-    <title>正規表示法筆記</title>
-    <link>/posts/2022/regex/</link>
-    <pubDate>Mon, 19 Sep 2022 06:31:50 &#43;0000</pubDate><guid>/posts/2022/regex/</guid>
-    <description><![CDATA[<p>有時遇到一些正規表示法的問題，做個筆記記錄一下。</p>]]></description>
 </item>
 </channel>
 </rss>
