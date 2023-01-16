@@ -3,7 +3,13 @@
         <title>CSharp - Tag - My Memo</title>
         <link>/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Jan 2023 07:10:52 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Jan 2023 15:49:49 &#43;0800</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>LazyIVRMonthlySummary</title>
+    <link>/posts/2023/2023011603/</link>
+    <pubDate>Mon, 16 Jan 2023 15:49:49 &#43;0800</pubDate><guid>/posts/2023/2023011603/</guid>
+    <description><![CDATA[<p>公司每月都要統計報表。</p>]]></description>
+</item>
+<item>
     <title>Double的運算</title>
     <link>/posts/2023/2023011602/</link>
     <pubDate>Mon, 16 Jan 2023 07:10:52 &#43;0000</pubDate><guid>/posts/2023/2023011602/</guid>
@@ -56,12 +62,6 @@
     <link>/posts/2022/getregistervalue/</link>
     <pubDate>Tue, 16 Aug 2022 02:35:20 &#43;0000</pubDate><guid>/posts/2022/getregistervalue/</guid>
     <description><![CDATA[<p>本來是要用預設瀏覽器開啟網址，但看到另種處理方法。</p>]]></description>
-</item>
-<item>
-    <title>FileWatcher</title>
-    <link>/posts/2022/filewatcher/</link>
-    <pubDate>Tue, 16 Aug 2022 01:15:48 &#43;0000</pubDate><guid>/posts/2022/filewatcher/</guid>
-    <description><![CDATA[<p>將檔案備份至多個硬碟對我來說一直是個很花時間的事。</p>]]></description>
 </item>
 </channel>
 </rss>

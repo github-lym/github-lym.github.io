@@ -3,7 +3,13 @@
         <title>Console - Tag - My Memo</title>
         <link>/tags/console/</link>
         <description>Console - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 02 Apr 2022 23:08:47 &#43;0800</lastBuildDate><atom:link href="/tags/console/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Jan 2023 15:49:49 &#43;0800</lastBuildDate><atom:link href="/tags/console/" rel="self" type="application/rss+xml" /><item>
+    <title>LazyIVRMonthlySummary</title>
+    <link>/posts/2023/2023011603/</link>
+    <pubDate>Mon, 16 Jan 2023 15:49:49 &#43;0800</pubDate><guid>/posts/2023/2023011603/</guid>
+    <description><![CDATA[<p>公司每月都要統計報表。</p>]]></description>
+</item>
+<item>
     <title>ConsoleProgressBar—Console下的進度條</title>
     <link>/posts/2022/consoleprogressbar/</link>
     <pubDate>Sat, 02 Apr 2022 23:08:47 &#43;0800</pubDate><guid>/posts/2022/consoleprogressbar/</guid>

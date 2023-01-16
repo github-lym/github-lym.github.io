@@ -3,9 +3,15 @@
         <title>My Memo</title>
         <link>/</link>
         <description>My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Jan 2023 07:10:52 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Jan 2023 15:49:49 &#43;0800</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>LazyIVRMonthlySummary</title>
+    <link>/posts/2023/2023011603/</link>
+    <pubDate>Mon, 16 Jan 2023 15:49:49 &#43;0800</pubDate><guid>/posts/2023/2023011603/</guid>
+    <description><![CDATA[<p>公司每月都要統計報表。</p>]]></description>
+</item>
+<item>
     <title>Double的運算</title>
     <link>/posts/2023/2023011602/</link>
     <pubDate>Mon, 16 Jan 2023 07:10:52 &#43;0000</pubDate><guid>/posts/2023/2023011602/</guid>
@@ -58,12 +64,6 @@
     <link>/posts/2022/spinwait/</link>
     <pubDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</pubDate><guid>/posts/2022/spinwait/</guid>
     <description><![CDATA[<p>從來沒用過這東西，不過看到了就該筆記。</p>]]></description>
-</item>
-<item>
-    <title>RDLC設定重複表頭</title>
-    <link>/posts/2022/rdlcrepeattitle/</link>
-    <pubDate>Mon, 03 Oct 2022 03:04:09 &#43;0000</pubDate><guid>/posts/2022/rdlcrepeattitle/</guid>
-    <description><![CDATA[<p>用那麼久，終於會設定了。</p>]]></description>
 </item>
 </channel>
 </rss>
