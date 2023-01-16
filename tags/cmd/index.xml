@@ -3,7 +3,13 @@
         <title>cmd - Tag - My Memo</title>
         <link>/tags/cmd/</link>
         <description>cmd - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 06 Apr 2022 14:25:47 &#43;0800</lastBuildDate><atom:link href="/tags/cmd/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Jan 2023 14:53:54 &#43;0800</lastBuildDate><atom:link href="/tags/cmd/" rel="self" type="application/rss+xml" /><item>
+    <title>版更程式</title>
+    <link>/posts/2023/2023011601/</link>
+    <pubDate>Mon, 16 Jan 2023 14:53:54 &#43;0800</pubDate><guid>/posts/2023/2023011601/</guid>
+    <description><![CDATA[<p>用來版更的懶人程式。</p>]]></description>
+</item>
+<item>
     <title>命令提示字元取得最後存取資料夾</title>
     <link>/posts/2022/cmdgetlastaccessfolder/</link>
     <pubDate>Wed, 06 Apr 2022 14:25:47 &#43;0800</pubDate><guid>/posts/2022/cmdgetlastaccessfolder/</guid>

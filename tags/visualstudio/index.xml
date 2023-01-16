@@ -3,17 +3,17 @@
         <title>VisualStudio - Tag - My Memo</title>
         <link>/tags/visualstudio/</link>
         <description>VisualStudio - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 Jan 2023 14:11:15 &#43;0000</lastBuildDate><atom:link href="/tags/visualstudio/" rel="self" type="application/rss+xml" /><item>
-    <title>Microsoft.WindowsAPICodePack.Dialogs</title>
-    <link>/posts/2023/2023010402/</link>
-    <pubDate>Wed, 04 Jan 2023 14:11:15 &#43;0000</pubDate><guid>/posts/2023/2023010402/</guid>
-    <description><![CDATA[<p>想在固有的程式跳出顯示明細，但又覺得MessageBox太陽春。</p>]]></description>
-</item>
-<item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 Jan 2023 21:47:45 &#43;0800</lastBuildDate><atom:link href="/tags/visualstudio/" rel="self" type="application/rss+xml" /><item>
     <title>讓下拉選單不可編輯</title>
     <link>/posts/2023/2023010401/</link>
     <pubDate>Wed, 04 Jan 2023 21:47:45 &#43;0800</pubDate><guid>/posts/2023/2023010401/</guid>
     <description><![CDATA[<p>現在才知道可以這麼搞。</p>]]></description>
+</item>
+<item>
+    <title>Microsoft.WindowsAPICodePack.Dialogs</title>
+    <link>/posts/2023/2023010402/</link>
+    <pubDate>Wed, 04 Jan 2023 14:11:15 &#43;0800</pubDate><guid>/posts/2023/2023010402/</guid>
+    <description><![CDATA[<p>想在固有的程式跳出顯示明細，但又覺得MessageBox太陽春。</p>]]></description>
 </item>
 <item>
     <title>使用IIS搭配Visual Studio除錯</title>

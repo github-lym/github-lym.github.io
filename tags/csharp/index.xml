@@ -3,7 +3,13 @@
         <title>CSharp - Tag - My Memo</title>
         <link>/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 26 Dec 2022 11:10:48 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Jan 2023 07:10:52 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>Double的運算</title>
+    <link>/posts/2023/2023011602/</link>
+    <pubDate>Mon, 16 Jan 2023 07:10:52 &#43;0000</pubDate><guid>/posts/2023/2023011602/</guid>
+    <description><![CDATA[<p>是襄理提出用<code>Double</code>相加會有問題。</p>]]></description>
+</item>
+<item>
     <title>查詢字串裡面的多個關鍵字</title>
     <link>/posts/2022/linqkeywordsearch/</link>
     <pubDate>Mon, 26 Dec 2022 11:10:48 &#43;0000</pubDate><guid>/posts/2022/linqkeywordsearch/</guid>
@@ -56,12 +62,6 @@
     <link>/posts/2022/filewatcher/</link>
     <pubDate>Tue, 16 Aug 2022 01:15:48 &#43;0000</pubDate><guid>/posts/2022/filewatcher/</guid>
     <description><![CDATA[<p>將檔案備份至多個硬碟對我來說一直是個很花時間的事。</p>]]></description>
-</item>
-<item>
-    <title>從資料表建相同的樣SchemaType的DataTable</title>
-    <link>/posts/2022/makesameschemadatatablefromdbtable/</link>
-    <pubDate>Thu, 11 Aug 2022 06:32:54 &#43;0000</pubDate><guid>/posts/2022/makesameschemadatatablefromdbtable/</guid>
-    <description><![CDATA[<p>之前還挺常用的，不過後來用 Entity 就沒在用了。</p>]]></description>
 </item>
 </channel>
 </rss>
