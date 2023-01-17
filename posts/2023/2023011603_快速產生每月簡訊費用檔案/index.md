@@ -1,4 +1,4 @@
-# LazyIVRMonthlySummary
+# 快速產生每月簡訊費用檔案–LazyIVRMonthlySummary
 
 
 公司每月都要統計報表。  
@@ -14,5 +14,10 @@
   
 還練習了呼叫stored procedure。
   
-有空再來把raw data轉換成Excel報表。
-
+有空再來把raw data轉換成Excel報表。  
+  
+---
+20230117更新：  
+因為今天有空檔，又加強了一下。  
+再把raw data用ClosedXML繼續處理，  
+讀取樣板產生Excel、CSV、Word檔。

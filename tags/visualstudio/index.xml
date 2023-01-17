@@ -4,15 +4,15 @@
         <link>/tags/visualstudio/</link>
         <description>VisualStudio - Tag - My Memo</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 04 Jan 2023 21:47:45 &#43;0800</lastBuildDate><atom:link href="/tags/visualstudio/" rel="self" type="application/rss+xml" /><item>
-    <title>讓下拉選單不可編輯</title>
-    <link>/posts/2023/2023010401/</link>
-    <pubDate>Wed, 04 Jan 2023 21:47:45 &#43;0800</pubDate><guid>/posts/2023/2023010401/</guid>
+    <title>讓下拉選單選項不可編輯</title>
+    <link>/posts/2023/2023010401_%E8%AE%93%E4%B8%8B%E6%8B%89%E9%81%B8%E5%96%AE%E9%81%B8%E9%A0%85%E4%B8%8D%E5%8F%AF%E7%B7%A8%E8%BC%AF/</link>
+    <pubDate>Wed, 04 Jan 2023 21:47:45 &#43;0800</pubDate><guid>/posts/2023/2023010401_%E8%AE%93%E4%B8%8B%E6%8B%89%E9%81%B8%E5%96%AE%E9%81%B8%E9%A0%85%E4%B8%8D%E5%8F%AF%E7%B7%A8%E8%BC%AF/</guid>
     <description><![CDATA[<p>現在才知道可以這麼搞。</p>]]></description>
 </item>
 <item>
     <title>Microsoft.WindowsAPICodePack.Dialogs</title>
-    <link>/posts/2023/2023010402/</link>
-    <pubDate>Wed, 04 Jan 2023 14:11:15 &#43;0800</pubDate><guid>/posts/2023/2023010402/</guid>
+    <link>/posts/2023/2023010402_microsoft.windowsapicodepack.dialogs/</link>
+    <pubDate>Wed, 04 Jan 2023 14:11:15 &#43;0800</pubDate><guid>/posts/2023/2023010402_microsoft.windowsapicodepack.dialogs/</guid>
     <description><![CDATA[<p>想在固有的程式跳出顯示明細，但又覺得MessageBox太陽春。</p>]]></description>
 </item>
 <item>
