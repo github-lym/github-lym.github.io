@@ -3,7 +3,25 @@
         <title>筆記 - Category - My Memo</title>
         <link>/categories/%E7%AD%86%E8%A8%98/</link>
         <description>筆記 - Category - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 16 Jan 2023 07:10:52 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Jan 2023 20:18:24 &#43;0800</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+    <title>ToString()用法</title>
+    <link>/posts/2023/2023011903_tostring%E7%94%A8%E6%B3%95/</link>
+    <pubDate>Thu, 19 Jan 2023 20:18:24 &#43;0800</pubDate><guid>/posts/2023/2023011903_tostring%E7%94%A8%E6%B3%95/</guid>
+    <description><![CDATA[<p>突然找到我完全不知道的用法。</p>]]></description>
+</item>
+<item>
+    <title>用無痕模式開啟瀏覽器除錯</title>
+    <link>/posts/2023/2023011902_%E7%94%A8%E7%84%A1%E7%97%95%E6%A8%A1%E5%BC%8F%E9%99%A4%E9%8C%AF/</link>
+    <pubDate>Thu, 19 Jan 2023 19:57:11 &#43;0800</pubDate><guid>/posts/2023/2023011902_%E7%94%A8%E7%84%A1%E7%97%95%E6%A8%A1%E5%BC%8F%E9%99%A4%E9%8C%AF/</guid>
+    <description><![CDATA[<p>沒想到早就可以這麼做！</p>]]></description>
+</item>
+<item>
+    <title>讀取ini檔</title>
+    <link>/posts/2023/2023011901_%E8%AE%80%E5%8F%96ini%E6%AA%94/</link>
+    <pubDate>Thu, 19 Jan 2023 17:41:49 &#43;0800</pubDate><guid>/posts/2023/2023011901_%E8%AE%80%E5%8F%96ini%E6%AA%94/</guid>
+    <description><![CDATA[<p>以前用網路上看的，比較複雜。</p>]]></description>
+</item>
+<item>
     <title>Double的運算</title>
     <link>/posts/2023/2023011602_double%E7%9A%84%E9%81%8B%E7%AE%97/</link>
     <pubDate>Mon, 16 Jan 2023 07:10:52 &#43;0000</pubDate><guid>/posts/2023/2023011602_double%E7%9A%84%E9%81%8B%E7%AE%97/</guid>
@@ -44,24 +62,6 @@
     <link>/posts/2022/datatablememo/</link>
     <pubDate>Tue, 27 Sep 2022 16:28:45 &#43;0000</pubDate><guid>/posts/2022/datatablememo/</guid>
     <description><![CDATA[<p>偶爾看到兩個小技巧，筆記一下。</p>]]></description>
-</item>
-<item>
-    <title>IIS加解密</title>
-    <link>/posts/2022/iisencryptiondecryption/</link>
-    <pubDate>Mon, 26 Sep 2022 14:15:32 &#43;0000</pubDate><guid>/posts/2022/iisencryptiondecryption/</guid>
-    <description><![CDATA[<p>雖知道有這功能，但之前完全沒有自己用過。</p>]]></description>
-</item>
-<item>
-    <title>將IEnumerable轉成DataTable</title>
-    <link>/posts/2022/ienumerabletodatatable/</link>
-    <pubDate>Mon, 19 Sep 2022 06:59:48 &#43;0000</pubDate><guid>/posts/2022/ienumerabletodatatable/</guid>
-    <description><![CDATA[<p>使用linq，但回傳要是DataTable，所以找到並抄下來。</p>]]></description>
-</item>
-<item>
-    <title>正規表示法筆記</title>
-    <link>/posts/2022/regex/</link>
-    <pubDate>Mon, 19 Sep 2022 06:31:50 &#43;0000</pubDate><guid>/posts/2022/regex/</guid>
-    <description><![CDATA[<p>有時遇到一些正規表示法的問題，做個筆記記錄一下。</p>]]></description>
 </item>
 </channel>
 </rss>
