@@ -3,7 +3,25 @@
         <title>All Posts - My Memo</title>
         <link>/posts/</link>
         <description>All Posts | My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Jan 2023 20:18:24 &#43;0800</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 16 Aug 2023 03:04:09 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>正確編譯匯出RDLC</title>
+    <link>/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/</link>
+    <pubDate>Wed, 16 Aug 2023 03:04:09 &#43;0000</pubDate><guid>/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/</guid>
+    <description><![CDATA[<p>之前發現RDLC匯出有問題。</p>]]></description>
+</item>
+<item>
+    <title>在Windows啟用自己寫的服務</title>
+    <link>/posts/2023/2023080801_%E5%9C%A8windows%E5%95%9F%E7%94%A8%E8%87%AA%E5%B7%B1%E5%AF%AB%E7%9A%84%E6%9C%8D%E5%8B%99/</link>
+    <pubDate>Tue, 08 Aug 2023 09:34:52 &#43;0000</pubDate><guid>/posts/2023/2023080801_%E5%9C%A8windows%E5%95%9F%E7%94%A8%E8%87%AA%E5%B7%B1%E5%AF%AB%E7%9A%84%E6%9C%8D%E5%8B%99/</guid>
+    <description><![CDATA[<p>啟用服務不難，難的是自訂服務名稱。</p>]]></description>
+</item>
+<item>
+    <title>StoredProcedure撰寫與使用</title>
+    <link>/posts/2023/2023080201_storedprocedure%E6%92%B0%E5%AF%AB%E8%88%87%E4%BD%BF%E7%94%A8/</link>
+    <pubDate>Wed, 02 Aug 2023 10:12:03 &#43;0000</pubDate><guid>/posts/2023/2023080201_storedprocedure%E6%92%B0%E5%AF%AB%E8%88%87%E4%BD%BF%E7%94%A8/</guid>
+    <description><![CDATA[<p>不確定是不是第一次寫，反正就記錄一下。</p>]]></description>
+</item>
+<item>
     <title>ToString()用法</title>
     <link>/posts/2023/2023011903_tostring%E7%94%A8%E6%B3%95/</link>
     <pubDate>Thu, 19 Jan 2023 20:18:24 &#43;0800</pubDate><guid>/posts/2023/2023011903_tostring%E7%94%A8%E6%B3%95/</guid>
@@ -44,24 +62,6 @@
     <link>/posts/2023/2023010401_%E8%AE%93%E4%B8%8B%E6%8B%89%E9%81%B8%E5%96%AE%E9%81%B8%E9%A0%85%E4%B8%8D%E5%8F%AF%E7%B7%A8%E8%BC%AF/</link>
     <pubDate>Wed, 04 Jan 2023 21:47:45 &#43;0800</pubDate><guid>/posts/2023/2023010401_%E8%AE%93%E4%B8%8B%E6%8B%89%E9%81%B8%E5%96%AE%E9%81%B8%E9%A0%85%E4%B8%8D%E5%8F%AF%E7%B7%A8%E8%BC%AF/</guid>
     <description><![CDATA[<p>現在才知道可以這麼搞。</p>]]></description>
-</item>
-<item>
-    <title>Microsoft.WindowsAPICodePack.Dialogs</title>
-    <link>/posts/2023/2023010402_microsoft.windowsapicodepack.dialogs/</link>
-    <pubDate>Wed, 04 Jan 2023 14:11:15 &#43;0800</pubDate><guid>/posts/2023/2023010402_microsoft.windowsapicodepack.dialogs/</guid>
-    <description><![CDATA[<p>想在固有的程式跳出顯示明細，但又覺得MessageBox太陽春。</p>]]></description>
-</item>
-<item>
-    <title>查詢字串裡面的多個關鍵字</title>
-    <link>/posts/2022/linqkeywordsearch/</link>
-    <pubDate>Mon, 26 Dec 2022 11:10:48 &#43;0000</pubDate><guid>/posts/2022/linqkeywordsearch/</guid>
-    <description><![CDATA[<p>看了<a href="https://dotblogs.com.tw/kevinya/2022/12/12/115149" target="_blank" rel="noopener noreffer">這篇</a>才知有這種使用方式。</p>]]></description>
-</item>
-<item>
-    <title>使用IIS搭配Visual Studio除錯</title>
-    <link>/posts/2022/iisdebug/</link>
-    <pubDate>Fri, 16 Dec 2022 02:46:26 &#43;0000</pubDate><guid>/posts/2022/iisdebug/</guid>
-    <description><![CDATA[<p>通常只用visual studio內建的IISExpress除錯。</p>]]></description>
 </item>
 </channel>
 </rss>

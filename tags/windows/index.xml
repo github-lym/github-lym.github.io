@@ -3,7 +3,13 @@
         <title>Windows - Tag - My Memo</title>
         <link>/tags/windows/</link>
         <description>Windows - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Aug 2022 02:56:59 &#43;0000</lastBuildDate><atom:link href="/tags/windows/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 08 Aug 2023 09:34:52 &#43;0000</lastBuildDate><atom:link href="/tags/windows/" rel="self" type="application/rss+xml" /><item>
+    <title>在Windows啟用自己寫的服務</title>
+    <link>/posts/2023/2023080801_%E5%9C%A8windows%E5%95%9F%E7%94%A8%E8%87%AA%E5%B7%B1%E5%AF%AB%E7%9A%84%E6%9C%8D%E5%8B%99/</link>
+    <pubDate>Tue, 08 Aug 2023 09:34:52 &#43;0000</pubDate><guid>/posts/2023/2023080801_%E5%9C%A8windows%E5%95%9F%E7%94%A8%E8%87%AA%E5%B7%B1%E5%AF%AB%E7%9A%84%E6%9C%8D%E5%8B%99/</guid>
+    <description><![CDATA[<p>啟用服務不難，難的是自訂服務名稱。</p>]]></description>
+</item>
+<item>
     <title>解決重開機桌面圖示排列混亂問題</title>
     <link>/posts/2022/iconarrangement/</link>
     <pubDate>Mon, 22 Aug 2022 02:56:59 &#43;0000</pubDate><guid>/posts/2022/iconarrangement/</guid>

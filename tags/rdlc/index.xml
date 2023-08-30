@@ -3,7 +3,13 @@
         <title>RDLC - Tag - My Memo</title>
         <link>/tags/rdlc/</link>
         <description>RDLC - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 03 Oct 2022 03:04:09 &#43;0000</lastBuildDate><atom:link href="/tags/rdlc/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 16 Aug 2023 03:04:09 &#43;0000</lastBuildDate><atom:link href="/tags/rdlc/" rel="self" type="application/rss+xml" /><item>
+    <title>正確編譯匯出RDLC</title>
+    <link>/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/</link>
+    <pubDate>Wed, 16 Aug 2023 03:04:09 &#43;0000</pubDate><guid>/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/</guid>
+    <description><![CDATA[<p>之前發現RDLC匯出有問題。</p>]]></description>
+</item>
+<item>
     <title>RDLC設定重複表頭</title>
     <link>/posts/2022/rdlcrepeattitle/</link>
     <pubDate>Mon, 03 Oct 2022 03:04:09 &#43;0000</pubDate><guid>/posts/2022/rdlcrepeattitle/</guid>

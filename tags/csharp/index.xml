@@ -3,7 +3,13 @@
         <title>CSharp - Tag - My Memo</title>
         <link>/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 19 Jan 2023 20:18:24 &#43;0800</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 02 Aug 2023 10:12:03 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>StoredProcedure撰寫與使用</title>
+    <link>/posts/2023/2023080201_storedprocedure%E6%92%B0%E5%AF%AB%E8%88%87%E4%BD%BF%E7%94%A8/</link>
+    <pubDate>Wed, 02 Aug 2023 10:12:03 &#43;0000</pubDate><guid>/posts/2023/2023080201_storedprocedure%E6%92%B0%E5%AF%AB%E8%88%87%E4%BD%BF%E7%94%A8/</guid>
+    <description><![CDATA[<p>不確定是不是第一次寫，反正就記錄一下。</p>]]></description>
+</item>
+<item>
     <title>ToString()用法</title>
     <link>/posts/2023/2023011903_tostring%E7%94%A8%E6%B3%95/</link>
     <pubDate>Thu, 19 Jan 2023 20:18:24 &#43;0800</pubDate><guid>/posts/2023/2023011903_tostring%E7%94%A8%E6%B3%95/</guid>
@@ -56,12 +62,6 @@
     <link>/posts/2022/ienumerabletodatatable/</link>
     <pubDate>Mon, 19 Sep 2022 06:59:48 &#43;0000</pubDate><guid>/posts/2022/ienumerabletodatatable/</guid>
     <description><![CDATA[<p>使用linq，但回傳要是DataTable，所以找到並抄下來。</p>]]></description>
-</item>
-<item>
-    <title>Web Service GUI Test Tool ( wizdl )</title>
-    <link>/posts/2022/wizdl/</link>
-    <pubDate>Tue, 23 Aug 2022 06:56:13 &#43;0000</pubDate><guid>/posts/2022/wizdl/</guid>
-    <description><![CDATA[<p>今天閒暇亂翻翻到保哥的介紹，才發現我也有玩過這東西。</p>]]></description>
 </item>
 </channel>
 </rss>
