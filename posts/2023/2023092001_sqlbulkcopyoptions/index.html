@@ -4,31 +4,31 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>正確編譯匯出RDLC - My Memo</title><meta name="description" content=""><meta property="og:title" content="正確編譯匯出RDLC" />
-<meta property="og:description" content="之前發現RDLC匯出有問題。" />
+        <title>SqlBulkCopyOptions - My Memo</title><meta name="description" content=""><meta property="og:title" content="SqlBulkCopyOptions" />
+<meta property="og:description" content="比較常用的有兩個：" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2023-08-16T03:04:09+00:00" />
-<meta property="article:modified_time" content="2023-08-16T03:04:09+00:00" />
+<meta property="og:url" content="/posts/2023/2023092001_sqlbulkcopyoptions/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-20T06:04:07+00:00" />
+<meta property="article:modified_time" content="2023-09-20T06:04:07+00:00" />
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/images/devil_s_bg.png"/>
 
-<meta name="twitter:title" content="正確編譯匯出RDLC"/>
-<meta name="twitter:description" content="之前發現RDLC匯出有問題。"/>
+<meta name="twitter:title" content="SqlBulkCopyOptions"/>
+<meta name="twitter:description" content="比較常用的有兩個："/>
 <meta name="application-name" content="My Memo">
 <meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/" /><link rel="prev" href="/posts/2023/2023080801_%E5%9C%A8windows%E5%95%9F%E7%94%A8%E8%87%AA%E5%B7%B1%E5%AF%AB%E7%9A%84%E6%9C%8D%E5%8B%99/" /><link rel="next" href="/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2023/2023092001_sqlbulkcopyoptions/" /><link rel="prev" href="/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "正確編譯匯出RDLC",
+        "headline": "SqlBulkCopyOptions",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": "\/posts\/2023\/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc\/"
-        },"genre": "posts","keywords": "VisualStudio, RDLC","wordcount":  5 ,
-        "url": "\/posts\/2023\/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc\/","datePublished": "2023-08-16T03:04:09+00:00","dateModified": "2023-08-16T03:04:09+00:00","publisher": {
+            "@id": "\/posts\/2023\/2023092001_sqlbulkcopyoptions\/"
+        },"genre": "posts","keywords": "CSharp","wordcount":  31 ,
+        "url": "\/posts\/2023\/2023092001_sqlbulkcopyoptions\/","datePublished": "2023-09-20T06:04:07+00:00","dateModified": "2023-09-20T06:04:07+00:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
                 "@type": "Person",
@@ -112,31 +112,60 @@
 <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
 </div><main class="main">
-                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">正確編譯匯出RDLC</h2><div class="post-meta">
-                <div class="post-meta-line">&nbsp;<span class="post-category">published in <a href="/categories/%E7%96%91%E9%9B%A3%E9%9B%9C%E7%97%87/"><i class="far fa-folder fa-fw"></i>疑難雜症</a></span></div>
-                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-08-16 03:04:09 Wednesday">2023-08-16 03:04:09 Wednesday</time></span>&nbsp;</div>
+                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">SqlBulkCopyOptions</h2><div class="post-meta">
+                <div class="post-meta-line">&nbsp;<span class="post-category">published in <a href="/categories/%E7%AD%86%E8%A8%98/"><i class="far fa-folder fa-fw"></i>筆記</a></span></div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-09-20 06:04:07 Wednesday">2023-09-20 06:04:07 Wednesday</time></span>&nbsp;</div>
             </div>
             
-            <hr><div class="content" id="content"><p>之前發現RDLC匯出有問題。</p>
-<p><a href="../img/2023081601_01.png" rel=""><figure><a class="lightgallery" href="../img/2023081601_01.png" title="檔案屬性" data-thumbnail="../img/2023081601_01.png" data-sub-html="<h2>檔案屬性</h2><p>檔案屬性</p>">
-        <img
-            class="lazyload"
-            src="/svg/loading.min.svg"
-            data-src="../img/2023081601_01.png"
-            data-srcset="../img/2023081601_01.png, ../img/2023081601_01.png 1.5x, ../img/2023081601_01.png 2x"
-            data-sizes="auto"
-            alt="../img/2023081601_01.png" />
-    </a><figcaption class="image-caption">檔案屬性</figcaption>
-    </figure></a></p>
-<p>右鍵檔案屬性，<br>
-<code>建置動作</code>選<code>內容</code>，可以讓RDLC檔案被匯出。<br>
-<code>複製到輸出目錄</code>選<code>不要複製</code>，可以匯出到專案正確位置而非bin裡面。</p></div><div class="post-footer" id="post-footer">
-    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/visualstudio/">VisualStudio</a>
-                </span><span><a href="/tags/rdlc/">RDLC</a>
+            <hr><div class="content" id="content"><p>比較常用的有兩個：</p>
+<ol>
+<li>KeepIdentity：保留來源的PK值，否則會出現複製過去的資料產生標識列發現變化的情況！</li>
+<li>KeepNulls： 資料為空時不填入預設值。<br>
+<br></li>
+</ol>
+<p>其他屬性如下表</p>
+<table>
+<thead>
+<tr>
+<th>屬性</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CheckConstraints</td>
+<td>在插入資料時檢查條件約束。 根據預設，不會檢查條件約束。</td>
+</tr>
+<tr>
+<td>Default</td>
+<td>使用所有選項的預設值。</td>
+</tr>
+<tr>
+<td>FireTriggers</td>
+<td>若已指定，則會導致此伺服器對於正在插入至此資料庫的資料列，引發插入觸發程序。</td>
+</tr>
+<tr>
+<td>KeepIdentity</td>
+<td>保留來源識別值。 如果未指定，則識別值依目的地指派。</td>
+</tr>
+<tr>
+<td>KeepNulls</td>
+<td>不論預設值的設定為何，均保留目的地資料表中的 null值。 如果未指定，則null值會以適用的預設值取代。</td>
+</tr>
+<tr>
+<td>TableLock</td>
+<td>在大量複製作業期間，取得大量更新鎖定。 如果未指定，則會使用資料列鎖定。</td>
+</tr>
+<tr>
+<td>UseInternalTransaction</td>
+<td>若已指定，則大量複製作業的每個批次將在交易內發生。 如果指定這個選項，同時也提供 SqlTransaction 物件給建構函式，則 ArgumentException 就會發生。</td>
+</tr>
+</tbody>
+</table></div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/csharp/">CSharp</a>
                 </span></div><div class="post-info-share">
-            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/" data-title="正確編譯匯出RDLC" data-hashtags="VisualStudio,RDLC"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/" data-hashtag="VisualStudio"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/" data-title="正確編譯匯出RDLC"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/" data-title="正確編譯匯出RDLC" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/" data-title="正確編譯匯出RDLC"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/" data-title="正確編譯匯出RDLC"><i class="fab fa-skype fa-fw"></i></a></span>
-        </div></div><div class="post-nav"><a href="/posts/2023/2023080801_%E5%9C%A8windows%E5%95%9F%E7%94%A8%E8%87%AA%E5%B7%B1%E5%AF%AB%E7%9A%84%E6%9C%8D%E5%8B%99/" class="prev" rel="prev" title="在Windows啟用自己寫的服務"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
-            <a href="/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/" class="next" rel="next" title="在本機除錯Service">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2023/2023092001_sqlbulkcopyoptions/" data-title="SqlBulkCopyOptions" data-hashtags="CSharp"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2023/2023092001_sqlbulkcopyoptions/" data-hashtag="CSharp"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2023/2023092001_sqlbulkcopyoptions/" data-title="SqlBulkCopyOptions"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2023/2023092001_sqlbulkcopyoptions/" data-title="SqlBulkCopyOptions" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2023/2023092001_sqlbulkcopyoptions/" data-title="SqlBulkCopyOptions"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2023/2023092001_sqlbulkcopyoptions/" data-title="SqlBulkCopyOptions"><i class="fab fa-skype fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/" class="prev" rel="prev" title="在本機除錯Service"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a></div></div>
 </div></article></div>
             </main>
             <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>

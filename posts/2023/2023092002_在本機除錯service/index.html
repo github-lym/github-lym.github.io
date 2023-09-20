@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>在本機除錯Service - My Memo</title><meta name="description" content=""><meta property="og:title" content="在本機除錯Service" />
+<meta property="og:description" content="接手一WindowsServie，但除錯得裝一些額外的東西。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-09-20T06:04:07+00:00" />
+<meta property="article:modified_time" content="2023-09-20T06:04:07+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/images/devil_s_bg.png"/>
+
+<meta name="twitter:title" content="在本機除錯Service"/>
+<meta name="twitter:description" content="接手一WindowsServie，但除錯得裝一些額外的東西。"/>
+<meta name="application-name" content="My Memo">
+<meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/" /><link rel="prev" href="/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/" /><link rel="next" href="/posts/2023/2023092001_sqlbulkcopyoptions/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "在本機除錯Service",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/2023\/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice\/"
+        },"genre": "posts","keywords": "CSharp, VistualStudio","wordcount":  238 ,
+        "url": "\/posts\/2023\/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice\/","datePublished": "2023-09-20T06:04:07+00:00","dateModified": "2023-09-20T06:04:07+00:00","publisher": {
+            "@type": "Organization",
+            "name": "LYM"},"author": {
+                "@type": "Person",
+                "name": "LYM"
+            },"description": ""
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My Memo"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/devil_s_bg.png"
+        data-srcset="/images/devil_s_bg.png, /images/devil_s_bg.png 1.5x, /images/devil_s_bg.png 2x"
+        data-sizes="auto"
+        alt="/images/devil_s_bg.png"
+        title="/images/devil_s_bg.png" /><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/github-lym" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My Memo"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/devil_s_bg.png"
+        data-srcset="/images/devil_s_bg.png, /images/devil_s_bg.png 1.5x, /images/devil_s_bg.png 2x"
+        data-sizes="auto"
+        alt="/images/devil_s_bg.png"
+        title="/images/devil_s_bg.png" /><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/github-lym" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">在本機除錯Service</h2><div class="post-meta">
+                <div class="post-meta-line">&nbsp;<span class="post-category">published in <a href="/categories/%E7%AD%86%E8%A8%98/"><i class="far fa-folder fa-fw"></i>筆記</a></span></div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-09-20 06:04:07 Wednesday">2023-09-20 06:04:07 Wednesday</time></span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="content" id="content"><p>接手一WindowsServie，但除錯得裝一些額外的東西。</p>
+<p>想說能不能懶惰一點，結果找到以下方法。</p>
+<ol>
+<li>先把輸出類型改為主控台應用程式。<br>
+<a href="../img/2023092002_01.png" rel=""><figure><a class="lightgallery" href="../img/2023092002_01.png" title="檔案屬性" data-thumbnail="../img/2023092002_01.png" data-sub-html="<h2>檔案屬性</h2><p>檔案屬性</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="../img/2023092002_01.png"
+            data-srcset="../img/2023092002_01.png, ../img/2023092002_01.png 1.5x, ../img/2023092002_01.png 2x"
+            data-sizes="auto"
+            alt="../img/2023092002_01.png" />
+    </a><figcaption class="image-caption">檔案屬性</figcaption>
+    </figure></a><br>
+<br></li>
+<li>在啟動那邊增加Debug區塊</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="cp">#define DEBUG</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Collections.Generic</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Reflection</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.ServiceProcess</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Text</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Threading.Tasks</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">namespace</span> <span class="nn">DTSService</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">static</span> <span class="k">class</span> <span class="nc">Program</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// 應用程式的主要進入點。</span>
+</span></span><span class="line"><span class="cl">        <span class="cs">/// &lt;/summary&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//TODO 打開 上板時</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">ServiceBase</span><span class="p">[]</span> <span class="n">ServicesToRun</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ServicesToRun</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ServiceBase</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">new</span> <span class="n">DTSService</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">};</span>
+</span></span><span class="line"><span class="cl">            <span class="n">ServiceBase</span><span class="p">.</span><span class="n">Run</span><span class="p">(</span><span class="n">ServicesToRun</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">//------------------------------------------</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//TODO 關閉</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//StandAlone 本機測試</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//DTSService ss = new DTSService();</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//ss.test();</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//ss.DoTransfer();</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//------------------------------------------</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#if (DEBUG)</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// 01-於VS中偵錯時請先註解此部分</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// ServiceBase.Run(ServicesToRun);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">// 02-使用RunInteractive來執行原有Service功能以進行偵錯</span>
+</span></span><span class="line"><span class="cl">            <span class="n">RunInteractive</span><span class="p">(</span><span class="n">ServicesToRun</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="err">#</span><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="cp">#if (DEBUG)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">static</span> <span class="k">void</span> <span class="n">RunInteractive</span><span class="p">(</span><span class="n">ServiceBase</span><span class="p">[]</span> <span class="n">servicesToRun</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// 利用Reflection取得非公開之 OnStart() 方法資訊</span>
+</span></span><span class="line"><span class="cl">            <span class="n">MethodInfo</span> <span class="n">onStartMethod</span> <span class="p">=</span> <span class="k">typeof</span><span class="p">(</span><span class="n">ServiceBase</span><span class="p">).</span><span class="n">GetMethod</span><span class="p">(</span><span class="s">&#34;OnStart&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">BindingFlags</span><span class="p">.</span><span class="n">Instance</span> <span class="p">|</span> <span class="n">BindingFlags</span><span class="p">.</span><span class="n">NonPublic</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">// 執行 OnStart 方法</span>
+</span></span><span class="line"><span class="cl">            <span class="k">foreach</span> <span class="p">(</span><span class="n">ServiceBase</span> <span class="n">service</span> <span class="k">in</span> <span class="n">servicesToRun</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&#34;Starting {0}...&#34;</span><span class="p">,</span> <span class="n">service</span><span class="p">.</span><span class="n">ServiceName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">onStartMethod</span><span class="p">.</span><span class="n">Invoke</span><span class="p">(</span><span class="n">service</span><span class="p">,</span> <span class="k">new</span> <span class="kt">object</span><span class="p">[]</span> <span class="p">{</span> <span class="k">new</span> <span class="kt">string</span><span class="p">[]</span> <span class="p">{</span> <span class="p">}</span> <span class="p">});</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&#34;Started&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Press any key to stop the services&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">// 利用Reflection取得非公開之 OnStop() 方法資訊</span>
+</span></span><span class="line"><span class="cl">            <span class="n">MethodInfo</span> <span class="n">onStopMethod</span> <span class="p">=</span> <span class="k">typeof</span><span class="p">(</span><span class="n">ServiceBase</span><span class="p">).</span><span class="n">GetMethod</span><span class="p">(</span><span class="s">&#34;OnStop&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">BindingFlags</span><span class="p">.</span><span class="n">Instance</span> <span class="p">|</span> <span class="n">BindingFlags</span><span class="p">.</span><span class="n">NonPublic</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">// 執行 OnStop 方法</span>
+</span></span><span class="line"><span class="cl">            <span class="k">foreach</span> <span class="p">(</span><span class="n">ServiceBase</span> <span class="n">service</span> <span class="k">in</span> <span class="n">servicesToRun</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&#34;Stopping {0}...&#34;</span><span class="p">,</span> <span class="n">service</span><span class="p">.</span><span class="n">ServiceName</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">onStopMethod</span><span class="p">.</span><span class="n">Invoke</span><span class="p">(</span><span class="n">service</span><span class="p">,</span> <span class="k">null</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Stopped&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="err">#</span><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><br>
+雖然不懂原理是啥，但能用就先筆記。</div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/csharp/">CSharp</a>
+                </span><span><a href="/tags/vistualstudio/">VistualStudio</a>
+                </span></div><div class="post-info-share">
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/" data-title="在本機除錯Service" data-hashtags="CSharp,VistualStudio"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/" data-hashtag="CSharp"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/" data-title="在本機除錯Service"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/" data-title="在本機除錯Service" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/" data-title="在本機除錯Service"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/" data-title="在本機除錯Service"><i class="fab fa-skype fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/" class="prev" rel="prev" title="正確編譯匯出RDLC"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/2023/2023092001_sqlbulkcopyoptions/" class="next" rel="next" title="SqlBulkCopyOptions">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/twemoji/twemoji.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":20},"comment":{},"data":{"id-1":"My Memo","id-2":"My Memo"},"search":{"algoliaAppID":"REZKV78K6P","algoliaIndex":"index","algoliaSearchKey":"b32b9724683ef42845b63a2743550d51","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"},"twemoji":true,"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

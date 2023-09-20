@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/2023\/2023080201_storedprocedure%E6%92%B0%E5%AF%AB%E8%88%87%E4%BD%BF%E7%94%A8\/"
-        },"genre": "posts","keywords": "CSharp, MSSQL","wordcount":  202 ,
+        },"genre": "posts","keywords": "CSharp, MSSQL","wordcount":  233 ,
         "url": "\/posts\/2023\/2023080201_storedprocedure%E6%92%B0%E5%AF%AB%E8%88%87%E4%BD%BF%E7%94%A8\/","datePublished": "2023-08-02T10:12:03+00:00","dateModified": "2023-08-02T10:12:03+00:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
@@ -276,7 +276,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><br>
-<p>用SQL呼叫的語法如下</p>
+<p>用SQL呼叫的語法如下(取得output)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -291,6 +291,32 @@
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">EXEC</span><span class="w"> </span><span class="n">GetPushCode</span><span class="w"> </span><span class="o">@</span><span class="n">BCODE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;928&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">UID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;H2228xxxxxx&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">PushCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">@</span><span class="n">myretValue</span><span class="w"> </span><span class="k">output</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">select</span><span class="w"> </span><span class="o">@</span><span class="n">myretValue</span><span class="p">;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><br>
+用SQL呼叫取得兩output的語法如下
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="k">DECLARE</span><span class="w"> </span><span class="o">@</span><span class="n">pushcode</span><span class="w"> </span><span class="nb">int</span><span class="p">,</span><span class="o">@</span><span class="n">usudid</span><span class="w"> </span><span class="n">uniqueidentifier</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">EXEC</span><span class="w"> </span><span class="n">GetPushCode</span><span class="w"> </span><span class="o">@</span><span class="n">BCODE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;928&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">UID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;H2228xxxxxx&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">@</span><span class="n">PushCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">@</span><span class="n">pushcode</span><span class="w"> </span><span class="k">output</span><span class="p">,</span><span class="o">@</span><span class="n">USUDID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">@</span><span class="n">usudid</span><span class="w"> </span><span class="k">output</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"> 
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">select</span><span class="w"> </span><span class="o">@</span><span class="n">pushcode</span><span class="p">,</span><span class="o">@</span><span class="n">usudid</span><span class="p">;</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">

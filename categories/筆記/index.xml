@@ -3,7 +3,19 @@
         <title>筆記 - Category - My Memo</title>
         <link>/categories/%E7%AD%86%E8%A8%98/</link>
         <description>筆記 - Category - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 08 Aug 2023 09:34:52 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</lastBuildDate><atom:link href="/categories/%E7%AD%86%E8%A8%98/" rel="self" type="application/rss+xml" /><item>
+    <title>SqlBulkCopyOptions</title>
+    <link>/posts/2023/2023092001_sqlbulkcopyoptions/</link>
+    <pubDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</pubDate><guid>/posts/2023/2023092001_sqlbulkcopyoptions/</guid>
+    <description><![CDATA[<p>比較常用的有兩個：</p>]]></description>
+</item>
+<item>
+    <title>在本機除錯Service</title>
+    <link>/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/</link>
+    <pubDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</pubDate><guid>/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/</guid>
+    <description><![CDATA[<p>接手一WindowsServie，但除錯得裝一些額外的東西。</p>]]></description>
+</item>
+<item>
     <title>在Windows啟用自己寫的服務</title>
     <link>/posts/2023/2023080801_%E5%9C%A8windows%E5%95%9F%E7%94%A8%E8%87%AA%E5%B7%B1%E5%AF%AB%E7%9A%84%E6%9C%8D%E5%8B%99/</link>
     <pubDate>Tue, 08 Aug 2023 09:34:52 &#43;0000</pubDate><guid>/posts/2023/2023080801_%E5%9C%A8windows%E5%95%9F%E7%94%A8%E8%87%AA%E5%B7%B1%E5%AF%AB%E7%9A%84%E6%9C%8D%E5%8B%99/</guid>
@@ -50,18 +62,6 @@
     <link>/posts/2022/iisdebug/</link>
     <pubDate>Fri, 16 Dec 2022 02:46:26 &#43;0000</pubDate><guid>/posts/2022/iisdebug/</guid>
     <description><![CDATA[<p>通常只用visual studio內建的IISExpress除錯。</p>]]></description>
-</item>
-<item>
-    <title>判斷Dynamic某欄位是否存在</title>
-    <link>/posts/2022/dynamicpropertyexist/</link>
-    <pubDate>Fri, 16 Dec 2022 02:06:00 &#43;0000</pubDate><guid>/posts/2022/dynamicpropertyexist/</guid>
-    <description><![CDATA[<p>因傳遞給API的值要新增一欄位，為了新舊版的APP都要能用，</p>]]></description>
-</item>
-<item>
-    <title>7-Zip排除特定目錄壓縮</title>
-    <link>/posts/2022/7zipcommand/</link>
-    <pubDate>Sat, 12 Nov 2022 08:15:37 &#43;0000</pubDate><guid>/posts/2022/7zipcommand/</guid>
-    <description><![CDATA[<p>要排除某些資料夾壓縮，本來只有找到壓成7z的指令。</p>]]></description>
 </item>
 </channel>
 </rss>

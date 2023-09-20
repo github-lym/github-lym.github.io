@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>VistualStudio - Tag - My Memo</title>
+        <link>/tags/vistualstudio/</link>
+        <description>VistualStudio - Tag - My Memo</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</lastBuildDate><atom:link href="/tags/vistualstudio/" rel="self" type="application/rss+xml" /><item>
+    <title>在本機除錯Service</title>
+    <link>/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/</link>
+    <pubDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</pubDate><guid>/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/</guid>
+    <description><![CDATA[<p>接手一WindowsServie，但除錯得裝一些額外的東西。</p>]]></description>
+</item>
+</channel>
+</rss>

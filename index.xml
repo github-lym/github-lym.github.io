@@ -3,9 +3,21 @@
         <title>My Memo</title>
         <link>/</link>
         <description>My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 16 Aug 2023 03:04:09 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>SqlBulkCopyOptions</title>
+    <link>/posts/2023/2023092001_sqlbulkcopyoptions/</link>
+    <pubDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</pubDate><guid>/posts/2023/2023092001_sqlbulkcopyoptions/</guid>
+    <description><![CDATA[<p>比較常用的有兩個：</p>]]></description>
+</item>
+<item>
+    <title>在本機除錯Service</title>
+    <link>/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/</link>
+    <pubDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</pubDate><guid>/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/</guid>
+    <description><![CDATA[<p>接手一WindowsServie，但除錯得裝一些額外的東西。</p>]]></description>
+</item>
+<item>
     <title>正確編譯匯出RDLC</title>
     <link>/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/</link>
     <pubDate>Wed, 16 Aug 2023 03:04:09 &#43;0000</pubDate><guid>/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/</guid>
@@ -52,18 +64,6 @@
     <link>/posts/2023/2023011602_double%E7%9A%84%E9%81%8B%E7%AE%97/</link>
     <pubDate>Mon, 16 Jan 2023 07:10:52 &#43;0000</pubDate><guid>/posts/2023/2023011602_double%E7%9A%84%E9%81%8B%E7%AE%97/</guid>
     <description><![CDATA[<p>是襄理提出用<code>Double</code>相加會有問題。</p>]]></description>
-</item>
-<item>
-    <title>版更批次程式</title>
-    <link>/posts/2023/2023011601_%E7%89%88%E6%9B%B4%E6%89%B9%E6%AC%A1%E7%A8%8B%E5%BC%8F/</link>
-    <pubDate>Mon, 16 Jan 2023 14:53:54 &#43;0800</pubDate><guid>/posts/2023/2023011601_%E7%89%88%E6%9B%B4%E6%89%B9%E6%AC%A1%E7%A8%8B%E5%BC%8F/</guid>
-    <description><![CDATA[<p>用來版更的懶人程式。</p>]]></description>
-</item>
-<item>
-    <title>讓下拉選單選項不可編輯</title>
-    <link>/posts/2023/2023010401_%E8%AE%93%E4%B8%8B%E6%8B%89%E9%81%B8%E5%96%AE%E9%81%B8%E9%A0%85%E4%B8%8D%E5%8F%AF%E7%B7%A8%E8%BC%AF/</link>
-    <pubDate>Wed, 04 Jan 2023 21:47:45 &#43;0800</pubDate><guid>/posts/2023/2023010401_%E8%AE%93%E4%B8%8B%E6%8B%89%E9%81%B8%E5%96%AE%E9%81%B8%E9%A0%85%E4%B8%8D%E5%8F%AF%E7%B7%A8%E8%BC%AF/</guid>
-    <description><![CDATA[<p>現在才知道可以這麼搞。</p>]]></description>
 </item>
 </channel>
 </rss>

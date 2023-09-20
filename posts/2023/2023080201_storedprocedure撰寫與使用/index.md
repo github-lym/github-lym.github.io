@@ -83,7 +83,7 @@ END
 
 <br>
 
-用SQL呼叫的語法如下
+用SQL呼叫的語法如下(取得output)
 ```SQL
 DECLARE @myretValue int
 
@@ -91,3 +91,19 @@ EXEC GetPushCode @BCODE = '928', @UID = 'H2228xxxxxx', @PushCode = @myretValue o
 
 select @myretValue;
 ```
+<br>
+用SQL呼叫取得兩output的語法如下
+
+```SQL
+DECLARE @pushcode int,@usudid uniqueidentifier
+
+ 
+
+EXEC GetPushCode @BCODE = '928', @UID = 'H2228xxxxxx', @PushCode = @pushcode output,@USUDID = @usudid output
+
+ 
+
+select @pushcode,@usudid;
+```
+
+

@@ -3,7 +3,19 @@
         <title>CSharp - Tag - My Memo</title>
         <link>/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 02 Aug 2023 10:12:03 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>SqlBulkCopyOptions</title>
+    <link>/posts/2023/2023092001_sqlbulkcopyoptions/</link>
+    <pubDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</pubDate><guid>/posts/2023/2023092001_sqlbulkcopyoptions/</guid>
+    <description><![CDATA[<p>比較常用的有兩個：</p>]]></description>
+</item>
+<item>
+    <title>在本機除錯Service</title>
+    <link>/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/</link>
+    <pubDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</pubDate><guid>/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/</guid>
+    <description><![CDATA[<p>接手一WindowsServie，但除錯得裝一些額外的東西。</p>]]></description>
+</item>
+<item>
     <title>StoredProcedure撰寫與使用</title>
     <link>/posts/2023/2023080201_storedprocedure%E6%92%B0%E5%AF%AB%E8%88%87%E4%BD%BF%E7%94%A8/</link>
     <pubDate>Wed, 02 Aug 2023 10:12:03 &#43;0000</pubDate><guid>/posts/2023/2023080201_storedprocedure%E6%92%B0%E5%AF%AB%E8%88%87%E4%BD%BF%E7%94%A8/</guid>
@@ -50,18 +62,6 @@
     <link>/posts/2022/spinwait/</link>
     <pubDate>Wed, 05 Oct 2022 02:18:08 &#43;0000</pubDate><guid>/posts/2022/spinwait/</guid>
     <description><![CDATA[<p>從來沒用過這東西，不過看到了就該筆記。</p>]]></description>
-</item>
-<item>
-    <title>DataTable的小技巧</title>
-    <link>/posts/2022/datatablememo/</link>
-    <pubDate>Tue, 27 Sep 2022 16:28:45 &#43;0000</pubDate><guid>/posts/2022/datatablememo/</guid>
-    <description><![CDATA[<p>偶爾看到兩個小技巧，筆記一下。</p>]]></description>
-</item>
-<item>
-    <title>將IEnumerable轉成DataTable</title>
-    <link>/posts/2022/ienumerabletodatatable/</link>
-    <pubDate>Mon, 19 Sep 2022 06:59:48 &#43;0000</pubDate><guid>/posts/2022/ienumerabletodatatable/</guid>
-    <description><![CDATA[<p>使用linq，但回傳要是DataTable，所以找到並抄下來。</p>]]></description>
 </item>
 </channel>
 </rss>
