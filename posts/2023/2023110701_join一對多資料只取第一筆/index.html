@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Join一對多資料只取第一筆 - My Memo</title><meta name="description" content=""><meta property="og:title" content="Join一對多資料只取第一筆" />
+<meta property="og:description" content="這應該不是我第一次有這需求。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-11-07T11:41:07+00:00" />
+<meta property="article:modified_time" content="2023-11-07T11:41:07+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/images/devil_s_bg.png"/>
+
+<meta name="twitter:title" content="Join一對多資料只取第一筆"/>
+<meta name="twitter:description" content="這應該不是我第一次有這需求。"/>
+<meta name="application-name" content="My Memo">
+<meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/" /><link rel="prev" href="/posts/2023/2023100302_%E6%AA%94%E6%A1%88%E5%AF%AB%E5%85%A5utf8-%E6%88%96-utf8-bom/" /><link rel="next" href="/posts/2023/2023121901_%E5%B0%87%E5%9F%B7%E8%A1%8C%E6%AA%94%E8%AE%8A%E6%88%90%E6%9C%8D%E5%8B%99/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Join一對多資料只取第一筆",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/2023\/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86\/"
+        },"genre": "posts","keywords": "MSSQL","wordcount":  56 ,
+        "url": "\/posts\/2023\/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86\/","datePublished": "2023-11-07T11:41:07+00:00","dateModified": "2023-11-07T11:41:07+00:00","publisher": {
+            "@type": "Organization",
+            "name": "LYM"},"author": {
+                "@type": "Person",
+                "name": "LYM"
+            },"description": ""
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My Memo"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/devil_s_bg.png"
+        data-srcset="/images/devil_s_bg.png, /images/devil_s_bg.png 1.5x, /images/devil_s_bg.png 2x"
+        data-sizes="auto"
+        alt="/images/devil_s_bg.png"
+        title="/images/devil_s_bg.png" /><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/github-lym" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My Memo"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/devil_s_bg.png"
+        data-srcset="/images/devil_s_bg.png, /images/devil_s_bg.png 1.5x, /images/devil_s_bg.png 2x"
+        data-sizes="auto"
+        alt="/images/devil_s_bg.png"
+        title="/images/devil_s_bg.png" /><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/github-lym" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">Join一對多資料只取第一筆</h2><div class="post-meta">
+                <div class="post-meta-line">&nbsp;<span class="post-category">published in <a href="/categories/%E7%AD%86%E8%A8%98/"><i class="far fa-folder fa-fw"></i>筆記</a></span></div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2023-11-07 11:41:07 Tuesday">2023-11-07 11:41:07 Tuesday</time></span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="content" id="content"><p>這應該不是我第一次有這需求。</p>
+<p>不過有把它寫下來應該是第一次。</p>
+<br>
+<p>重點在於<code>row_number()</code>取得編號，才能取第一筆。</p>
+<blockquote>
+<p>以帳號<code>(clr_ca_account)</code>為區隔，以時間<code>(CLR_LogoutDT)</code>為排序。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-SQL" data-lang="SQL"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w">  </span><span class="n">A</span><span class="p">.</span><span class="o">*</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">A</span><span class="p">.</span><span class="n">CA_Account</span><span class="p">,</span><span class="n">A</span><span class="p">.</span><span class="n">ca_cum_bankcode</span><span class="o">+</span><span class="s1">&#39;-&#39;</span><span class="o">+</span><span class="n">A</span><span class="p">.</span><span class="n">ca_name</span><span class="w"> </span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">R</span><span class="p">.</span><span class="n">CR_RoleName</span><span class="p">,</span><span class="n">IIF</span><span class="p">(</span><span class="n">A</span><span class="p">.</span><span class="n">CA_AccountDisable</span><span class="o">=</span><span class="s1">&#39;Y&#39;</span><span class="p">,</span><span class="s1">&#39;停用&#39;</span><span class="p">,</span><span class="s1">&#39;啟用&#39;</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="n">A</span><span class="p">.</span><span class="n">CA_ModTime</span><span class="p">,</span><span class="n">CLR_LoginDT</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="p">[</span><span class="n">dbo</span><span class="p">].[</span><span class="n">CMS_Account</span><span class="p">]</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">A</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">left</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="n">clr_ca_account</span><span class="p">,</span><span class="n">CLR_LoginDT</span><span class="p">,</span><span class="n">row_number</span><span class="p">()</span><span class="w"> </span><span class="n">over</span><span class="w"> </span><span class="p">(</span><span class="n">partition</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">clr_ca_account</span><span class="w"> </span><span class="k">order</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">CLR_LogoutDT</span><span class="w"> </span><span class="k">desc</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">rownum</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">FROM</span><span class="w"> </span><span class="p">[</span><span class="n">dbo</span><span class="p">].[</span><span class="n">CMS_LoginRec</span><span class="p">])</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">L</span><span class="w">  </span><span class="k">on</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">ca_account</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">L</span><span class="p">.</span><span class="n">clr_ca_account</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">AND</span><span class="w"> </span><span class="n">L</span><span class="p">.</span><span class="n">rownum</span><span class="o">=</span><span class="s1">&#39;1&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">Left</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="p">[</span><span class="n">CMS_Role</span><span class="p">]</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">R</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">A</span><span class="p">.</span><span class="n">CA_CR_RoleCode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">R</span><span class="p">.</span><span class="n">CR_RoleCode</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/mssql/">MSSQL</a>
+                </span></div><div class="post-info-share">
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/" data-title="Join一對多資料只取第一筆" data-hashtags="MSSQL"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/" data-hashtag="MSSQL"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/" data-title="Join一對多資料只取第一筆"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/" data-title="Join一對多資料只取第一筆" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/" data-title="Join一對多資料只取第一筆"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/" data-title="Join一對多資料只取第一筆"><i class="fab fa-skype fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/2023/2023100302_%E6%AA%94%E6%A1%88%E5%AF%AB%E5%85%A5utf8-%E6%88%96-utf8-bom/" class="prev" rel="prev" title="檔案寫入UTF8 或 UTF8 BOM"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/2023/2023121901_%E5%B0%87%E5%9F%B7%E8%A1%8C%E6%AA%94%E8%AE%8A%E6%88%90%E6%9C%8D%E5%8B%99/" class="next" rel="next" title="將執行檔變成服務">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/twemoji/twemoji.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":20},"comment":{},"data":{"id-1":"My Memo","id-2":"My Memo"},"search":{"algoliaAppID":"REZKV78K6P","algoliaIndex":"index","algoliaSearchKey":"b32b9724683ef42845b63a2743550d51","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"},"twemoji":true,"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>

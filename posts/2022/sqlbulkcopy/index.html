@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/2022\/sqlbulkcopy\/"
-        },"genre": "posts","keywords": "CSharp","wordcount":  185 ,
+        },"genre": "posts","keywords": "CSharp","wordcount":  193 ,
         "url": "\/posts\/2022\/sqlbulkcopy\/","datePublished": "2022-04-20T09:13:30+08:00","dateModified": "2022-04-20T09:13:30+08:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
@@ -191,6 +191,9 @@
 </span><span class="lnt">63
 </span><span class="lnt">64
 </span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="k">using</span> <span class="p">(</span><span class="n">SqlBulkCopy</span> <span class="n">bulkcopy</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlBulkCopy</span><span class="p">(</span><span class="n">_dao</span><span class="p">.</span><span class="n">_conn</span><span class="p">))</span>
@@ -216,41 +219,44 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1">//SqlTransaction版本</span>
-</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="p">(</span><span class="n">SqlConnection</span> <span class="n">conn</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlConnection</span><span class="p">(</span><span class="n">ConfigurationManager</span><span class="p">.</span><span class="n">AppSettings</span><span class="p">[</span><span class="s">&#34;conn&#34;</span><span class="p">].</span><span class="n">Trim</span><span class="p">()))</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="p">(</span><span class="n">SqlConnection</span> <span class="n">conn</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlConnection</span><span class="p">(</span><span class="n">connectionString</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="n">conn</span><span class="p">.</span><span class="n">Open</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">	<span class="k">using</span> <span class="p">(</span><span class="n">SqlTransaction</span> <span class="n">transaction</span> <span class="p">=</span> <span class="n">conn</span><span class="p">.</span><span class="n">BeginTransaction</span><span class="p">())</span>
 </span></span><span class="line"><span class="cl">	<span class="p">{</span>
-</span></span><span class="line"><span class="cl">		<span class="n">conn</span><span class="p">.</span><span class="n">Open</span><span class="p">();</span>
-</span></span><span class="line"><span class="cl">		<span class="k">using</span> <span class="p">(</span><span class="n">SqlBulkCopy</span> <span class="n">bulkcopy</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlBulkCopy</span><span class="p">(</span><span class="n">conn</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">		<span class="k">using</span> <span class="p">(</span><span class="n">SqlBulkCopy</span> <span class="n">bulkcopy</span> <span class="p">=</span> <span class="k">new</span> <span class="n">SqlBulkCopy</span><span class="p">(</span><span class="n">conn</span><span class="p">,</span> <span class="n">SqlBulkCopyOptions</span><span class="p">.</span><span class="n">Default</span><span class="p">,</span> <span class="n">transaction</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl">		<span class="p">{</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">			<span class="c1">//目標資料庫名稱</span>
-</span></span><span class="line"><span class="cl">			<span class="n">bulkcopy</span><span class="p">.</span><span class="n">DestinationTableName</span> <span class="p">=</span> <span class="s">&#34;Opinion&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">			<span class="n">bulkcopy</span><span class="p">.</span><span class="n">DestinationTableName</span> <span class="p">=</span> <span class="s">&#34;EAI_TranRecStatistics&#34;</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">			<span class="c1">//逾時秒數</span>
 </span></span><span class="line"><span class="cl">			<span class="n">bulkcopy</span><span class="p">.</span><span class="n">BulkCopyTimeout</span> <span class="p">=</span> <span class="m">60</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">			<span class="c1">//設定每個批次要複製的筆數</span>
-</span></span><span class="line"><span class="cl">			<span class="n">bulkcopy</span><span class="p">.</span><span class="n">BatchSize</span> <span class="p">=</span> <span class="m">20000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">			<span class="n">bulkcopy</span><span class="p">.</span><span class="n">BatchSize</span> <span class="p">=</span> <span class="m">100000</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">			<span class="c1">//設定當SqlBulkCopy複製多少筆資料後, 觸發通知事件</span>
-</span></span><span class="line"><span class="cl">			<span class="n">bulkcopy</span><span class="p">.</span><span class="n">NotifyAfter</span> <span class="p">=</span> <span class="m">200000</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">			<span class="n">bulkcopy</span><span class="p">.</span><span class="n">SqlRowsCopied</span> <span class="p">+=</span> <span class="k">new</span> <span class="n">SqlRowsCopiedEventHandler</span><span class="p">(</span><span class="n">sqlBulkCopy_SqlRowsCopied</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">			<span class="c1">//bulkcopy.NotifyAfter = 200000;</span>
+</span></span><span class="line"><span class="cl">			<span class="c1">//bulkcopy.SqlRowsCopied += new SqlRowsCopiedEventHandler(sqlBulkCopy_SqlRowsCopied);</span>
 </span></span><span class="line"><span class="cl">			<span class="k">try</span>
 </span></span><span class="line"><span class="cl">			<span class="p">{</span>
-</span></span><span class="line"><span class="cl">				<span class="n">bulkcopy</span><span class="p">.</span><span class="n">WriteToServer</span><span class="p">(</span><span class="n">tmpDt</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">				<span class="n">bulkcopy</span><span class="p">.</span><span class="n">WriteToServer</span><span class="p">(</span><span class="n">target</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">				<span class="n">transaction</span><span class="p">.</span><span class="n">Commit</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">				<span class="n">logger</span><span class="p">.</span><span class="n">Info</span><span class="p">(</span><span class="s">$&#34;匯入{sDate}至{eDate}資料至資料庫完成&#34;</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">			<span class="p">}</span>
 </span></span><span class="line"><span class="cl">			<span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">ex</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">			<span class="p">{</span>
-</span></span><span class="line"><span class="cl">				<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Err:{ex.ToString()}&#34;</span><span class="p">);</span>
-</span></span><span class="line"><span class="cl">				<span class="n">logger</span><span class="p">.</span><span class="n">Append</span><span class="p">(</span><span class="s">$&#34;Err:{ex.ToString()}&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">				<span class="n">logger</span><span class="p">.</span><span class="n">Info</span><span class="p">(</span><span class="s">$&#34;匯入{sDate}至{eDate}資料至資料庫失敗&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">				<span class="n">logger</span><span class="p">.</span><span class="n">Error</span><span class="p">(</span><span class="s">&#34;ImportToDb(bulkcopy):&#34;</span> <span class="p">+</span> <span class="n">ex</span><span class="p">.</span><span class="n">ToString</span><span class="p">());</span>
 </span></span><span class="line"><span class="cl">				<span class="n">transaction</span><span class="p">.</span><span class="n">Rollback</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">			<span class="p">}</span>
 </span></span><span class="line"><span class="cl">			<span class="k">finally</span>
 </span></span><span class="line"><span class="cl">			<span class="p">{</span>
 </span></span><span class="line"><span class="cl">				<span class="n">bulkcopy</span><span class="p">.</span><span class="n">Close</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">			<span class="p">}</span>
-</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">		<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">		<span class="n">conn</span><span class="p">.</span><span class="n">Close</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">	<span class="p">}</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
@@ -268,7 +274,7 @@
             <a href="/posts/2022/object-fit/" class="next" rel="next" title="object-fit—圖片的縮放">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
 </div></article></div>
             </main>
-            <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>
+            <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>
 </div>
 </footer>
         </div>

@@ -1,0 +1,13 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>NLog - Tag - My Memo</title>
+        <link>/tags/nlog/</link>
+        <description>NLog - Tag - My Memo</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Jan 2024 09:19:07 &#43;0000</lastBuildDate><atom:link href="/tags/nlog/" rel="self" type="application/rss+xml" /><item>
+    <title>NLog用程式設定</title>
+    <link>/posts/2024/2024011901_nlog%E7%94%A8%E7%A8%8B%E5%BC%8F%E8%A8%AD%E5%AE%9A/</link>
+    <pubDate>Fri, 19 Jan 2024 09:19:07 &#43;0000</pubDate><guid>/posts/2024/2024011901_nlog%E7%94%A8%E7%A8%8B%E5%BC%8F%E8%A8%AD%E5%AE%9A/</guid>
+    <description><![CDATA[<p>以前還自己傻傻的自己寫Log處理。</p>]]></description>
+</item>
+</channel>
+</rss>

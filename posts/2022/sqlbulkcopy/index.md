@@ -34,41 +34,44 @@ using (SqlBulkCopy bulkcopy = new SqlBulkCopy(_dao._conn))
 
 
 //SqlTransaction版本
-using (SqlConnection conn = new SqlConnection(ConfigurationManager.AppSettings["conn"].Trim()))
+using (SqlConnection conn = new SqlConnection(connectionString))
 {
+	conn.Open();
 	using (SqlTransaction transaction = conn.BeginTransaction())
 	{
-		conn.Open();
-		using (SqlBulkCopy bulkcopy = new SqlBulkCopy(conn))
+		using (SqlBulkCopy bulkcopy = new SqlBulkCopy(conn, SqlBulkCopyOptions.Default, transaction))
 		{
+
 			//目標資料庫名稱
-			bulkcopy.DestinationTableName = "Opinion";
+			bulkcopy.DestinationTableName = "EAI_TranRecStatistics";
 			//逾時秒數
 			bulkcopy.BulkCopyTimeout = 60;
 			//設定每個批次要複製的筆數
-			bulkcopy.BatchSize = 20000;
+			bulkcopy.BatchSize = 100000;
 			//設定當SqlBulkCopy複製多少筆資料後, 觸發通知事件
-			bulkcopy.NotifyAfter = 200000;
-			bulkcopy.SqlRowsCopied += new SqlRowsCopiedEventHandler(sqlBulkCopy_SqlRowsCopied);
+			//bulkcopy.NotifyAfter = 200000;
+			//bulkcopy.SqlRowsCopied += new SqlRowsCopiedEventHandler(sqlBulkCopy_SqlRowsCopied);
 			try
 			{
-				bulkcopy.WriteToServer(tmpDt);
+				bulkcopy.WriteToServer(target);
 				transaction.Commit();
+				logger.Info($"匯入{sDate}至{eDate}資料至資料庫完成");
 			}
 			catch (Exception ex)
 			{
-				Console.WriteLine($"Err:{ex.ToString()}");
-				logger.Append($"Err:{ex.ToString()}");
+				logger.Info($"匯入{sDate}至{eDate}資料至資料庫失敗");
+				logger.Error("ImportToDb(bulkcopy):" + ex.ToString());
 				transaction.Rollback();
 			}
 			finally
 			{
 				bulkcopy.Close();
 			}
-
 		}
+
 		conn.Close();
 	}
+
 }
 
 

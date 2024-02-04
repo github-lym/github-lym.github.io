@@ -3,67 +3,67 @@
         <title>My Memo</title>
         <link>/</link>
         <description>My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Jan 2024 13:40:07 &#43;0000</lastBuildDate>
             <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
         <item>
-    <title>SqlBulkCopyOptions</title>
-    <link>/posts/2023/2023092001_sqlbulkcopyoptions/</link>
-    <pubDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</pubDate><guid>/posts/2023/2023092001_sqlbulkcopyoptions/</guid>
-    <description><![CDATA[<p>比較常用的有兩個：</p>]]></description>
+    <title>XML讀取</title>
+    <link>/posts/2024/2024012201_xml%E8%AE%80%E5%8F%96/</link>
+    <pubDate>Mon, 22 Jan 2024 13:40:07 &#43;0000</pubDate><guid>/posts/2024/2024012201_xml%E8%AE%80%E5%8F%96/</guid>
+    <description><![CDATA[<p>查網路的結果，<code>XmlReader</code>最快。</p>]]></description>
 </item>
 <item>
-    <title>在本機除錯Service</title>
-    <link>/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/</link>
-    <pubDate>Wed, 20 Sep 2023 06:04:07 &#43;0000</pubDate><guid>/posts/2023/2023092002_%E5%9C%A8%E6%9C%AC%E6%A9%9F%E9%99%A4%E9%8C%AFservice/</guid>
-    <description><![CDATA[<p>接手一WindowsServie，但除錯得裝一些額外的東西。</p>]]></description>
+    <title>Config的連線字串密碼有分號</title>
+    <link>/posts/2024/2024011902_config%E7%9A%84%E9%80%A3%E7%B7%9A%E5%AD%97%E4%B8%B2%E5%AF%86%E7%A2%BC%E6%9C%89%E5%88%86%E8%99%9F/</link>
+    <pubDate>Fri, 19 Jan 2024 10:41:07 &#43;0000</pubDate><guid>/posts/2024/2024011902_config%E7%9A%84%E9%80%A3%E7%B7%9A%E5%AD%97%E4%B8%B2%E5%AF%86%E7%A2%BC%E6%9C%89%E5%88%86%E8%99%9F/</guid>
+    <description><![CDATA[<p>config裡連線字串有分號很麻煩。</p>]]></description>
 </item>
 <item>
-    <title>正確編譯匯出RDLC</title>
-    <link>/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/</link>
-    <pubDate>Wed, 16 Aug 2023 03:04:09 &#43;0000</pubDate><guid>/posts/2023/2023081601_%E6%AD%A3%E7%A2%BA%E7%B7%A8%E8%AD%AF%E5%8C%AF%E5%87%BArdlc/</guid>
-    <description><![CDATA[<p>之前發現RDLC匯出有問題。</p>]]></description>
+    <title>NLog用程式設定</title>
+    <link>/posts/2024/2024011901_nlog%E7%94%A8%E7%A8%8B%E5%BC%8F%E8%A8%AD%E5%AE%9A/</link>
+    <pubDate>Fri, 19 Jan 2024 09:19:07 &#43;0000</pubDate><guid>/posts/2024/2024011901_nlog%E7%94%A8%E7%A8%8B%E5%BC%8F%E8%A8%AD%E5%AE%9A/</guid>
+    <description><![CDATA[<p>以前還自己傻傻的自己寫Log處理。</p>]]></description>
 </item>
 <item>
-    <title>在Windows啟用自己寫的服務</title>
-    <link>/posts/2023/2023080801_%E5%9C%A8windows%E5%95%9F%E7%94%A8%E8%87%AA%E5%B7%B1%E5%AF%AB%E7%9A%84%E6%9C%8D%E5%8B%99/</link>
-    <pubDate>Tue, 08 Aug 2023 09:34:52 &#43;0000</pubDate><guid>/posts/2023/2023080801_%E5%9C%A8windows%E5%95%9F%E7%94%A8%E8%87%AA%E5%B7%B1%E5%AF%AB%E7%9A%84%E6%9C%8D%E5%8B%99/</guid>
-    <description><![CDATA[<p>啟用服務不難，難的是自訂服務名稱。</p>]]></description>
+    <title>List泛型的Distinct</title>
+    <link>/posts/2024/2024011201_list%E6%B3%9B%E5%9E%8B%E7%9A%84distinct/</link>
+    <pubDate>Fri, 12 Jan 2024 16:05:07 &#43;0000</pubDate><guid>/posts/2024/2024011201_list%E6%B3%9B%E5%9E%8B%E7%9A%84distinct/</guid>
+    <description><![CDATA[<p>本以為刪除重複用<code>Distinct</code>就簡單搞定了。</p>]]></description>
 </item>
 <item>
-    <title>StoredProcedure撰寫與使用</title>
-    <link>/posts/2023/2023080201_storedprocedure%E6%92%B0%E5%AF%AB%E8%88%87%E4%BD%BF%E7%94%A8/</link>
-    <pubDate>Wed, 02 Aug 2023 10:12:03 &#43;0000</pubDate><guid>/posts/2023/2023080201_storedprocedure%E6%92%B0%E5%AF%AB%E8%88%87%E4%BD%BF%E7%94%A8/</guid>
-    <description><![CDATA[<p>不確定是不是第一次寫，反正就記錄一下。</p>]]></description>
+    <title>用Post傳送Form資料</title>
+    <link>/posts/2024/2024010502_%E7%94%A8post%E5%82%B3%E9%80%81form%E8%B3%87%E6%96%99/</link>
+    <pubDate>Fri, 05 Jan 2024 11:01:07 &#43;0000</pubDate><guid>/posts/2024/2024010502_%E7%94%A8post%E5%82%B3%E9%80%81form%E8%B3%87%E6%96%99/</guid>
+    <description><![CDATA[<p>本來<code>PostAsync</code>用得好好的，突然不行了。</p>]]></description>
 </item>
 <item>
-    <title>ToString()用法</title>
-    <link>/posts/2023/2023011903_tostring%E7%94%A8%E6%B3%95/</link>
-    <pubDate>Thu, 19 Jan 2023 20:18:24 &#43;0800</pubDate><guid>/posts/2023/2023011903_tostring%E7%94%A8%E6%B3%95/</guid>
-    <description><![CDATA[<p>突然找到我完全不知道的用法。</p>]]></description>
+    <title>Chrome你的連線不是私人連線解決方法？</title>
+    <link>/posts/2024/2024010501_chrome%E4%BD%A0%E7%9A%84%E9%80%A3%E7%B7%9A%E4%B8%8D%E6%98%AF%E7%A7%81%E4%BA%BA%E9%80%A3%E7%B7%9A%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%B3%95/</link>
+    <pubDate>Fri, 05 Jan 2024 09:58:07 &#43;0000</pubDate><guid>/posts/2024/2024010501_chrome%E4%BD%A0%E7%9A%84%E9%80%A3%E7%B7%9A%E4%B8%8D%E6%98%AF%E7%A7%81%E4%BA%BA%E9%80%A3%E7%B7%9A%E8%A7%A3%E6%B1%BA%E6%96%B9%E6%B3%95/</guid>
+    <description><![CDATA[<p>先說結論，我失敗了。</p>]]></description>
 </item>
 <item>
-    <title>用無痕模式開啟瀏覽器除錯</title>
-    <link>/posts/2023/2023011902_%E7%94%A8%E7%84%A1%E7%97%95%E6%A8%A1%E5%BC%8F%E9%99%A4%E9%8C%AF/</link>
-    <pubDate>Thu, 19 Jan 2023 19:57:11 &#43;0800</pubDate><guid>/posts/2023/2023011902_%E7%94%A8%E7%84%A1%E7%97%95%E6%A8%A1%E5%BC%8F%E9%99%A4%E9%8C%AF/</guid>
-    <description><![CDATA[<p>沒想到早就可以這麼做！</p>]]></description>
+    <title>將執行檔變成服務</title>
+    <link>/posts/2023/2023121901_%E5%B0%87%E5%9F%B7%E8%A1%8C%E6%AA%94%E8%AE%8A%E6%88%90%E6%9C%8D%E5%8B%99/</link>
+    <pubDate>Tue, 19 Dec 2023 11:11:07 &#43;0000</pubDate><guid>/posts/2023/2023121901_%E5%B0%87%E5%9F%B7%E8%A1%8C%E6%AA%94%E8%AE%8A%E6%88%90%E6%9C%8D%E5%8B%99/</guid>
+    <description><![CDATA[<p>因每次重開機都要重新執行檔案，所以去找有無方法變成服務。</p>]]></description>
 </item>
 <item>
-    <title>讀取ini檔</title>
-    <link>/posts/2023/2023011901_%E8%AE%80%E5%8F%96ini%E6%AA%94/</link>
-    <pubDate>Thu, 19 Jan 2023 17:41:49 &#43;0800</pubDate><guid>/posts/2023/2023011901_%E8%AE%80%E5%8F%96ini%E6%AA%94/</guid>
-    <description><![CDATA[<p>以前用網路上看的，比較複雜。</p>]]></description>
+    <title>Join一對多資料只取第一筆</title>
+    <link>/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/</link>
+    <pubDate>Tue, 07 Nov 2023 11:41:07 &#43;0000</pubDate><guid>/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/</guid>
+    <description><![CDATA[<p>這應該不是我第一次有這需求。</p>]]></description>
 </item>
 <item>
-    <title>快速產生每月簡訊費用檔案–LazyIVRMonthlySummary</title>
-    <link>/posts/2023/2023011603_%E5%BF%AB%E9%80%9F%E7%94%A2%E7%94%9F%E6%AF%8F%E6%9C%88%E7%B0%A1%E8%A8%8A%E8%B2%BB%E7%94%A8%E6%AA%94%E6%A1%88/</link>
-    <pubDate>Mon, 16 Jan 2023 15:49:49 &#43;0800</pubDate><guid>/posts/2023/2023011603_%E5%BF%AB%E9%80%9F%E7%94%A2%E7%94%9F%E6%AF%8F%E6%9C%88%E7%B0%A1%E8%A8%8A%E8%B2%BB%E7%94%A8%E6%AA%94%E6%A1%88/</guid>
-    <description><![CDATA[<p>公司每月都要統計報表。</p>]]></description>
+    <title>檔案寫入UTF8 或 UTF8 BOM</title>
+    <link>/posts/2023/2023100302_%E6%AA%94%E6%A1%88%E5%AF%AB%E5%85%A5utf8-%E6%88%96-utf8-bom/</link>
+    <pubDate>Tue, 03 Oct 2023 16:15:07 &#43;0000</pubDate><guid>/posts/2023/2023100302_%E6%AA%94%E6%A1%88%E5%AF%AB%E5%85%A5utf8-%E6%88%96-utf8-bom/</guid>
+    <description><![CDATA[<p>說實話，還是不清楚BOM的作用是啥。</p>]]></description>
 </item>
 <item>
-    <title>Double的運算</title>
-    <link>/posts/2023/2023011602_double%E7%9A%84%E9%81%8B%E7%AE%97/</link>
-    <pubDate>Mon, 16 Jan 2023 07:10:52 &#43;0000</pubDate><guid>/posts/2023/2023011602_double%E7%9A%84%E9%81%8B%E7%AE%97/</guid>
-    <description><![CDATA[<p>是襄理提出用<code>Double</code>相加會有問題。</p>]]></description>
+    <title>將yyyyMMdd字串改成yyyy-MM-dd</title>
+    <link>/posts/2023/2023100301_%E5%B0%87yyyymmdd%E5%AD%97%E4%B8%B2%E6%94%B9%E6%88%90yyyy-mm-dd/</link>
+    <pubDate>Tue, 03 Oct 2023 11:22:07 &#43;0000</pubDate><guid>/posts/2023/2023100301_%E5%B0%87yyyymmdd%E5%AD%97%E4%B8%B2%E6%94%B9%E6%88%90yyyy-mm-dd/</guid>
+    <description><![CDATA[<p>簡單粗暴的做法就是轉成DateTime格式再轉。</p>]]></description>
 </item>
 </channel>
 </rss>

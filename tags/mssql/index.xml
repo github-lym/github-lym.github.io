@@ -3,7 +3,13 @@
         <title>MSSQL - Tag - My Memo</title>
         <link>/tags/mssql/</link>
         <description>MSSQL - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 02 Aug 2023 10:12:03 &#43;0000</lastBuildDate><atom:link href="/tags/mssql/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 07 Nov 2023 11:41:07 &#43;0000</lastBuildDate><atom:link href="/tags/mssql/" rel="self" type="application/rss+xml" /><item>
+    <title>Join一對多資料只取第一筆</title>
+    <link>/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/</link>
+    <pubDate>Tue, 07 Nov 2023 11:41:07 &#43;0000</pubDate><guid>/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/</guid>
+    <description><![CDATA[<p>這應該不是我第一次有這需求。</p>]]></description>
+</item>
+<item>
     <title>StoredProcedure撰寫與使用</title>
     <link>/posts/2023/2023080201_storedprocedure%E6%92%B0%E5%AF%AB%E8%88%87%E4%BD%BF%E7%94%A8/</link>
     <pubDate>Wed, 02 Aug 2023 10:12:03 &#43;0000</pubDate><guid>/posts/2023/2023080201_storedprocedure%E6%92%B0%E5%AF%AB%E8%88%87%E4%BD%BF%E7%94%A8/</guid>

@@ -10,7 +10,7 @@ public static DateTime FirstDayOfMonth_AddMethod(this DateTime value)
 
 public static DateTime LastDayOfMonth_NewMethodWithReuseOfExtMethod(this DateTime value)
     {
-        return new DateTime(value.Year, value.Month, value.DaysInMonth());
+        return new DateTime(now.Year, now.Month, DateTime.DaysInMonth(now.Year, now.Month));
     }
 
 ```
