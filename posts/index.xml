@@ -3,7 +3,25 @@
         <title>All Posts - My Memo</title>
         <link>/posts/</link>
         <description>All Posts | My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 22 Jan 2024 13:40:07 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 03 Apr 2024 11:12:03 &#43;0000</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>StoredProcedure迴圈更新</title>
+    <link>/posts/2024/20240403_storedprocedure%E8%BF%B4%E5%9C%88%E6%9B%B4%E6%96%B0/</link>
+    <pubDate>Wed, 03 Apr 2024 11:12:03 &#43;0000</pubDate><guid>/posts/2024/20240403_storedprocedure%E8%BF%B4%E5%9C%88%E6%9B%B4%E6%96%B0/</guid>
+    <description><![CDATA[<p>迴圈更新，反正就記錄一下。</p>]]></description>
+</item>
+<item>
+    <title>CompareList—產生副本檔案並修改時間</title>
+    <link>/posts/2024/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93/</link>
+    <pubDate>Fri, 22 Mar 2024 11:57:04 &#43;0800</pubDate><guid>/posts/2024/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93/</guid>
+    <description><![CDATA[<p>版更現在比對檔案越來越麻煩。</p>]]></description>
+</item>
+<item>
+    <title>讀取csv行數</title>
+    <link>/posts/2024/2024013101_%E8%AE%80%E5%8F%96csv%E8%A1%8C%E6%95%B8/</link>
+    <pubDate>Wed, 31 Jan 2024 13:59:54 &#43;0000</pubDate><guid>/posts/2024/2024013101_%E8%AE%80%E5%8F%96csv%E8%A1%8C%E6%95%B8/</guid>
+    <description><![CDATA[<p>就為了統計查調程式查詢的筆數。</p>]]></description>
+</item>
+<item>
     <title>XML讀取</title>
     <link>/posts/2024/2024012201_xml%E8%AE%80%E5%8F%96/</link>
     <pubDate>Mon, 22 Jan 2024 13:40:07 &#43;0000</pubDate><guid>/posts/2024/2024012201_xml%E8%AE%80%E5%8F%96/</guid>
@@ -44,24 +62,6 @@
     <link>/posts/2023/2023121901_%E5%B0%87%E5%9F%B7%E8%A1%8C%E6%AA%94%E8%AE%8A%E6%88%90%E6%9C%8D%E5%8B%99/</link>
     <pubDate>Tue, 19 Dec 2023 11:11:07 &#43;0000</pubDate><guid>/posts/2023/2023121901_%E5%B0%87%E5%9F%B7%E8%A1%8C%E6%AA%94%E8%AE%8A%E6%88%90%E6%9C%8D%E5%8B%99/</guid>
     <description><![CDATA[<p>因每次重開機都要重新執行檔案，所以去找有無方法變成服務。</p>]]></description>
-</item>
-<item>
-    <title>Join一對多資料只取第一筆</title>
-    <link>/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/</link>
-    <pubDate>Tue, 07 Nov 2023 11:41:07 &#43;0000</pubDate><guid>/posts/2023/2023110701_join%E4%B8%80%E5%B0%8D%E5%A4%9A%E8%B3%87%E6%96%99%E5%8F%AA%E5%8F%96%E7%AC%AC%E4%B8%80%E7%AD%86/</guid>
-    <description><![CDATA[<p>這應該不是我第一次有這需求。</p>]]></description>
-</item>
-<item>
-    <title>檔案寫入UTF8 或 UTF8 BOM</title>
-    <link>/posts/2023/2023100302_%E6%AA%94%E6%A1%88%E5%AF%AB%E5%85%A5utf8-%E6%88%96-utf8-bom/</link>
-    <pubDate>Tue, 03 Oct 2023 16:15:07 &#43;0000</pubDate><guid>/posts/2023/2023100302_%E6%AA%94%E6%A1%88%E5%AF%AB%E5%85%A5utf8-%E6%88%96-utf8-bom/</guid>
-    <description><![CDATA[<p>說實話，還是不清楚BOM的作用是啥。</p>]]></description>
-</item>
-<item>
-    <title>將yyyyMMdd字串改成yyyy-MM-dd</title>
-    <link>/posts/2023/2023100301_%E5%B0%87yyyymmdd%E5%AD%97%E4%B8%B2%E6%94%B9%E6%88%90yyyy-mm-dd/</link>
-    <pubDate>Tue, 03 Oct 2023 11:22:07 &#43;0000</pubDate><guid>/posts/2023/2023100301_%E5%B0%87yyyymmdd%E5%AD%97%E4%B8%B2%E6%94%B9%E6%88%90yyyy-mm-dd/</guid>
-    <description><![CDATA[<p>簡單粗暴的做法就是轉成DateTime格式再轉。</p>]]></description>
 </item>
 </channel>
 </rss>

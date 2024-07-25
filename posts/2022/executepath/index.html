@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/2022\/executepath\/"
-        },"genre": "posts","keywords": "CSharp","wordcount":  9 ,
+        },"genre": "posts","keywords": "CSharp","wordcount":  38 ,
         "url": "\/posts\/2022\/executepath\/","datePublished": "2022-08-10T09:22:31+08:00","dateModified": "2022-08-10T09:22:31+08:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
@@ -118,21 +118,62 @@
             </div>
             
             <hr><div class="content" id="content"><p>取得執行檔執行資料夾</p>
+<p>以<code>D:\Documents\bin\Debug\test.exe</code> 執行為例：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">assemblyPath</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="n">GetDirectoryName</span><span class="p">(</span><span class="n">Assembly</span><span class="p">.</span><span class="n">GetExecutingAssembly</span><span class="p">().</span><span class="n">Location</span><span class="p">);</span>
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="c1">//結果=&gt;d:\documents\bin\Debug</span>
+</span></span><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">assemblyPath</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="n">GetDirectoryName</span><span class="p">(</span><span class="n">Assembly</span><span class="p">.</span><span class="n">GetExecutingAssembly</span><span class="p">().</span><span class="n">Location</span><span class="p">);</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>取得執行檔完全路徑</p>
+</div><p>取得執行檔完全路徑(含執行檔)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="n">Reflection</span><span class="p">.</span><span class="n">Assembly</span><span class="p">.</span><span class="n">GetEntryAssembly</span><span class="p">().</span><span class="n">Location</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="c1">//結果=&gt;d:\documents\bin\Debug\test.exe</span>
+</span></span><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="n">Reflection</span><span class="p">.</span><span class="n">Assembly</span><span class="p">.</span><span class="n">GetEntryAssembly</span><span class="p">().</span><span class="n">Location</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><br/>
+<p>若已有完整參考路徑<code>(assemblyPath)</code>：<br>
+取得目前資料夾名稱</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="c1">//結果=&gt;Debug</span>
+</span></span><span class="line"><span class="cl"><span class="k">new</span> <span class="n">DirectoryInfo</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">).</span><span class="n">Name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//結果=&gt;d:\documents\bin\Debug</span>
+</span></span><span class="line"><span class="cl"><span class="k">new</span> <span class="n">DirectoryInfo</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">).</span><span class="n">FullName</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>取得上一層路徑</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="c1">//結果=&gt;bin</span>
+</span></span><span class="line"><span class="cl"><span class="n">Directory</span><span class="p">.</span><span class="n">GetParent</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">.</span><span class="n">TrimEnd</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="n">DirectorySeparatorChar</span><span class="p">)).</span><span class="n">Name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//結果=&gt;d:\documents\bin</span>
+</span></span><span class="line"><span class="cl"><span class="n">Directory</span><span class="p">.</span><span class="n">GetParent</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">.</span><span class="n">TrimEnd</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="n">DirectorySeparatorChar</span><span class="p">)).</span><span class="n">FullName</span><span class="p">;</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">

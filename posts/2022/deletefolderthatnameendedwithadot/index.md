@@ -16,7 +16,10 @@
 `rd /s "\\?\D:\Downloads\ScreenToGif.`
 
 處理檔案的：  
-`del "\?C:TempStuffSales Agreement."`  
+`del "\?C:TempStuffSales Agreement."` <=  沒成功過 
+`del \\?\E:\Downloads\mp4*.` <= 沒試過  
+  
+檔案還可以用壓縮軟體的檔案總管刪，親測有效！  
 
 同篇文章說Win7的另一種操作：  
 `del c:tempsomefil*`

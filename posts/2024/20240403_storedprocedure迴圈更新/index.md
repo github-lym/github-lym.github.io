@@ -1,0 +1,82 @@
+# StoredProcedure迴圈更新
+
+迴圈更新，反正就記錄一下。
+<!--more-->
+```SQL
+ALTER PROCEDURE [dbo].[sp_UpdateCust2]
+AS
+/****** Object:  StoredProcedure [dbo].[sp_UpdateCust2]    Script Date: 2024/4/2 下午 04:00:00 ******/
+SET ANSI_NULLS ON
+SET QUOTED_IDENTIFIER ON
+
+DECLARE @BR_CODE nvarchar(5)
+DECLARE @ID_DATA nvarchar(11)
+DECLARE @NAME nvarchar(39)
+DECLARE @MOBILE nvarchar(20)
+DECLARE @EMAIL_ADDR nvarchar(50)
+DECLARE @GUID uniqueidentifier
+
+--刪除已更新並超過30天的紀錄
+DELETE [dbo].[UPDATE_CUST]
+WHERE IsUpdated = 1
+	AND DATEDIFF(day, Update_Date, getdate()) > 30
+
+--查詢要更新的名單
+DECLARE CHANGE_CURSOR CURSOR
+FOR
+SELECT BR_CODE
+	,ID_DATA
+	,[NAME]
+	,MOBILE
+	,EMAIL_ADDR
+	,GUID
+FROM [dbo].[UPDATE_CUST]
+WHERE IsUpdated = 0
+
+OPEN CHANGE_CURSOR
+
+FETCH NEXT
+FROM CHANGE_CURSOR
+INTO @BR_CODE
+	,@ID_DATA
+	,@NAME
+	,@MOBILE
+	,@EMAIL_ADDR
+	,@GUID
+
+--一個個更新
+WHILE @@FETCH_STATUS = 0
+BEGIN
+	UPDATE [dbo].[CUST]
+	SET [NAME] = @NAME
+		,MOBILE = @MOBILE
+		,EMAIL_ADDR = @EMAIL_ADDR
+	WHERE BR_CODE = @BR_CODE
+		AND ID_DATA = @ID_DATA
+
+	--print @@ROWCOUNT;
+	--print @ID_DATA
+	
+	--有更新的回寫更新名單
+IF @@ROWCOUNT <> 0
+	UPDATE [dbo].[UPDATE_CUST]
+	SET IsUpdated = 1
+		,Update_Date = GETDATE()
+	WHERE BR_CODE = @BR_CODE
+		AND ID_DATA = @ID_DATA
+		AND GUID = @GUID
+
+	FETCH NEXT
+	FROM CHANGE_CURSOR
+	INTO @BR_CODE
+		,@ID_DATA
+		,@NAME
+		,@MOBILE
+		,@EMAIL_ADDR
+		,@GUID
+END
+
+CLOSE CHANGE_CURSOR
+
+DEALLOCATE CHANGE_CURSOR
+```

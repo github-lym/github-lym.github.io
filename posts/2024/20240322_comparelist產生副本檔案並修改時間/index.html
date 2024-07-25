@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>CompareList—產生副本檔案並修改時間 - My Memo</title><meta name="description" content="CompareList—產生副本檔案並修改時間"><meta property="og:title" content="CompareList—產生副本檔案並修改時間" />
+<meta property="og:description" content="CompareList—產生副本檔案並修改時間" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2024/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2024-03-22T11:57:04+08:00" />
+<meta property="article:modified_time" content="2024-03-22T11:57:04+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/images/devil_s_bg.png"/>
+
+<meta name="twitter:title" content="CompareList—產生副本檔案並修改時間"/>
+<meta name="twitter:description" content="CompareList—產生副本檔案並修改時間"/>
+<meta name="application-name" content="My Memo">
+<meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/2024/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93/" /><link rel="prev" href="/posts/2024/2024013101_%E8%AE%80%E5%8F%96csv%E8%A1%8C%E6%95%B8/" /><link rel="next" href="/posts/2024/20240403_storedprocedure%E8%BF%B4%E5%9C%88%E6%9B%B4%E6%96%B0/" /><link rel="stylesheet" href="/css/page.min.css"><link rel="stylesheet" href="/css/home.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "CompareList—產生副本檔案並修改時間",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/2024\/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93\/"
+        },"genre": "posts","keywords": "CSharp, Console","wordcount":  400 ,
+        "url": "\/posts\/2024\/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93\/","datePublished": "2024-03-22T11:57:04+08:00","dateModified": "2024-03-22T11:57:04+08:00","publisher": {
+            "@type": "Organization",
+            "name": "LYM"},"author": {
+                "@type": "Person",
+                "name": "LYM"
+            },"description": "CompareList—產生副本檔案並修改時間"
+    }
+    </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="My Memo"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/devil_s_bg.png"
+        data-srcset="/images/devil_s_bg.png, /images/devil_s_bg.png 1.5x, /images/devil_s_bg.png 2x"
+        data-sizes="auto"
+        alt="/images/devil_s_bg.png"
+        title="/images/devil_s_bg.png" /><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/github-lym" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a class="menu-item" href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="My Memo"><img
+        class="lazyload logo"
+        src="/svg/loading.min.svg"
+        data-src="/images/devil_s_bg.png"
+        data-srcset="/images/devil_s_bg.png, /images/devil_s_bg.png 1.5x, /images/devil_s_bg.png 2x"
+        data-sizes="auto"
+        alt="/images/devil_s_bg.png"
+        title="/images/devil_s_bg.png" /><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="#" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="#" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="#" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/github-lym" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><div class="menu-item"><a href="/index.xml" title="RSS"><i class="fas fa-rss fa-fw" title="RSS"></i> </a>
+                <span>&nbsp;|&nbsp;</span><a href="javascript:void(0);" class="theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div></div>
+    </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div><main class="main">
+                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">CompareList—產生副本檔案並修改時間</h2><div class="post-meta">
+                <div class="post-meta-line">&nbsp;<span class="post-category">published in <a href="/categories/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/"><i class="far fa-folder fa-fw"></i>懶人上班程式</a></span></div>
+                <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2024-03-22 11:57:04 Friday">2024-03-22 11:57:04 Friday</time></span>&nbsp;</div>
+            </div>
+            
+            <hr><div class="content" id="content"><p>版更現在比對檔案越來越麻煩。</p>
+<p>做出檔案差異檔，主測跟複測都得要一份。</p>
+<p>犯懶的我寫了<a href="https://github.com/github-lym/CompareList" target="_blank" rel="noopener noreffer">這個</a>。<br>
+先做好一份比對檔案再執行即可。</p>
+<p>步驟就是先做出清單，<br>
+把第一個原始比對檔案修改時間當基礎時間加上一開始輸入的增加時間，
+當成第一個複製檔案的新修改時間， <br>
+之後再依序複製檔案並隨機加上幾秒讓檔案時間看起來正常些。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Diagnostics</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.IO</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Linq</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Reflection</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System.Text.RegularExpressions</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">namespace</span> <span class="nn">CompareList</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">class</span> <span class="nc">Program</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">static</span> <span class="kt">string</span> <span class="n">assemblyPath</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="n">GetDirectoryName</span><span class="p">(</span><span class="n">Assembly</span><span class="p">.</span><span class="n">GetExecutingAssembly</span><span class="p">().</span><span class="n">Location</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;請輸入增加時間(日(空格)時(空格)分):&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//int addTime = 0;</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">addDays</span><span class="p">,</span> <span class="n">addHours</span><span class="p">,</span> <span class="n">addMins</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">//bool parsedSuccessfully = int.TryParse(Console.ReadLine(), out addTime);</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span> <span class="n">input</span> <span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">bool</span> <span class="n">parsedSuccessfully</span> <span class="p">=</span> <span class="n">Regex</span><span class="p">.</span><span class="n">IsMatch</span><span class="p">(</span><span class="n">input</span><span class="p">,</span> <span class="s">@&#34;\d+\s\d+\s\d+&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">while</span> <span class="p">(</span><span class="n">parsedSuccessfully</span> <span class="p">==</span> <span class="k">false</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;格式不符&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;請輸入增加時間(日(空格)時(空格)分):&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">input</span> <span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//parsedSuccessfully = int.TryParse(Console.ReadLine(), out addTime);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">parsedSuccessfully</span> <span class="p">=</span> <span class="n">Regex</span><span class="p">.</span><span class="n">IsMatch</span><span class="p">(</span><span class="n">input</span><span class="p">,</span> <span class="s">@&#34;\d+\s\d+\s\d+&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span><span class="p">[]</span> <span class="n">addTime</span> <span class="p">=</span> <span class="n">input</span><span class="p">.</span><span class="n">Split</span><span class="p">(</span><span class="k">new</span> <span class="kt">char</span><span class="p">[]</span> <span class="p">{</span> <span class="sc">&#39; &#39;</span> <span class="p">},</span> <span class="n">StringSplitOptions</span><span class="p">.</span><span class="n">RemoveEmptyEntries</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">addDays</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">addTime</span><span class="p">[</span><span class="m">0</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">addHours</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">addTime</span><span class="p">[</span><span class="m">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">            <span class="n">addMins</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">addTime</span><span class="p">[</span><span class="m">2</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kt">string</span> <span class="n">compareList</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">,</span> <span class="s">&#34;CompareList&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(!</span><span class="n">Directory</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">compareList</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;目標資料夾不存在!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//取案號</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">string</span> <span class="n">caseNO</span> <span class="p">=</span> <span class="k">new</span> <span class="n">DirectoryInfo</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">).</span><span class="n">Name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1">//用cmd產生 附件三</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">var</span> <span class="n">psiNpm0</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ProcessStartInfo</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">FileName</span> <span class="p">=</span> <span class="s">&#34;cmd&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">RedirectStandardOutput</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">RedirectStandardInput</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">UseShellExecute</span> <span class="p">=</span> <span class="k">false</span>
+</span></span><span class="line"><span class="cl">                <span class="p">};</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">var</span> <span class="n">pNpmRun0</span> <span class="p">=</span> <span class="n">Process</span><span class="p">.</span><span class="n">Start</span><span class="p">(</span><span class="n">psiNpm0</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pNpmRun0</span><span class="p">.</span><span class="n">StandardInput</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$@&#34;DIR Update\SourceCode\*.* /S –D &gt; 附件三-{caseNO}.txt&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pNpmRun0</span><span class="p">.</span><span class="n">StandardInput</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;exit&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pNpmRun0</span><span class="p">.</span><span class="n">WaitForExit</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1">//用cmd產生 附件四-CompareList.txt</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">var</span> <span class="n">psiNpm1</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ProcessStartInfo</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">FileName</span> <span class="p">=</span> <span class="s">&#34;cmd&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">RedirectStandardOutput</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">RedirectStandardInput</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">UseShellExecute</span> <span class="p">=</span> <span class="k">false</span>
+</span></span><span class="line"><span class="cl">                <span class="p">};</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">var</span> <span class="n">pNpmRun1</span> <span class="p">=</span> <span class="n">Process</span><span class="p">.</span><span class="n">Start</span><span class="p">(</span><span class="n">psiNpm1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pNpmRun1</span><span class="p">.</span><span class="n">StandardInput</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">@&#34;DIR CompareList\*.* /S –D &gt; 附件四-CompareList.txt&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pNpmRun1</span><span class="p">.</span><span class="n">StandardInput</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;exit&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pNpmRun1</span><span class="p">.</span><span class="n">WaitForExit</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="n">DirectoryInfo</span> <span class="n">d</span> <span class="p">=</span> <span class="k">new</span> <span class="n">DirectoryInfo</span><span class="p">(</span><span class="n">compareList</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">FileInfo</span><span class="p">[]</span> <span class="n">files</span> <span class="p">=</span> <span class="n">d</span><span class="p">.</span><span class="n">GetFiles</span><span class="p">(</span><span class="s">&#34;*.*&#34;</span><span class="p">);</span> <span class="c1">//Getting files</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1">//新資料夾</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">string</span> <span class="n">newCompareList</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">,</span> <span class="s">&#34;CompareListCheck&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(!</span><span class="n">Directory</span><span class="p">.</span><span class="n">Exists</span><span class="p">(</span><span class="n">newCompareList</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">Directory</span><span class="p">.</span><span class="n">CreateDirectory</span><span class="p">(</span><span class="n">newCompareList</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="n">DateTime</span> <span class="n">oTime</span> <span class="p">=</span> <span class="n">files</span><span class="p">.</span><span class="n">OrderBy</span><span class="p">(</span><span class="n">o</span> <span class="p">=&gt;</span> <span class="n">o</span><span class="p">.</span><span class="n">LastWriteTime</span><span class="p">).</span><span class="n">Last</span><span class="p">().</span><span class="n">LastWriteTime</span><span class="p">;</span>   <span class="c1">//基礎時間</span>
+</span></span><span class="line"><span class="cl">                <span class="n">DateTime</span> <span class="n">nTime</span> <span class="p">=</span> <span class="n">oTime</span><span class="p">.</span><span class="n">AddDays</span><span class="p">(</span><span class="n">addDays</span><span class="p">).</span><span class="n">AddHours</span><span class="p">(</span><span class="n">addHours</span><span class="p">).</span><span class="n">AddMinutes</span><span class="p">(</span><span class="n">addMins</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Random</span> <span class="n">rnd</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Random</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">//複製至另一資料夾並改變修改時間</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">files</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="kt">string</span> <span class="n">copyFile</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="n">newCompareList</span><span class="p">,</span> <span class="n">files</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">Name</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">File</span><span class="p">.</span><span class="n">Copy</span><span class="p">(</span><span class="n">files</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">FullName</span><span class="p">,</span> <span class="n">copyFile</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">nTime</span> <span class="p">=</span> <span class="n">nTime</span><span class="p">.</span><span class="n">AddSeconds</span><span class="p">(</span><span class="n">rnd</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="m">15</span><span class="p">,</span> <span class="m">30</span><span class="p">));</span>  <span class="c1">//增加隨機秒數</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">File</span><span class="p">.</span><span class="n">SetLastWriteTime</span><span class="p">(</span><span class="n">copyFile</span><span class="p">,</span> <span class="n">nTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">File</span><span class="p">.</span><span class="n">SetCreationTime</span><span class="p">(</span><span class="n">copyFile</span><span class="p">,</span> <span class="n">nTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">File</span><span class="p">.</span><span class="n">SetLastAccessTime</span><span class="p">(</span><span class="n">copyFile</span><span class="p">,</span> <span class="n">nTime</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1">//用cmd產生 附件四-CompareList.txt</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">var</span> <span class="n">psiNpm2</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ProcessStartInfo</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">FileName</span> <span class="p">=</span> <span class="s">&#34;cmd&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">RedirectStandardOutput</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">RedirectStandardInput</span> <span class="p">=</span> <span class="k">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">UseShellExecute</span> <span class="p">=</span> <span class="k">false</span>
+</span></span><span class="line"><span class="cl">                <span class="p">};</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">var</span> <span class="n">pNpmRun2</span> <span class="p">=</span> <span class="n">Process</span><span class="p">.</span><span class="n">Start</span><span class="p">(</span><span class="n">psiNpm2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pNpmRun2</span><span class="p">.</span><span class="n">StandardInput</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">@&#34;DIR CompareListCheck\*.* /S –D &gt; 附件四-CompareListCheck.txt&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pNpmRun2</span><span class="p">.</span><span class="n">StandardInput</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;exit&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">pNpmRun2</span><span class="p">.</span><span class="n">WaitForExit</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
+    <div class="post-info"><div class="post-info-tag"><span><a href="/tags/csharp/">CSharp</a>
+                </span><span><a href="/tags/console/">Console</a>
+                </span></div><div class="post-info-share">
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2024/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93/" data-title="CompareList—產生副本檔案並修改時間" data-hashtags="CSharp,Console"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2024/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93/" data-hashtag="CSharp"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2024/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93/" data-title="CompareList—產生副本檔案並修改時間"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2024/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93/" data-title="CompareList—產生副本檔案並修改時間" data-description="CompareList—產生副本檔案並修改時間"><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2024/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93/" data-title="CompareList—產生副本檔案並修改時間"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2024/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93/" data-title="CompareList—產生副本檔案並修改時間"><i class="fab fa-skype fa-fw"></i></a></span>
+        </div></div><div class="post-nav"><a href="/posts/2024/2024013101_%E8%AE%80%E5%8F%96csv%E8%A1%8C%E6%95%B8/" class="prev" rel="prev" title="讀取csv行數"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
+            <a href="/posts/2024/20240403_storedprocedure%E8%BF%B4%E5%9C%88%E6%9B%B4%E6%96%B0/" class="next" rel="next" title="StoredProcedure迴圈更新">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
+</div></article></div>
+            </main>
+            <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>
+</div>
+</footer>
+        </div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-chevron-up fa-fw"></i>
+            </a></div><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><link rel="stylesheet" href="/lib/lightgallery/lightgallery.min.css"><script src="/lib/autocomplete/autocomplete.min.js"></script><script src="/lib/algoliasearch/algoliasearch-lite.umd.min.js"></script><script src="/lib/lazysizes/lazysizes.min.js"></script><script src="/lib/twemoji/twemoji.min.js"></script><script src="/lib/typeit/typeit.min.js"></script><script src="/lib/lightgallery/lightgallery.min.js"></script><script src="/lib/lightgallery/lg-thumbnail.min.js"></script><script src="/lib/lightgallery/lg-zoom.min.js"></script><script src="/lib/clipboard/clipboard.min.js"></script><script src="/lib/sharer/sharer.min.js"></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":20},"comment":{},"data":{"id-1":"My Memo","id-2":"My Memo"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"search":{"algoliaAppID":"REZKV78K6P","algoliaIndex":"index","algoliaSearchKey":"b32b9724683ef42845b63a2743550d51","highlightTag":"em","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"algolia"},"twemoji":true,"typeit":{"cursorChar":null,"cursorSpeed":null,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":null,"speed":null}};</script><script src="/js/theme.min.js"></script></body></html>
