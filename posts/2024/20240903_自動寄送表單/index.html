@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/2024\/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE\/"
-        },"genre": "posts","keywords": "CSharp","wordcount":  40 ,
+        },"genre": "posts","keywords": "CSharp","wordcount":  48 ,
         "url": "\/posts\/2024\/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE\/","datePublished": "2024-09-03T02:13:07+00:00","dateModified": "2024-09-03T02:13:07+00:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
@@ -122,28 +122,47 @@
 <br>
 比較特別的是，原來可以把`DataTable`直接匯出至`ClosedXML`，還幫你弄得好好的。  
 mail能直接把記憶體內的內容附加寄出。  
-```CSharp
-wbook.Worksheets.Add(dt, "Sheet1"); //直接把DB匯入excel
-var worksheet = wbook.Worksheet(1);
-worksheet.Columns().AdjustToContents(); //根據cell大小調整寬度
-wbook.SaveAs(ms);
-SendMail(ms);
-<p>&hellip;&hellip;.</p>
-<p>string filename = $&ldquo;新企網銀單位功能啟用清單 {today.ToString(&ldquo;yyyyMM&rdquo;)} 版&rdquo; + &ldquo;.xlsx&rdquo;;
-ms.Position = 0;
-var att = new System.Net.Mail.Attachment(ms, filename, &ldquo;application/vnd.ms-excel&rdquo;);
-message.Attachments.Add(att);</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">[![結果](../img/20240903_01.jpg &#39;結果&#39;)](../img/20240903_01.jpg.png) 
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="n">wbook</span><span class="p">.</span><span class="n">Worksheets</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">dt</span><span class="p">,</span> <span class="s">&#34;Sheet1&#34;</span><span class="p">);</span> <span class="c1">//直接把DB匯入excel</span>
+</span></span><span class="line"><span class="cl"><span class="kt">var</span> <span class="n">worksheet</span> <span class="p">=</span> <span class="n">wbook</span><span class="p">.</span><span class="n">Worksheet</span><span class="p">(</span><span class="m">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">worksheet</span><span class="p">.</span><span class="n">Columns</span><span class="p">().</span><span class="n">AdjustToContents</span><span class="p">();</span> <span class="c1">//根據cell大小調整寬度</span>
+</span></span><span class="line"><span class="cl"><span class="n">wbook</span><span class="p">.</span><span class="n">SaveAs</span><span class="p">(</span><span class="n">ms</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">SendMail</span><span class="p">(</span><span class="n">ms</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">(</span><span class="err">中略</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">filename</span> <span class="p">=</span> <span class="s">$&#34;新企網銀單位功能啟用清單 {today.ToString(&#34;</span><span class="n">yyyyMM</span><span class="s">&#34;)} 版&#34;</span> <span class="p">+</span> <span class="s">&#34;.xlsx&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">ms</span><span class="p">.</span><span class="n">Position</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">var</span> <span class="n">att</span> <span class="p">=</span> <span class="k">new</span> <span class="n">System</span><span class="p">.</span><span class="n">Net</span><span class="p">.</span><span class="n">Mail</span><span class="p">.</span><span class="n">Attachment</span><span class="p">(</span><span class="n">ms</span><span class="p">,</span> <span class="n">filename</span><span class="p">,</span> <span class="s">&#34;application/vnd.ms-excel&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">message</span><span class="p">.</span><span class="n">Attachments</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">att</span><span class="p">);</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div></div><div class="post-footer" id="post-footer">
+</div><br>  
+<p><a href="../img/20240903_01.jpg.png" rel=""><figure><a class="lightgallery" href="../img/20240903_01.jpg" title="結果" data-thumbnail="../img/20240903_01.jpg" data-sub-html="<h2>結果</h2><p>結果</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="../img/20240903_01.jpg"
+            data-srcset="../img/20240903_01.jpg, ../img/20240903_01.jpg 1.5x, ../img/20240903_01.jpg 2x"
+            data-sizes="auto"
+            alt="../img/20240903_01.jpg" />
+    </a><figcaption class="image-caption">結果</figcaption>
+    </figure></a></p></div><div class="post-footer" id="post-footer">
     <div class="post-info"><div class="post-info-tag"><span><a href="/tags/csharp/">CSharp</a>
                 </span></div><div class="post-info-share">
             <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2024/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE/" data-title="自動寄送表單" data-hashtags="CSharp"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2024/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE/" data-hashtag="CSharp"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2024/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE/" data-title="自動寄送表單"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2024/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE/" data-title="自動寄送表單" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2024/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE/" data-title="自動寄送表單"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2024/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE/" data-title="自動寄送表單"><i class="fab fa-skype fa-fw"></i></a></span>
