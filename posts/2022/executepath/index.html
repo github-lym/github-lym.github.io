@@ -4,8 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
-        <title>取得執行檔資料夾與完整路徑 - My Memo</title><meta name="description" content="取得執行檔資料夾與完整路徑"><meta property="og:title" content="取得執行檔資料夾與完整路徑" />
-<meta property="og:description" content="取得執行檔資料夾與完整路徑" />
+        <title>取得執行檔路徑相關 - My Memo</title><meta name="description" content="取得執行檔路徑相關"><meta property="og:title" content="取得執行檔路徑相關" />
+<meta property="og:description" content="取得執行檔路徑相關" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/posts/2022/executepath/" /><meta property="og:image" content="/images/devil_s_bg.png"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-08-10T09:22:31+08:00" />
@@ -13,8 +13,8 @@
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="/images/devil_s_bg.png"/>
 
-<meta name="twitter:title" content="取得執行檔資料夾與完整路徑"/>
-<meta name="twitter:description" content="取得執行檔資料夾與完整路徑"/>
+<meta name="twitter:title" content="取得執行檔路徑相關"/>
+<meta name="twitter:description" content="取得執行檔路徑相關"/>
 <meta name="application-name" content="My Memo">
 <meta name="apple-mobile-web-app-title" content="My Memo"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,18 +22,18 @@
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
-        "headline": "取得執行檔資料夾與完整路徑",
+        "headline": "取得執行檔路徑相關",
         "inLanguage": "en",
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/2022\/executepath\/"
-        },"genre": "posts","keywords": "CSharp","wordcount":  38 ,
+        },"genre": "posts","keywords": "CSharp","wordcount":  151 ,
         "url": "\/posts\/2022\/executepath\/","datePublished": "2022-08-10T09:22:31+08:00","dateModified": "2022-08-10T09:22:31+08:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
                 "@type": "Person",
                 "name": "LYM"
-            },"description": "取得執行檔資料夾與完整路徑"
+            },"description": "取得執行檔路徑相關"
     }
     </script></head><body data-header-desktop="fixed" data-header-mobile="auto"><script>(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
 
@@ -112,7 +112,7 @@
 <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
 </div><main class="main">
-                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">取得執行檔資料夾與完整路徑</h2><div class="post-meta">
+                <div class="container"><article class="page single" data-toc="disable"><div class="single-card" ><h2 class="single-title animated flipInX">取得執行檔路徑相關</h2><div class="post-meta">
                 <div class="post-meta-line">&nbsp;<span class="post-category">published in <a href="/categories/%E7%AD%86%E8%A8%98/"><i class="far fa-folder fa-fw"></i>筆記</a></span></div>
                 <div class="post-meta-line"><span><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2022-08-10 09:22:31 Wednesday">2022-08-10 09:22:31 Wednesday</time></span>&nbsp;</div>
             </div>
@@ -122,22 +122,18 @@
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="c1">//結果=&gt;d:\documents\bin\Debug</span>
-</span></span><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">assemblyPath</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="n">GetDirectoryName</span><span class="p">(</span><span class="n">Assembly</span><span class="p">.</span><span class="n">GetExecutingAssembly</span><span class="p">().</span><span class="n">Location</span><span class="p">);</span>
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">assemblyPath</span> <span class="p">=</span> <span class="n">Path</span><span class="p">.</span><span class="n">GetDirectoryName</span><span class="p">(</span><span class="n">Assembly</span><span class="p">.</span><span class="n">GetExecutingAssembly</span><span class="p">().</span><span class="n">Location</span><span class="p">);</span>  <span class="c1">//d:\documents\bin\Debug</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>取得執行檔完全路徑(含執行檔)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="c1">//結果=&gt;d:\documents\bin\Debug\test.exe</span>
-</span></span><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="n">Reflection</span><span class="p">.</span><span class="n">Assembly</span><span class="p">.</span><span class="n">GetEntryAssembly</span><span class="p">().</span><span class="n">Location</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="n">System</span><span class="p">.</span><span class="n">Reflection</span><span class="p">.</span><span class="n">Assembly</span><span class="p">.</span><span class="n">GetEntryAssembly</span><span class="p">().</span><span class="n">Location</span><span class="p">;</span>  <span class="c1">// d:\documents\bin\Debug\test.exe  </span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><br/>
@@ -148,15 +144,11 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="c1">//結果=&gt;Debug</span>
-</span></span><span class="line"><span class="cl"><span class="k">new</span> <span class="n">DirectoryInfo</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">).</span><span class="n">Name</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="k">new</span> <span class="n">DirectoryInfo</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">).</span><span class="n">Name</span><span class="p">;</span>  <span class="c1">// Debug</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">//結果=&gt;d:\documents\bin\Debug</span>
-</span></span><span class="line"><span class="cl"><span class="k">new</span> <span class="n">DirectoryInfo</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">).</span><span class="n">FullName</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">new</span> <span class="n">DirectoryInfo</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">).</span><span class="n">FullName</span><span class="p">;</span>  <span class="c1">// d:\documents\bin\Debug</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>取得上一層路徑</p>
@@ -169,17 +161,124 @@
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="c1">//結果=&gt;bin</span>
-</span></span><span class="line"><span class="cl"><span class="n">Directory</span><span class="p">.</span><span class="n">GetParent</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">.</span><span class="n">TrimEnd</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="n">DirectorySeparatorChar</span><span class="p">)).</span><span class="n">Name</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="n">Directory</span><span class="p">.</span><span class="n">GetParent</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">.</span><span class="n">TrimEnd</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="n">DirectorySeparatorChar</span><span class="p">)).</span><span class="n">Name</span><span class="p">;</span>  
+</span></span><span class="line"><span class="cl"><span class="c1">//結果=&gt;bin</span>
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Directory</span><span class="p">.</span><span class="n">GetParent</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">.</span><span class="n">TrimEnd</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="n">DirectorySeparatorChar</span><span class="p">)).</span><span class="n">FullName</span><span class="p">;</span>  
 </span></span><span class="line"><span class="cl"><span class="c1">//結果=&gt;d:\documents\bin</span>
-</span></span><span class="line"><span class="cl"><span class="n">Directory</span><span class="p">.</span><span class="n">GetParent</span><span class="p">(</span><span class="n">assemblyPath</span><span class="p">.</span><span class="n">TrimEnd</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="n">DirectorySeparatorChar</span><span class="p">)).</span><span class="n">FullName</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><br/>
+<hr>
+<p>以下內容為黑暗執行緒大大提供  <a href="https://blog.darkthread.net/blog/dotnet-io-path-funcs/" target="_blank" rel="noopener noreffer">https://blog.darkthread.net/blog/dotnet-io-path-funcs/</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">GetDirectoryName</span><span class="p">(</span><span class="s">@&#34;D:\Documents\bin\Debug\test.exe&#34;</span><span class="p">);</span> <span class="c1">// D:\Documents\bin\Debug  </span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">GetDirectoryName</span><span class="p">(</span><span class="s">@&#34;\bin\Debug\test.exe&#34;</span><span class="p">);</span> <span class="c1">// \bin\Debug  </span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">GetFileName</span><span class="p">(</span><span class="s">@&#34;\bin\Debug\test.exe&#34;</span><span class="p">);</span> <span class="c1">// test.exe  </span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">GetFileNameWithoutExtension</span><span class="p">(</span><span class="s">@&#34;D:\Documents\bin\Debug\test.exe&#34;</span><span class="p">);</span> <span class="c1">// test  </span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">GetExtension</span><span class="p">(</span><span class="s">@&#34;D:\Documents\bin\Debug\test.exe&#34;</span><span class="p">);</span> <span class="c1">// .exe  </span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">GetFullPath</span><span class="p">(</span><span class="s">@&#34;D:\Documents\bin\Debug\test.exe&#34;</span><span class="p">)</span> <span class="c1">//  D:\Documents\bin\Debug\test.exe</span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">GetFullPath</span><span class="p">(</span><span class="s">@&#34;.\bin\Debug\test.exe&#34;</span><span class="p">)</span>  <span class="c1">//  會依當時路徑算出</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><br/>
+<p>檢查路徑是否為從根目錄起始(絕對路徑)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">IsPathRooted</span><span class="p">(</span><span class="s">@&#34;C:\Temp&#34;</span><span class="p">);</span> <span class="c1">// true</span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">IsPathRooted</span><span class="p">(</span><span class="s">@&#34;\Temp&#34;</span><span class="p">);</span> <span class="c1">// true</span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">IsPathRooted</span><span class="p">(</span><span class="s">@&#34;.\test.txt&#34;</span><span class="p">);</span> <span class="c1">// false</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><br/>
+<p>取得根目錄</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">GetPathRoot</span><span class="p">(</span><span class="s">@&#34;Temp\test.txt&#34;</span><span class="p">);</span> <span class="c1">// 空字串</span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">GetPathRoot</span><span class="p">(</span><span class="s">@&#34;\Temp\test.txt&#34;</span><span class="p">);</span> <span class="c1">// \</span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">GetPathRoot</span><span class="p">(</span><span class="s">@&#34;C:\Temp\test.txt&#34;</span><span class="p">);</span> <span class="c1">// C:\</span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">GetPathRoot</span><span class="p">(</span><span class="s">@&#34;\\my-server\share\folder1\test.txt&#34;</span><span class="p">);</span> <span class="c1">// \\my-server\share</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><br/>
+<p>更換副檔名</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">ChangeExtension</span><span class="p">(</span><span class="s">@&#34;C:\Temp\test.txt&#34;</span><span class="p">,</span> <span class="s">&#34;.jpg&#34;</span><span class="p">);</span> <span class="c1">// C:\Temp\test.jpg</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><br/>
+<p>取得暫存目錄、暫存檔名(隨機產生且不重複)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">GetTempPath</span><span class="p">();</span> <span class="c1">// 例：C:\Users\Jeffrey\AppData\Local\Temp\</span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">Combine</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="n">GetTempPath</span><span class="p">(),</span> <span class="n">Guid</span><span class="p">.</span><span class="n">NewGuid</span><span class="p">().</span><span class="n">ToString</span><span class="p">());</span> <span class="c1">// 可拋式暫存檔</span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">GetTempFileName</span><span class="p">();</span> <span class="c1">// 不重複隨機檔名，如：C:\Users\Jeffrey\AppData\Local\Temp\tmpB913.tmp</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><br/>
+<p>檢查路徑或檔名是否包含無效字元</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="s">@&#34;C:\Temp\&#34;</span><span class="p">.</span><span class="n">IndexOfAny</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="n">GetInvalidPathChars</span><span class="p">());</span> <span class="c1">// -1</span>
+</span></span><span class="line"><span class="cl"><span class="s">@&#34;C:\?Temp&#34;&#34;\&#34;</span><span class="p">.</span><span class="n">IndexOfAny</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="n">GetInvalidPathChars</span><span class="p">());</span> <span class="c1">// 8, ? 合法 &#34; 不合法</span>
+</span></span><span class="line"><span class="cl"><span class="s">@&#34;test?.txt&#34;</span><span class="p">.</span><span class="n">IndexOfAny</span><span class="p">(</span><span class="n">Path</span><span class="p">.</span><span class="n">GetInvalidFileNameChars</span><span class="p">());</span> <span class="c1">// 4</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><br/>
+<p>路徑相關字元</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">DirectorySeparatorChar</span> <span class="c1">// \</span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">AltDirectorySeparatorChar</span> <span class="c1">// /</span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">PathSeparator</span> <span class="c1">// ;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Path</span><span class="p">.</span><span class="n">VolumeSeparatorChar</span> <span class="c1">// :</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
     <div class="post-info"><div class="post-info-tag"><span><a href="/tags/csharp/">CSharp</a>
                 </span></div><div class="post-info-share">
-            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2022/executepath/" data-title="取得執行檔資料夾與完整路徑" data-hashtags="CSharp"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2022/executepath/" data-hashtag="CSharp"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2022/executepath/" data-title="取得執行檔資料夾與完整路徑"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2022/executepath/" data-title="取得執行檔資料夾與完整路徑" data-description="取得執行檔資料夾與完整路徑"><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2022/executepath/" data-title="取得執行檔資料夾與完整路徑"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2022/executepath/" data-title="取得執行檔資料夾與完整路徑"><i class="fab fa-skype fa-fw"></i></a></span>
+            <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="/posts/2022/executepath/" data-title="取得執行檔路徑相關" data-hashtags="CSharp"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="/posts/2022/executepath/" data-hashtag="CSharp"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="/posts/2022/executepath/" data-title="取得執行檔路徑相關"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="Share on Blogger" data-sharer="blogger" data-url="/posts/2022/executepath/" data-title="取得執行檔路徑相關" data-description="取得執行檔路徑相關"><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="Share on Evernote" data-sharer="evernote" data-url="/posts/2022/executepath/" data-title="取得執行檔路徑相關"><i class="fab fa-evernote fa-fw"></i></a><a href="javascript:void(0);" title="Share on Skype" data-sharer="skype" data-url="/posts/2022/executepath/" data-title="取得執行檔路徑相關"><i class="fab fa-skype fa-fw"></i></a></span>
         </div></div><div class="post-nav"><a href="/posts/2022/sqlparameterin/" class="prev" rel="prev" title="在語法有IN情況下使用Sql Parameter"><i class="fas fa-angle-left fa-fw"></i>Previous Post</a>
             <a href="/posts/2022/winformcatchkeyboard/" class="next" rel="next" title="WinForm抓取鍵盤輸入">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
 </div></article></div>
