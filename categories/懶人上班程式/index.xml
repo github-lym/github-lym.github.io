@@ -3,7 +3,13 @@
         <title>懶人上班程式 - Category - My Memo</title>
         <link>/categories/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/</link>
         <description>懶人上班程式 - Category - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 22 Mar 2024 11:57:04 &#43;0800</lastBuildDate><atom:link href="/categories/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 03 Sep 2024 02:13:07 &#43;0000</lastBuildDate><atom:link href="/categories/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/" rel="self" type="application/rss+xml" /><item>
+    <title>自動寄送表單</title>
+    <link>/posts/2024/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE/</link>
+    <pubDate>Tue, 03 Sep 2024 02:13:07 &#43;0000</pubDate><guid>/posts/2024/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE/</guid>
+    <description><![CDATA[<p>就為了查調程式功能。</p>]]></description>
+</item>
+<item>
     <title>CompareList—產生副本檔案並修改時間</title>
     <link>/posts/2024/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93/</link>
     <pubDate>Fri, 22 Mar 2024 11:57:04 &#43;0800</pubDate><guid>/posts/2024/20240322_comparelist%E7%94%A2%E7%94%9F%E5%89%AF%E6%9C%AC%E6%AA%94%E6%A1%88%E4%B8%A6%E4%BF%AE%E6%94%B9%E6%99%82%E9%96%93/</guid>
@@ -56,12 +62,6 @@
     <link>/posts/2022/focussnapshot/</link>
     <pubDate>Wed, 30 Mar 2022 14:41:19 &#43;0800</pubDate><guid>/posts/2022/focussnapshot/</guid>
     <description><![CDATA[<p>駐點在機關時得幫其他廠商定期與不定期更新網站。</p>]]></description>
-</item>
-<item>
-    <title>去掉文字前後空白</title>
-    <link>/posts/2022/trimcopy/</link>
-    <pubDate>Wed, 30 Mar 2022 14:13:40 &#43;0800</pubDate><guid>/posts/2022/trimcopy/</guid>
-    <description><![CDATA[<p>做客服工程師那會，每天都要查詢資料庫。</p>]]></description>
 </item>
 </channel>
 </rss>

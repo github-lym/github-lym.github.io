@@ -3,7 +3,13 @@
         <title>CSharp - Tag - My Memo</title>
         <link>/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 03 Apr 2024 11:12:03 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 03 Sep 2024 02:13:07 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>自動寄送表單</title>
+    <link>/posts/2024/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE/</link>
+    <pubDate>Tue, 03 Sep 2024 02:13:07 &#43;0000</pubDate><guid>/posts/2024/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE/</guid>
+    <description><![CDATA[<p>就為了查調程式功能。</p>]]></description>
+</item>
+<item>
     <title>StoredProcedure迴圈更新</title>
     <link>/posts/2024/20240403_storedprocedure%E8%BF%B4%E5%9C%88%E6%9B%B4%E6%96%B0/</link>
     <pubDate>Wed, 03 Apr 2024 11:12:03 &#43;0000</pubDate><guid>/posts/2024/20240403_storedprocedure%E8%BF%B4%E5%9C%88%E6%9B%B4%E6%96%B0/</guid>
@@ -56,12 +62,6 @@
     <link>/posts/2023/2023100302_%E6%AA%94%E6%A1%88%E5%AF%AB%E5%85%A5utf8-%E6%88%96-utf8-bom/</link>
     <pubDate>Tue, 03 Oct 2023 16:15:07 &#43;0000</pubDate><guid>/posts/2023/2023100302_%E6%AA%94%E6%A1%88%E5%AF%AB%E5%85%A5utf8-%E6%88%96-utf8-bom/</guid>
     <description><![CDATA[<p>說實話，還是不清楚BOM的作用是啥。</p>]]></description>
-</item>
-<item>
-    <title>將yyyyMMdd字串改成yyyy-MM-dd</title>
-    <link>/posts/2023/2023100301_%E5%B0%87yyyymmdd%E5%AD%97%E4%B8%B2%E6%94%B9%E6%88%90yyyy-mm-dd/</link>
-    <pubDate>Tue, 03 Oct 2023 11:22:07 &#43;0000</pubDate><guid>/posts/2023/2023100301_%E5%B0%87yyyymmdd%E5%AD%97%E4%B8%B2%E6%94%B9%E6%88%90yyyy-mm-dd/</guid>
-    <description><![CDATA[<p>簡單粗暴的做法就是轉成DateTime格式再轉。</p>]]></description>
 </item>
 </channel>
 </rss>
