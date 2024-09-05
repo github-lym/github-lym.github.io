@@ -6,8 +6,13 @@
 就花點時間把[這個](https://github.com/github-lym/CorpEBMonthlyFunction)寫出來。  
 
 <br>
-比較特別的是，原來可以把`DataTable`直接匯出至`ClosedXML`，還幫你弄得好好的。  
-mail能直接把記憶體內的內容附加寄出。  
+
+比較特別的是，原來可以把`DataTable`直接匯出至`ClosedXML`成Excel，  
+標題過濾還幫你弄得好好的。  
+mail則能直接把記憶體內的內容附加寄出。 
+
+<br>
+ 
 
 ```CSharp
 wbook.Worksheets.Add(dt, "Sheet1"); //直接把DB匯入excel
