@@ -36,6 +36,7 @@ KeyValuePair<string, string>[] keyValues = new[]
 	new KeyValuePair<string, string>("appId", MAPPID)
 };
 
+var formContent = new FormUrlEncodedContent(keyValues);
 using (HttpClient httpClient = new HttpClient())
 {
 	System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };//是否忽略憑證																								

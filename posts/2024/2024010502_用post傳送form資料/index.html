@@ -27,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/2024\/2024010502_%E7%94%A8post%E5%82%B3%E9%80%81form%E8%B3%87%E6%96%99\/"
-        },"genre": "posts","keywords": "CSharp","wordcount":  127 ,
+        },"genre": "posts","keywords": "CSharp","wordcount":  133 ,
         "url": "\/posts\/2024\/2024010502_%E7%94%A8post%E5%82%B3%E9%80%81form%E8%B3%87%E6%96%99\/","datePublished": "2024-01-05T11:01:07+00:00","dateModified": "2024-01-05T11:01:07+00:00","publisher": {
             "@type": "Organization",
             "name": "LYM"},"author": {
@@ -171,6 +171,7 @@
 </span><span class="lnt">17
 </span><span class="lnt">18
 </span><span class="lnt">19
+</span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-CSharp" data-lang="CSharp"><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">resultContent</span><span class="p">;</span>
@@ -183,6 +184,7 @@
 </span></span><span class="line"><span class="cl">	<span class="k">new</span> <span class="n">KeyValuePair</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">string</span><span class="p">&gt;(</span><span class="s">&#34;appId&#34;</span><span class="p">,</span> <span class="n">MAPPID</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">};</span>
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">var</span> <span class="n">formContent</span> <span class="p">=</span> <span class="k">new</span> <span class="n">FormUrlEncodedContent</span><span class="p">(</span><span class="n">keyValues</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="p">(</span><span class="n">HttpClient</span> <span class="n">httpClient</span> <span class="p">=</span> <span class="k">new</span> <span class="n">HttpClient</span><span class="p">())</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">	<span class="n">System</span><span class="p">.</span><span class="n">Net</span><span class="p">.</span><span class="n">ServicePointManager</span><span class="p">.</span><span class="n">ServerCertificateValidationCallback</span> <span class="p">=</span> <span class="k">delegate</span> <span class="p">{</span> <span class="k">return</span> <span class="k">true</span><span class="p">;</span> <span class="p">};</span><span class="c1">//是否忽略憑證																								</span>
@@ -202,7 +204,7 @@
             <a href="/posts/2024/2024011201_list%E6%B3%9B%E5%9E%8B%E7%9A%84distinct/" class="next" rel="next" title="List泛型的Distinct">Next Post<i class="fas fa-angle-right fa-fw"></i></a></div></div>
 </div></article></div>
             </main>
-            <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2024</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>
+            <footer class="footer"><div class="footer-container"><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022 - 2025</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="https://github.com/github-lym">LYM</a></span></div>
 </div>
 </footer>
         </div>
