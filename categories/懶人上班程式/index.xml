@@ -3,7 +3,13 @@
         <title>懶人上班程式 - Category - My Memo</title>
         <link>/categories/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/</link>
         <description>懶人上班程式 - Category - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 14 Jan 2025 10:05:07 &#43;0000</lastBuildDate><atom:link href="/categories/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 18 Oct 2025 11:57:04 &#43;0800</lastBuildDate><atom:link href="/categories/%E6%87%B6%E4%BA%BA%E4%B8%8A%E7%8F%AD%E7%A8%8B%E5%BC%8F/" rel="self" type="application/rss+xml" /><item>
+    <title>GetCompareFile依更新檔案抓取凍版檔案</title>
+    <link>/posts/2025/20251018_getcomparefile%E4%BE%9D%E6%9B%B4%E6%96%B0%E6%AA%94%E6%A1%88%E6%8A%93%E5%8F%96%E5%87%8D%E7%89%88%E6%AA%94%E6%A1%88/</link>
+    <pubDate>Sat, 18 Oct 2025 11:57:04 &#43;0800</pubDate><guid>/posts/2025/20251018_getcomparefile%E4%BE%9D%E6%9B%B4%E6%96%B0%E6%AA%94%E6%A1%88%E6%8A%93%E5%8F%96%E5%87%8D%E7%89%88%E6%AA%94%E6%A1%88/</guid>
+    <description><![CDATA[<p>為了版更現在比對檔案用。</p>]]></description>
+</item>
+<item>
     <title>檢查服務是否執行</title>
     <link>/posts/2025/20250114_%E6%AA%A2%E6%9F%A5%E6%9C%8D%E5%8B%99%E6%98%AF%E5%90%A6%E5%9F%B7%E8%A1%8C/</link>
     <pubDate>Tue, 14 Jan 2025 10:05:07 &#43;0000</pubDate><guid>/posts/2025/20250114_%E6%AA%A2%E6%9F%A5%E6%9C%8D%E5%8B%99%E6%98%AF%E5%90%A6%E5%9F%B7%E8%A1%8C/</guid>
@@ -56,12 +62,6 @@
     <link>/posts/2022/generatemodel/</link>
     <pubDate>Sat, 02 Apr 2022 10:53:49 &#43;0800</pubDate><guid>/posts/2022/generatemodel/</guid>
     <description><![CDATA[<p>結束駐點回公司後開始寫MVC。</p>]]></description>
-</item>
-<item>
-    <title>送交Google表單</title>
-    <link>/posts/2022/submitgoogleform/</link>
-    <pubDate>Sat, 02 Apr 2022 10:44:11 &#43;0800</pubDate><guid>/posts/2022/submitgoogleform/</guid>
-    <description><![CDATA[<p>疫情的關係，公司設計了一個Google表單要我們每日填寫。</p>]]></description>
 </item>
 </channel>
 </rss>

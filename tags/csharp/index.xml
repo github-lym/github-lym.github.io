@@ -3,7 +3,13 @@
         <title>CSharp - Tag - My Memo</title>
         <link>/tags/csharp/</link>
         <description>CSharp - Tag - My Memo</description>
-        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 03 Sep 2024 10:13:07 &#43;0000</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 18 Oct 2025 11:57:04 &#43;0800</lastBuildDate><atom:link href="/tags/csharp/" rel="self" type="application/rss+xml" /><item>
+    <title>GetCompareFile依更新檔案抓取凍版檔案</title>
+    <link>/posts/2025/20251018_getcomparefile%E4%BE%9D%E6%9B%B4%E6%96%B0%E6%AA%94%E6%A1%88%E6%8A%93%E5%8F%96%E5%87%8D%E7%89%88%E6%AA%94%E6%A1%88/</link>
+    <pubDate>Sat, 18 Oct 2025 11:57:04 &#43;0800</pubDate><guid>/posts/2025/20251018_getcomparefile%E4%BE%9D%E6%9B%B4%E6%96%B0%E6%AA%94%E6%A1%88%E6%8A%93%E5%8F%96%E5%87%8D%E7%89%88%E6%AA%94%E6%A1%88/</guid>
+    <description><![CDATA[<p>為了版更現在比對檔案用。</p>]]></description>
+</item>
+<item>
     <title>自動寄送表單</title>
     <link>/posts/2024/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE/</link>
     <pubDate>Tue, 03 Sep 2024 10:13:07 &#43;0000</pubDate><guid>/posts/2024/20240903_%E8%87%AA%E5%8B%95%E5%AF%84%E9%80%81%E8%A1%A8%E5%96%AE/</guid>
@@ -56,12 +62,6 @@
     <link>/posts/2024/2024010502_%E7%94%A8post%E5%82%B3%E9%80%81form%E8%B3%87%E6%96%99/</link>
     <pubDate>Fri, 05 Jan 2024 11:01:07 &#43;0000</pubDate><guid>/posts/2024/2024010502_%E7%94%A8post%E5%82%B3%E9%80%81form%E8%B3%87%E6%96%99/</guid>
     <description><![CDATA[<p>本來<code>PostAsync</code>用得好好的，突然不行了。</p>]]></description>
-</item>
-<item>
-    <title>檔案寫入UTF8 或 UTF8 BOM</title>
-    <link>/posts/2023/2023100302_%E6%AA%94%E6%A1%88%E5%AF%AB%E5%85%A5utf8-%E6%88%96-utf8-bom/</link>
-    <pubDate>Tue, 03 Oct 2023 16:15:07 &#43;0000</pubDate><guid>/posts/2023/2023100302_%E6%AA%94%E6%A1%88%E5%AF%AB%E5%85%A5utf8-%E6%88%96-utf8-bom/</guid>
-    <description><![CDATA[<p>說實話，還是不清楚BOM的作用是啥。</p>]]></description>
 </item>
 </channel>
 </rss>
